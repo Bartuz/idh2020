@@ -1,0 +1,1057 @@
+﻿<?xml version="1.0"?>
+<DTS:Executable xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:refId="Package"
+  DTS:CreationDate="5/4/2020 7:12:30 PM"
+  DTS:CreationName="Microsoft.Package"
+  DTS:CreatorComputerName="DESKTOP-V8810I2"
+  DTS:CreatorName="AzureAD\MaciejAdamczyk"
+  DTS:DTSID="{CD7AF3C9-7584-4C37-9391-17716128811B}"
+  DTS:ExecutableType="Microsoft.Package"
+  DTS:LastModifiedProductVersion="15.0.2000.93"
+  DTS:LocaleID="2057"
+  DTS:ObjectName="Package"
+  DTS:PackageType="5"
+  DTS:VersionBuild="21"
+  DTS:VersionGUID="{CB225770-D1E0-40B5-B41A-9F7818C501AC}">
+  <DTS:Property
+    DTS:Name="PackageFormatVersion">8</DTS:Property>
+  <DTS:ConnectionManagers>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Flat File Connection Manager]"
+      DTS:CreationName="FLATFILE"
+      DTS:DTSID="{EAAB198F-BF62-4889-88A3-78E7AF208EA6}"
+      DTS:ObjectName="Flat File Connection Manager">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:Format="Delimited"
+          DTS:LocaleID="2057"
+          DTS:HeaderRowDelimiter="_x000D__x000A_"
+          DTS:ColumnNamesInFirstDataRow="True"
+          DTS:RowDelimiter=""
+          DTS:TextQualifier="_x003C_none_x003E_"
+          DTS:CodePage="1252"
+          DTS:ConnectionString="D:\PJATK_Informatyka\magisterkie\IDH\cwiczenia\coronavirusdataset\PatientInfo.csv">
+          <DTS:FlatFileColumns>
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="patient_id"
+              DTS:DTSID="{F9DBC7DB-3BB1-4CEF-83E3-2D652FEAE485}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="global_num"
+              DTS:DTSID="{D214F142-7A9C-4A3A-9B51-EC157490FFE0}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="sex"
+              DTS:DTSID="{E03DACE1-68CD-44D6-8C7E-5A1980AE12DC}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="birth_year"
+              DTS:DTSID="{ACE750D6-A411-438A-99AC-29F054E7B8AB}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="age"
+              DTS:DTSID="{D02C3B84-392E-4F5D-8916-F3103A807E73}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="country"
+              DTS:DTSID="{45041191-A470-4A13-BCE9-CF43C38DF213}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="province"
+              DTS:DTSID="{BFC6E9D0-5842-4649-8109-6606A7876671}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="city"
+              DTS:DTSID="{7FFD4889-7142-4B38-98B6-E763A9856E9A}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="disease"
+              DTS:DTSID="{855ED024-5CA5-4B66-A3C4-446895A72B26}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="infection_case"
+              DTS:DTSID="{DAF67645-1099-4079-9BBE-2FEDF2739BFA}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="infection_order"
+              DTS:DTSID="{1DB42F4B-3366-4CC3-AEB2-D87FA731D0EF}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="infected_by"
+              DTS:DTSID="{FFCC6AA0-AAB5-4F5D-AB57-9EF15DCEC89F}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="contact_number"
+              DTS:DTSID="{C5C7D9C3-AD41-408B-840F-BFABF2D8CC97}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="symptom_onset_date"
+              DTS:DTSID="{25AADBBF-AE24-4812-AFFC-0D85FC319DB9}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="confirmed_date"
+              DTS:DTSID="{48E04B9A-B9B4-47CD-A057-657215094727}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="released_date"
+              DTS:DTSID="{6D582BD0-45F7-4B62-87B3-3B47CF16A77D}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="deceased_date"
+              DTS:DTSID="{097F5B6B-3028-4906-B7FF-EEF52AAE2931}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x000D__x000A_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="state"
+              DTS:DTSID="{EF79BE5A-39A6-40F7-881B-58D184F2F806}"
+              DTS:CreationName="" />
+          </DTS:FlatFileColumns>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[localhost.IDH]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{F2C62856-B7CC-44E8-9680-203C5ED86F22}"
+      DTS:ObjectName="localhost.IDH">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="Data Source=localhost;Initial Catalog=IDH;Provider=MSOLEDBSQL.1;Integrated Security=SSPI;Auto Translate=False;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+  </DTS:ConnectionManagers>
+  <DTS:Variables />
+  <DTS:Executables>
+    <DTS:Executable
+      DTS:refId="Package\Czyszczenie tabelki Płeć"
+      DTS:CreationName="Microsoft.ExecuteSQLTask"
+      DTS:Description="Execute SQL Task"
+      DTS:DTSID="{17B870C9-EDB8-41DF-9E05-9DBC34B60C0B}"
+      DTS:ExecutableType="Microsoft.ExecuteSQLTask"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Czyszczenie tabelki Płeć"
+      DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2019; © 2019 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
+      DTS:ThreadHint="0">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <SQLTask:SqlTaskData
+          SQLTask:Connection="{F2C62856-B7CC-44E8-9680-203C5ED86F22}"
+          SQLTask:SqlStatementSource="TRUNCATE TABLE dbo.Płeć" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\Przepływ danych Płeć"
+      DTS:CreationName="Microsoft.Pipeline"
+      DTS:Description="Data Flow Task"
+      DTS:DTSID="{B842479F-C16C-4A3A-88EE-420A16F3739B}"
+      DTS:ExecutableType="Microsoft.Pipeline"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Przepływ danych Płeć"
+      DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <pipeline
+          version="1">
+          <components>
+            <component
+              refId="Package\Przepływ danych Płeć\Przekonwertuj typ na WSTR"
+              componentClassID="Microsoft.DataConvert"
+              contactInfo="Data Conversion;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;0"
+              description="Data Conversion"
+              name="Przekonwertuj typ na WSTR"
+              usesDispositions="true">
+              <inputs>
+                <input
+                  refId="Package\Przepływ danych Płeć\Przekonwertuj typ na WSTR.Inputs[Data Conversion Input]"
+                  name="Data Conversion Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Przepływ danych Płeć\Przekonwertuj typ na WSTR.Inputs[Data Conversion Input].Columns[sex]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="sex"
+                      cachedSortKeyPosition="1"
+                      lineageId="Package\Przepływ danych Płeć\Usuń duplikaty.Outputs[Sort Output].Columns[sex]" />
+                  </inputColumns>
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Przepływ danych Płeć\Przekonwertuj typ na WSTR.Outputs[Data Conversion Output]"
+                  exclusionGroup="1"
+                  name="Data Conversion Output"
+                  synchronousInputId="Package\Przepływ danych Płeć\Przekonwertuj typ na WSTR.Inputs[Data Conversion Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Przepływ danych Płeć\Przekonwertuj typ na WSTR.Outputs[Data Conversion Output].Columns[sex_WSTR]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      length="50"
+                      lineageId="Package\Przepływ danych Płeć\Przekonwertuj typ na WSTR.Outputs[Data Conversion Output].Columns[sex_WSTR]"
+                      name="sex_WSTR"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the input column used as the source of data for the conversion."
+                          name="SourceInputColumnLineageID">#{Package\Przepływ danych Płeć\Usuń duplikaty.Outputs[Sort Output].Columns[sex]}</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                      </properties>
+                    </outputColumn>
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\Przepływ danych Płeć\Przekonwertuj typ na WSTR.Outputs[Data Conversion Error Output]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="Data Conversion Error Output"
+                  synchronousInputId="Package\Przepływ danych Płeć\Przekonwertuj typ na WSTR.Inputs[Data Conversion Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Przepływ danych Płeć\Przekonwertuj typ na WSTR.Outputs[Data Conversion Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Przepływ danych Płeć\Przekonwertuj typ na WSTR.Outputs[Data Conversion Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Przepływ danych Płeć\Przekonwertuj typ na WSTR.Outputs[Data Conversion Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Przepływ danych Płeć\Przekonwertuj typ na WSTR.Outputs[Data Conversion Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Przepływ danych Płeć\Usuń bezpłciowe przypadki"
+              componentClassID="Microsoft.ConditionalSplit"
+              contactInfo="Conditional Split;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;0"
+              description="Routes data rows to different outputs depending on the content of the data. Use conditions (SSIS expressions) to specify which rows are routed. For example, separate records that need to be cleaned from those that are ready to be loaded or route only a subset of records."
+              name="Usuń bezpłciowe przypadki"
+              usesDispositions="true">
+              <inputs>
+                <input
+                  refId="Package\Przepływ danych Płeć\Usuń bezpłciowe przypadki.Inputs[Conditional Split Input]"
+                  description="Input to the Conditional Split Transformation"
+                  name="Conditional Split Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Przepływ danych Płeć\Usuń bezpłciowe przypadki.Inputs[Conditional Split Input].Columns[sex]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="sex"
+                      lineageId="Package\Przepływ danych Płeć\Wczytaj kolumnę &quot;sex&quot; z csv &quot;PatientInfo&quot;.Outputs[Flat File Source Output].Columns[sex]" />
+                  </inputColumns>
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Przepływ danych Płeć\Usuń bezpłciowe przypadki.Outputs[Bezpłciowe]"
+                  description="Output 2 of the Conditional Split Transformation"
+                  errorOrTruncationOperation="Computation"
+                  errorRowDisposition="FailComponent"
+                  exclusionGroup="1"
+                  name="Bezpłciowe"
+                  synchronousInputId="Package\Przepływ danych Płeć\Usuń bezpłciowe przypadki.Inputs[Conditional Split Input]"
+                  truncationRowDisposition="FailComponent">
+                  <properties>
+                    <property
+                      containsID="true"
+                      dataType="System.String"
+                      description="Specifies the expression. This expression version uses lineage identifiers instead of column names."
+                      name="Expression">#{Package\Przepływ danych Płeć\Wczytaj kolumnę "sex" z csv "PatientInfo".Outputs[Flat File Source Output].Columns[sex]} == ""</property>
+                    <property
+                      containsID="true"
+                      dataType="System.String"
+                      description="Specifies the friendly version of the expression. This expression version uses column names."
+                      expressionType="Notify"
+                      name="FriendlyExpression">sex == ""</property>
+                    <property
+                      dataType="System.Int32"
+                      description="Specifies the position of the condition in the list of conditions that the transformation evaluates. The evaluation order is from the lowest to the highest value."
+                      name="EvaluationOrder">0</property>
+                  </properties>
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\Przepływ danych Płeć\Usuń bezpłciowe przypadki.Outputs[Z płcią]"
+                  description="Default Output of the Conditional Split Transformation"
+                  exclusionGroup="1"
+                  name="Z płcią"
+                  synchronousInputId="Package\Przepływ danych Płeć\Usuń bezpłciowe przypadki.Inputs[Conditional Split Input]">
+                  <properties>
+                    <property
+                      dataType="System.Boolean"
+                      name="IsDefaultOut">true</property>
+                  </properties>
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\Przepływ danych Płeć\Usuń bezpłciowe przypadki.Outputs[Conditional Split Error Output]"
+                  description="Error Output of the Conditional Split Transformation"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="Conditional Split Error Output"
+                  synchronousInputId="Package\Przepływ danych Płeć\Usuń bezpłciowe przypadki.Inputs[Conditional Split Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Przepływ danych Płeć\Usuń bezpłciowe przypadki.Outputs[Conditional Split Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Przepływ danych Płeć\Usuń bezpłciowe przypadki.Outputs[Conditional Split Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Przepływ danych Płeć\Usuń bezpłciowe przypadki.Outputs[Conditional Split Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Przepływ danych Płeć\Usuń bezpłciowe przypadki.Outputs[Conditional Split Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Przepływ danych Płeć\Usuń duplikaty"
+              componentClassID="Microsoft.Sort"
+              contactInfo="Sort;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
+              description="Sorts input data in ascending or descending order when it cannot be sorted at its source. For example, sort sales data by 'customer id' before it is written to a flat file and delivered to another department. Note: We do not recommend this transformation for large data flows."
+              name="Usuń duplikaty"
+              version="1">
+              <properties>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the Sort transformation removes rows with duplicate sort values."
+                  name="EliminateDuplicates">true</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the maximum number of threads to use for sorting."
+                  expressionType="Notify"
+                  name="MaximumThreads">-1</property>
+              </properties>
+              <inputs>
+                <input
+                  refId="Package\Przepływ danych Płeć\Usuń duplikaty.Inputs[Sort Input]"
+                  name="Sort Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Przepływ danych Płeć\Usuń duplikaty.Inputs[Sort Input].Columns[sex]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="sex"
+                      lineageId="Package\Przepływ danych Płeć\Wczytaj kolumnę &quot;sex&quot; z csv &quot;PatientInfo&quot;.Outputs[Flat File Source Output].Columns[sex]">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the comparison options for character data."
+                          name="NewComparisonFlags">0</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the sort order of the column."
+                          name="NewSortKeyPosition">1</property>
+                      </properties>
+                    </inputColumn>
+                  </inputColumns>
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Przepływ danych Płeć\Usuń duplikaty.Outputs[Sort Output]"
+                  isSorted="true"
+                  name="Sort Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Przepływ danych Płeć\Usuń duplikaty.Outputs[Sort Output].Columns[sex]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      lineageId="Package\Przepływ danych Płeć\Usuń duplikaty.Outputs[Sort Output].Columns[sex]"
+                      name="sex"
+                      sortKeyPosition="1">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the lineage identifier of the input column that is associated with this output column."
+                          name="SortColumnId">#{Package\Przepływ danych Płeć\Wczytaj kolumnę "sex" z csv "PatientInfo".Outputs[Flat File Source Output].Columns[sex]}</property>
+                      </properties>
+                    </outputColumn>
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Przepływ danych Płeć\Wczytaj kolumnę &quot;sex&quot; z csv &quot;PatientInfo&quot;"
+              componentClassID="Microsoft.FlatFileSource"
+              contactInfo="Flat File Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
+              description="Flat File Source"
+              localeId="2057"
+              name="Wczytaj kolumnę &quot;sex&quot; z csv &quot;PatientInfo&quot;"
+              usesDispositions="true"
+              version="1">
+              <properties>
+                <property
+                  dataType="System.Boolean"
+                  description="Specifies whether zero-length columns are treated as null."
+                  name="RetainNulls">false</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of an output column containing the file name. If no name is specified, no output column containing the file name will be generated."
+                  name="FileNameColumnName"></property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Przepływ danych Płeć\Wczytaj kolumnę &quot;sex&quot; z csv &quot;PatientInfo&quot;.Connections[FlatFileConnection]"
+                  connectionManagerID="Package.ConnectionManagers[Flat File Connection Manager]"
+                  connectionManagerRefId="Package.ConnectionManagers[Flat File Connection Manager]"
+                  name="FlatFileConnection" />
+              </connections>
+              <outputs>
+                <output
+                  refId="Package\Przepływ danych Płeć\Wczytaj kolumnę &quot;sex&quot; z csv &quot;PatientInfo&quot;.Outputs[Flat File Source Output]"
+                  name="Flat File Source Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Przepływ danych Płeć\Wczytaj kolumnę &quot;sex&quot; z csv &quot;PatientInfo&quot;.Outputs[Flat File Source Output].Columns[sex]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Przepływ danych Płeć\Wczytaj kolumnę &quot;sex&quot; z csv &quot;PatientInfo&quot;.Outputs[Flat File Source Output].ExternalColumns[sex]"
+                      length="50"
+                      lineageId="Package\Przepływ danych Płeć\Wczytaj kolumnę &quot;sex&quot; z csv &quot;PatientInfo&quot;.Outputs[Flat File Source Output].Columns[sex]"
+                      name="sex"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                  </outputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Przepływ danych Płeć\Wczytaj kolumnę &quot;sex&quot; z csv &quot;PatientInfo&quot;.Outputs[Flat File Source Output].ExternalColumns[patient_id]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="patient_id" />
+                    <externalMetadataColumn
+                      refId="Package\Przepływ danych Płeć\Wczytaj kolumnę &quot;sex&quot; z csv &quot;PatientInfo&quot;.Outputs[Flat File Source Output].ExternalColumns[global_num]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="global_num" />
+                    <externalMetadataColumn
+                      refId="Package\Przepływ danych Płeć\Wczytaj kolumnę &quot;sex&quot; z csv &quot;PatientInfo&quot;.Outputs[Flat File Source Output].ExternalColumns[sex]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="sex" />
+                    <externalMetadataColumn
+                      refId="Package\Przepływ danych Płeć\Wczytaj kolumnę &quot;sex&quot; z csv &quot;PatientInfo&quot;.Outputs[Flat File Source Output].ExternalColumns[birth_year]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="birth_year" />
+                    <externalMetadataColumn
+                      refId="Package\Przepływ danych Płeć\Wczytaj kolumnę &quot;sex&quot; z csv &quot;PatientInfo&quot;.Outputs[Flat File Source Output].ExternalColumns[age]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="age" />
+                    <externalMetadataColumn
+                      refId="Package\Przepływ danych Płeć\Wczytaj kolumnę &quot;sex&quot; z csv &quot;PatientInfo&quot;.Outputs[Flat File Source Output].ExternalColumns[country]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="country" />
+                    <externalMetadataColumn
+                      refId="Package\Przepływ danych Płeć\Wczytaj kolumnę &quot;sex&quot; z csv &quot;PatientInfo&quot;.Outputs[Flat File Source Output].ExternalColumns[province]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="province" />
+                    <externalMetadataColumn
+                      refId="Package\Przepływ danych Płeć\Wczytaj kolumnę &quot;sex&quot; z csv &quot;PatientInfo&quot;.Outputs[Flat File Source Output].ExternalColumns[city]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="city" />
+                    <externalMetadataColumn
+                      refId="Package\Przepływ danych Płeć\Wczytaj kolumnę &quot;sex&quot; z csv &quot;PatientInfo&quot;.Outputs[Flat File Source Output].ExternalColumns[disease]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="disease" />
+                    <externalMetadataColumn
+                      refId="Package\Przepływ danych Płeć\Wczytaj kolumnę &quot;sex&quot; z csv &quot;PatientInfo&quot;.Outputs[Flat File Source Output].ExternalColumns[infection_case]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="infection_case" />
+                    <externalMetadataColumn
+                      refId="Package\Przepływ danych Płeć\Wczytaj kolumnę &quot;sex&quot; z csv &quot;PatientInfo&quot;.Outputs[Flat File Source Output].ExternalColumns[infection_order]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="infection_order" />
+                    <externalMetadataColumn
+                      refId="Package\Przepływ danych Płeć\Wczytaj kolumnę &quot;sex&quot; z csv &quot;PatientInfo&quot;.Outputs[Flat File Source Output].ExternalColumns[infected_by]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="infected_by" />
+                    <externalMetadataColumn
+                      refId="Package\Przepływ danych Płeć\Wczytaj kolumnę &quot;sex&quot; z csv &quot;PatientInfo&quot;.Outputs[Flat File Source Output].ExternalColumns[contact_number]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="contact_number" />
+                    <externalMetadataColumn
+                      refId="Package\Przepływ danych Płeć\Wczytaj kolumnę &quot;sex&quot; z csv &quot;PatientInfo&quot;.Outputs[Flat File Source Output].ExternalColumns[symptom_onset_date]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="symptom_onset_date" />
+                    <externalMetadataColumn
+                      refId="Package\Przepływ danych Płeć\Wczytaj kolumnę &quot;sex&quot; z csv &quot;PatientInfo&quot;.Outputs[Flat File Source Output].ExternalColumns[confirmed_date]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="confirmed_date" />
+                    <externalMetadataColumn
+                      refId="Package\Przepływ danych Płeć\Wczytaj kolumnę &quot;sex&quot; z csv &quot;PatientInfo&quot;.Outputs[Flat File Source Output].ExternalColumns[released_date]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="released_date" />
+                    <externalMetadataColumn
+                      refId="Package\Przepływ danych Płeć\Wczytaj kolumnę &quot;sex&quot; z csv &quot;PatientInfo&quot;.Outputs[Flat File Source Output].ExternalColumns[deceased_date]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="deceased_date" />
+                    <externalMetadataColumn
+                      refId="Package\Przepływ danych Płeć\Wczytaj kolumnę &quot;sex&quot; z csv &quot;PatientInfo&quot;.Outputs[Flat File Source Output].ExternalColumns[state]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="state" />
+                  </externalMetadataColumns>
+                </output>
+                <output
+                  refId="Package\Przepływ danych Płeć\Wczytaj kolumnę &quot;sex&quot; z csv &quot;PatientInfo&quot;.Outputs[Flat File Source Error Output]"
+                  isErrorOut="true"
+                  name="Flat File Source Error Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Przepływ danych Płeć\Wczytaj kolumnę &quot;sex&quot; z csv &quot;PatientInfo&quot;.Outputs[Flat File Source Error Output].Columns[Flat File Source Error Output Column]"
+                      codePage="1252"
+                      dataType="text"
+                      description="Flat File Source Error Output Column"
+                      lineageId="Package\Przepływ danych Płeć\Wczytaj kolumnę &quot;sex&quot; z csv &quot;PatientInfo&quot;.Outputs[Flat File Source Error Output].Columns[Flat File Source Error Output Column]"
+                      name="Flat File Source Error Output Column" />
+                    <outputColumn
+                      refId="Package\Przepływ danych Płeć\Wczytaj kolumnę &quot;sex&quot; z csv &quot;PatientInfo&quot;.Outputs[Flat File Source Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Przepływ danych Płeć\Wczytaj kolumnę &quot;sex&quot; z csv &quot;PatientInfo&quot;.Outputs[Flat File Source Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Przepływ danych Płeć\Wczytaj kolumnę &quot;sex&quot; z csv &quot;PatientInfo&quot;.Outputs[Flat File Source Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Przepływ danych Płeć\Wczytaj kolumnę &quot;sex&quot; z csv &quot;PatientInfo&quot;.Outputs[Flat File Source Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Przepływ danych Płeć\Wrzuć do DB SQL Płeć"
+              componentClassID="Microsoft.OLEDBDestination"
+              contactInfo="OLE DB Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;4"
+              description="OLE DB Destination"
+              name="Wrzuć do DB SQL Płeć"
+              usesDispositions="true"
+              version="4">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of the database object used to open a rowset."
+                  name="OpenRowset">[dbo].[Płeć]</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the variable that contains the name of the database object used to open a rowset."
+                  name="OpenRowsetVariable"></property>
+                <property
+                  dataType="System.String"
+                  description="The SQL command to be executed."
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the column code page to use when code page information is unavailable from the data source."
+                  name="DefaultCodePage">1252</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Forces the use of the DefaultCodePage property value when describing character data."
+                  name="AlwaysUseDefaultCodePage">false</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the mode used to access the database."
+                  name="AccessMode"
+                  typeConverter="AccessMode">3</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the values supplied for identity columns will be copied to the destination. If false, values for identity columns will be auto-generated at the destination. Applies only if fast load is turned on."
+                  name="FastLoadKeepIdentity">false</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the columns containing null will have null inserted in the destination. If false, columns containing null will have their default values inserted at the destination. Applies only if fast load is turned on."
+                  name="FastLoadKeepNulls">false</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies options to be used with fast load.  Applies only if fast load is turned on."
+                  name="FastLoadOptions">TABLOCK,CHECK_CONSTRAINTS</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies when commits are issued during data insertion.  A value of 0 specifies that one commit will be issued at the end of data insertion.  Applies only if fast load is turned on."
+                  name="FastLoadMaxInsertCommitSize">2147483647</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Przepływ danych Płeć\Wrzuć do DB SQL Płeć.Connections[OleDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[localhost.IDH]"
+                  connectionManagerRefId="Package.ConnectionManagers[localhost.IDH]"
+                  description="The OLE DB runtime connection used to access the database."
+                  name="OleDbConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\Przepływ danych Płeć\Wrzuć do DB SQL Płeć.Inputs[OLE DB Destination Input]"
+                  errorOrTruncationOperation="Insert"
+                  errorRowDisposition="FailComponent"
+                  hasSideEffects="true"
+                  name="OLE DB Destination Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Przepływ danych Płeć\Wrzuć do DB SQL Płeć.Inputs[OLE DB Destination Input].Columns[sex_WSTR]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="sex_WSTR"
+                      externalMetadataColumnId="Package\Przepływ danych Płeć\Wrzuć do DB SQL Płeć.Inputs[OLE DB Destination Input].ExternalColumns[nazwa_plci]"
+                      lineageId="Package\Przepływ danych Płeć\Przekonwertuj typ na WSTR.Outputs[Data Conversion Output].Columns[sex_WSTR]" />
+                  </inputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Przepływ danych Płeć\Wrzuć do DB SQL Płeć.Inputs[OLE DB Destination Input].ExternalColumns[plec_id]"
+                      dataType="i4"
+                      name="plec_id" />
+                    <externalMetadataColumn
+                      refId="Package\Przepływ danych Płeć\Wrzuć do DB SQL Płeć.Inputs[OLE DB Destination Input].ExternalColumns[nazwa_plci]"
+                      dataType="wstr"
+                      length="50"
+                      name="nazwa_plci" />
+                  </externalMetadataColumns>
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Przepływ danych Płeć\Wrzuć do DB SQL Płeć.Outputs[OLE DB Destination Error Output]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="OLE DB Destination Error Output"
+                  synchronousInputId="Package\Przepływ danych Płeć\Wrzuć do DB SQL Płeć.Inputs[OLE DB Destination Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Przepływ danych Płeć\Wrzuć do DB SQL Płeć.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Przepływ danych Płeć\Wrzuć do DB SQL Płeć.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Przepływ danych Płeć\Wrzuć do DB SQL Płeć.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Przepływ danych Płeć\Wrzuć do DB SQL Płeć.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+          </components>
+          <paths>
+            <path
+              refId="Package\Przepływ danych Płeć.Paths[Conditional Split Default Output]"
+              endId="Package\Przepływ danych Płeć\Usuń duplikaty.Inputs[Sort Input]"
+              name="Conditional Split Default Output"
+              startId="Package\Przepływ danych Płeć\Usuń bezpłciowe przypadki.Outputs[Z płcią]" />
+            <path
+              refId="Package\Przepływ danych Płeć.Paths[Data Conversion Output]"
+              endId="Package\Przepływ danych Płeć\Wrzuć do DB SQL Płeć.Inputs[OLE DB Destination Input]"
+              name="Data Conversion Output"
+              startId="Package\Przepływ danych Płeć\Przekonwertuj typ na WSTR.Outputs[Data Conversion Output]" />
+            <path
+              refId="Package\Przepływ danych Płeć.Paths[Flat File Source Output]"
+              endId="Package\Przepływ danych Płeć\Usuń bezpłciowe przypadki.Inputs[Conditional Split Input]"
+              name="Flat File Source Output"
+              startId="Package\Przepływ danych Płeć\Wczytaj kolumnę &quot;sex&quot; z csv &quot;PatientInfo&quot;.Outputs[Flat File Source Output]" />
+            <path
+              refId="Package\Przepływ danych Płeć.Paths[Sort Output]"
+              endId="Package\Przepływ danych Płeć\Przekonwertuj typ na WSTR.Inputs[Data Conversion Input]"
+              name="Sort Output"
+              startId="Package\Przepływ danych Płeć\Usuń duplikaty.Outputs[Sort Output]" />
+          </paths>
+        </pipeline>
+      </DTS:ObjectData>
+    </DTS:Executable>
+  </DTS:Executables>
+  <DTS:PrecedenceConstraints>
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint]"
+      DTS:CreationName=""
+      DTS:DTSID="{2C61003E-7851-472D-A85B-AD3F7360717E}"
+      DTS:From="Package\Czyszczenie tabelki Płeć"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Constraint"
+      DTS:To="Package\Przepływ danych Płeć" />
+  </DTS:PrecedenceConstraints>
+  <DTS:DesignTimeProperties><![CDATA[<?xml version="1.0"?>
+<!--This CDATA section contains the layout information of the package. The section includes information such as (x,y) coordinates, width, and height.-->
+<!--If you manually edit this section and make a mistake, you can delete it. -->
+<!--The package will still be able to load normally but the previous layout information will be lost and the designer will automatically re-arrange the elements on the design surface.-->
+<Objects
+  Version="8">
+  <!--Each node below will contain properties that do not affect runtime behavior.-->
+  <Package
+    design-time-name="Package">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        <NodeLayout
+          Size="196.666666666667,42.6666666666667"
+          Id="Package\Czyszczenie tabelki Płeć"
+          TopLeft="231.249996554107,20.9824565352936" />
+        <NodeLayout
+          Size="184,42.6666666666667"
+          Id="Package\Przepływ danych Płeć"
+          TopLeft="238.33332978189,121.333335617132" />
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint]"
+          TopLeft="329.958329834665,63.6491232019603">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,57.6842124151717"
+              Start="0,0"
+              End="0,50.1842124151717">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,50.1842124151717" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </Package>
+  <TaskHost
+    design-time-name="Package\Przepływ danych Płeć">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="16" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        <NodeLayout
+          Size="209.333333333334,42.6666666666667"
+          Id="Package\Przepływ danych Płeć\Usuń bezpłciowe przypadki"
+          TopLeft="66.6666656732559,137.298248198334" />
+        <NodeLayout
+          Size="149.333333333334,42.6666666666667"
+          Id="Package\Przepływ danych Płeć\Usuń duplikaty"
+          TopLeft="240.416663084179,218.035091823268" />
+        <NodeLayout
+          Size="213.333333333334,42.6666666666667"
+          Id="Package\Przepływ danych Płeć\Przekonwertuj typ na WSTR"
+          TopLeft="160.416664276272,282.070178100167" />
+        <NodeLayout
+          Size="276,42.6666666666667"
+          Id="Package\Przepływ danych Płeć\Wczytaj kolumnę &quot;sex&quot; z csv &quot;PatientInfo&quot;"
+          TopLeft="207.916663568467,65.6842117626582" />
+        <NodeLayout
+          Size="190.666666666667,42.6666666666667"
+          Id="Package\Przepływ danych Płeć\Wrzuć do DB SQL Płeć"
+          TopLeft="192.499997131527,371.403515185456" />
+        <EdgeLayout
+          Id="Package\Przepływ danych Płeć.Paths[Sort Output]"
+          TopLeft="240.416663084179,239.368425156601">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-6.24999831741044,42.7017529435657"
+              Start="0,0"
+              End="-6.24999831741044,35.2017529435657">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="-2.24999831741044,0" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-2.24999831741044,0"
+                    Point2="-6.24999831741044,0"
+                    Point3="-6.24999831741044,4" />
+                  <mssgle:LineSegment
+                    End="-6.24999831741044,35.2017529435657" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Przepływ danych Płeć.Paths[Flat File Source Output]"
+          TopLeft="345.916663568467,108.350878429325">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-174.583331228544,28.9473697690091"
+              Start="0,0"
+              End="-174.583331228544,21.4473697690091">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,10.4736848845046" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,10.4736848845046"
+                    Point2="0,14.4736848845046"
+                    Point3="-4,14.4736848845046" />
+                  <mssgle:LineSegment
+                    End="-170.583331228544,14.4736848845046" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-170.583331228544,14.4736848845046"
+                    Point2="-174.583331228544,14.4736848845046"
+                    Point3="-174.583331228544,18.4736848845046" />
+                  <mssgle:LineSegment
+                    End="-174.583331228544,21.4473697690091" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Przepływ danych Płeć.Paths[Data Conversion Output]"
+          TopLeft="267.083330942939,324.736844766834">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="20.7499995219215,46.6666704186224"
+              Start="0,0"
+              End="20.7499995219215,39.1666704186224">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,19.3333352093112" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,19.3333352093112"
+                    Point2="0,23.3333352093112"
+                    Point3="4,23.3333352093112" />
+                  <mssgle:LineSegment
+                    End="16.7499995219215,23.3333352093112" />
+                  <mssgle:CubicBezierSegment
+                    Point1="16.7499995219215,23.3333352093112"
+                    Point2="20.7499995219215,23.3333352093112"
+                    Point3="20.7499995219215,27.3333352093112" />
+                  <mssgle:LineSegment
+                    End="20.7499995219215,39.1666704186224" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Przepływ danych Płeć.Paths[Conditional Split Default Output]"
+          TopLeft="171.333332339923,179.964914865001">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="143.749997410923,38.0701769582674"
+              Start="0,0"
+              End="143.749997410923,30.5701769582674">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,15.0350884791337" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,15.0350884791337"
+                    Point2="0,19.0350884791337"
+                    Point3="4,19.0350884791337" />
+                  <mssgle:LineSegment
+                    End="139.749997410923,19.0350884791337" />
+                  <mssgle:CubicBezierSegment
+                    Point1="139.749997410923,19.0350884791337"
+                    Point2="143.749997410923,19.0350884791337"
+                    Point3="143.749997410923,23.0350884791337" />
+                  <mssgle:LineSegment
+                    End="143.749997410923,30.5701769582674" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="56.7034362054615,24.0350884791337,30.343125,11.6142578125"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\Przepływ danych Płeć\Wrzuć do DB SQL Płeć">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+</Objects>]]></DTS:DesignTimeProperties>
+</DTS:Executable>
