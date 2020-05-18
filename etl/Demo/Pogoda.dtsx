@@ -11,8 +11,8 @@
   DTS:LocaleID="2057"
   DTS:ObjectName="Package1"
   DTS:PackageType="5"
-  DTS:VersionBuild="67"
-  DTS:VersionGUID="{760617A9-66EB-4566-8C33-829728A9EBF9}">
+  DTS:VersionBuild="68"
+  DTS:VersionGUID="{A87B2B6D-5866-4B89-9F71-EB514E66B7D2}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -2079,13 +2079,13 @@
           Id="Package\Czyszczenie Pogoda Temp"
           TopLeft="479.583326186985,38.8070163418602" />
         <NodeLayout
-          Size="274.666666666667,42.6666666666667"
-          Id="Package\Przepływ danych Pogoda i Pogoda Temp"
-          TopLeft="243.749996367842,83.578948853749" />
-        <NodeLayout
           Size="289.333333333334,42.6666666666667"
           Id="Package\Dodaj kategorię &quot;Brak informacji&quot; do Pogoda"
           TopLeft="245.416663009673,177.43859983107" />
+        <NodeLayout
+          Size="274.666666666667,42.6666666666667"
+          Id="Package\Przepływ danych Pogoda i Pogoda Temp"
+          TopLeft="243.749996367842,83.578948853749" />
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint]"
           TopLeft="353.083329403152,56.9122808820543">
@@ -2706,7 +2706,7 @@
     </LayoutInfo>
   </TaskHost>
   <PipelineComponentMetadata
-    design-time-name="Package\Przepływ danych Pogoda i Pogoda Temp\Wrzuć do DB SQL Pogoda">
+    design-time-name="Package\Przepływ danych Pogoda i Pogoda Temp\Wrzućdo DB SQL Pogoda Temp">
     <Properties>
       <Property>
         <Name>DataSourceViewID</Name>
@@ -2719,7 +2719,7 @@
     </Properties>
   </PipelineComponentMetadata>
   <PipelineComponentMetadata
-    design-time-name="Package\Przepływ danych Pogoda i Pogoda Temp\Wrzućdo DB SQL Pogoda Temp">
+    design-time-name="Package\Przepływ danych Pogoda i Pogoda Temp\Wrzuć do DB SQL Pogoda">
     <Properties>
       <Property>
         <Name>DataSourceViewID</Name>

@@ -11,8 +11,8 @@
   DTS:LocaleID="1045"
   DTS:ObjectName="Package2"
   DTS:PackageType="5"
-  DTS:VersionBuild="58"
-  DTS:VersionGUID="{A8D0DD68-521C-477A-B878-DDD2CD1ACA36}">
+  DTS:VersionBuild="59"
+  DTS:VersionGUID="{AABDF35D-0E01-4C2A-A00A-1FEE442557AF}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -3304,49 +3304,87 @@
       <GraphLayout
         Capacity="32" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
-          Size="545.333333333334,42.6666666666667"
-          Id="Package\Przepływ danych Data\Dodaj dane z następnego dnia żeby przeliczyć sumę kroczącą na faktyczną wartość z danego dnia"
-          TopLeft="641.547621557755,465.205513073074" />
-        <NodeLayout
-          Size="656,42.6666666666667"
-          Id="Package\Przepływ danych Data\Zamień nulle na 0 dla pierwszego dnia (jest to edge case z powodu braku pary dla pierwszego dnia zarejestrowania covid)"
-          TopLeft="760.190476545266,580.348370915053" />
-        <NodeLayout
-          Size="166.666666666667,42.6666666666667"
-          Id="Package\Przepływ danych Data\Wrzuć do DB SQL"
-          TopLeft="1252.48808371719,742.471181040624" />
-        <NodeLayout
-          Size="322.666666666667,42"
-          Id="Package\Przepływ danych Data\Podziel kolumne data na 3 nowe - rok miesiac dzien"
-          TopLeft="400.535714724767,243.355888400885" />
-        <NodeLayout
-          Size="258.666666666667,42.6666666666667"
-          Id="Package\Przepływ danych Data\Zamień typ danych CSV na obliczalny"
-          TopLeft="913.523810126951,158.812029412862" />
-        <NodeLayout
-          Size="280,42"
-          Id="Package\Przepływ danych Data\CSV Time (ale dla liczenia sumy kroczacej)"
-          TopLeft="902,57" />
-        <NodeLayout
           Size="676,42.6666666666667"
           Id="Package\Przepływ danych Data\Dodaj kolumny i wylicz faktyczne wartości przeprowadzonych testow i wyników negatywnych lub pozytywnych dla danego dnia"
           TopLeft="1007,653" />
-        <NodeLayout
-          Size="260,42.6666666666667"
-          Id="Package\Przepływ danych Data\Zamień typ danych CSV na obliczalne"
-          TopLeft="429.916666772217,152.508770753582" />
         <NodeLayout
           Size="189.333333333334,42.6666666666667"
           Id="Package\Przepływ danych Data\Zmień datę na datę + 1"
           TopLeft="969.571429635797,270.102756536537" />
         <NodeLayout
+          Size="193.333333333334,42.6666666666667"
+          Id="Package\Przepływ danych Data\Posortuj po nowej dacie"
+          TopLeft="1028.92856171621,384.360905456883" />
+        <NodeLayout
           Size="161.333333333334,42.6666666666667"
           Id="Package\Przepływ danych Data\Posortuj po dacie"
           TopLeft="552.107142944954,351.030073532154" />
         <NodeLayout
+          Size="260,42.6666666666667"
+          Id="Package\Przepływ danych Data\Zamień typ danych CSV na obliczalne"
+          TopLeft="429.916666772217,152.508770753582" />
+        <NodeLayout
+          Size="280,42"
+          Id="Package\Przepływ danych Data\CSV Time (ale dla liczenia sumy kroczacej)"
+          TopLeft="902,57" />
+        <NodeLayout
+          Size="322.666666666667,42"
+          Id="Package\Przepływ danych Data\Podziel kolumne data na 3 nowe - rok miesiac dzien"
+          TopLeft="400.535714724767,243.355888400885" />
+        <NodeLayout
+          Size="166.666666666667,42.6666666666667"
+          Id="Package\Przepływ danych Data\Wrzuć do DB SQL"
+          TopLeft="1252.48808371719,742.471181040624" />
+        <NodeLayout
+          Size="545.333333333334,42.6666666666667"
+          Id="Package\Przepływ danych Data\Dodaj dane z następnego dnia żeby przeliczyć sumę kroczącą na faktyczną wartość z danego dnia"
+          TopLeft="641.547621557755,465.205513073074" />
+        <NodeLayout
+          Size="258.666666666667,42.6666666666667"
+          Id="Package\Przepływ danych Data\Zamień typ danych CSV na obliczalny"
+          TopLeft="913.523810126951,158.812029412862" />
+        <NodeLayout
+          Size="656,42.6666666666667"
+          Id="Package\Przepływ danych Data\Zamień nulle na 0 dla pierwszego dnia (jest to edge case z powodu braku pary dla pierwszego dnia zarejestrowania covid)"
+          TopLeft="760.190476545266,580.348370915053" />
+        <NodeLayout
           Size="124,42"
           Id="Package\Przepływ danych Data\CSV Time"
           TopLeft="389,73" />
+        <EdgeLayout
+          Id="Package\Przepływ danych Data.Paths[Sort Output1]"
+          TopLeft="1125.59522838287,427.027572123549">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-121.825384602897,38.1779409495243"
+              Start="0,0"
+              End="-121.825384602897,30.6779409495243">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,18.8397530692668" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,18.8397530692668"
+                    Point2="0,22.8397530692668"
+                    Point3="-4,22.8397530692668" />
+                  <mssgle:LineSegment
+                    End="-117.825384602897,22.8397530692668" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-117.825384602897,22.8397530692668"
+                    Point2="-121.825384602897,22.8397530692668"
+                    Point3="-121.825384602897,26.8397530692668" />
+                  <mssgle:LineSegment
+                    End="-121.825384602897,30.6779409495243" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
         <EdgeLayout
           Id="Package\Przepływ danych Data.Paths[Sort Output]"
           TopLeft="632.77380961162,393.696740198821">
@@ -3472,6 +3510,74 @@
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
+          Id="Package\Przepływ danych Data.Paths[Derived Column Output3]"
+          TopLeft="1064.23809630246,312.769423203204">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="61.3571320804101,71.5914822536791"
+              Start="0,0"
+              End="61.3571320804101,64.0914822536791">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,31.7957411268396" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,31.7957411268396"
+                    Point2="0,35.7957411268396"
+                    Point3="4,35.7957411268396" />
+                  <mssgle:LineSegment
+                    End="57.3571320804101,35.7957411268396" />
+                  <mssgle:CubicBezierSegment
+                    Point1="57.3571320804101,35.7957411268396"
+                    Point2="61.3571320804101,35.7957411268396"
+                    Point3="61.3571320804101,39.7957411268396" />
+                  <mssgle:LineSegment
+                    End="61.3571320804101,64.0914822536791" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Przepływ danych Data.Paths[Derived Column Output2]"
+          TopLeft="1345,695.666666666667">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-9.17858294947564,46.804514373957"
+              Start="0,0"
+              End="-9.17858294947564,39.304514373957">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,19.4022571869785" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,19.4022571869785"
+                    Point2="0,23.4022571869785"
+                    Point3="-4,23.4022571869785" />
+                  <mssgle:LineSegment
+                    End="-5.17858294947564,23.4022571869785" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-5.17858294947564,23.4022571869785"
+                    Point2="-9.17858294947564,23.4022571869785"
+                    Point3="-9.17858294947564,27.4022571869785" />
+                  <mssgle:LineSegment
+                    End="-9.17858294947564,39.304514373957" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
           Id="Package\Przepływ danych Data.Paths[Derived Column Output1]"
           TopLeft="1088.19047654527,623.01503758172">
           <EdgeLayout.Curve>
@@ -3587,112 +3693,6 @@
                   Capacity="5">
                   <mssgle:LineSegment
                     End="0,40.6804509806362" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Przepływ danych Data.Paths[Derived Column Output2]"
-          TopLeft="1345,695.666666666667">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="-9.17858294947564,46.804514373957"
-              Start="0,0"
-              End="-9.17858294947564,39.304514373957">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,19.4022571869785" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,19.4022571869785"
-                    Point2="0,23.4022571869785"
-                    Point3="-4,23.4022571869785" />
-                  <mssgle:LineSegment
-                    End="-5.17858294947564,23.4022571869785" />
-                  <mssgle:CubicBezierSegment
-                    Point1="-5.17858294947564,23.4022571869785"
-                    Point2="-9.17858294947564,23.4022571869785"
-                    Point3="-9.17858294947564,27.4022571869785" />
-                  <mssgle:LineSegment
-                    End="-9.17858294947564,39.304514373957" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <NodeLayout
-          Size="193.333333333334,42.6666666666667"
-          Id="Package\Przepływ danych Data\Posortuj po nowej dacie"
-          TopLeft="1028.92856171621,384.360905456883" />
-        <EdgeLayout
-          Id="Package\Przepływ danych Data.Paths[Derived Column Output3]"
-          TopLeft="1064.23809630246,312.769423203204">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="61.3571320804101,71.5914822536791"
-              Start="0,0"
-              End="61.3571320804101,64.0914822536791">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,31.7957411268396" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,31.7957411268396"
-                    Point2="0,35.7957411268396"
-                    Point3="4,35.7957411268396" />
-                  <mssgle:LineSegment
-                    End="57.3571320804101,35.7957411268396" />
-                  <mssgle:CubicBezierSegment
-                    Point1="57.3571320804101,35.7957411268396"
-                    Point2="61.3571320804101,35.7957411268396"
-                    Point3="61.3571320804101,39.7957411268396" />
-                  <mssgle:LineSegment
-                    End="61.3571320804101,64.0914822536791" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Przepływ danych Data.Paths[Sort Output1]"
-          TopLeft="1125.59522838287,427.027572123549">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="-121.825384602897,38.1779409495243"
-              Start="0,0"
-              End="-121.825384602897,30.6779409495243">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,18.8397530692668" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,18.8397530692668"
-                    Point2="0,22.8397530692668"
-                    Point3="-4,22.8397530692668" />
-                  <mssgle:LineSegment
-                    End="-117.825384602897,22.8397530692668" />
-                  <mssgle:CubicBezierSegment
-                    Point1="-117.825384602897,22.8397530692668"
-                    Point2="-121.825384602897,22.8397530692668"
-                    Point3="-121.825384602897,26.8397530692668" />
-                  <mssgle:LineSegment
-                    End="-121.825384602897,30.6779409495243" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
