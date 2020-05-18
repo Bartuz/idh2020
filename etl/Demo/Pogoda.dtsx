@@ -11,11 +11,26 @@
   DTS:LocaleID="2057"
   DTS:ObjectName="Package1"
   DTS:PackageType="5"
-  DTS:VersionBuild="68"
-  DTS:VersionGUID="{A87B2B6D-5866-4B89-9F71-EB514E66B7D2}">
+  DTS:VersionBuild="76"
+  DTS:VersionGUID="{931FB303-3120-4BB9-8CEA-145730C60660}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[covid19southkorea.database.windows.net.Covid-19SouthKoreaDWH.covid@covid19southkorea]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{A7DF38C7-73B4-4B68-A6BA-5B9DC1316A0E}"
+      DTS:ObjectName="covid19southkorea.database.windows.net.Covid-19SouthKoreaDWH.covid@covid19southkorea">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="Data Source=covid19southkorea.database.windows.net;User ID=covid@covid19southkorea;Initial Catalog=Covid-19SouthKoreaDWH;Provider=SQLNCLI11.1;Auto Translate=False;">
+          <DTS:Password
+            DTS:Name="Password"
+            Sensitive="1"
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAvimQ3wX2i0aWlF5K7wDfMwAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAADySCXAIsYwQPaH0M6jPoG1nIYjH8i6J8b+nmsZ94JiBgAAAAAOgAAAAAIAACAAAADntA8ApNZ0MfvCWfoq8rOTirwKGoqV/3mmfeFOgrSaGSAAAADo3929R2H3wZcsqeNALpjyTKOZ7HruvFgPF2g004v1rkAAAAAEepdUeyi6Dv/D93HT6fdqK7VSUBCjb92Grk0xckOf+N6KbEezKX3g+enQ0ci3qWjLGriCuhmI7RUzUc6u2How</DTS:Password>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
     <DTS:ConnectionManager
       DTS:refId="Package.ConnectionManagers[Flat File Connection Manager]"
       DTS:CreationName="FLATFILE"
@@ -296,12 +311,12 @@
       DTS:LocaleID="-1"
       DTS:ObjectName="Czyszczenie Pogoda"
       DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2019; © 2019 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-      DTS:ThreadHint="0">
+      DTS:ThreadHint="1">
       <DTS:Variables />
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
-          SQLTask:Connection="{644158A7-00A1-43AF-AEDA-C75554A508CA}"
-          SQLTask:SqlStatementSource="TRUNCATE TABLE [IDH].[dbo].[Pogoda]" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+          SQLTask:Connection="{A7DF38C7-73B4-4B68-A6BA-5B9DC1316A0E}"
+          SQLTask:SqlStatementSource="TRUNCATE TABLE [dbo].[Pogoda]" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
       </DTS:ObjectData>
     </DTS:Executable>
     <DTS:Executable
@@ -313,29 +328,29 @@
       DTS:LocaleID="-1"
       DTS:ObjectName="Czyszczenie Pogoda Temp"
       DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2019; © 2019 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-      DTS:ThreadHint="1">
+      DTS:ThreadHint="0">
       <DTS:Variables />
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
-          SQLTask:Connection="{644158A7-00A1-43AF-AEDA-C75554A508CA}"
-          SQLTask:SqlStatementSource="TRUNCATE TABLE [IDH].[dbo].[Pogoda_Temp]" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+          SQLTask:Connection="{A7DF38C7-73B4-4B68-A6BA-5B9DC1316A0E}"
+          SQLTask:SqlStatementSource="TRUNCATE TABLE [dbo].[Pogoda_Temp]" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
       </DTS:ObjectData>
     </DTS:Executable>
     <DTS:Executable
-      DTS:refId="Package\Dodaj kategorię &quot;Brak informacji&quot; do Pogoda"
+      DTS:refId="Package\Dodaj kategorię &quot;unknown humidity&quot; do Pogoda"
       DTS:CreationName="Microsoft.ExecuteSQLTask"
       DTS:Description="Execute SQL Task"
       DTS:DTSID="{88488396-BD4A-4A66-AD7E-DB6F36FB2F80}"
       DTS:ExecutableType="Microsoft.ExecuteSQLTask"
       DTS:LocaleID="-1"
-      DTS:ObjectName="Dodaj kategorię &quot;Brak informacji&quot; do Pogoda"
+      DTS:ObjectName="Dodaj kategorię &quot;unknown humidity&quot; do Pogoda"
       DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2019; © 2019 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
       DTS:ThreadHint="0">
       <DTS:Variables />
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
-          SQLTask:Connection="{644158A7-00A1-43AF-AEDA-C75554A508CA}"
-          SQLTask:SqlStatementSource="INSERT INTO [dbo].[Pogoda]&#xA;VALUES ('Brak informacji')" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+          SQLTask:Connection="{A7DF38C7-73B4-4B68-A6BA-5B9DC1316A0E}"
+          SQLTask:SqlStatementSource="INSERT INTO [dbo].[Pogoda] &#xA;VALUES ('unknown humidity')" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
       </DTS:ObjectData>
     </DTS:Executable>
     <DTS:Executable
@@ -353,15 +368,15 @@
           version="1">
           <components>
             <component
-              refId="Package\Przepływ danych Pogoda i Pogoda Temp\Dodaj kolumnę kategoria z wartością &quot;mała&quot;"
+              refId="Package\Przepływ danych Pogoda i Pogoda Temp\Dodaj kolumnę kategoria z wartością &quot;high&quot;"
               componentClassID="Microsoft.DerivedColumn"
               contactInfo="Derived Column;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;0"
               description="Creates new column values by applying expressions to transformation input columns. Create new columns or overwrite existing ones. For example, concatenate the values from the 'first name' and 'last name' column to make a 'full name' column."
-              name="Dodaj kolumnę kategoria z wartością &quot;mała&quot;"
+              name="Dodaj kolumnę kategoria z wartością &quot;high&quot;"
               usesDispositions="true">
               <inputs>
                 <input
-                  refId="Package\Przepływ danych Pogoda i Pogoda Temp\Dodaj kolumnę kategoria z wartością &quot;mała&quot;.Inputs[Derived Column Input]"
+                  refId="Package\Przepływ danych Pogoda i Pogoda Temp\Dodaj kolumnę kategoria z wartością &quot;high&quot;.Inputs[Derived Column Input]"
                   description="Input to the Derived Column Transformation"
                   name="Derived Column Input">
                   <externalMetadataColumns />
@@ -369,19 +384,19 @@
               </inputs>
               <outputs>
                 <output
-                  refId="Package\Przepływ danych Pogoda i Pogoda Temp\Dodaj kolumnę kategoria z wartością &quot;mała&quot;.Outputs[Derived Column Output]"
+                  refId="Package\Przepływ danych Pogoda i Pogoda Temp\Dodaj kolumnę kategoria z wartością &quot;high&quot;.Outputs[Derived Column Output]"
                   description="Default Output of the Derived Column Transformation"
                   exclusionGroup="1"
                   name="Derived Column Output"
-                  synchronousInputId="Package\Przepływ danych Pogoda i Pogoda Temp\Dodaj kolumnę kategoria z wartością &quot;mała&quot;.Inputs[Derived Column Input]">
+                  synchronousInputId="Package\Przepływ danych Pogoda i Pogoda Temp\Dodaj kolumnę kategoria z wartością &quot;high&quot;.Inputs[Derived Column Input]">
                   <outputColumns>
                     <outputColumn
-                      refId="Package\Przepływ danych Pogoda i Pogoda Temp\Dodaj kolumnę kategoria z wartością &quot;mała&quot;.Outputs[Derived Column Output].Columns[kategoria]"
+                      refId="Package\Przepływ danych Pogoda i Pogoda Temp\Dodaj kolumnę kategoria z wartością &quot;high&quot;.Outputs[Derived Column Output].Columns[kategoria]"
                       dataType="wstr"
                       errorOrTruncationOperation="Computation"
                       errorRowDisposition="FailComponent"
                       length="4"
-                      lineageId="Package\Przepływ danych Pogoda i Pogoda Temp\Dodaj kolumnę kategoria z wartością &quot;mała&quot;.Outputs[Derived Column Output].Columns[kategoria]"
+                      lineageId="Package\Przepływ danych Pogoda i Pogoda Temp\Dodaj kolumnę kategoria z wartością &quot;high&quot;.Outputs[Derived Column Output].Columns[kategoria]"
                       name="kategoria"
                       truncationRowDisposition="FailComponent">
                       <properties>
@@ -389,36 +404,36 @@
                           containsID="true"
                           dataType="System.String"
                           description="Derived Column Expression"
-                          name="Expression">"mała"</property>
+                          name="Expression">"high"</property>
                         <property
                           containsID="true"
                           dataType="System.String"
                           description="Derived Column Friendly Expression"
                           expressionType="Notify"
-                          name="FriendlyExpression">"mała"</property>
+                          name="FriendlyExpression">"high"</property>
                       </properties>
                     </outputColumn>
                   </outputColumns>
                   <externalMetadataColumns />
                 </output>
                 <output
-                  refId="Package\Przepływ danych Pogoda i Pogoda Temp\Dodaj kolumnę kategoria z wartością &quot;mała&quot;.Outputs[Derived Column Error Output]"
+                  refId="Package\Przepływ danych Pogoda i Pogoda Temp\Dodaj kolumnę kategoria z wartością &quot;high&quot;.Outputs[Derived Column Error Output]"
                   description="Error Output of the Derived Column Transformation"
                   exclusionGroup="1"
                   isErrorOut="true"
                   name="Derived Column Error Output"
-                  synchronousInputId="Package\Przepływ danych Pogoda i Pogoda Temp\Dodaj kolumnę kategoria z wartością &quot;mała&quot;.Inputs[Derived Column Input]">
+                  synchronousInputId="Package\Przepływ danych Pogoda i Pogoda Temp\Dodaj kolumnę kategoria z wartością &quot;high&quot;.Inputs[Derived Column Input]">
                   <outputColumns>
                     <outputColumn
-                      refId="Package\Przepływ danych Pogoda i Pogoda Temp\Dodaj kolumnę kategoria z wartością &quot;mała&quot;.Outputs[Derived Column Error Output].Columns[ErrorCode]"
+                      refId="Package\Przepływ danych Pogoda i Pogoda Temp\Dodaj kolumnę kategoria z wartością &quot;high&quot;.Outputs[Derived Column Error Output].Columns[ErrorCode]"
                       dataType="i4"
-                      lineageId="Package\Przepływ danych Pogoda i Pogoda Temp\Dodaj kolumnę kategoria z wartością &quot;mała&quot;.Outputs[Derived Column Error Output].Columns[ErrorCode]"
+                      lineageId="Package\Przepływ danych Pogoda i Pogoda Temp\Dodaj kolumnę kategoria z wartością &quot;high&quot;.Outputs[Derived Column Error Output].Columns[ErrorCode]"
                       name="ErrorCode"
                       specialFlags="1" />
                     <outputColumn
-                      refId="Package\Przepływ danych Pogoda i Pogoda Temp\Dodaj kolumnę kategoria z wartością &quot;mała&quot;.Outputs[Derived Column Error Output].Columns[ErrorColumn]"
+                      refId="Package\Przepływ danych Pogoda i Pogoda Temp\Dodaj kolumnę kategoria z wartością &quot;high&quot;.Outputs[Derived Column Error Output].Columns[ErrorColumn]"
                       dataType="i4"
-                      lineageId="Package\Przepływ danych Pogoda i Pogoda Temp\Dodaj kolumnę kategoria z wartością &quot;mała&quot;.Outputs[Derived Column Error Output].Columns[ErrorColumn]"
+                      lineageId="Package\Przepływ danych Pogoda i Pogoda Temp\Dodaj kolumnę kategoria z wartością &quot;high&quot;.Outputs[Derived Column Error Output].Columns[ErrorColumn]"
                       name="ErrorColumn"
                       specialFlags="2" />
                   </outputColumns>
@@ -427,15 +442,15 @@
               </outputs>
             </component>
             <component
-              refId="Package\Przepływ danych Pogoda i Pogoda Temp\Dodaj kolumnę kategoria z wartością &quot;wysoka&quot;"
+              refId="Package\Przepływ danych Pogoda i Pogoda Temp\Dodaj kolumnę kategoria z wartością &quot;low&quot;"
               componentClassID="Microsoft.DerivedColumn"
               contactInfo="Derived Column;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;0"
               description="Creates new column values by applying expressions to transformation input columns. Create new columns or overwrite existing ones. For example, concatenate the values from the 'first name' and 'last name' column to make a 'full name' column."
-              name="Dodaj kolumnę kategoria z wartością &quot;wysoka&quot;"
+              name="Dodaj kolumnę kategoria z wartością &quot;low&quot;"
               usesDispositions="true">
               <inputs>
                 <input
-                  refId="Package\Przepływ danych Pogoda i Pogoda Temp\Dodaj kolumnę kategoria z wartością &quot;wysoka&quot;.Inputs[Derived Column Input]"
+                  refId="Package\Przepływ danych Pogoda i Pogoda Temp\Dodaj kolumnę kategoria z wartością &quot;low&quot;.Inputs[Derived Column Input]"
                   description="Input to the Derived Column Transformation"
                   name="Derived Column Input">
                   <externalMetadataColumns />
@@ -443,19 +458,93 @@
               </inputs>
               <outputs>
                 <output
-                  refId="Package\Przepływ danych Pogoda i Pogoda Temp\Dodaj kolumnę kategoria z wartością &quot;wysoka&quot;.Outputs[Derived Column Output]"
+                  refId="Package\Przepływ danych Pogoda i Pogoda Temp\Dodaj kolumnę kategoria z wartością &quot;low&quot;.Outputs[Derived Column Output]"
                   description="Default Output of the Derived Column Transformation"
                   exclusionGroup="1"
                   name="Derived Column Output"
-                  synchronousInputId="Package\Przepływ danych Pogoda i Pogoda Temp\Dodaj kolumnę kategoria z wartością &quot;wysoka&quot;.Inputs[Derived Column Input]">
+                  synchronousInputId="Package\Przepływ danych Pogoda i Pogoda Temp\Dodaj kolumnę kategoria z wartością &quot;low&quot;.Inputs[Derived Column Input]">
                   <outputColumns>
                     <outputColumn
-                      refId="Package\Przepływ danych Pogoda i Pogoda Temp\Dodaj kolumnę kategoria z wartością &quot;wysoka&quot;.Outputs[Derived Column Output].Columns[kategoria]"
+                      refId="Package\Przepływ danych Pogoda i Pogoda Temp\Dodaj kolumnę kategoria z wartością &quot;low&quot;.Outputs[Derived Column Output].Columns[kategoria]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Computation"
+                      errorRowDisposition="FailComponent"
+                      length="3"
+                      lineageId="Package\Przepływ danych Pogoda i Pogoda Temp\Dodaj kolumnę kategoria z wartością &quot;low&quot;.Outputs[Derived Column Output].Columns[kategoria]"
+                      name="kategoria"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Derived Column Expression"
+                          name="Expression">"low"</property>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Derived Column Friendly Expression"
+                          expressionType="Notify"
+                          name="FriendlyExpression">"low"</property>
+                      </properties>
+                    </outputColumn>
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\Przepływ danych Pogoda i Pogoda Temp\Dodaj kolumnę kategoria z wartością &quot;low&quot;.Outputs[Derived Column Error Output]"
+                  description="Error Output of the Derived Column Transformation"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="Derived Column Error Output"
+                  synchronousInputId="Package\Przepływ danych Pogoda i Pogoda Temp\Dodaj kolumnę kategoria z wartością &quot;low&quot;.Inputs[Derived Column Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Przepływ danych Pogoda i Pogoda Temp\Dodaj kolumnę kategoria z wartością &quot;low&quot;.Outputs[Derived Column Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Przepływ danych Pogoda i Pogoda Temp\Dodaj kolumnę kategoria z wartością &quot;low&quot;.Outputs[Derived Column Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Przepływ danych Pogoda i Pogoda Temp\Dodaj kolumnę kategoria z wartością &quot;low&quot;.Outputs[Derived Column Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Przepływ danych Pogoda i Pogoda Temp\Dodaj kolumnę kategoria z wartością &quot;low&quot;.Outputs[Derived Column Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Przepływ danych Pogoda i Pogoda Temp\Dodaj kolumnę kategoria z wartością &quot;medium&quot;"
+              componentClassID="Microsoft.DerivedColumn"
+              contactInfo="Derived Column;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;0"
+              description="Creates new column values by applying expressions to transformation input columns. Create new columns or overwrite existing ones. For example, concatenate the values from the 'first name' and 'last name' column to make a 'full name' column."
+              name="Dodaj kolumnę kategoria z wartością &quot;medium&quot;"
+              usesDispositions="true">
+              <inputs>
+                <input
+                  refId="Package\Przepływ danych Pogoda i Pogoda Temp\Dodaj kolumnę kategoria z wartością &quot;medium&quot;.Inputs[Derived Column Input]"
+                  description="Input to the Derived Column Transformation"
+                  name="Derived Column Input">
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Przepływ danych Pogoda i Pogoda Temp\Dodaj kolumnę kategoria z wartością &quot;medium&quot;.Outputs[Derived Column Output]"
+                  description="Default Output of the Derived Column Transformation"
+                  exclusionGroup="1"
+                  name="Derived Column Output"
+                  synchronousInputId="Package\Przepływ danych Pogoda i Pogoda Temp\Dodaj kolumnę kategoria z wartością &quot;medium&quot;.Inputs[Derived Column Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Przepływ danych Pogoda i Pogoda Temp\Dodaj kolumnę kategoria z wartością &quot;medium&quot;.Outputs[Derived Column Output].Columns[kategoria]"
                       dataType="wstr"
                       errorOrTruncationOperation="Computation"
                       errorRowDisposition="FailComponent"
                       length="6"
-                      lineageId="Package\Przepływ danych Pogoda i Pogoda Temp\Dodaj kolumnę kategoria z wartością &quot;wysoka&quot;.Outputs[Derived Column Output].Columns[kategoria]"
+                      lineageId="Package\Przepływ danych Pogoda i Pogoda Temp\Dodaj kolumnę kategoria z wartością &quot;medium&quot;.Outputs[Derived Column Output].Columns[kategoria]"
                       name="kategoria"
                       truncationRowDisposition="FailComponent">
                       <properties>
@@ -463,110 +552,36 @@
                           containsID="true"
                           dataType="System.String"
                           description="Derived Column Expression"
-                          name="Expression">"wysoka"</property>
+                          name="Expression">"medium"</property>
                         <property
                           containsID="true"
                           dataType="System.String"
                           description="Derived Column Friendly Expression"
                           expressionType="Notify"
-                          name="FriendlyExpression">"wysoka"</property>
+                          name="FriendlyExpression">"medium"</property>
                       </properties>
                     </outputColumn>
                   </outputColumns>
                   <externalMetadataColumns />
                 </output>
                 <output
-                  refId="Package\Przepływ danych Pogoda i Pogoda Temp\Dodaj kolumnę kategoria z wartością &quot;wysoka&quot;.Outputs[Derived Column Error Output]"
+                  refId="Package\Przepływ danych Pogoda i Pogoda Temp\Dodaj kolumnę kategoria z wartością &quot;medium&quot;.Outputs[Derived Column Error Output]"
                   description="Error Output of the Derived Column Transformation"
                   exclusionGroup="1"
                   isErrorOut="true"
                   name="Derived Column Error Output"
-                  synchronousInputId="Package\Przepływ danych Pogoda i Pogoda Temp\Dodaj kolumnę kategoria z wartością &quot;wysoka&quot;.Inputs[Derived Column Input]">
+                  synchronousInputId="Package\Przepływ danych Pogoda i Pogoda Temp\Dodaj kolumnę kategoria z wartością &quot;medium&quot;.Inputs[Derived Column Input]">
                   <outputColumns>
                     <outputColumn
-                      refId="Package\Przepływ danych Pogoda i Pogoda Temp\Dodaj kolumnę kategoria z wartością &quot;wysoka&quot;.Outputs[Derived Column Error Output].Columns[ErrorCode]"
+                      refId="Package\Przepływ danych Pogoda i Pogoda Temp\Dodaj kolumnę kategoria z wartością &quot;medium&quot;.Outputs[Derived Column Error Output].Columns[ErrorCode]"
                       dataType="i4"
-                      lineageId="Package\Przepływ danych Pogoda i Pogoda Temp\Dodaj kolumnę kategoria z wartością &quot;wysoka&quot;.Outputs[Derived Column Error Output].Columns[ErrorCode]"
+                      lineageId="Package\Przepływ danych Pogoda i Pogoda Temp\Dodaj kolumnę kategoria z wartością &quot;medium&quot;.Outputs[Derived Column Error Output].Columns[ErrorCode]"
                       name="ErrorCode"
                       specialFlags="1" />
                     <outputColumn
-                      refId="Package\Przepływ danych Pogoda i Pogoda Temp\Dodaj kolumnę kategoria z wartością &quot;wysoka&quot;.Outputs[Derived Column Error Output].Columns[ErrorColumn]"
+                      refId="Package\Przepływ danych Pogoda i Pogoda Temp\Dodaj kolumnę kategoria z wartością &quot;medium&quot;.Outputs[Derived Column Error Output].Columns[ErrorColumn]"
                       dataType="i4"
-                      lineageId="Package\Przepływ danych Pogoda i Pogoda Temp\Dodaj kolumnę kategoria z wartością &quot;wysoka&quot;.Outputs[Derived Column Error Output].Columns[ErrorColumn]"
-                      name="ErrorColumn"
-                      specialFlags="2" />
-                  </outputColumns>
-                  <externalMetadataColumns />
-                </output>
-              </outputs>
-            </component>
-            <component
-              refId="Package\Przepływ danych Pogoda i Pogoda Temp\Dodaj kolumnę kategoria z wartością &quot;średnia&quot;"
-              componentClassID="Microsoft.DerivedColumn"
-              contactInfo="Derived Column;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;0"
-              description="Creates new column values by applying expressions to transformation input columns. Create new columns or overwrite existing ones. For example, concatenate the values from the 'first name' and 'last name' column to make a 'full name' column."
-              name="Dodaj kolumnę kategoria z wartością &quot;średnia&quot;"
-              usesDispositions="true">
-              <inputs>
-                <input
-                  refId="Package\Przepływ danych Pogoda i Pogoda Temp\Dodaj kolumnę kategoria z wartością &quot;średnia&quot;.Inputs[Derived Column Input]"
-                  description="Input to the Derived Column Transformation"
-                  name="Derived Column Input">
-                  <externalMetadataColumns />
-                </input>
-              </inputs>
-              <outputs>
-                <output
-                  refId="Package\Przepływ danych Pogoda i Pogoda Temp\Dodaj kolumnę kategoria z wartością &quot;średnia&quot;.Outputs[Derived Column Output]"
-                  description="Default Output of the Derived Column Transformation"
-                  exclusionGroup="1"
-                  name="Derived Column Output"
-                  synchronousInputId="Package\Przepływ danych Pogoda i Pogoda Temp\Dodaj kolumnę kategoria z wartością &quot;średnia&quot;.Inputs[Derived Column Input]">
-                  <outputColumns>
-                    <outputColumn
-                      refId="Package\Przepływ danych Pogoda i Pogoda Temp\Dodaj kolumnę kategoria z wartością &quot;średnia&quot;.Outputs[Derived Column Output].Columns[kategoria]"
-                      dataType="wstr"
-                      errorOrTruncationOperation="Computation"
-                      errorRowDisposition="FailComponent"
-                      length="7"
-                      lineageId="Package\Przepływ danych Pogoda i Pogoda Temp\Dodaj kolumnę kategoria z wartością &quot;średnia&quot;.Outputs[Derived Column Output].Columns[kategoria]"
-                      name="kategoria"
-                      truncationRowDisposition="FailComponent">
-                      <properties>
-                        <property
-                          containsID="true"
-                          dataType="System.String"
-                          description="Derived Column Expression"
-                          name="Expression">"średnia"</property>
-                        <property
-                          containsID="true"
-                          dataType="System.String"
-                          description="Derived Column Friendly Expression"
-                          expressionType="Notify"
-                          name="FriendlyExpression">"średnia"</property>
-                      </properties>
-                    </outputColumn>
-                  </outputColumns>
-                  <externalMetadataColumns />
-                </output>
-                <output
-                  refId="Package\Przepływ danych Pogoda i Pogoda Temp\Dodaj kolumnę kategoria z wartością &quot;średnia&quot;.Outputs[Derived Column Error Output]"
-                  description="Error Output of the Derived Column Transformation"
-                  exclusionGroup="1"
-                  isErrorOut="true"
-                  name="Derived Column Error Output"
-                  synchronousInputId="Package\Przepływ danych Pogoda i Pogoda Temp\Dodaj kolumnę kategoria z wartością &quot;średnia&quot;.Inputs[Derived Column Input]">
-                  <outputColumns>
-                    <outputColumn
-                      refId="Package\Przepływ danych Pogoda i Pogoda Temp\Dodaj kolumnę kategoria z wartością &quot;średnia&quot;.Outputs[Derived Column Error Output].Columns[ErrorCode]"
-                      dataType="i4"
-                      lineageId="Package\Przepływ danych Pogoda i Pogoda Temp\Dodaj kolumnę kategoria z wartością &quot;średnia&quot;.Outputs[Derived Column Error Output].Columns[ErrorCode]"
-                      name="ErrorCode"
-                      specialFlags="1" />
-                    <outputColumn
-                      refId="Package\Przepływ danych Pogoda i Pogoda Temp\Dodaj kolumnę kategoria z wartością &quot;średnia&quot;.Outputs[Derived Column Error Output].Columns[ErrorColumn]"
-                      dataType="i4"
-                      lineageId="Package\Przepływ danych Pogoda i Pogoda Temp\Dodaj kolumnę kategoria z wartością &quot;średnia&quot;.Outputs[Derived Column Error Output].Columns[ErrorColumn]"
+                      lineageId="Package\Przepływ danych Pogoda i Pogoda Temp\Dodaj kolumnę kategoria z wartością &quot;medium&quot;.Outputs[Derived Column Error Output].Columns[ErrorColumn]"
                       name="ErrorColumn"
                       specialFlags="2" />
                   </outputColumns>
@@ -599,12 +614,12 @@
               </inputs>
               <outputs>
                 <output
-                  refId="Package\Przepływ danych Pogoda i Pogoda Temp\Kategoryzacja wilgotności.Outputs[Small]"
+                  refId="Package\Przepływ danych Pogoda i Pogoda Temp\Kategoryzacja wilgotności.Outputs[Low]"
                   description="Output 1 of the Conditional Split Transformation"
                   errorOrTruncationOperation="Computation"
                   errorRowDisposition="FailComponent"
                   exclusionGroup="1"
-                  name="Small"
+                  name="Low"
                   synchronousInputId="Package\Przepływ danych Pogoda i Pogoda Temp\Kategoryzacja wilgotności.Inputs[Conditional Split Input]"
                   truncationRowDisposition="FailComponent">
                   <properties>
@@ -618,7 +633,7 @@
                       dataType="System.String"
                       description="Specifies the friendly version of the expression. This expression version uses column names."
                       expressionType="Notify"
-                      name="FriendlyExpression">[Copy of avg_relative_humidity] &lt; 30</property>
+                      name="FriendlyExpression">avg_relative_humidity_NUMERIC &lt; 30</property>
                     <property
                       dataType="System.Int32"
                       description="Specifies the position of the condition in the list of conditions that the transformation evaluates. The evaluation order is from the lowest to the highest value."
@@ -646,7 +661,7 @@
                       dataType="System.String"
                       description="Specifies the friendly version of the expression. This expression version uses column names."
                       expressionType="Notify"
-                      name="FriendlyExpression">[Copy of avg_relative_humidity] &gt;= 30 &amp;&amp; [Copy of avg_relative_humidity] &lt;= 60</property>
+                      name="FriendlyExpression">avg_relative_humidity_NUMERIC &gt;= 30 &amp;&amp; avg_relative_humidity_NUMERIC &lt;= 60</property>
                     <property
                       dataType="System.Int32"
                       description="Specifies the position of the condition in the list of conditions that the transformation evaluates. The evaluation order is from the lowest to the highest value."
@@ -655,12 +670,12 @@
                   <externalMetadataColumns />
                 </output>
                 <output
-                  refId="Package\Przepływ danych Pogoda i Pogoda Temp\Kategoryzacja wilgotności.Outputs[Big]"
+                  refId="Package\Przepływ danych Pogoda i Pogoda Temp\Kategoryzacja wilgotności.Outputs[High]"
                   description="Output 3 of the Conditional Split Transformation"
                   errorOrTruncationOperation="Computation"
                   errorRowDisposition="FailComponent"
                   exclusionGroup="1"
-                  name="Big"
+                  name="High"
                   synchronousInputId="Package\Przepływ danych Pogoda i Pogoda Temp\Kategoryzacja wilgotności.Inputs[Conditional Split Input]"
                   truncationRowDisposition="FailComponent">
                   <properties>
@@ -674,7 +689,7 @@
                       dataType="System.String"
                       description="Specifies the friendly version of the expression. This expression version uses column names."
                       expressionType="Notify"
-                      name="FriendlyExpression">[Copy of avg_relative_humidity] &gt; 60</property>
+                      name="FriendlyExpression">avg_relative_humidity_NUMERIC &gt; 60</property>
                     <property
                       dataType="System.Int32"
                       description="Specifies the position of the condition in the list of conditions that the transformation evaluates. The evaluation order is from the lowest to the highest value."
@@ -1061,8 +1076,8 @@
               <connections>
                 <connection
                   refId="Package\Przepływ danych Pogoda i Pogoda Temp\Wrzuć do DB SQL Pogoda.Connections[OleDbConnection]"
-                  connectionManagerID="Package.ConnectionManagers[localhost.IDH 1]"
-                  connectionManagerRefId="Package.ConnectionManagers[localhost.IDH 1]"
+                  connectionManagerID="Package.ConnectionManagers[covid19southkorea.database.windows.net.Covid-19SouthKoreaDWH.covid@covid19southkorea]"
+                  connectionManagerRefId="Package.ConnectionManagers[covid19southkorea.database.windows.net.Covid-19SouthKoreaDWH.covid@covid19southkorea]"
                   description="The OLE DB runtime connection used to access the database."
                   name="OleDbConnection" />
               </connections>
@@ -1080,7 +1095,7 @@
                       cachedLength="7"
                       cachedName="kategoria"
                       cachedSortKeyPosition="1"
-                      externalMetadataColumnId="Package\Przepływ danych Pogoda i Pogoda Temp\Wrzuć do DB SQL Pogoda.Inputs[OLE DB Destination Input].ExternalColumns[kategoria_wilgotności]"
+                      externalMetadataColumnId="Package\Przepływ danych Pogoda i Pogoda Temp\Wrzuć do DB SQL Pogoda.Inputs[OLE DB Destination Input].ExternalColumns[kategoria_wilgotnosci]"
                       lineageId="Package\Przepływ danych Pogoda i Pogoda Temp\Wyciągnij unikalne kategorie.Outputs[Sort Output].Columns[kategoria]" />
                   </inputColumns>
                   <externalMetadataColumns
@@ -1090,10 +1105,10 @@
                       dataType="i4"
                       name="pogoda_id" />
                     <externalMetadataColumn
-                      refId="Package\Przepływ danych Pogoda i Pogoda Temp\Wrzuć do DB SQL Pogoda.Inputs[OLE DB Destination Input].ExternalColumns[kategoria_wilgotności]"
+                      refId="Package\Przepływ danych Pogoda i Pogoda Temp\Wrzuć do DB SQL Pogoda.Inputs[OLE DB Destination Input].ExternalColumns[kategoria_wilgotnosci]"
                       dataType="wstr"
                       length="50"
-                      name="kategoria_wilgotności" />
+                      name="kategoria_wilgotnosci" />
                   </externalMetadataColumns>
                 </input>
               </inputs>
@@ -1181,8 +1196,8 @@
               <connections>
                 <connection
                   refId="Package\Przepływ danych Pogoda i Pogoda Temp\Wrzućdo DB SQL Pogoda Temp.Connections[OleDbConnection]"
-                  connectionManagerID="Package.ConnectionManagers[localhost.IDH 1]"
-                  connectionManagerRefId="Package.ConnectionManagers[localhost.IDH 1]"
+                  connectionManagerID="Package.ConnectionManagers[covid19southkorea.database.windows.net.Covid-19SouthKoreaDWH.covid@covid19southkorea]"
+                  connectionManagerRefId="Package.ConnectionManagers[covid19southkorea.database.windows.net.Covid-19SouthKoreaDWH.covid@covid19southkorea]"
                   description="The OLE DB runtime connection used to access the database."
                   name="OleDbConnection" />
               </connections>
@@ -1675,9 +1690,9 @@
                     <inputColumn
                       refId="Package\Przepływ danych Pogoda i Pogoda Temp\Zbierz wartości (połącz).Inputs[Union All Input 1].Columns[kategoria]"
                       cachedDataType="wstr"
-                      cachedLength="6"
+                      cachedLength="4"
                       cachedName="kategoria"
-                      lineageId="Package\Przepływ danych Pogoda i Pogoda Temp\Dodaj kolumnę kategoria z wartością &quot;wysoka&quot;.Outputs[Derived Column Output].Columns[kategoria]">
+                      lineageId="Package\Przepływ danych Pogoda i Pogoda Temp\Dodaj kolumnę kategoria z wartością &quot;high&quot;.Outputs[Derived Column Output].Columns[kategoria]">
                       <properties>
                         <property
                           containsID="true"
@@ -1756,9 +1771,9 @@
                     <inputColumn
                       refId="Package\Przepływ danych Pogoda i Pogoda Temp\Zbierz wartości (połącz).Inputs[Union All Input 2].Columns[kategoria]"
                       cachedDataType="wstr"
-                      cachedLength="7"
+                      cachedLength="6"
                       cachedName="kategoria"
-                      lineageId="Package\Przepływ danych Pogoda i Pogoda Temp\Dodaj kolumnę kategoria z wartością &quot;średnia&quot;.Outputs[Derived Column Output].Columns[kategoria]">
+                      lineageId="Package\Przepływ danych Pogoda i Pogoda Temp\Dodaj kolumnę kategoria z wartością &quot;medium&quot;.Outputs[Derived Column Output].Columns[kategoria]">
                       <properties>
                         <property
                           containsID="true"
@@ -1837,9 +1852,9 @@
                     <inputColumn
                       refId="Package\Przepływ danych Pogoda i Pogoda Temp\Zbierz wartości (połącz).Inputs[Union All Input 3].Columns[kategoria]"
                       cachedDataType="wstr"
-                      cachedLength="4"
+                      cachedLength="3"
                       cachedName="kategoria"
-                      lineageId="Package\Przepływ danych Pogoda i Pogoda Temp\Dodaj kolumnę kategoria z wartością &quot;mała&quot;.Outputs[Derived Column Output].Columns[kategoria]">
+                      lineageId="Package\Przepływ danych Pogoda i Pogoda Temp\Dodaj kolumnę kategoria z wartością &quot;low&quot;.Outputs[Derived Column Output].Columns[kategoria]">
                       <properties>
                         <property
                           containsID="true"
@@ -1959,9 +1974,9 @@
           <paths>
             <path
               refId="Package\Przepływ danych Pogoda i Pogoda Temp.Paths[Big]"
-              endId="Package\Przepływ danych Pogoda i Pogoda Temp\Dodaj kolumnę kategoria z wartością &quot;wysoka&quot;.Inputs[Derived Column Input]"
+              endId="Package\Przepływ danych Pogoda i Pogoda Temp\Dodaj kolumnę kategoria z wartością &quot;high&quot;.Inputs[Derived Column Input]"
               name="Big"
-              startId="Package\Przepływ danych Pogoda i Pogoda Temp\Kategoryzacja wilgotności.Outputs[Big]" />
+              startId="Package\Przepływ danych Pogoda i Pogoda Temp\Kategoryzacja wilgotności.Outputs[High]" />
             <path
               refId="Package\Przepływ danych Pogoda i Pogoda Temp.Paths[Data Conversion Output]"
               endId="Package\Przepływ danych Pogoda i Pogoda Temp\Kategoryzacja wilgotności.Inputs[Conditional Split Input]"
@@ -1976,17 +1991,17 @@
               refId="Package\Przepływ danych Pogoda i Pogoda Temp.Paths[Derived Column Output]"
               endId="Package\Przepływ danych Pogoda i Pogoda Temp\Zbierz wartości (połącz).Inputs[Union All Input 1]"
               name="Derived Column Output"
-              startId="Package\Przepływ danych Pogoda i Pogoda Temp\Dodaj kolumnę kategoria z wartością &quot;wysoka&quot;.Outputs[Derived Column Output]" />
+              startId="Package\Przepływ danych Pogoda i Pogoda Temp\Dodaj kolumnę kategoria z wartością &quot;high&quot;.Outputs[Derived Column Output]" />
             <path
               refId="Package\Przepływ danych Pogoda i Pogoda Temp.Paths[Derived Column Output1]"
               endId="Package\Przepływ danych Pogoda i Pogoda Temp\Zbierz wartości (połącz).Inputs[Union All Input 2]"
               name="Derived Column Output"
-              startId="Package\Przepływ danych Pogoda i Pogoda Temp\Dodaj kolumnę kategoria z wartością &quot;średnia&quot;.Outputs[Derived Column Output]" />
+              startId="Package\Przepływ danych Pogoda i Pogoda Temp\Dodaj kolumnę kategoria z wartością &quot;medium&quot;.Outputs[Derived Column Output]" />
             <path
               refId="Package\Przepływ danych Pogoda i Pogoda Temp.Paths[Derived Column Output2]"
               endId="Package\Przepływ danych Pogoda i Pogoda Temp\Zbierz wartości (połącz).Inputs[Union All Input 3]"
               name="Derived Column Output"
-              startId="Package\Przepływ danych Pogoda i Pogoda Temp\Dodaj kolumnę kategoria z wartością &quot;mała&quot;.Outputs[Derived Column Output]" />
+              startId="Package\Przepływ danych Pogoda i Pogoda Temp\Dodaj kolumnę kategoria z wartością &quot;low&quot;.Outputs[Derived Column Output]" />
             <path
               refId="Package\Przepływ danych Pogoda i Pogoda Temp.Paths[Flat File Source Output]"
               endId="Package\Przepływ danych Pogoda i Pogoda Temp\Pozbądź się pustych.Inputs[Conditional Split Input]"
@@ -1994,7 +2009,7 @@
               startId="Package\Przepływ danych Pogoda i Pogoda Temp\Wczytaj csv &quot;Pogoda&quot; z kolumną humidity.Outputs[Flat File Source Output]" />
             <path
               refId="Package\Przepływ danych Pogoda i Pogoda Temp.Paths[Medium]"
-              endId="Package\Przepływ danych Pogoda i Pogoda Temp\Dodaj kolumnę kategoria z wartością &quot;średnia&quot;.Inputs[Derived Column Input]"
+              endId="Package\Przepływ danych Pogoda i Pogoda Temp\Dodaj kolumnę kategoria z wartością &quot;medium&quot;.Inputs[Derived Column Input]"
               name="Medium"
               startId="Package\Przepływ danych Pogoda i Pogoda Temp\Kategoryzacja wilgotności.Outputs[Medium]" />
             <path
@@ -2014,9 +2029,9 @@
               startId="Package\Przepływ danych Pogoda i Pogoda Temp\Pozbądź się pustych.Outputs[Wypełnione pole wilgotności]" />
             <path
               refId="Package\Przepływ danych Pogoda i Pogoda Temp.Paths[Small]"
-              endId="Package\Przepływ danych Pogoda i Pogoda Temp\Dodaj kolumnę kategoria z wartością &quot;mała&quot;.Inputs[Derived Column Input]"
+              endId="Package\Przepływ danych Pogoda i Pogoda Temp\Dodaj kolumnę kategoria z wartością &quot;low&quot;.Inputs[Derived Column Input]"
               name="Small"
-              startId="Package\Przepływ danych Pogoda i Pogoda Temp\Kategoryzacja wilgotności.Outputs[Small]" />
+              startId="Package\Przepływ danych Pogoda i Pogoda Temp\Kategoryzacja wilgotności.Outputs[Low]" />
             <path
               refId="Package\Przepływ danych Pogoda i Pogoda Temp.Paths[Sort Output]"
               endId="Package\Przepływ danych Pogoda i Pogoda Temp\Wrzuć do DB SQL Pogoda.Inputs[OLE DB Destination Input]"
@@ -2056,7 +2071,7 @@
       DTS:From="Package\Przepływ danych Pogoda i Pogoda Temp"
       DTS:LogicalAnd="True"
       DTS:ObjectName="Constraint 2"
-      DTS:To="Package\Dodaj kategorię &quot;Brak informacji&quot; do Pogoda" />
+      DTS:To="Package\Dodaj kategorię &quot;unknown humidity&quot; do Pogoda" />
   </DTS:PrecedenceConstraints>
   <DTS:DesignTimeProperties><![CDATA[<?xml version="1.0"?>
 <!--This CDATA section contains the layout information of the package. The section includes information such as (x,y) coordinates, width, and height.-->
@@ -2079,8 +2094,8 @@
           Id="Package\Czyszczenie Pogoda Temp"
           TopLeft="479.583326186985,38.8070163418602" />
         <NodeLayout
-          Size="289.333333333334,42.6666666666667"
-          Id="Package\Dodaj kategorię &quot;Brak informacji&quot; do Pogoda"
+          Size="304,42.6666666666667"
+          Id="Package\Dodaj kategorię &quot;unknown humidity&quot; do Pogoda"
           TopLeft="245.416663009673,177.43859983107" />
         <NodeLayout
           Size="274.666666666667,42.6666666666667"
@@ -2154,9 +2169,9 @@
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="8.99999997516431,51.1929843106543"
+              EndConnector="16.3333333084977,51.1929843106543"
               Start="0,0"
-              End="8.99999997516431,43.6929843106543">
+              End="16.3333333084977,43.6929843106543">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
@@ -2167,13 +2182,13 @@
                     Point2="0,25.5964921553272"
                     Point3="4,25.5964921553272" />
                   <mssgle:LineSegment
-                    End="4.99999997516431,25.5964921553272" />
+                    End="12.3333333084977,25.5964921553272" />
                   <mssgle:CubicBezierSegment
-                    Point1="4.99999997516431,25.5964921553272"
-                    Point2="8.99999997516431,25.5964921553272"
-                    Point3="8.99999997516431,29.5964921553272" />
+                    Point1="12.3333333084977,25.5964921553272"
+                    Point2="16.3333333084977,25.5964921553272"
+                    Point3="16.3333333084977,29.5964921553272" />
                   <mssgle:LineSegment
-                    End="8.99999997516431,43.6929843106543" />
+                    End="16.3333333084977,43.6929843106543" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -2195,37 +2210,13 @@
       <GraphLayout
         Capacity="32" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
-          Size="298.666666666667,42.6666666666667"
-          Id="Package\Przepływ danych Pogoda i Pogoda Temp\Dodaj kolumnę kategoria z wartością &quot;średnia&quot;"
-          TopLeft="391.249994169921,314.771933816917" />
-        <NodeLayout
-          Size="206.666666666667,42.6666666666667"
-          Id="Package\Przepływ danych Pogoda i Pogoda Temp\Wrzuć do DB SQL Pogoda"
-          TopLeft="460.166659849386,642.479536050208" />
-        <NodeLayout
-          Size="256,42.6666666666667"
-          Id="Package\Przepływ danych Pogoda i Pogoda Temp\Zamień wilgotność ze string na liczbę"
-          TopLeft="346.666661500931,157.824564374165" />
-        <NodeLayout
-          Size="149.333333333334,42.6666666666667"
-          Id="Package\Przepływ danych Pogoda i Pogoda Temp\Zduplikuj dane"
-          TopLeft="733.333322405815,517.485383164886" />
-        <NodeLayout
-          Size="300,42.6666666666667"
-          Id="Package\Przepływ danych Pogoda i Pogoda Temp\Dodaj kolumnę kategoria z wartością &quot;wysoka&quot;"
-          TopLeft="599.749991996836,233.438597221014" />
-        <NodeLayout
-          Size="286.666666666667,42.6666666666667"
-          Id="Package\Przepływ danych Pogoda i Pogoda Temp\Dodaj kolumnę kategoria z wartością &quot;mała&quot;"
-          TopLeft="92.9166652821009,312.456146232089" />
-        <NodeLayout
           Size="233.333333333334,42.6666666666667"
           Id="Package\Przepływ danych Pogoda i Pogoda Temp\Wrzućdo DB SQL Pogoda Temp"
           TopLeft="741.388877841334,650.222227768591" />
         <NodeLayout
-          Size="214.666666666667,42.6666666666667"
-          Id="Package\Przepływ danych Pogoda i Pogoda Temp\Wyciągnij unikalne kategorie"
-          TopLeft="481.666659489274,511.403515348584" />
+          Size="192,42.6666666666667"
+          Id="Package\Przepływ danych Pogoda i Pogoda Temp\Zbierz wartości (połącz)"
+          TopLeft="675.416656602175,418.046785889497" />
         <NodeLayout
           Size="202.666666666667,42.6666666666667"
           Id="Package\Przepływ danych Pogoda i Pogoda Temp\Kategoryzacja wilgotności"
@@ -2235,17 +2226,41 @@
           Id="Package\Przepływ danych Pogoda i Pogoda Temp\Wczytaj csv &quot;Pogoda&quot; z kolumną humidity"
           TopLeft="354.58332804963,10.0350879081839" />
         <NodeLayout
-          Size="164,42.6666666666667"
-          Id="Package\Przepływ danych Pogoda i Pogoda Temp\Zamień na WSTR"
-          TopLeft="824.999987706542,578.30409775994" />
+          Size="214.666666666667,42.6666666666667"
+          Id="Package\Przepływ danych Pogoda i Pogoda Temp\Wyciągnij unikalne kategorie"
+          TopLeft="481.666659489274,511.403515348584" />
+        <NodeLayout
+          Size="302.666666666667,42.6666666666667"
+          Id="Package\Przepływ danych Pogoda i Pogoda Temp\Dodaj kolumnę kategoria z wartością &quot;medium&quot;"
+          TopLeft="391.249994169921,314.771933816917" />
+        <NodeLayout
+          Size="206.666666666667,42.6666666666667"
+          Id="Package\Przepływ danych Pogoda i Pogoda Temp\Wrzuć do DB SQL Pogoda"
+          TopLeft="460.166659849386,642.479536050208" />
         <NodeLayout
           Size="177.333333333334,42.6666666666667"
           Id="Package\Przepływ danych Pogoda i Pogoda Temp\Pozbądź się pustych"
           TopLeft="359.999994635582,83.298246240792" />
         <NodeLayout
-          Size="192,42.6666666666667"
-          Id="Package\Przepływ danych Pogoda i Pogoda Temp\Zbierz wartości (połącz)"
-          TopLeft="675.416656602175,418.046785889497" />
+          Size="284,42.6666666666667"
+          Id="Package\Przepływ danych Pogoda i Pogoda Temp\Dodaj kolumnę kategoria z wartością &quot;high&quot;"
+          TopLeft="599.749991996836,233.438597221014" />
+        <NodeLayout
+          Size="164,42.6666666666667"
+          Id="Package\Przepływ danych Pogoda i Pogoda Temp\Zamień na WSTR"
+          TopLeft="824.999987706542,578.30409775994" />
+        <NodeLayout
+          Size="256,42.6666666666667"
+          Id="Package\Przepływ danych Pogoda i Pogoda Temp\Zamień wilgotność ze string na liczbę"
+          TopLeft="346.666661500931,157.824564374165" />
+        <NodeLayout
+          Size="280,42.6666666666667"
+          Id="Package\Przepływ danych Pogoda i Pogoda Temp\Dodaj kolumnę kategoria z wartością &quot;low&quot;"
+          TopLeft="92.9166652821009,312.456146232089" />
+        <NodeLayout
+          Size="149.333333333334,42.6666666666667"
+          Id="Package\Przepływ danych Pogoda i Pogoda Temp\Zduplikuj dane"
+          TopLeft="733.333322405815,517.485383164886" />
         <EdgeLayout
           Id="Package\Przepływ danych Pogoda i Pogoda Temp.Paths[Union All Output 1]"
           TopLeft="771.416656602175,460.713452556163">
@@ -2320,9 +2335,9 @@
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="-181.805551737133,36.2456155204153"
+              EndConnector="-185.138885070466,36.2456155204153"
               Start="0,0"
-              End="-181.805551737133,28.7456155204153">
+              End="-185.138885070466,28.7456155204153">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
@@ -2333,20 +2348,20 @@
                     Point2="0,14.6685911375049"
                     Point3="-4,14.6685911375049" />
                   <mssgle:LineSegment
-                    End="-177.805551737133,14.6685911375049" />
+                    End="-181.138885070466,14.6685911375049" />
                   <mssgle:CubicBezierSegment
-                    Point1="-177.805551737133,14.6685911375049"
-                    Point2="-181.805551737133,14.6685911375049"
-                    Point3="-181.805551737133,18.6685911375049" />
+                    Point1="-181.138885070466,14.6685911375049"
+                    Point2="-185.138885070466,14.6685911375049"
+                    Point3="-185.138885070466,18.6685911375049" />
                   <mssgle:LineSegment
-                    End="-181.805551737133,28.7456155204153" />
+                    End="-185.138885070466,28.7456155204153" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
             <mssgm:EdgeLabel
-              BoundingBox="-103.270568837316,19.6685911375049,24.7355859375,9.7490234375"
+              BoundingBox="-102.043485503983,19.6685911375049,18.9480859375,9.421875"
               RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
@@ -2438,37 +2453,37 @@
         </EdgeLayout>
         <EdgeLayout
           Id="Package\Przepływ danych Pogoda i Pogoda Temp.Paths[Medium]"
-          TopLeft="450.499994797011,276.210530711674">
+          TopLeft="482.944439241456,276.210530711674">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="90.0833327062429,38.561403105243"
+              EndConnector="59.6388882617986,38.5614031052433"
               Start="0,0"
-              End="90.0833327062429,31.061403105243">
+              End="59.6388882617986,31.0614031052433">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,15.2807015526215" />
+                    End="0,11.6057897684405" />
                   <mssgle:CubicBezierSegment
-                    Point1="0,15.2807015526215"
-                    Point2="0,19.2807015526215"
-                    Point3="4,19.2807015526215" />
+                    Point1="0,11.6057897684405"
+                    Point2="0,15.6057897684405"
+                    Point3="4,15.6057897684405" />
                   <mssgle:LineSegment
-                    End="86.0833327062429,19.2807015526215" />
+                    End="55.6388882617986,15.6057897684405" />
                   <mssgle:CubicBezierSegment
-                    Point1="86.0833327062429,19.2807015526215"
-                    Point2="90.0833327062429,19.2807015526215"
-                    Point3="90.0833327062429,23.2807015526215" />
+                    Point1="55.6388882617986,15.6057897684405"
+                    Point2="59.6388882617986,15.6057897684405"
+                    Point3="59.6388882617986,19.6057897684405" />
                   <mssgle:LineSegment
-                    End="90.0833327062429,31.061403105243" />
+                    End="59.6388882617986,31.0614031052433" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
             <mssgm:EdgeLabel
-              BoundingBox="27.3385999468714,24.2807015526215,35.4061328125,9.7490234375"
+              BoundingBox="12.1163777246493,20.6057897684405,35.4061328125,9.7490234375"
               RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
@@ -2508,30 +2523,30 @@
         </EdgeLayout>
         <EdgeLayout
           Id="Package\Przepływ danych Pogoda i Pogoda Temp.Paths[Derived Column Output2]"
-          TopLeft="236.249998615434,355.122812898756">
+          TopLeft="232.916665282101,355.122812898756">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="489.166657986741,62.923972990741"
+              EndConnector="492.499991320074,62.9239729907413"
               Start="0,0"
-              End="489.166657986741,55.423972990741">
+              End="492.499991320074,55.4239729907413">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,37.3746671719941" />
+                    End="0,37.3746671719943" />
                   <mssgle:CubicBezierSegment
-                    Point1="0,37.3746671719941"
-                    Point2="0,41.3746671719941"
-                    Point3="4,41.3746671719941" />
+                    Point1="0,37.3746671719943"
+                    Point2="0,41.3746671719943"
+                    Point3="4,41.3746671719943" />
                   <mssgle:LineSegment
-                    End="485.166657986741,41.3746671719941" />
+                    End="488.499991320074,41.3746671719943" />
                   <mssgle:CubicBezierSegment
-                    Point1="485.166657986741,41.3746671719941"
-                    Point2="489.166657986741,41.3746671719941"
-                    Point3="489.166657986741,45.3746671719941" />
+                    Point1="488.499991320074,41.3746671719943"
+                    Point2="492.499991320074,41.3746671719943"
+                    Point3="492.499991320074,45.3746671719943" />
                   <mssgle:LineSegment
-                    End="489.166657986741,55.423972990741" />
+                    End="492.499991320074,55.4239729907413" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -2542,30 +2557,30 @@
         </EdgeLayout>
         <EdgeLayout
           Id="Package\Przepływ danych Pogoda i Pogoda Temp.Paths[Derived Column Output1]"
-          TopLeft="540.583327503254,357.438600483583">
+          TopLeft="542.583327503254,357.438600483584">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="230.833329098921,60.6081854059133"
+              EndConnector="228.833329098921,60.6081854059133"
               Start="0,0"
-              End="230.833329098921,53.1081854059133">
+              End="228.833329098921,53.1081854059133">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,26.3040927029566" />
+                    End="0,26.3040927029567" />
                   <mssgle:CubicBezierSegment
-                    Point1="0,26.3040927029566"
-                    Point2="0,30.3040927029566"
-                    Point3="4,30.3040927029566" />
+                    Point1="0,26.3040927029567"
+                    Point2="0,30.3040927029567"
+                    Point3="4,30.3040927029567" />
                   <mssgle:LineSegment
-                    End="226.833329098921,30.3040927029566" />
+                    End="224.833329098921,30.3040927029567" />
                   <mssgle:CubicBezierSegment
-                    Point1="226.833329098921,30.3040927029566"
-                    Point2="230.833329098921,30.3040927029566"
-                    Point3="230.833329098921,34.3040927029566" />
+                    Point1="224.833329098921,30.3040927029567"
+                    Point2="228.833329098921,30.3040927029567"
+                    Point3="228.833329098921,34.3040927029567" />
                   <mssgle:LineSegment
-                    End="230.833329098921,53.1081854059133" />
+                    End="228.833329098921,53.1081854059133" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -2576,30 +2591,30 @@
         </EdgeLayout>
         <EdgeLayout
           Id="Package\Przepływ danych Pogoda i Pogoda Temp.Paths[Derived Column Output]"
-          TopLeft="749.749991996836,276.10526388768">
+          TopLeft="741.749991996836,276.105263887681">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="67.666664605339,141.941522001816"
+              EndConnector="75.666664605339,141.941522001816"
               Start="0,0"
-              End="67.666664605339,134.441522001816">
+              End="75.666664605339,134.441522001816">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,89.3314117272218" />
+                    End="0,89.3314117272217" />
                   <mssgle:CubicBezierSegment
-                    Point1="0,89.3314117272218"
-                    Point2="0,93.3314117272218"
-                    Point3="4,93.3314117272218" />
+                    Point1="0,89.3314117272217"
+                    Point2="0,93.3314117272217"
+                    Point3="4,93.3314117272217" />
                   <mssgle:LineSegment
-                    End="63.666664605339,93.3314117272218" />
+                    End="71.666664605339,93.3314117272217" />
                   <mssgle:CubicBezierSegment
-                    Point1="63.666664605339,93.3314117272218"
-                    Point2="67.666664605339,93.3314117272218"
-                    Point3="67.666664605339,97.3314117272218" />
+                    Point1="71.666664605339,93.3314117272217"
+                    Point2="75.666664605339,93.3314117272217"
+                    Point3="75.666664605339,97.3314117272217" />
                   <mssgle:LineSegment
-                    End="67.666664605339,134.441522001816" />
+                    End="75.666664605339,134.441522001816" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -2673,9 +2688,7 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="-36.3055555741821,24.6762410573159,16,16"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -2684,21 +2697,21 @@
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="47.9166638664913,0"
+              EndConnector="47.9166638664914,0"
               Start="0,0"
-              End="40.4166638664913,0">
+              End="40.4166638664914,0">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="40.4166638664913,0" />
+                    End="40.4166638664914,0" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
             <mssgm:EdgeLabel
-              BoundingBox="13.0553436519956,5,14.3059765625,11.384765625"
+              BoundingBox="9.81639833949569,5,20.7838671875,11.6630859375"
               RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
