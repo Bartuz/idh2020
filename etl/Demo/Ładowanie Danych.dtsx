@@ -11,8 +11,8 @@
   DTS:LocaleID="2057"
   DTS:ObjectName="Package1"
   DTS:PackageType="5"
-  DTS:VersionBuild="13"
-  DTS:VersionGUID="{81C3F415-716B-4FED-B421-5D9F53B0598F}">
+  DTS:VersionBuild="15"
+  DTS:VersionGUID="{ED821C56-4CFD-43ED-98EF-11E2B87BC2AD}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:Variables />
@@ -96,13 +96,13 @@
           </DTS:ObjectData>
         </DTS:Executable>
         <DTS:Executable
-          DTS:refId="Package\Sequence Container\Wykonaj zadnie Płeć"
+          DTS:refId="Package\Sequence Container\Wykonaj zadanie Płeć"
           DTS:CreationName="Microsoft.ExecutePackageTask"
           DTS:Description="Execute Package Task"
           DTS:DTSID="{91D3ECCD-4679-4A23-B2C5-9B977CD93B9C}"
           DTS:ExecutableType="Microsoft.ExecutePackageTask"
           DTS:LocaleID="-1"
-          DTS:ObjectName="Wykonaj zadnie Płeć"
+          DTS:ObjectName="Wykonaj zadanie Płeć"
           DTS:TaskContact="Microsoft Corporation; Microsoft SQL Server; Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
           <DTS:Variables />
           <DTS:ObjectData>
@@ -155,14 +155,6 @@
       <GraphLayout
         Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
-          Size="274.666666666667,42.6666666666667"
-          Id="Package\Sequence Container\Wykonaj zadanie PołożenieGeograficzne"
-          TopLeft="5.5,5.71929934458498" />
-        <NodeLayout
-          Size="200.666666666667,42.6666666666667"
-          Id="Package\Sequence Container\Wykonaj zadanie Pogoda"
-          TopLeft="212.166663587093,57.2982457514065" />
-        <NodeLayout
           Size="186.666666666667,42.6666666666667"
           Id="Package\Sequence Container\Wykonaj zadanie Data"
           TopLeft="20.2499970756472,58.596493134098" />
@@ -171,13 +163,21 @@
           Id="Package\Sequence Container\Wykonaj zadanie Grupa wiekowa"
           TopLeft="15.6666638106108,116.666669113594" />
         <NodeLayout
-          Size="178.666666666667,42.6666666666667"
-          Id="Package\Sequence Container\Wykonaj zadnie Płeć"
+          Size="200.666666666667,42.6666666666667"
+          Id="Package\Sequence Container\Wykonaj zadanie Pogoda"
+          TopLeft="212.166663587093,57.2982457514065" />
+        <NodeLayout
+          Size="274.666666666667,42.6666666666667"
+          Id="Package\Sequence Container\Wykonaj zadanie PołożenieGeograficzne"
+          TopLeft="5.5,5.71929934458498" />
+        <NodeLayout
+          Size="184,42.6666666666667"
+          Id="Package\Sequence Container\Wykonaj zadanie Płeć"
           TopLeft="288.583326410502,116.070178426424" />
         <ContainerLayout
           HeaderHeight="43"
           IsExpanded="True"
-          PanelSize="506.666666666667,233.333333333334"
+          PanelSize="506.666666666667,234"
           Size="506.666666666667,276.666666666667"
           Id="Package\Sequence Container"
           TopLeft="176.24999737367,76.5964919921984" />
