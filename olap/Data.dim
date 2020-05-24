@@ -1,0 +1,314 @@
+﻿<Dimension xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="7e4bb5da-fbb0-4a2b-a691-e46161485efc" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>Data</ID>
+  <Name>Data</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
+      <Value>
+        <dds xmlns="">
+          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="3" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-5812" scrolltop="-7609" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="18606" y="12827" backcolor="2434342" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+            <font>
+              <ddsxmlobjectstreamwrapper binary="01ee00009001b0300100065461686f6d61" />
+            </font>
+            <mouseicon>
+              <ddsxmlobjectstreamwrapper binary="6c74000000000000" />
+            </mouseicon>
+          </diagram>
+          <layoutmanager>
+            <ddsxmlobj />
+          </layoutmanager>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="Data" left="-742" top="-3260" logicalid="2" controlid="1" masterid="0" hint1="0" hint2="0" width="6943" height="3747" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000e00001f1b0000a30e0000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dbo_Data" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+        </dds>
+      </Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowRelationshipNames</Name>
+      <Value>false</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:UseDiagramDefaultLayout</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
+      <Value>-5812</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
+      <Value>-7609</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
+      <Value>-742</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
+      <Value>-3260</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
+      <Value>100</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ARDiagramLayout</Name>
+      <Value>
+        <DiagramLayout ZoomPercent="100" ViewPortX="0" ViewPortY="0" xmlns="">
+          <Shapes NodeWidth="300">
+            <Shape Id="Data Id" Expanded="false">
+              <Attributes>
+                <Attribute Id="Data Id" />
+                <Attribute Id="Dzien" />
+                <Attribute Id="Ilosc Testow z Wynikiem Negatywnym" />
+                <Attribute Id="Ilosc Testow z Wynikiem Pozytywnym" />
+                <Attribute Id="Ilosc Wszystkich Przeprowadzonych Testow" />
+              </Attributes>
+              <Position x="20" y="20" />
+            </Shape>
+            <Shape Id="Nazwa Miesiaca" Expanded="true">
+              <Attributes>
+                <Attribute Id="Nazwa Miesiaca" />
+                <Attribute Id="Miesiac" />
+              </Attributes>
+              <Position x="400" y="20" />
+            </Shape>
+            <Shape Id="Rok" Expanded="false">
+              <Attributes>
+                <Attribute Id="Rok" />
+              </Attributes>
+              <Position x="400" y="94" />
+            </Shape>
+          </Shapes>
+        </DiagramLayout>
+      </Value>
+    </Annotation>
+  </Annotations>
+  <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+  <State>Unprocessed</State>
+  <Source xsi:type="DataSourceViewBinding" dwd:design-time-name="46aa289f-a309-46d4-9128-c935c7a0a53f">
+    <DataSourceViewID>Covid-19 South Korea DWH</DataSourceViewID>
+  </Source>
+  <Type>Time</Type>
+  <ErrorConfiguration dwd:design-time-name="e89f475f-6c76-4a9b-b8ab-fb40b7c7dcde">
+    <KeyNotFound>ReportAndStop</KeyNotFound>
+    <KeyDuplicate>ReportAndStop</KeyDuplicate>
+    <NullKeyNotAllowed>ReportAndStop</NullKeyNotAllowed>
+  </ErrorConfiguration>
+  <CurrentStorageMode>Molap</CurrentStorageMode>
+  <Attributes>
+    <Attribute dwd:design-time-name="f89c5ad9-eb05-4397-90d4-89ada98abb86">
+      <ID>Data Id</ID>
+      <Name>Data</Name>
+      <Type>Date</Type>
+      <Usage>Key</Usage>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="71ba87a3-a236-44b8-b103-b2e14a15d981">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="5e0ed922-b923-41fc-adcf-dca47c9a7ca5">
+            <TableID>dbo_Data</TableID>
+            <ColumnID>data_id</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn dwd:design-time-name="8decc82c-fb06-45e2-8878-6defde04ba1d">
+        <DataType>WChar</DataType>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="9b87baad-7b98-4c40-a6c4-8342b4fe2eb4">
+          <TableID>dbo_Data</TableID>
+          <ColumnID>pelna_data</ColumnID>
+        </Source>
+      </NameColumn>
+      <AttributeRelationships>
+        <AttributeRelationship dwd:design-time-name="56325f48-f7f7-454b-bc98-67248ec9b0e8">
+          <AttributeID>Rok</AttributeID>
+          <Name>Rok</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="ea8ccbc4-87e9-44a1-ab1c-49b363a66341">
+          <AttributeID>Dzien</AttributeID>
+          <Name>Dzien</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="8ad176a8-57d8-4501-b96d-5f026dffc4e9">
+          <AttributeID>Ilosc Wszystkich Przeprowadzonych Testow</AttributeID>
+          <Name>Ilosc Wszystkich Przeprowadzonych Testow</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="871652bd-3eb2-47db-9398-a8dd27acd12a">
+          <AttributeID>Ilosc Testow z Wynikiem Pozytywnym</AttributeID>
+          <Name>Ilosc Testow z Wynikiem Pozytywnym</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="513abca8-74b2-4b8c-b80e-c63a81a7b52a">
+          <AttributeID>Ilosc Testow z Wynikiem Negatywnym</AttributeID>
+          <Name>Ilosc Testow z Wynikiem Negatywnym</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="3d21d2d4-a8e7-4e1a-95e8-4388d5e179b8">
+          <AttributeID>Nazwa Miesiaca</AttributeID>
+          <Name>Nazwa Miesiaca</Name>
+        </AttributeRelationship>
+      </AttributeRelationships>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="22cdb8f9-9455-4133-8c1e-6386617910b9">
+      <ID>Rok</ID>
+      <Name>Rok</Name>
+      <Type>Years</Type>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="6b4012fd-ca5c-455a-ae06-48bd7ea2073e">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="3731f024-9039-4e5d-a01b-80d10917fb28">
+            <TableID>dbo_Data</TableID>
+            <ColumnID>rok</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="0847701f-9869-4810-9d39-d31ad9362ba4">
+      <ID>Miesiac</ID>
+      <Name>Miesiac</Name>
+      <Type>Months</Type>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="07965df2-d0a1-442c-8cb0-79fbadbb1991">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="7a4a4aa5-d9d7-4d8e-ae36-40f350d6ff64">
+            <TableID>dbo_Data</TableID>
+            <ColumnID>miesiac</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="6d68507e-2902-404f-b55d-190452c6c9df">
+      <ID>Dzien</ID>
+      <Name>Dzien</Name>
+      <Type>DayOfMonth</Type>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="4b7c667d-3864-4ed6-af9a-5e0f7c97566e">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="49eb8849-c1af-4644-a41e-2f3e055b550b">
+            <TableID>dbo_Data</TableID>
+            <ColumnID>dzien</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="f9c42c5f-a1b2-4c21-b750-8738b3b74c79">
+      <ID>Ilosc Wszystkich Przeprowadzonych Testow</ID>
+      <Name>Ilosc Wszystkich Przeprowadzonych Testow</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="881f0f40-be9b-4fa3-96cd-f6decda5da9b">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="9eb3f6e9-06bf-48fe-a3db-106b5568a2ea">
+            <TableID>dbo_Data</TableID>
+            <ColumnID>ilosc_wszystkich_przeprowadzonych_testow</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="d4d7d514-5b0d-4292-8386-f89e59dbe294">
+      <ID>Ilosc Testow z Wynikiem Pozytywnym</ID>
+      <Name>Ilosc Testow z Wynikiem Pozytywnym</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="ee993c3f-e5d1-4ae4-bfd8-ac47278c008c">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="f9ea86b1-bf8a-4a21-8e64-774bb4922fd2">
+            <TableID>dbo_Data</TableID>
+            <ColumnID>ilosc_testow_z_wynikiem_pozytywnym</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="b8bb27e0-1bf3-473e-b11f-9971dcbb0adc">
+      <ID>Ilosc Testow z Wynikiem Negatywnym</ID>
+      <Name>Ilosc Testow z Wynikiem Negatywnym</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="1c9e3877-ca7e-4bb6-ab9b-199f8fd37875">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="f649c361-7fe6-4d6f-bae7-dfa6f4292879">
+            <TableID>dbo_Data</TableID>
+            <ColumnID>ilosc_testow_z_wynikiem_negatywnym</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="9bba3c40-a2b7-4fc0-b99e-dd362d0aee7a">
+      <ID>Nazwa Miesiaca</ID>
+      <Name>Nazwa Miesiaca</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="9520ef1f-3bdb-4fe4-a5c6-365041be150f">
+          <DataType>WChar</DataType>
+          <DataSize>8</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="724b4690-0a9a-47ea-8a9c-bdc413d841a2">
+            <TableID>dbo_Data</TableID>
+            <ColumnID>Nazwa_x0020_miesiaca</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <AttributeRelationships>
+        <AttributeRelationship dwd:design-time-name="e7fac4e6-8383-42b7-91e2-3b743a6110fc">
+          <AttributeID>Miesiac</AttributeID>
+          <RelationshipType>Rigid</RelationshipType>
+          <Name>Miesiac</Name>
+        </AttributeRelationship>
+      </AttributeRelationships>
+      <OrderBy>AttributeKey</OrderBy>
+      <OrderByAttributeID>Miesiac</OrderByAttributeID>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+  </Attributes>
+  <Hierarchies>
+    <Hierarchy dwd:design-time-name="ac1ccad4-72ff-4172-8183-625a6e19cea5">
+      <ID>Hierarchy</ID>
+      <Name>Hierarchia kalendarzowa</Name>
+      <Levels>
+        <Level dwd:design-time-name="a17eed35-5066-4a60-9fcb-422e4c921294">
+          <ID>Rok</ID>
+          <Name>Rok</Name>
+          <SourceAttributeID>Rok</SourceAttributeID>
+        </Level>
+        <Level dwd:design-time-name="9a07bb9a-eeff-4759-b013-951e533a6a5c">
+          <ID>Nazwa Miesiaca</ID>
+          <Name>Nazwa Miesiaca</Name>
+          <SourceAttributeID>Nazwa Miesiaca</SourceAttributeID>
+        </Level>
+        <Level dwd:design-time-name="29336eba-737d-4196-bb70-b1fac2c549ee">
+          <ID>Data</ID>
+          <Name>Data</Name>
+          <SourceAttributeID>Data Id</SourceAttributeID>
+        </Level>
+      </Levels>
+    </Hierarchy>
+  </Hierarchies>
+  <ddl300:ProcessingState>Unprocessed</ddl300:ProcessingState>
+</Dimension>
