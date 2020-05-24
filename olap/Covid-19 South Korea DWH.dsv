@@ -1,0 +1,369 @@
+﻿<DataSourceView xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="60d03566-86f2-408c-aa9a-4912044b6f46" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>Covid-19 South Korea DWH</ID>
+  <Name>Covid-19 South Korea DWH</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:CurrentLayout</Name>
+      <Value>_ALL_TABLES_</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:NameMatchingCriteria</Name>
+      <Value>1</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:SchemaRestriction</Name>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:RetrieveRelationships</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:Layouts</Name>
+      <Value>
+        <Layouts xmlns="">
+          <Diagram>
+            <Name>_ALL_TABLES_</Name>
+            <DiagramLayout>
+              <dds>
+                <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="12" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-19300" scrolltop="4398" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="96" x="56896" y="14055" backcolor="2434342" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="1" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+                  <font>
+                    <ddsxmlobjectstreamwrapper binary="01ee00009001b0300100065461686f6d61" />
+                  </font>
+                  <mouseicon>
+                    <ddsxmlobjectstreamwrapper binary="6c74000000000000" />
+                  </mouseicon>
+                </diagram>
+                <layoutmanager>
+                  <ddsxmlobj />
+                </layoutmanager>
+                <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="Data" left="2305" top="10494" logicalid="1" controlid="1" masterid="0" hint1="0" hint2="0" width="6943" height="3747" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+                  <control>
+                    <ddsxmlobjectstreaminitwrapper binary="000e00001f1b0000a30e0000" />
+                  </control>
+                  <layoutobject>
+                    <ddsxmlobj>
+                      <property name="LogicalObject" value="dbo_Data" vartype="8" />
+                    </ddsxmlobj>
+                  </layoutobject>
+                  <shape groupshapeid="0" groupnode="0" />
+                </ddscontrol>
+                <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="Dzienne_Statystyki_Covid_19" left="5420" top="3988" logicalid="2" controlid="2" masterid="0" hint1="0" hint2="0" width="7303" height="4106" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+                  <control>
+                    <ddsxmlobjectstreaminitwrapper binary="000e0000871c00000a100000" />
+                  </control>
+                  <layoutobject>
+                    <ddsxmlobj>
+                      <property name="LogicalObject" value="dbo_Dzienne_Statystyki_Covid_19" vartype="8" />
+                    </ddsxmlobj>
+                  </layoutobject>
+                  <shape groupshapeid="0" groupnode="0" />
+                </ddscontrol>
+                <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="Grupa_Wiekowa" left="11648" top="10494" logicalid="3" controlid="3" masterid="0" hint1="0" hint2="0" width="4191" height="1588" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+                  <control>
+                    <ddsxmlobjectstreaminitwrapper binary="000e00005f10000034060000" />
+                  </control>
+                  <layoutobject>
+                    <ddsxmlobj>
+                      <property name="LogicalObject" value="dbo_Grupa_Wiekowa" vartype="8" />
+                    </ddsxmlobj>
+                  </layoutobject>
+                  <shape groupshapeid="0" groupnode="0" />
+                </ddscontrol>
+                <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="Plec" left="20" top="5247" logicalid="4" controlid="4" masterid="0" hint1="0" hint2="0" width="3000" height="1588" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+                  <control>
+                    <ddsxmlobjectstreaminitwrapper binary="000e0000b80b000034060000" />
+                  </control>
+                  <layoutobject>
+                    <ddsxmlobj>
+                      <property name="LogicalObject" value="dbo_Plec" vartype="8" />
+                    </ddsxmlobj>
+                  </layoutobject>
+                  <shape groupshapeid="0" groupnode="0" />
+                </ddscontrol>
+                <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="Pogoda" left="7103" top="0" logicalid="5" controlid="5" masterid="0" hint1="0" hint2="0" width="3937" height="1588" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+                  <control>
+                    <ddsxmlobjectstreaminitwrapper binary="000e0000610f000034060000" />
+                  </control>
+                  <layoutobject>
+                    <ddsxmlobj>
+                      <property name="LogicalObject" value="dbo_Pogoda" vartype="8" />
+                    </ddsxmlobj>
+                  </layoutobject>
+                  <shape groupshapeid="0" groupnode="0" />
+                </ddscontrol>
+                <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="Polozenie_Geograficzne" left="15123" top="3988" logicalid="6" controlid="6" masterid="0" hint1="0" hint2="0" width="5059" height="4106" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+                  <control>
+                    <ddsxmlobjectstreaminitwrapper binary="000e0000c31300000a100000" />
+                  </control>
+                  <layoutobject>
+                    <ddsxmlobj>
+                      <property name="LogicalObject" value="dbo_Polozenie_Geograficzne" vartype="8" />
+                    </ddsxmlobj>
+                  </layoutobject>
+                  <shape groupshapeid="0" groupnode="0" />
+                </ddscontrol>
+                <ddscontrol controlprogid="MSDDS.Polyline" left="2720" top="5642" logicalid="7" controlid="7" masterid="0" hint1="0" hint2="0" width="3000" height="799" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+                  <control>
+                    <ddsxmlobj>
+                      <polyline endtypedst="6" endtypesrc="3" usercolor="15856113" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+                    </ddsxmlobj>
+                  </control>
+                  <layoutobject>
+                    <ddsxmlobj>
+                      <property name="LogicalObject" value="dataSet.Relations[Dzienne_Statystyki_Covid_19-Plec]" vartype="8" />
+                      <property name="Virtual" value="0" vartype="11" />
+                      <property name="VisibleAP" value="0" vartype="3" />
+                    </ddsxmlobj>
+                  </layoutobject>
+                  <connector lineroutestyle="MSDDS.Rectilinear" sourceid="4" destid="2" sourceattachpoint="13" destattachpoint="32" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+                    <point x="3020" y="6041" />
+                    <point x="5420" y="6041" />
+                  </connector>
+                </ddscontrol>
+                <ddscontrol controlprogid="MSDDS.Polyline" left="5377" top="7794" logicalid="8" controlid="8" masterid="0" hint1="0" hint2="0" width="2894" height="3200" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+                  <control>
+                    <ddsxmlobj>
+                      <polyline endtypedst="6" endtypesrc="3" usercolor="15856113" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+                    </ddsxmlobj>
+                  </control>
+                  <layoutobject>
+                    <ddsxmlobj>
+                      <property name="LogicalObject" value="dataSet.Relations[Dzienne_Statystyki_Covid_19-Data]" vartype="8" />
+                      <property name="Virtual" value="0" vartype="11" />
+                      <property name="VisibleAP" value="0" vartype="3" />
+                    </ddsxmlobj>
+                  </layoutobject>
+                  <connector lineroutestyle="MSDDS.Rectilinear" sourceid="1" destid="2" sourceattachpoint="12" destattachpoint="9" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+                    <point x="5776" y="10494" />
+                    <point x="5776" y="9294" />
+                    <point x="7971" y="9294" />
+                    <point x="7971" y="8094" />
+                  </connector>
+                </ddscontrol>
+                <ddscontrol controlprogid="MSDDS.Polyline" left="8672" top="1089" logicalid="9" controlid="9" masterid="0" hint1="0" hint2="0" width="799" height="3199" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+                  <control>
+                    <ddsxmlobj>
+                      <polyline endtypedst="6" endtypesrc="3" usercolor="15856113" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+                    </ddsxmlobj>
+                  </control>
+                  <layoutobject>
+                    <ddsxmlobj>
+                      <property name="LogicalObject" value="dataSet.Relations[Dzienne_Statystyki_Covid_19-Pogoda]" vartype="8" />
+                      <property name="Virtual" value="0" vartype="11" />
+                      <property name="VisibleAP" value="0" vartype="3" />
+                    </ddsxmlobj>
+                  </layoutobject>
+                  <connector lineroutestyle="MSDDS.Rectilinear" sourceid="5" destid="2" sourceattachpoint="7" destattachpoint="12" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+                    <point x="9071" y="1588" />
+                    <point x="9071" y="3988" />
+                  </connector>
+                </ddscontrol>
+                <ddscontrol controlprogid="MSDDS.Polyline" left="9321" top="7794" logicalid="10" controlid="10" masterid="0" hint1="0" hint2="0" width="4822" height="3200" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+                  <control>
+                    <ddsxmlobj>
+                      <polyline endtypedst="6" endtypesrc="3" usercolor="15856113" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+                    </ddsxmlobj>
+                  </control>
+                  <layoutobject>
+                    <ddsxmlobj>
+                      <property name="LogicalObject" value="dataSet.Relations[Dzienne_Statystyki_Covid_19-Grupa_Wiekowa]" vartype="8" />
+                      <property name="Virtual" value="0" vartype="11" />
+                      <property name="VisibleAP" value="0" vartype="3" />
+                    </ddsxmlobj>
+                  </layoutobject>
+                  <connector lineroutestyle="MSDDS.Rectilinear" sourceid="3" destid="2" sourceattachpoint="6" destattachpoint="15" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+                    <point x="13743" y="10494" />
+                    <point x="13743" y="9294" />
+                    <point x="9621" y="9294" />
+                    <point x="9621" y="8094" />
+                  </connector>
+                </ddscontrol>
+                <ddscontrol controlprogid="MSDDS.Polyline" left="12423" top="5642" logicalid="11" controlid="11" masterid="0" hint1="0" hint2="0" width="3000" height="799" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+                  <control>
+                    <ddsxmlobj>
+                      <polyline endtypedst="6" endtypesrc="3" usercolor="15856113" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+                    </ddsxmlobj>
+                  </control>
+                  <layoutobject>
+                    <ddsxmlobj>
+                      <property name="LogicalObject" value="dataSet.Relations[Dzienne_Statystyki_Covid_19-Polozenie_Geograficzne]" vartype="8" />
+                      <property name="Virtual" value="0" vartype="11" />
+                      <property name="VisibleAP" value="0" vartype="3" />
+                    </ddsxmlobj>
+                  </layoutobject>
+                  <connector lineroutestyle="MSDDS.Rectilinear" sourceid="6" destid="2" sourceattachpoint="24" destattachpoint="33" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+                    <point x="15123" y="6041" />
+                    <point x="12723" y="6041" />
+                  </connector>
+                </ddscontrol>
+              </dds>
+</DiagramLayout>
+            <ShowRelationshipNames>False</ShowRelationshipNames>
+            <UseDiagramDefaultLayout>True</UseDiagramDefaultLayout>
+            <DiagramViewPortLeft>-19300</DiagramViewPortLeft>
+            <DiagramViewPortTop>4398</DiagramViewPortTop>
+            <DiagramBoundingLeft>0</DiagramBoundingLeft>
+            <DiagramBoundingTop>0</DiagramBoundingTop>
+            <DiagramZoom>96</DiagramZoom>
+          </Diagram>
+        </Layouts>
+      </Value>
+    </Annotation>
+  </Annotations>
+  <DataSourceID>Covid-19 South Korea DWH</DataSourceID>
+  <Schema>
+    <xs:schema id="Covid-19_x0020_South_x0020_Korea_x0020_DWH" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop">
+      <xs:element name="Covid-19_x0020_South_x0020_Korea_x0020_DWH" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:design-time-name="bb73b2d1-efdd-424d-aa88-2e2b0657c7d5">
+        <xs:complexType>
+          <xs:choice minOccurs="0" maxOccurs="unbounded">
+            <xs:element name="dbo_Data" msprop:design-time-name="dec7e5c4-6bf8-457e-bc55-bbd198903dcf" msprop:FriendlyName="Data" msprop:DbSchemaName="dbo" msprop:DbTableName="Data" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="data_id" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:design-time-name="fd86e94b-f526-4987-841a-fa2423019b1a" msprop:DbColumnName="data_id" msprop:FriendlyName="data_id" type="xs:int" />
+                  <xs:element name="rok" msprop:design-time-name="8048ce15-3e02-4f72-80d1-ec7c4a8b462e" msprop:DbColumnName="rok" msprop:FriendlyName="rok" type="xs:int" minOccurs="0" />
+                  <xs:element name="miesiac" msprop:design-time-name="eef5a08e-da10-454f-b256-27874a9ad62c" msprop:DbColumnName="miesiac" msprop:FriendlyName="miesiac" type="xs:int" minOccurs="0" />
+                  <xs:element name="dzien" msprop:design-time-name="603c3f9d-c383-4cde-8197-0d25f112702c" msprop:DbColumnName="dzien" msprop:FriendlyName="dzien" type="xs:int" minOccurs="0" />
+                  <xs:element name="pelna_data" msprop:design-time-name="3261a3cb-1571-4c4b-b0a8-a883516e9360" msprop:DbColumnName="pelna_data" msprop:FriendlyName="pelna_data" type="xs:dateTime" minOccurs="0" />
+                  <xs:element name="ilosc_wszystkich_przeprowadzonych_testow" msprop:design-time-name="28998389-d6db-4438-bd99-1bb3b5fadc76" msprop:DbColumnName="ilosc_wszystkich_przeprowadzonych_testow" msprop:FriendlyName="ilosc_wszystkich_przeprowadzonych_testow" type="xs:int" minOccurs="0" />
+                  <xs:element name="ilosc_testow_z_wynikiem_pozytywnym" msprop:design-time-name="eab6ce30-7a46-441b-b324-f2e24bdfe0be" msprop:DbColumnName="ilosc_testow_z_wynikiem_pozytywnym" msprop:FriendlyName="ilosc_testow_z_wynikiem_pozytywnym" type="xs:int" minOccurs="0" />
+                  <xs:element name="ilosc_testow_z_wynikiem_negatywnym" msprop:design-time-name="0e512a7a-f670-45b8-acf5-19dd69c5af7e" msprop:DbColumnName="ilosc_testow_z_wynikiem_negatywnym" msprop:FriendlyName="ilosc_testow_z_wynikiem_negatywnym" type="xs:int" minOccurs="0" />
+                  <xs:element name="Nazwa_x0020_miesiaca" msdata:ReadOnly="true" msprop:design-time-name="898c7b20-0b9b-4026-a29e-11ec0f2a9fae" msprop:IsLogical="True" msprop:FriendlyName="Nazwa miesiaca" msprop:Description="" msprop:DbColumnName="Nazwa miesiaca" msprop:ComputedColumnExpression="Case &#xD;&#xA;&#x9;when miesiac = 1 then 'January'&#xD;&#xA;&#x9;when miesiac = 2 then 'February'&#x9;&#xD;&#xA;&#x9;when miesiac = 3 then 'March'&#xD;&#xA;&#x9;else 'April'&#xD;&#xA;end">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="8" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_Dzienne_Statystyki_Covid_19" msprop:design-time-name="f17169ea-143b-42ed-9669-b681cb8615fd" msprop:FriendlyName="Dzienne_Statystyki_Covid_19" msprop:DbSchemaName="dbo" msprop:DbTableName="Dzienne_Statystyki_Covid_19" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="dzienne_statystyki_covid19_id" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:design-time-name="9504fe6c-e0a1-4240-bdf2-526311a5bb70" msprop:DbColumnName="dzienne_statystyki_covid19_id" msprop:FriendlyName="dzienne_statystyki_covid19_id" type="xs:int" />
+                  <xs:element name="plec_id" msprop:design-time-name="1d30fa98-3693-4c57-bcfe-f038b3e0cd83" msprop:DbColumnName="plec_id" msprop:FriendlyName="plec_id" type="xs:int" />
+                  <xs:element name="data_id" msprop:design-time-name="1815cbd4-2dba-4532-b29d-1b9223dc86eb" msprop:DbColumnName="data_id" msprop:FriendlyName="data_id" type="xs:int" />
+                  <xs:element name="pogoda_id" msprop:design-time-name="da175bb5-6de7-41ce-a1a4-213e42d3c47b" msprop:DbColumnName="pogoda_id" msprop:FriendlyName="pogoda_id" type="xs:int" />
+                  <xs:element name="grupa_wiekowa_id" msprop:design-time-name="47c5c575-f29e-4468-b058-3957ef12b4f7" msprop:DbColumnName="grupa_wiekowa_id" msprop:FriendlyName="grupa_wiekowa_id" type="xs:int" />
+                  <xs:element name="polozenie_geograficzne_id" msprop:design-time-name="abf82ea1-e32e-47cb-9677-95b391b03239" msprop:DbColumnName="polozenie_geograficzne_id" msprop:FriendlyName="polozenie_geograficzne_id" type="xs:int" />
+                  <xs:element name="liczba_potwierdzonych_przypadkow" msprop:design-time-name="9e3276ae-49d6-4808-868e-7d268f277303" msprop:DbColumnName="liczba_potwierdzonych_przypadkow" msprop:FriendlyName="liczba_potwierdzonych_przypadkow" type="xs:int" minOccurs="0" />
+                  <xs:element name="liczba_pacjentow_zwolnionych_z_kwarantanny" msprop:design-time-name="f96a2fef-b446-4758-b273-4ec5032d1e9d" msprop:DbColumnName="liczba_pacjentow_zwolnionych_z_kwarantanny" msprop:FriendlyName="liczba_pacjentow_zwolnionych_z_kwarantanny" type="xs:int" minOccurs="0" />
+                  <xs:element name="liczba_zgonow" msprop:design-time-name="62b9c805-6ec2-4ad1-8377-757928e9af9e" msprop:DbColumnName="liczba_zgonow" msprop:FriendlyName="liczba_zgonow" type="xs:int" minOccurs="0" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_Grupa_Wiekowa" msprop:design-time-name="3aafabeb-3b14-48b5-b4fb-2132ceaf812e" msprop:FriendlyName="Grupa_Wiekowa" msprop:DbSchemaName="dbo" msprop:DbTableName="Grupa_Wiekowa" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="grupa_wiekowa_id" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:design-time-name="5cd9e45c-135c-4b72-bc31-df16f855f33c" msprop:DbColumnName="grupa_wiekowa_id" msprop:FriendlyName="grupa_wiekowa_id" type="xs:int" />
+                  <xs:element name="nazwa_grupy_wiekowej" msprop:design-time-name="12eac797-e65e-43e9-8f25-311ea00c6365" msprop:DbColumnName="nazwa_grupy_wiekowej" msprop:FriendlyName="nazwa_grupy_wiekowej" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_Plec" msprop:design-time-name="d43e219e-e50d-4720-8f99-a68adea2a541" msprop:FriendlyName="Plec" msprop:DbSchemaName="dbo" msprop:DbTableName="Plec" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="plec_id" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:design-time-name="d329da4f-ec4f-4ed0-947e-0b791052d06b" msprop:DbColumnName="plec_id" msprop:FriendlyName="plec_id" type="xs:int" />
+                  <xs:element name="nazwa_plci" msprop:design-time-name="1665e269-5f05-46c5-9d8f-acfe13e212fb" msprop:DbColumnName="nazwa_plci" msprop:FriendlyName="nazwa_plci" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_Pogoda" msprop:design-time-name="96ba0535-8769-479a-9375-813eb9805ad7" msprop:FriendlyName="Pogoda" msprop:DbSchemaName="dbo" msprop:DbTableName="Pogoda" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="pogoda_id" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:design-time-name="0db41270-7bd6-4e2e-8469-d5308fd974ff" msprop:DbColumnName="pogoda_id" msprop:FriendlyName="pogoda_id" type="xs:int" />
+                  <xs:element name="kategoria_wilgotnosci" msprop:design-time-name="4df1f7ca-500d-4d3d-b4d7-af601ffa9cc3" msprop:DbColumnName="kategoria_wilgotnosci" msprop:FriendlyName="kategoria_wilgotnosci" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_Polozenie_Geograficzne" msprop:design-time-name="193918f8-3add-4e44-bca2-85a6993011a7" msprop:FriendlyName="Polozenie_Geograficzne" msprop:DbSchemaName="dbo" msprop:DbTableName="Polozenie_Geograficzne" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="polozenie_geograficzne_id" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:design-time-name="6523cdce-7cce-4acd-b9e9-5231fcd3e9d5" msprop:DbColumnName="polozenie_geograficzne_id" msprop:FriendlyName="polozenie_geograficzne_id" type="xs:int" />
+                  <xs:element name="prowincja" msprop:design-time-name="34cc1a7b-5ecc-40be-a114-ba89f03a4ebc" msprop:DbColumnName="prowincja" msprop:FriendlyName="prowincja" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="miasto" msprop:design-time-name="3b0a5994-23b1-4de9-b0b8-04dc6dbf7b34" msprop:DbColumnName="miasto" msprop:FriendlyName="miasto" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="szerokosc_geograficzna" msprop:design-time-name="6f2f5dd3-d537-480e-8546-4f49a1daeeb0" msprop:DbColumnName="szerokosc_geograficzna" msprop:FriendlyName="szerokosc_geograficzna" type="xs:decimal" minOccurs="0" />
+                  <xs:element name="dlugosc_geograficzna" msprop:design-time-name="21e5bf97-c6d0-497b-8b7e-4b60e8eefe5f" msprop:DbColumnName="dlugosc_geograficzna" msprop:FriendlyName="dlugosc_geograficzna" type="xs:decimal" minOccurs="0" />
+                  <xs:element name="ilosc_uczelni" msprop:design-time-name="93316ece-c814-4143-b0f2-b9f7a60d3829" msprop:DbColumnName="ilosc_uczelni" msprop:FriendlyName="ilosc_uczelni" type="xs:int" minOccurs="0" />
+                  <xs:element name="ilosc_przedszkoli" msprop:design-time-name="b7167b3f-a43c-4320-b41c-351982766cfd" msprop:DbColumnName="ilosc_przedszkoli" msprop:FriendlyName="ilosc_przedszkoli" type="xs:int" minOccurs="0" />
+                  <xs:element name="ilosc_szkol_podstawowych" msprop:design-time-name="6acc9030-628f-4474-b6b9-bdd7a8a9f96b" msprop:DbColumnName="ilosc_szkol_podstawowych" msprop:FriendlyName="ilosc_szkol_podstawowych" type="xs:int" minOccurs="0" />
+                  <xs:element name="ilosc_placowek_edukacyjnych" msprop:design-time-name="1a043f76-1428-44ad-849f-9b5919656d84" msprop:DbColumnName="ilosc_placowek_edukacyjnych" msprop:FriendlyName="ilosc_placowek_edukacyjnych" type="xs:int" minOccurs="0" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+          </xs:choice>
+        </xs:complexType>
+        <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_Data" />
+          <xs:field xpath="data_id" />
+        </xs:unique>
+        <xs:unique name="dbo_Dzienne_Statystyki_Covid_19_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_Dzienne_Statystyki_Covid_19" />
+          <xs:field xpath="dzienne_statystyki_covid19_id" />
+        </xs:unique>
+        <xs:unique name="dbo_Grupa_Wiekowa_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_Grupa_Wiekowa" />
+          <xs:field xpath="grupa_wiekowa_id" />
+        </xs:unique>
+        <xs:unique name="dbo_Plec_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_Plec" />
+          <xs:field xpath="plec_id" />
+        </xs:unique>
+        <xs:unique name="dbo_Pogoda_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_Pogoda" />
+          <xs:field xpath="pogoda_id" />
+        </xs:unique>
+        <xs:unique name="dbo_Polozenie_Geograficzne_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_Polozenie_Geograficzne" />
+          <xs:field xpath="polozenie_geograficzne_id" />
+        </xs:unique>
+      </xs:element>
+      <xs:annotation>
+        <xs:appinfo>
+          <msdata:Relationship name="Dzienne_Statystyki_Covid_19-Plec" msdata:parent="dbo_Plec" msdata:child="dbo_Dzienne_Statystyki_Covid_19" msdata:parentkey="plec_id" msdata:childkey="plec_id" />
+          <msdata:Relationship name="Dzienne_Statystyki_Covid_19-Data" msdata:parent="dbo_Data" msdata:child="dbo_Dzienne_Statystyki_Covid_19" msdata:parentkey="data_id" msdata:childkey="data_id" />
+          <msdata:Relationship name="Dzienne_Statystyki_Covid_19-Pogoda" msdata:parent="dbo_Pogoda" msdata:child="dbo_Dzienne_Statystyki_Covid_19" msdata:parentkey="pogoda_id" msdata:childkey="pogoda_id" />
+          <msdata:Relationship name="Dzienne_Statystyki_Covid_19-Grupa_Wiekowa" msdata:parent="dbo_Grupa_Wiekowa" msdata:child="dbo_Dzienne_Statystyki_Covid_19" msdata:parentkey="grupa_wiekowa_id" msdata:childkey="grupa_wiekowa_id" />
+          <msdata:Relationship name="Dzienne_Statystyki_Covid_19-Polozenie_Geograficzne" msdata:parent="dbo_Polozenie_Geograficzne" msdata:child="dbo_Dzienne_Statystyki_Covid_19" msdata:parentkey="polozenie_geograficzne_id" msdata:childkey="polozenie_geograficzne_id" />
+        </xs:appinfo>
+      </xs:annotation>
+    </xs:schema>
+    <Covid-19_x0020_South_x0020_Korea_x0020_DWH xmlns="" />
+  </Schema>
+</DataSourceView>
