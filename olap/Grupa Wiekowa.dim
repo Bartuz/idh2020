@@ -1,4 +1,4 @@
-﻿<Dimension xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="f3e23222-9397-430c-bef6-de01138321cd" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+﻿<Dimension xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="1b6f0aaa-79ad-410c-98ef-8a77940e6cd3" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
   <ID>Grupa Wiekowa</ID>
   <Name>Grupa Wiekowa</Name>
   <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
@@ -8,9 +8,9 @@
       <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
       <Value>
         <dds xmlns="">
-          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="2" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-7188" scrolltop="-8688" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="18606" y="18965" backcolor="2434342" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="3" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-7188" scrolltop="-8688" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="10239" y="18918" backcolor="16777215" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
             <font>
-              <ddsxmlobjectstreamwrapper binary="01ee00009001b0300100065461686f6d61" />
+              <ddsxmlobjectstreamwrapper binary="01000000900144420100065461686f6d61" />
             </font>
             <mouseicon>
               <ddsxmlobjectstreamwrapper binary="6c74000000000000" />
@@ -19,7 +19,7 @@
           <layoutmanager>
             <ddsxmlobj />
           </layoutmanager>
-          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="Grupa_Wiekowa" left="20" top="0" logicalid="1" controlid="1" masterid="0" hint1="0" hint2="0" width="4191" height="1588" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="Grupa_Wiekowa" left="-3975" top="-159" logicalid="2" controlid="1" masterid="0" hint1="0" hint2="0" width="4191" height="1588" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
             <control>
               <ddsxmlobjectstreaminitwrapper binary="000e00005f10000034060000" />
             </control>
@@ -55,50 +55,109 @@
     </Annotation>
     <Annotation>
       <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
-      <Value>20</Value>
+      <Value>-3975</Value>
     </Annotation>
     <Annotation>
       <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
-      <Value>0</Value>
+      <Value>-159</Value>
     </Annotation>
     <Annotation>
       <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
       <Value>100</Value>
     </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ARDiagramLayout</Name>
+      <Value>
+        <DiagramLayout ZoomPercent="100" ViewPortX="0" ViewPortY="0" xmlns="">
+          <Shapes NodeWidth="216">
+            <Shape Id="Grupa Wiekowa Id" Expanded="true">
+              <Attributes>
+                <Attribute Id="Grupa Wiekowa Id" />
+                <Attribute Id="Kolejnosc Nazwa Grupy Wiekowej" />
+              </Attributes>
+              <Position x="20" y="20" />
+            </Shape>
+          </Shapes>
+        </DiagramLayout>
+      </Value>
+    </Annotation>
   </Annotations>
   <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
   <State>Unprocessed</State>
-  <Source xsi:type="DataSourceViewBinding" dwd:design-time-name="402b5599-a9fe-4ec3-9ce3-88b35ba5497f">
+  <Source xsi:type="DataSourceViewBinding" dwd:design-time-name="860730dd-9970-494e-83de-28831419ed6f">
     <DataSourceViewID>Covid-19 South Korea DWH</DataSourceViewID>
   </Source>
-  <ErrorConfiguration dwd:design-time-name="5adcd155-4c3a-4258-bc68-7cab1efb3228">
+  <ErrorConfiguration dwd:design-time-name="eb3e35e3-1cc6-4f4f-b9f9-3d6704bfb1e6">
     <KeyNotFound>ReportAndStop</KeyNotFound>
     <KeyDuplicate>ReportAndStop</KeyDuplicate>
     <NullKeyNotAllowed>ReportAndStop</NullKeyNotAllowed>
   </ErrorConfiguration>
   <CurrentStorageMode>Molap</CurrentStorageMode>
   <Attributes>
-    <Attribute dwd:design-time-name="07d02202-9836-43d5-bee4-8d8bb26e6a9e">
+    <Attribute dwd:design-time-name="3315b4b6-c016-490d-9f8f-c698482946ee">
       <ID>Grupa Wiekowa Id</ID>
       <Name>Nazwa grupy wiekowej</Name>
       <Usage>Key</Usage>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="835421b2-427a-49e6-a4d8-3d74652eaf39">
+        <KeyColumn dwd:design-time-name="c39d6e6c-f33c-4bdb-91bc-4a6e344a3d62">
           <DataType>Integer</DataType>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="71401471-3c8f-4966-bae6-d8d2edd752d8">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="50bca567-19dc-42d8-b439-a40709f6e64a">
             <TableID>dbo_Grupa_Wiekowa</TableID>
             <ColumnID>grupa_wiekowa_id</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
-      <NameColumn dwd:design-time-name="a5227d37-5f3d-408a-878f-258d0ab86baf">
+      <NameColumn dwd:design-time-name="2f0c32b7-a79b-4f7a-b28b-8f16cbbd49f4">
         <DataType>WChar</DataType>
-        <DataSize>50</DataSize>
-        <Source xsi:type="ColumnBinding" dwd:design-time-name="06e3d3c2-e5dd-4c38-b7ed-26394db10693">
+        <DataSize>17</DataSize>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="84c19f89-c7be-4eed-8c6b-273f4241e170">
           <TableID>dbo_Grupa_Wiekowa</TableID>
-          <ColumnID>nazwa_grupy_wiekowej</ColumnID>
+          <ColumnID>przyjazna_nazwa_grupy_wiekowej</ColumnID>
         </Source>
       </NameColumn>
+      <AttributeRelationships>
+        <AttributeRelationship dwd:design-time-name="1df70c4a-b6e4-4ddb-a0b5-e8c37f8a07f1">
+          <AttributeID>Kolejnosc Nazwa Grupy Wiekowej</AttributeID>
+          <Name>Kolejnosc Nazwa Grupy Wiekowej</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="0d8c53bc-d62c-476a-ad51-caaeb7bc6fb3">
+          <AttributeID>Przyjazna Nazwa Grupy Wiekowej</AttributeID>
+          <Name>Przyjazna Nazwa Grupy Wiekowej</Name>
+        </AttributeRelationship>
+      </AttributeRelationships>
+      <OrderBy>AttributeKey</OrderBy>
+      <OrderByAttributeID>Kolejnosc Nazwa Grupy Wiekowej</OrderByAttributeID>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="bdc5a829-be06-4845-8db9-a9b78a66a71d">
+      <ID>Kolejnosc Nazwa Grupy Wiekowej</ID>
+      <Name>Kolejnosc Nazwa Grupy Wiekowej</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="1868a26d-69df-4a72-b187-af9e3640c977">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="76906471-45b2-405c-ac1b-ffcde8fa3627">
+            <TableID>dbo_Grupa_Wiekowa</TableID>
+            <ColumnID>kolejnosc_nazwa_grupy_wiekowej</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="cda68263-dcd6-4faf-9443-0f3667c491ef">
+      <ID>Przyjazna Nazwa Grupy Wiekowej</ID>
+      <Name>Przyjazna Nazwa Grupy Wiekowej</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="e065ee46-1cd7-4ccb-859d-7bc6e83c7eda">
+          <DataType>WChar</DataType>
+          <DataSize>17</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="a9e4755a-a11a-4c88-b0bc-6762bbc16a92">
+            <TableID>dbo_Grupa_Wiekowa</TableID>
+            <ColumnID>przyjazna_nazwa_grupy_wiekowej</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
