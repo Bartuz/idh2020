@@ -11,293 +11,11 @@
   DTS:LocaleID="1045"
   DTS:ObjectName="Package2"
   DTS:PackageType="5"
-  DTS:VersionBuild="50"
-  DTS:VersionGUID="{E2EC7F05-61F9-499D-B95F-AE88E8E3910F}">
+  DTS:ProtectionLevel="0"
+  DTS:VersionBuild="53"
+  DTS:VersionGUID="{ACB72CB4-724D-46C7-83AB-6FF7AA3A6881}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
-  <DTS:ConnectionManagers>
-    <DTS:ConnectionManager
-      DTS:refId="Package.ConnectionManagers[covid19southkorea.database.windows.net.Covid-19SouthKoreaDWH.covid@covid19southkorea]"
-      DTS:CreationName="OLEDB"
-      DTS:DTSID="{30C39B94-80DF-478B-9963-AE3527469912}"
-      DTS:ObjectName="covid19southkorea.database.windows.net.Covid-19SouthKoreaDWH.covid@covid19southkorea">
-      <DTS:ObjectData>
-        <DTS:ConnectionManager
-          DTS:ConnectionString="Data Source=covid19southkorea.database.windows.net;User ID=covid@covid19southkorea;Initial Catalog=Covid-19SouthKoreaDWH;Provider=SQLNCLI11.1;Auto Translate=False;">
-          <DTS:Password
-            DTS:Name="Password"
-            Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAvimQ3wX2i0aWlF5K7wDfMwAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAAC7IrujMtNCNLZ2+pPvus6o4qrzM/nw8oqgL7dsvbD1dAAAAAAOgAAAAAIAACAAAACvfMxlD2t3L5WUZrcVC7qNIsJu2ACc0biellT7dOaDnyAAAAC6Mj86pSUvNQ+CmLacQOwoJx3Wiihljp0nnqB/w+8VukAAAAAd00lT6Bcikw/hsCBGkgZ+xfsrmQ0XZ1Af9CdqZWgFhJQOutmzKNs/FCfZCFBCPNGe2mfVCNCdWfd8jsfkTqxq</DTS:Password>
-        </DTS:ConnectionManager>
-      </DTS:ObjectData>
-    </DTS:ConnectionManager>
-    <DTS:ConnectionManager
-      DTS:refId="Package.ConnectionManagers[Flat File Connection Manager]"
-      DTS:CreationName="FLATFILE"
-      DTS:DTSID="{D18A72E5-F932-4FFA-B5A1-5B964ABBD759}"
-      DTS:ObjectName="Flat File Connection Manager">
-      <DTS:ObjectData>
-        <DTS:ConnectionManager
-          DTS:Format="Delimited"
-          DTS:LocaleID="1045"
-          DTS:HeaderRowDelimiter="_x000D__x000A_"
-          DTS:ColumnNamesInFirstDataRow="True"
-          DTS:RowDelimiter=""
-          DTS:TextQualifier="_x003C_none_x003E_"
-          DTS:CodePage="1250"
-          DTS:ConnectionString="D:\a;x\cwiczenia\coronavirusdataset\Region.csv">
-          <DTS:FlatFileColumns>
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x002C_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="code"
-              DTS:DTSID="{C4423E4A-CE04-48C9-B9FD-28B97B2A6C5A}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x002C_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="province"
-              DTS:DTSID="{54FC54D1-0590-41C8-82D0-499F30D9A568}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x002C_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="city"
-              DTS:DTSID="{C751611E-828D-4DAE-B0E0-1747A91F7A64}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x002C_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="latitude"
-              DTS:DTSID="{0B551F4B-D0A7-47FD-B1DD-E5E806AE04E2}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x002C_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="longitude"
-              DTS:DTSID="{EBAB029D-D886-49DD-8769-9F087134BB31}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x002C_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="elementary_school_count"
-              DTS:DTSID="{0CBE9AA5-1814-44C3-B5FC-A09589F6F69D}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x002C_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="kindergarten_count"
-              DTS:DTSID="{E47FCC8A-2F59-409A-A36A-3FB8892B1C4B}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x002C_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="university_count"
-              DTS:DTSID="{52808F3D-59B8-4F1B-88D7-8D9319D26D5B}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x002C_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="academy_ratio"
-              DTS:DTSID="{FCEEF106-9CAF-43AA-86E0-27E923C49F15}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x002C_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="elderly_population_ratio"
-              DTS:DTSID="{E4FC4BEC-9502-470F-9AB0-FA6F953E2CA5}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x002C_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="elderly_alone_ratio"
-              DTS:DTSID="{58C48D51-AAAC-4DBE-8A15-B741A834EBEC}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x000D__x000A_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="nursing_home_count"
-              DTS:DTSID="{192E3465-3305-47A4-82D8-02184C9D9BF8}"
-              DTS:CreationName="" />
-          </DTS:FlatFileColumns>
-        </DTS:ConnectionManager>
-      </DTS:ObjectData>
-    </DTS:ConnectionManager>
-    <DTS:ConnectionManager
-      DTS:refId="Package.ConnectionManagers[Flat File Connection Manager 1]"
-      DTS:CreationName="FLATFILE"
-      DTS:DTSID="{5CED5765-5DC6-48DC-A373-AA2E31A6E29A}"
-      DTS:ObjectName="Flat File Connection Manager 1">
-      <DTS:ObjectData>
-        <DTS:ConnectionManager
-          DTS:Format="Delimited"
-          DTS:LocaleID="2057"
-          DTS:HeaderRowDelimiter="_x000D__x000A_"
-          DTS:ColumnNamesInFirstDataRow="True"
-          DTS:RowDelimiter=""
-          DTS:TextQualifier="_x003C_none_x003E_"
-          DTS:CodePage="1252"
-          DTS:ConnectionString="D:\PJATK_Informatyka\magisterkie\IDH\cwiczenia\coronavirusdataset\Region.csv">
-          <DTS:FlatFileColumns>
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x002C_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="code"
-              DTS:DTSID="{4A0E7367-914C-4A18-8046-8F86AE7837AF}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x002C_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="province"
-              DTS:DTSID="{7B8F39E5-B6F9-4910-A218-B9DABFA6D12A}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x002C_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="city"
-              DTS:DTSID="{E5F2772E-0D70-4FDD-80F5-68512F26430F}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x002C_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="latitude"
-              DTS:DTSID="{E8711D75-11E8-407F-84E2-26D1C669FA5A}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x002C_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="longitude"
-              DTS:DTSID="{607EB68F-14C2-43DF-8FF0-338F5B37908E}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x002C_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="elementary_school_count"
-              DTS:DTSID="{9ACC2D65-1070-4E7D-967E-24CE86876064}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x002C_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="kindergarten_count"
-              DTS:DTSID="{0EB30ABE-6D9D-46E4-87A5-13709E33392F}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x002C_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="university_count"
-              DTS:DTSID="{3D8F3A9B-4DA0-4316-A315-CDAF2155D58C}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x002C_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="academy_ratio"
-              DTS:DTSID="{7E7AF295-4C9C-404B-BDFC-098C7F8E181D}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x002C_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="elderly_population_ratio"
-              DTS:DTSID="{5A11EF08-3786-44FC-A60A-B2B20F182FD9}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x002C_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="elderly_alone_ratio"
-              DTS:DTSID="{CF0451CC-65F6-439F-9EFD-3F22708C981F}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x000D__x000A_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="nursing_home_count"
-              DTS:DTSID="{6405671E-5B85-4BAF-ADB7-3CE79D7906BC}"
-              DTS:CreationName="" />
-          </DTS:FlatFileColumns>
-        </DTS:ConnectionManager>
-      </DTS:ObjectData>
-    </DTS:ConnectionManager>
-    <DTS:ConnectionManager
-      DTS:refId="Package.ConnectionManagers[localhost.IDH]"
-      DTS:CreationName="OLEDB"
-      DTS:DTSID="{968CADF8-DEF0-45D5-885F-F74398ABA5A6}"
-      DTS:ObjectName="localhost.IDH">
-      <DTS:ObjectData>
-        <DTS:ConnectionManager
-          DTS:ConnectionString="Data Source=localhost;Initial Catalog=IDH;Provider=MSOLEDBSQL.1;Integrated Security=SSPI;Auto Translate=False;" />
-      </DTS:ObjectData>
-    </DTS:ConnectionManager>
-  </DTS:ConnectionManagers>
   <DTS:Variables />
   <DTS:Executables>
     <DTS:Executable
@@ -313,7 +31,7 @@
       <DTS:Variables />
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
-          SQLTask:Connection="{30C39B94-80DF-478B-9963-AE3527469912}"
+          SQLTask:Connection="{52D2FB58-7BB0-47DA-8698-4BD065BFE199}"
           SQLTask:SqlStatementSource="TRUNCATE TABLE [dbo].[Polozenie_Geograficzne];&#xA;" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
       </DTS:ObjectData>
     </DTS:Executable>
@@ -447,17 +165,17 @@
                   <externalMetadataColumns />
                 </output>
                 <output
-                  refId="Package\Przepływ danych do Położenie Geograficzne\Duplikuj dane.Outputs[Multicast Output 3]"
+                  refId="Package\Przepływ danych do Położenie Geograficzne\Duplikuj dane.Outputs[Multicast Output 1]"
                   deleteOutputOnPathDetached="true"
-                  name="Multicast Output 3"
+                  name="Multicast Output 1"
                   synchronousInputId="Package\Przepływ danych do Położenie Geograficzne\Duplikuj dane.Inputs[Multicast Input 1]">
                   <externalMetadataColumns />
                 </output>
                 <output
-                  refId="Package\Przepływ danych do Położenie Geograficzne\Duplikuj dane.Outputs[Multicast Output 1]"
+                  refId="Package\Przepływ danych do Położenie Geograficzne\Duplikuj dane.Outputs[Multicast Output 3]"
                   dangling="true"
                   deleteOutputOnPathDetached="true"
-                  name="Multicast Output 1"
+                  name="Multicast Output 3"
                   synchronousInputId="Package\Przepływ danych do Położenie Geograficzne\Duplikuj dane.Inputs[Multicast Input 1]">
                   <externalMetadataColumns />
                 </output>
@@ -478,7 +196,7 @@
                   <inputColumns>
                     <inputColumn
                       refId="Package\Przepływ danych do Położenie Geograficzne\Pozbądź się rekordu reprezentującego całą Koreę (Korea).Inputs[Conditional Split Input].Columns[province]"
-                      cachedCodepage="1252"
+                      cachedCodepage="1250"
                       cachedDataType="str"
                       cachedLength="50"
                       cachedName="province"
@@ -568,18 +286,18 @@
                   <inputColumns>
                     <inputColumn
                       refId="Package\Przepływ danych do Położenie Geograficzne\Przekonwertuj typ na WSTR.Inputs[Data Conversion Input].Columns[province]"
-                      cachedCodepage="1252"
+                      cachedCodepage="1250"
                       cachedDataType="str"
                       cachedLength="50"
                       cachedName="province"
-                      lineageId="Package\Przepływ danych do Położenie Geograficzne\Zbierz do kupy.Outputs[Union All Output 1].Columns[province]" />
+                      lineageId="Package\Przepływ danych do Położenie Geograficzne\Union All.Outputs[Union All Output 1].Columns[province]" />
                     <inputColumn
                       refId="Package\Przepływ danych do Położenie Geograficzne\Przekonwertuj typ na WSTR.Inputs[Data Conversion Input].Columns[city]"
-                      cachedCodepage="1252"
+                      cachedCodepage="1250"
                       cachedDataType="str"
                       cachedLength="50"
                       cachedName="city"
-                      lineageId="Package\Przepływ danych do Położenie Geograficzne\Zbierz do kupy.Outputs[Union All Output 1].Columns[city]" />
+                      lineageId="Package\Przepływ danych do Położenie Geograficzne\Union All.Outputs[Union All Output 1].Columns[city]" />
                   </inputColumns>
                   <externalMetadataColumns />
                 </input>
@@ -605,7 +323,7 @@
                           containsID="true"
                           dataType="System.Int32"
                           description="Specifies the input column used as the source of data for the conversion."
-                          name="SourceInputColumnLineageID">#{Package\Przepływ danych do Położenie Geograficzne\Zbierz do kupy.Outputs[Union All Output 1].Columns[province]}</property>
+                          name="SourceInputColumnLineageID">#{Package\Przepływ danych do Położenie Geograficzne\Union All.Outputs[Union All Output 1].Columns[province]}</property>
                         <property
                           dataType="System.Boolean"
                           description="Indicates whether the column uses the faster, locale-neutral parsing routines."
@@ -626,7 +344,7 @@
                           containsID="true"
                           dataType="System.Int32"
                           description="Specifies the input column used as the source of data for the conversion."
-                          name="SourceInputColumnLineageID">#{Package\Przepływ danych do Położenie Geograficzne\Zbierz do kupy.Outputs[Union All Output 1].Columns[city]}</property>
+                          name="SourceInputColumnLineageID">#{Package\Przepływ danych do Położenie Geograficzne\Union All.Outputs[Union All Output 1].Columns[city]}</property>
                         <property
                           dataType="System.Boolean"
                           description="Indicates whether the column uses the faster, locale-neutral parsing routines."
@@ -675,7 +393,7 @@
                   <inputColumns>
                     <inputColumn
                       refId="Package\Przepływ danych do Położenie Geograficzne\Stwórz prowincje z &quot;unknown city&quot;.Inputs[Derived Column Input].Columns[city]"
-                      cachedCodepage="1252"
+                      cachedCodepage="1250"
                       cachedDataType="str"
                       cachedLength="50"
                       cachedName="city"
@@ -701,7 +419,7 @@
                     </inputColumn>
                     <inputColumn
                       refId="Package\Przepływ danych do Położenie Geograficzne\Stwórz prowincje z &quot;unknown city&quot;.Inputs[Derived Column Input].Columns[latitude]"
-                      cachedCodepage="1252"
+                      cachedCodepage="1250"
                       cachedDataType="str"
                       cachedLength="50"
                       cachedName="latitude"
@@ -726,7 +444,7 @@
                     </inputColumn>
                     <inputColumn
                       refId="Package\Przepływ danych do Położenie Geograficzne\Stwórz prowincje z &quot;unknown city&quot;.Inputs[Derived Column Input].Columns[longitude]"
-                      cachedCodepage="1252"
+                      cachedCodepage="1250"
                       cachedDataType="str"
                       cachedLength="50"
                       cachedName="longitude"
@@ -751,7 +469,7 @@
                     </inputColumn>
                     <inputColumn
                       refId="Package\Przepływ danych do Położenie Geograficzne\Stwórz prowincje z &quot;unknown city&quot;.Inputs[Derived Column Input].Columns[elementary_school_count]"
-                      cachedCodepage="1252"
+                      cachedCodepage="1250"
                       cachedDataType="str"
                       cachedLength="50"
                       cachedName="elementary_school_count"
@@ -776,7 +494,7 @@
                     </inputColumn>
                     <inputColumn
                       refId="Package\Przepływ danych do Położenie Geograficzne\Stwórz prowincje z &quot;unknown city&quot;.Inputs[Derived Column Input].Columns[kindergarten_count]"
-                      cachedCodepage="1252"
+                      cachedCodepage="1250"
                       cachedDataType="str"
                       cachedLength="50"
                       cachedName="kindergarten_count"
@@ -801,7 +519,7 @@
                     </inputColumn>
                     <inputColumn
                       refId="Package\Przepływ danych do Położenie Geograficzne\Stwórz prowincje z &quot;unknown city&quot;.Inputs[Derived Column Input].Columns[university_count]"
-                      cachedCodepage="1252"
+                      cachedCodepage="1250"
                       cachedDataType="str"
                       cachedLength="50"
                       cachedName="university_count"
@@ -887,6 +605,630 @@
               </outputs>
             </component>
             <component
+              refId="Package\Przepływ danych do Położenie Geograficzne\Union All"
+              componentClassID="Microsoft.UnionAll"
+              contactInfo="Union All;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
+              description="Combines rows from multiple data flows without sorting. For example, add rows back to a data flow after correction of errors. If sorting is important, we recommend using the Merge transformation."
+              name="Union All"
+              version="1">
+              <inputs>
+                <input
+                  refId="Package\Przepływ danych do Położenie Geograficzne\Union All.Inputs[Union All Input 1]"
+                  name="Union All Input 1">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Przepływ danych do Położenie Geograficzne\Union All.Inputs[Union All Input 1].Columns[code]"
+                      cachedCodepage="1250"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="code"
+                      lineageId="Package\Przepływ danych do Położenie Geograficzne\Usuń duplikaty par city-province (w naszym datasecie nie ma).Outputs[Sort Output].Columns[code]">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Output column lineage ID"
+                          name="OutputColumnLineageID">#{Package\Przepływ danych do Położenie Geograficzne\Union All.Outputs[Union All Output 1].Columns[code]}</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Przepływ danych do Położenie Geograficzne\Union All.Inputs[Union All Input 1].Columns[province]"
+                      cachedCodepage="1250"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="province"
+                      cachedSortKeyPosition="1"
+                      lineageId="Package\Przepływ danych do Położenie Geograficzne\Usuń duplikaty par city-province (w naszym datasecie nie ma).Outputs[Sort Output].Columns[province]">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Output column lineage ID"
+                          name="OutputColumnLineageID">#{Package\Przepływ danych do Położenie Geograficzne\Union All.Outputs[Union All Output 1].Columns[province]}</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Przepływ danych do Położenie Geograficzne\Union All.Inputs[Union All Input 1].Columns[city]"
+                      cachedCodepage="1250"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="city"
+                      cachedSortKeyPosition="2"
+                      lineageId="Package\Przepływ danych do Położenie Geograficzne\Usuń duplikaty par city-province (w naszym datasecie nie ma).Outputs[Sort Output].Columns[city]">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Output column lineage ID"
+                          name="OutputColumnLineageID">#{Package\Przepływ danych do Położenie Geograficzne\Union All.Outputs[Union All Output 1].Columns[city]}</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Przepływ danych do Położenie Geograficzne\Union All.Inputs[Union All Input 1].Columns[latitude]"
+                      cachedCodepage="1250"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="latitude"
+                      lineageId="Package\Przepływ danych do Położenie Geograficzne\Usuń duplikaty par city-province (w naszym datasecie nie ma).Outputs[Sort Output].Columns[latitude]">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Output column lineage ID"
+                          name="OutputColumnLineageID">#{Package\Przepływ danych do Położenie Geograficzne\Union All.Outputs[Union All Output 1].Columns[latitude]}</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Przepływ danych do Położenie Geograficzne\Union All.Inputs[Union All Input 1].Columns[longitude]"
+                      cachedCodepage="1250"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="longitude"
+                      lineageId="Package\Przepływ danych do Położenie Geograficzne\Usuń duplikaty par city-province (w naszym datasecie nie ma).Outputs[Sort Output].Columns[longitude]">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Output column lineage ID"
+                          name="OutputColumnLineageID">#{Package\Przepływ danych do Położenie Geograficzne\Union All.Outputs[Union All Output 1].Columns[longitude]}</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Przepływ danych do Położenie Geograficzne\Union All.Inputs[Union All Input 1].Columns[elementary_school_count]"
+                      cachedCodepage="1250"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="elementary_school_count"
+                      lineageId="Package\Przepływ danych do Położenie Geograficzne\Usuń duplikaty par city-province (w naszym datasecie nie ma).Outputs[Sort Output].Columns[elementary_school_count]">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Output column lineage ID"
+                          name="OutputColumnLineageID">#{Package\Przepływ danych do Położenie Geograficzne\Union All.Outputs[Union All Output 1].Columns[elementary_school_count]}</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Przepływ danych do Położenie Geograficzne\Union All.Inputs[Union All Input 1].Columns[kindergarten_count]"
+                      cachedCodepage="1250"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="kindergarten_count"
+                      lineageId="Package\Przepływ danych do Położenie Geograficzne\Usuń duplikaty par city-province (w naszym datasecie nie ma).Outputs[Sort Output].Columns[kindergarten_count]">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Output column lineage ID"
+                          name="OutputColumnLineageID">#{Package\Przepływ danych do Położenie Geograficzne\Union All.Outputs[Union All Output 1].Columns[kindergarten_count]}</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Przepływ danych do Położenie Geograficzne\Union All.Inputs[Union All Input 1].Columns[university_count]"
+                      cachedCodepage="1250"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="university_count"
+                      lineageId="Package\Przepływ danych do Położenie Geograficzne\Usuń duplikaty par city-province (w naszym datasecie nie ma).Outputs[Sort Output].Columns[university_count]">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Output column lineage ID"
+                          name="OutputColumnLineageID">#{Package\Przepływ danych do Położenie Geograficzne\Union All.Outputs[Union All Output 1].Columns[university_count]}</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Przepływ danych do Położenie Geograficzne\Union All.Inputs[Union All Input 1].Columns[academy_ratio]"
+                      cachedCodepage="1250"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="academy_ratio"
+                      lineageId="Package\Przepływ danych do Położenie Geograficzne\Usuń duplikaty par city-province (w naszym datasecie nie ma).Outputs[Sort Output].Columns[academy_ratio]">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Output column lineage ID"
+                          name="OutputColumnLineageID">#{Package\Przepływ danych do Położenie Geograficzne\Union All.Outputs[Union All Output 1].Columns[academy_ratio]}</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Przepływ danych do Położenie Geograficzne\Union All.Inputs[Union All Input 1].Columns[elderly_population_ratio]"
+                      cachedCodepage="1250"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="elderly_population_ratio"
+                      lineageId="Package\Przepływ danych do Położenie Geograficzne\Usuń duplikaty par city-province (w naszym datasecie nie ma).Outputs[Sort Output].Columns[elderly_population_ratio]">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Output column lineage ID"
+                          name="OutputColumnLineageID">#{Package\Przepływ danych do Położenie Geograficzne\Union All.Outputs[Union All Output 1].Columns[elderly_population_ratio]}</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Przepływ danych do Położenie Geograficzne\Union All.Inputs[Union All Input 1].Columns[elderly_alone_ratio]"
+                      cachedCodepage="1250"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="elderly_alone_ratio"
+                      lineageId="Package\Przepływ danych do Położenie Geograficzne\Usuń duplikaty par city-province (w naszym datasecie nie ma).Outputs[Sort Output].Columns[elderly_alone_ratio]">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Output column lineage ID"
+                          name="OutputColumnLineageID">#{Package\Przepływ danych do Położenie Geograficzne\Union All.Outputs[Union All Output 1].Columns[elderly_alone_ratio]}</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Przepływ danych do Położenie Geograficzne\Union All.Inputs[Union All Input 1].Columns[nursing_home_count]"
+                      cachedCodepage="1250"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="nursing_home_count"
+                      lineageId="Package\Przepływ danych do Położenie Geograficzne\Usuń duplikaty par city-province (w naszym datasecie nie ma).Outputs[Sort Output].Columns[nursing_home_count]">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Output column lineage ID"
+                          name="OutputColumnLineageID">#{Package\Przepływ danych do Położenie Geograficzne\Union All.Outputs[Union All Output 1].Columns[nursing_home_count]}</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Przepływ danych do Położenie Geograficzne\Union All.Inputs[Union All Input 1].Columns[Copy of kindergarten_count]"
+                      cachedDataType="numeric"
+                      cachedName="Copy of kindergarten_count"
+                      cachedPrecision="18"
+                      lineageId="Package\Przepływ danych do Położenie Geograficzne\Usuń duplikaty par city-province (w naszym datasecie nie ma).Outputs[Sort Output].Columns[Copy of kindergarten_count]">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Output column lineage ID"
+                          name="OutputColumnLineageID">#{Package\Przepływ danych do Położenie Geograficzne\Union All.Outputs[Union All Output 1].Columns[Copy of kindergarten_count]}</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Przepływ danych do Położenie Geograficzne\Union All.Inputs[Union All Input 1].Columns[Copy of university_count]"
+                      cachedDataType="numeric"
+                      cachedName="Copy of university_count"
+                      cachedPrecision="18"
+                      lineageId="Package\Przepływ danych do Położenie Geograficzne\Usuń duplikaty par city-province (w naszym datasecie nie ma).Outputs[Sort Output].Columns[Copy of university_count]">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Output column lineage ID"
+                          name="OutputColumnLineageID">#{Package\Przepływ danych do Położenie Geograficzne\Union All.Outputs[Union All Output 1].Columns[Copy of university_count]}</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Przepływ danych do Położenie Geograficzne\Union All.Inputs[Union All Input 1].Columns[Copy of elementary_school_count]"
+                      cachedDataType="numeric"
+                      cachedName="Copy of elementary_school_count"
+                      cachedPrecision="18"
+                      lineageId="Package\Przepływ danych do Położenie Geograficzne\Usuń duplikaty par city-province (w naszym datasecie nie ma).Outputs[Sort Output].Columns[Copy of elementary_school_count]">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Output column lineage ID"
+                          name="OutputColumnLineageID">#{Package\Przepływ danych do Położenie Geograficzne\Union All.Outputs[Union All Output 1].Columns[Copy of elementary_school_count]}</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Przepływ danych do Położenie Geograficzne\Union All.Inputs[Union All Input 1].Columns[ilosc_placowek_edukacyjnych]"
+                      cachedDataType="numeric"
+                      cachedName="ilosc_placowek_edukacyjnych"
+                      cachedPrecision="20"
+                      lineageId="Package\Przepływ danych do Położenie Geograficzne\Usuń duplikaty par city-province (w naszym datasecie nie ma).Outputs[Sort Output].Columns[ilosc_placowek_edukacyjnych]">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Output column lineage ID"
+                          name="OutputColumnLineageID">#{Package\Przepływ danych do Położenie Geograficzne\Union All.Outputs[Union All Output 1].Columns[ilosc_placowek_edukacyjnych]}</property>
+                      </properties>
+                    </inputColumn>
+                  </inputColumns>
+                  <externalMetadataColumns />
+                </input>
+                <input
+                  refId="Package\Przepływ danych do Położenie Geograficzne\Union All.Inputs[Union All Input 2]"
+                  hasSideEffects="true"
+                  name="Union All Input 2">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Przepływ danych do Położenie Geograficzne\Union All.Inputs[Union All Input 2].Columns[code]"
+                      cachedCodepage="1250"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="code"
+                      lineageId="Package\Przepływ danych do Położenie Geograficzne\Usuń duplikaty prowincji.Outputs[Sort Output].Columns[code]">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Output column lineage ID"
+                          name="OutputColumnLineageID">#{Package\Przepływ danych do Położenie Geograficzne\Union All.Outputs[Union All Output 1].Columns[code]}</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Przepływ danych do Położenie Geograficzne\Union All.Inputs[Union All Input 2].Columns[province]"
+                      cachedCodepage="1250"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="province"
+                      cachedSortKeyPosition="1"
+                      lineageId="Package\Przepływ danych do Położenie Geograficzne\Usuń duplikaty prowincji.Outputs[Sort Output].Columns[province]">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Output column lineage ID"
+                          name="OutputColumnLineageID">#{Package\Przepływ danych do Położenie Geograficzne\Union All.Outputs[Union All Output 1].Columns[province]}</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Przepływ danych do Położenie Geograficzne\Union All.Inputs[Union All Input 2].Columns[city]"
+                      cachedCodepage="1250"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="city"
+                      lineageId="Package\Przepływ danych do Położenie Geograficzne\Usuń duplikaty prowincji.Outputs[Sort Output].Columns[city]">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Output column lineage ID"
+                          name="OutputColumnLineageID">#{Package\Przepływ danych do Położenie Geograficzne\Union All.Outputs[Union All Output 1].Columns[city]}</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Przepływ danych do Położenie Geograficzne\Union All.Inputs[Union All Input 2].Columns[latitude]"
+                      cachedCodepage="1250"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="latitude"
+                      lineageId="Package\Przepływ danych do Położenie Geograficzne\Usuń duplikaty prowincji.Outputs[Sort Output].Columns[latitude]">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Output column lineage ID"
+                          name="OutputColumnLineageID">#{Package\Przepływ danych do Położenie Geograficzne\Union All.Outputs[Union All Output 1].Columns[latitude]}</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Przepływ danych do Położenie Geograficzne\Union All.Inputs[Union All Input 2].Columns[longitude]"
+                      cachedCodepage="1250"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="longitude"
+                      lineageId="Package\Przepływ danych do Położenie Geograficzne\Usuń duplikaty prowincji.Outputs[Sort Output].Columns[longitude]">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Output column lineage ID"
+                          name="OutputColumnLineageID">#{Package\Przepływ danych do Położenie Geograficzne\Union All.Outputs[Union All Output 1].Columns[longitude]}</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Przepływ danych do Położenie Geograficzne\Union All.Inputs[Union All Input 2].Columns[elementary_school_count]"
+                      cachedCodepage="1250"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="elementary_school_count"
+                      lineageId="Package\Przepływ danych do Położenie Geograficzne\Usuń duplikaty prowincji.Outputs[Sort Output].Columns[elementary_school_count]">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Output column lineage ID"
+                          name="OutputColumnLineageID">#{Package\Przepływ danych do Położenie Geograficzne\Union All.Outputs[Union All Output 1].Columns[elementary_school_count]}</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Przepływ danych do Położenie Geograficzne\Union All.Inputs[Union All Input 2].Columns[kindergarten_count]"
+                      cachedCodepage="1250"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="kindergarten_count"
+                      lineageId="Package\Przepływ danych do Położenie Geograficzne\Usuń duplikaty prowincji.Outputs[Sort Output].Columns[kindergarten_count]">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Output column lineage ID"
+                          name="OutputColumnLineageID">#{Package\Przepływ danych do Położenie Geograficzne\Union All.Outputs[Union All Output 1].Columns[kindergarten_count]}</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Przepływ danych do Położenie Geograficzne\Union All.Inputs[Union All Input 2].Columns[university_count]"
+                      cachedCodepage="1250"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="university_count"
+                      lineageId="Package\Przepływ danych do Położenie Geograficzne\Usuń duplikaty prowincji.Outputs[Sort Output].Columns[university_count]">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Output column lineage ID"
+                          name="OutputColumnLineageID">#{Package\Przepływ danych do Położenie Geograficzne\Union All.Outputs[Union All Output 1].Columns[university_count]}</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Przepływ danych do Położenie Geograficzne\Union All.Inputs[Union All Input 2].Columns[academy_ratio]"
+                      cachedCodepage="1250"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="academy_ratio"
+                      lineageId="Package\Przepływ danych do Położenie Geograficzne\Usuń duplikaty prowincji.Outputs[Sort Output].Columns[academy_ratio]">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Output column lineage ID"
+                          name="OutputColumnLineageID">#{Package\Przepływ danych do Położenie Geograficzne\Union All.Outputs[Union All Output 1].Columns[academy_ratio]}</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Przepływ danych do Położenie Geograficzne\Union All.Inputs[Union All Input 2].Columns[elderly_population_ratio]"
+                      cachedCodepage="1250"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="elderly_population_ratio"
+                      lineageId="Package\Przepływ danych do Położenie Geograficzne\Usuń duplikaty prowincji.Outputs[Sort Output].Columns[elderly_population_ratio]">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Output column lineage ID"
+                          name="OutputColumnLineageID">#{Package\Przepływ danych do Położenie Geograficzne\Union All.Outputs[Union All Output 1].Columns[elderly_population_ratio]}</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Przepływ danych do Położenie Geograficzne\Union All.Inputs[Union All Input 2].Columns[elderly_alone_ratio]"
+                      cachedCodepage="1250"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="elderly_alone_ratio"
+                      lineageId="Package\Przepływ danych do Położenie Geograficzne\Usuń duplikaty prowincji.Outputs[Sort Output].Columns[elderly_alone_ratio]">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Output column lineage ID"
+                          name="OutputColumnLineageID">#{Package\Przepływ danych do Położenie Geograficzne\Union All.Outputs[Union All Output 1].Columns[elderly_alone_ratio]}</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Przepływ danych do Położenie Geograficzne\Union All.Inputs[Union All Input 2].Columns[nursing_home_count]"
+                      cachedCodepage="1250"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="nursing_home_count"
+                      lineageId="Package\Przepływ danych do Położenie Geograficzne\Usuń duplikaty prowincji.Outputs[Sort Output].Columns[nursing_home_count]">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Output column lineage ID"
+                          name="OutputColumnLineageID">#{Package\Przepływ danych do Położenie Geograficzne\Union All.Outputs[Union All Output 1].Columns[nursing_home_count]}</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Przepływ danych do Położenie Geograficzne\Union All.Inputs[Union All Input 2].Columns[Copy of kindergarten_count]"
+                      cachedDataType="numeric"
+                      cachedName="Copy of kindergarten_count"
+                      cachedPrecision="18"
+                      lineageId="Package\Przepływ danych do Położenie Geograficzne\Usuń duplikaty prowincji.Outputs[Sort Output].Columns[Copy of kindergarten_count]">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Output column lineage ID"
+                          name="OutputColumnLineageID">#{Package\Przepływ danych do Położenie Geograficzne\Union All.Outputs[Union All Output 1].Columns[Copy of kindergarten_count]}</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Przepływ danych do Położenie Geograficzne\Union All.Inputs[Union All Input 2].Columns[Copy of university_count]"
+                      cachedDataType="numeric"
+                      cachedName="Copy of university_count"
+                      cachedPrecision="18"
+                      lineageId="Package\Przepływ danych do Położenie Geograficzne\Usuń duplikaty prowincji.Outputs[Sort Output].Columns[Copy of university_count]">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Output column lineage ID"
+                          name="OutputColumnLineageID">#{Package\Przepływ danych do Położenie Geograficzne\Union All.Outputs[Union All Output 1].Columns[Copy of university_count]}</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Przepływ danych do Położenie Geograficzne\Union All.Inputs[Union All Input 2].Columns[Copy of elementary_school_count]"
+                      cachedDataType="numeric"
+                      cachedName="Copy of elementary_school_count"
+                      cachedPrecision="18"
+                      lineageId="Package\Przepływ danych do Położenie Geograficzne\Usuń duplikaty prowincji.Outputs[Sort Output].Columns[Copy of elementary_school_count]">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Output column lineage ID"
+                          name="OutputColumnLineageID">#{Package\Przepływ danych do Położenie Geograficzne\Union All.Outputs[Union All Output 1].Columns[Copy of elementary_school_count]}</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Przepływ danych do Położenie Geograficzne\Union All.Inputs[Union All Input 2].Columns[ilosc_placowek_edukacyjnych]"
+                      cachedDataType="numeric"
+                      cachedName="ilosc_placowek_edukacyjnych"
+                      cachedPrecision="20"
+                      lineageId="Package\Przepływ danych do Położenie Geograficzne\Usuń duplikaty prowincji.Outputs[Sort Output].Columns[ilosc_placowek_edukacyjnych]">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Output column lineage ID"
+                          name="OutputColumnLineageID">#{Package\Przepływ danych do Położenie Geograficzne\Union All.Outputs[Union All Output 1].Columns[ilosc_placowek_edukacyjnych]}</property>
+                      </properties>
+                    </inputColumn>
+                  </inputColumns>
+                  <externalMetadataColumns />
+                </input>
+                <input
+                  refId="Package\Przepływ danych do Położenie Geograficzne\Union All.Inputs[Union All Input 3]"
+                  dangling="true"
+                  hasSideEffects="true"
+                  name="Union All Input 3">
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Przepływ danych do Położenie Geograficzne\Union All.Outputs[Union All Output 1]"
+                  name="Union All Output 1">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Przepływ danych do Położenie Geograficzne\Union All.Outputs[Union All Output 1].Columns[code]"
+                      codePage="1250"
+                      dataType="str"
+                      length="50"
+                      lineageId="Package\Przepływ danych do Położenie Geograficzne\Union All.Outputs[Union All Output 1].Columns[code]"
+                      name="code" />
+                    <outputColumn
+                      refId="Package\Przepływ danych do Położenie Geograficzne\Union All.Outputs[Union All Output 1].Columns[province]"
+                      codePage="1250"
+                      dataType="str"
+                      length="50"
+                      lineageId="Package\Przepływ danych do Położenie Geograficzne\Union All.Outputs[Union All Output 1].Columns[province]"
+                      name="province" />
+                    <outputColumn
+                      refId="Package\Przepływ danych do Położenie Geograficzne\Union All.Outputs[Union All Output 1].Columns[city]"
+                      codePage="1250"
+                      dataType="str"
+                      length="50"
+                      lineageId="Package\Przepływ danych do Położenie Geograficzne\Union All.Outputs[Union All Output 1].Columns[city]"
+                      name="city" />
+                    <outputColumn
+                      refId="Package\Przepływ danych do Położenie Geograficzne\Union All.Outputs[Union All Output 1].Columns[latitude]"
+                      codePage="1250"
+                      dataType="str"
+                      length="50"
+                      lineageId="Package\Przepływ danych do Położenie Geograficzne\Union All.Outputs[Union All Output 1].Columns[latitude]"
+                      name="latitude" />
+                    <outputColumn
+                      refId="Package\Przepływ danych do Położenie Geograficzne\Union All.Outputs[Union All Output 1].Columns[longitude]"
+                      codePage="1250"
+                      dataType="str"
+                      length="50"
+                      lineageId="Package\Przepływ danych do Położenie Geograficzne\Union All.Outputs[Union All Output 1].Columns[longitude]"
+                      name="longitude" />
+                    <outputColumn
+                      refId="Package\Przepływ danych do Położenie Geograficzne\Union All.Outputs[Union All Output 1].Columns[elementary_school_count]"
+                      codePage="1250"
+                      dataType="str"
+                      length="50"
+                      lineageId="Package\Przepływ danych do Położenie Geograficzne\Union All.Outputs[Union All Output 1].Columns[elementary_school_count]"
+                      name="elementary_school_count" />
+                    <outputColumn
+                      refId="Package\Przepływ danych do Położenie Geograficzne\Union All.Outputs[Union All Output 1].Columns[kindergarten_count]"
+                      codePage="1250"
+                      dataType="str"
+                      length="50"
+                      lineageId="Package\Przepływ danych do Położenie Geograficzne\Union All.Outputs[Union All Output 1].Columns[kindergarten_count]"
+                      name="kindergarten_count" />
+                    <outputColumn
+                      refId="Package\Przepływ danych do Położenie Geograficzne\Union All.Outputs[Union All Output 1].Columns[university_count]"
+                      codePage="1250"
+                      dataType="str"
+                      length="50"
+                      lineageId="Package\Przepływ danych do Położenie Geograficzne\Union All.Outputs[Union All Output 1].Columns[university_count]"
+                      name="university_count" />
+                    <outputColumn
+                      refId="Package\Przepływ danych do Położenie Geograficzne\Union All.Outputs[Union All Output 1].Columns[academy_ratio]"
+                      codePage="1250"
+                      dataType="str"
+                      length="50"
+                      lineageId="Package\Przepływ danych do Położenie Geograficzne\Union All.Outputs[Union All Output 1].Columns[academy_ratio]"
+                      name="academy_ratio" />
+                    <outputColumn
+                      refId="Package\Przepływ danych do Położenie Geograficzne\Union All.Outputs[Union All Output 1].Columns[elderly_population_ratio]"
+                      codePage="1250"
+                      dataType="str"
+                      length="50"
+                      lineageId="Package\Przepływ danych do Położenie Geograficzne\Union All.Outputs[Union All Output 1].Columns[elderly_population_ratio]"
+                      name="elderly_population_ratio" />
+                    <outputColumn
+                      refId="Package\Przepływ danych do Położenie Geograficzne\Union All.Outputs[Union All Output 1].Columns[elderly_alone_ratio]"
+                      codePage="1250"
+                      dataType="str"
+                      length="50"
+                      lineageId="Package\Przepływ danych do Położenie Geograficzne\Union All.Outputs[Union All Output 1].Columns[elderly_alone_ratio]"
+                      name="elderly_alone_ratio" />
+                    <outputColumn
+                      refId="Package\Przepływ danych do Położenie Geograficzne\Union All.Outputs[Union All Output 1].Columns[nursing_home_count]"
+                      codePage="1250"
+                      dataType="str"
+                      length="50"
+                      lineageId="Package\Przepływ danych do Położenie Geograficzne\Union All.Outputs[Union All Output 1].Columns[nursing_home_count]"
+                      name="nursing_home_count" />
+                    <outputColumn
+                      refId="Package\Przepływ danych do Położenie Geograficzne\Union All.Outputs[Union All Output 1].Columns[Copy of kindergarten_count]"
+                      dataType="numeric"
+                      lineageId="Package\Przepływ danych do Położenie Geograficzne\Union All.Outputs[Union All Output 1].Columns[Copy of kindergarten_count]"
+                      name="Copy of kindergarten_count"
+                      precision="18" />
+                    <outputColumn
+                      refId="Package\Przepływ danych do Położenie Geograficzne\Union All.Outputs[Union All Output 1].Columns[Copy of university_count]"
+                      dataType="numeric"
+                      lineageId="Package\Przepływ danych do Położenie Geograficzne\Union All.Outputs[Union All Output 1].Columns[Copy of university_count]"
+                      name="Copy of university_count"
+                      precision="18" />
+                    <outputColumn
+                      refId="Package\Przepływ danych do Położenie Geograficzne\Union All.Outputs[Union All Output 1].Columns[Copy of elementary_school_count]"
+                      dataType="numeric"
+                      lineageId="Package\Przepływ danych do Położenie Geograficzne\Union All.Outputs[Union All Output 1].Columns[Copy of elementary_school_count]"
+                      name="Copy of elementary_school_count"
+                      precision="18" />
+                    <outputColumn
+                      refId="Package\Przepływ danych do Położenie Geograficzne\Union All.Outputs[Union All Output 1].Columns[ilosc_placowek_edukacyjnych]"
+                      dataType="numeric"
+                      lineageId="Package\Przepływ danych do Położenie Geograficzne\Union All.Outputs[Union All Output 1].Columns[ilosc_placowek_edukacyjnych]"
+                      name="ilosc_placowek_edukacyjnych"
+                      precision="20" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
               refId="Package\Przepływ danych do Położenie Geograficzne\Usuń duplikaty par city-province (w naszym datasecie nie ma)"
               componentClassID="Microsoft.Sort"
               contactInfo="Sort;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
@@ -911,7 +1253,7 @@
                   <inputColumns>
                     <inputColumn
                       refId="Package\Przepływ danych do Położenie Geograficzne\Usuń duplikaty par city-province (w naszym datasecie nie ma).Inputs[Sort Input].Columns[code]"
-                      cachedCodepage="1252"
+                      cachedCodepage="1250"
                       cachedDataType="str"
                       cachedLength="50"
                       cachedName="code"
@@ -929,7 +1271,7 @@
                     </inputColumn>
                     <inputColumn
                       refId="Package\Przepływ danych do Położenie Geograficzne\Usuń duplikaty par city-province (w naszym datasecie nie ma).Inputs[Sort Input].Columns[province]"
-                      cachedCodepage="1252"
+                      cachedCodepage="1250"
                       cachedDataType="str"
                       cachedLength="50"
                       cachedName="province"
@@ -947,7 +1289,7 @@
                     </inputColumn>
                     <inputColumn
                       refId="Package\Przepływ danych do Położenie Geograficzne\Usuń duplikaty par city-province (w naszym datasecie nie ma).Inputs[Sort Input].Columns[city]"
-                      cachedCodepage="1252"
+                      cachedCodepage="1250"
                       cachedDataType="str"
                       cachedLength="50"
                       cachedName="city"
@@ -965,7 +1307,7 @@
                     </inputColumn>
                     <inputColumn
                       refId="Package\Przepływ danych do Położenie Geograficzne\Usuń duplikaty par city-province (w naszym datasecie nie ma).Inputs[Sort Input].Columns[latitude]"
-                      cachedCodepage="1252"
+                      cachedCodepage="1250"
                       cachedDataType="str"
                       cachedLength="50"
                       cachedName="latitude"
@@ -983,7 +1325,7 @@
                     </inputColumn>
                     <inputColumn
                       refId="Package\Przepływ danych do Położenie Geograficzne\Usuń duplikaty par city-province (w naszym datasecie nie ma).Inputs[Sort Input].Columns[longitude]"
-                      cachedCodepage="1252"
+                      cachedCodepage="1250"
                       cachedDataType="str"
                       cachedLength="50"
                       cachedName="longitude"
@@ -1001,7 +1343,7 @@
                     </inputColumn>
                     <inputColumn
                       refId="Package\Przepływ danych do Położenie Geograficzne\Usuń duplikaty par city-province (w naszym datasecie nie ma).Inputs[Sort Input].Columns[elementary_school_count]"
-                      cachedCodepage="1252"
+                      cachedCodepage="1250"
                       cachedDataType="str"
                       cachedLength="50"
                       cachedName="elementary_school_count"
@@ -1019,7 +1361,7 @@
                     </inputColumn>
                     <inputColumn
                       refId="Package\Przepływ danych do Położenie Geograficzne\Usuń duplikaty par city-province (w naszym datasecie nie ma).Inputs[Sort Input].Columns[kindergarten_count]"
-                      cachedCodepage="1252"
+                      cachedCodepage="1250"
                       cachedDataType="str"
                       cachedLength="50"
                       cachedName="kindergarten_count"
@@ -1037,7 +1379,7 @@
                     </inputColumn>
                     <inputColumn
                       refId="Package\Przepływ danych do Położenie Geograficzne\Usuń duplikaty par city-province (w naszym datasecie nie ma).Inputs[Sort Input].Columns[university_count]"
-                      cachedCodepage="1252"
+                      cachedCodepage="1250"
                       cachedDataType="str"
                       cachedLength="50"
                       cachedName="university_count"
@@ -1055,7 +1397,7 @@
                     </inputColumn>
                     <inputColumn
                       refId="Package\Przepływ danych do Położenie Geograficzne\Usuń duplikaty par city-province (w naszym datasecie nie ma).Inputs[Sort Input].Columns[academy_ratio]"
-                      cachedCodepage="1252"
+                      cachedCodepage="1250"
                       cachedDataType="str"
                       cachedLength="50"
                       cachedName="academy_ratio"
@@ -1073,7 +1415,7 @@
                     </inputColumn>
                     <inputColumn
                       refId="Package\Przepływ danych do Położenie Geograficzne\Usuń duplikaty par city-province (w naszym datasecie nie ma).Inputs[Sort Input].Columns[elderly_population_ratio]"
-                      cachedCodepage="1252"
+                      cachedCodepage="1250"
                       cachedDataType="str"
                       cachedLength="50"
                       cachedName="elderly_population_ratio"
@@ -1091,7 +1433,7 @@
                     </inputColumn>
                     <inputColumn
                       refId="Package\Przepływ danych do Położenie Geograficzne\Usuń duplikaty par city-province (w naszym datasecie nie ma).Inputs[Sort Input].Columns[elderly_alone_ratio]"
-                      cachedCodepage="1252"
+                      cachedCodepage="1250"
                       cachedDataType="str"
                       cachedLength="50"
                       cachedName="elderly_alone_ratio"
@@ -1109,7 +1451,7 @@
                     </inputColumn>
                     <inputColumn
                       refId="Package\Przepływ danych do Położenie Geograficzne\Usuń duplikaty par city-province (w naszym datasecie nie ma).Inputs[Sort Input].Columns[nursing_home_count]"
-                      cachedCodepage="1252"
+                      cachedCodepage="1250"
                       cachedDataType="str"
                       cachedLength="50"
                       cachedName="nursing_home_count"
@@ -1205,7 +1547,7 @@
                   <outputColumns>
                     <outputColumn
                       refId="Package\Przepływ danych do Położenie Geograficzne\Usuń duplikaty par city-province (w naszym datasecie nie ma).Outputs[Sort Output].Columns[code]"
-                      codePage="1252"
+                      codePage="1250"
                       dataType="str"
                       length="50"
                       lineageId="Package\Przepływ danych do Położenie Geograficzne\Usuń duplikaty par city-province (w naszym datasecie nie ma).Outputs[Sort Output].Columns[code]"
@@ -1220,7 +1562,7 @@
                     </outputColumn>
                     <outputColumn
                       refId="Package\Przepływ danych do Położenie Geograficzne\Usuń duplikaty par city-province (w naszym datasecie nie ma).Outputs[Sort Output].Columns[province]"
-                      codePage="1252"
+                      codePage="1250"
                       dataType="str"
                       length="50"
                       lineageId="Package\Przepływ danych do Położenie Geograficzne\Usuń duplikaty par city-province (w naszym datasecie nie ma).Outputs[Sort Output].Columns[province]"
@@ -1236,7 +1578,7 @@
                     </outputColumn>
                     <outputColumn
                       refId="Package\Przepływ danych do Położenie Geograficzne\Usuń duplikaty par city-province (w naszym datasecie nie ma).Outputs[Sort Output].Columns[city]"
-                      codePage="1252"
+                      codePage="1250"
                       dataType="str"
                       length="50"
                       lineageId="Package\Przepływ danych do Położenie Geograficzne\Usuń duplikaty par city-province (w naszym datasecie nie ma).Outputs[Sort Output].Columns[city]"
@@ -1252,7 +1594,7 @@
                     </outputColumn>
                     <outputColumn
                       refId="Package\Przepływ danych do Położenie Geograficzne\Usuń duplikaty par city-province (w naszym datasecie nie ma).Outputs[Sort Output].Columns[latitude]"
-                      codePage="1252"
+                      codePage="1250"
                       dataType="str"
                       length="50"
                       lineageId="Package\Przepływ danych do Położenie Geograficzne\Usuń duplikaty par city-province (w naszym datasecie nie ma).Outputs[Sort Output].Columns[latitude]"
@@ -1267,7 +1609,7 @@
                     </outputColumn>
                     <outputColumn
                       refId="Package\Przepływ danych do Położenie Geograficzne\Usuń duplikaty par city-province (w naszym datasecie nie ma).Outputs[Sort Output].Columns[longitude]"
-                      codePage="1252"
+                      codePage="1250"
                       dataType="str"
                       length="50"
                       lineageId="Package\Przepływ danych do Położenie Geograficzne\Usuń duplikaty par city-province (w naszym datasecie nie ma).Outputs[Sort Output].Columns[longitude]"
@@ -1282,7 +1624,7 @@
                     </outputColumn>
                     <outputColumn
                       refId="Package\Przepływ danych do Położenie Geograficzne\Usuń duplikaty par city-province (w naszym datasecie nie ma).Outputs[Sort Output].Columns[elementary_school_count]"
-                      codePage="1252"
+                      codePage="1250"
                       dataType="str"
                       length="50"
                       lineageId="Package\Przepływ danych do Położenie Geograficzne\Usuń duplikaty par city-province (w naszym datasecie nie ma).Outputs[Sort Output].Columns[elementary_school_count]"
@@ -1297,7 +1639,7 @@
                     </outputColumn>
                     <outputColumn
                       refId="Package\Przepływ danych do Położenie Geograficzne\Usuń duplikaty par city-province (w naszym datasecie nie ma).Outputs[Sort Output].Columns[kindergarten_count]"
-                      codePage="1252"
+                      codePage="1250"
                       dataType="str"
                       length="50"
                       lineageId="Package\Przepływ danych do Położenie Geograficzne\Usuń duplikaty par city-province (w naszym datasecie nie ma).Outputs[Sort Output].Columns[kindergarten_count]"
@@ -1312,7 +1654,7 @@
                     </outputColumn>
                     <outputColumn
                       refId="Package\Przepływ danych do Położenie Geograficzne\Usuń duplikaty par city-province (w naszym datasecie nie ma).Outputs[Sort Output].Columns[university_count]"
-                      codePage="1252"
+                      codePage="1250"
                       dataType="str"
                       length="50"
                       lineageId="Package\Przepływ danych do Położenie Geograficzne\Usuń duplikaty par city-province (w naszym datasecie nie ma).Outputs[Sort Output].Columns[university_count]"
@@ -1327,7 +1669,7 @@
                     </outputColumn>
                     <outputColumn
                       refId="Package\Przepływ danych do Położenie Geograficzne\Usuń duplikaty par city-province (w naszym datasecie nie ma).Outputs[Sort Output].Columns[academy_ratio]"
-                      codePage="1252"
+                      codePage="1250"
                       dataType="str"
                       length="50"
                       lineageId="Package\Przepływ danych do Położenie Geograficzne\Usuń duplikaty par city-province (w naszym datasecie nie ma).Outputs[Sort Output].Columns[academy_ratio]"
@@ -1342,7 +1684,7 @@
                     </outputColumn>
                     <outputColumn
                       refId="Package\Przepływ danych do Położenie Geograficzne\Usuń duplikaty par city-province (w naszym datasecie nie ma).Outputs[Sort Output].Columns[elderly_population_ratio]"
-                      codePage="1252"
+                      codePage="1250"
                       dataType="str"
                       length="50"
                       lineageId="Package\Przepływ danych do Położenie Geograficzne\Usuń duplikaty par city-province (w naszym datasecie nie ma).Outputs[Sort Output].Columns[elderly_population_ratio]"
@@ -1357,7 +1699,7 @@
                     </outputColumn>
                     <outputColumn
                       refId="Package\Przepływ danych do Położenie Geograficzne\Usuń duplikaty par city-province (w naszym datasecie nie ma).Outputs[Sort Output].Columns[elderly_alone_ratio]"
-                      codePage="1252"
+                      codePage="1250"
                       dataType="str"
                       length="50"
                       lineageId="Package\Przepływ danych do Położenie Geograficzne\Usuń duplikaty par city-province (w naszym datasecie nie ma).Outputs[Sort Output].Columns[elderly_alone_ratio]"
@@ -1372,7 +1714,7 @@
                     </outputColumn>
                     <outputColumn
                       refId="Package\Przepływ danych do Położenie Geograficzne\Usuń duplikaty par city-province (w naszym datasecie nie ma).Outputs[Sort Output].Columns[nursing_home_count]"
-                      codePage="1252"
+                      codePage="1250"
                       dataType="str"
                       length="50"
                       lineageId="Package\Przepływ danych do Położenie Geograficzne\Usuń duplikaty par city-province (w naszym datasecie nie ma).Outputs[Sort Output].Columns[nursing_home_count]"
@@ -1471,7 +1813,7 @@
                   <inputColumns>
                     <inputColumn
                       refId="Package\Przepływ danych do Położenie Geograficzne\Usuń duplikaty prowincji.Inputs[Sort Input].Columns[code]"
-                      cachedCodepage="1252"
+                      cachedCodepage="1250"
                       cachedDataType="str"
                       cachedLength="50"
                       cachedName="code"
@@ -1489,7 +1831,7 @@
                     </inputColumn>
                     <inputColumn
                       refId="Package\Przepływ danych do Położenie Geograficzne\Usuń duplikaty prowincji.Inputs[Sort Input].Columns[province]"
-                      cachedCodepage="1252"
+                      cachedCodepage="1250"
                       cachedDataType="str"
                       cachedLength="50"
                       cachedName="province"
@@ -1508,7 +1850,7 @@
                     </inputColumn>
                     <inputColumn
                       refId="Package\Przepływ danych do Położenie Geograficzne\Usuń duplikaty prowincji.Inputs[Sort Input].Columns[city]"
-                      cachedCodepage="1252"
+                      cachedCodepage="1250"
                       cachedDataType="str"
                       cachedLength="50"
                       cachedName="city"
@@ -1527,7 +1869,7 @@
                     </inputColumn>
                     <inputColumn
                       refId="Package\Przepływ danych do Położenie Geograficzne\Usuń duplikaty prowincji.Inputs[Sort Input].Columns[latitude]"
-                      cachedCodepage="1252"
+                      cachedCodepage="1250"
                       cachedDataType="str"
                       cachedLength="50"
                       cachedName="latitude"
@@ -1545,7 +1887,7 @@
                     </inputColumn>
                     <inputColumn
                       refId="Package\Przepływ danych do Położenie Geograficzne\Usuń duplikaty prowincji.Inputs[Sort Input].Columns[longitude]"
-                      cachedCodepage="1252"
+                      cachedCodepage="1250"
                       cachedDataType="str"
                       cachedLength="50"
                       cachedName="longitude"
@@ -1563,7 +1905,7 @@
                     </inputColumn>
                     <inputColumn
                       refId="Package\Przepływ danych do Położenie Geograficzne\Usuń duplikaty prowincji.Inputs[Sort Input].Columns[elementary_school_count]"
-                      cachedCodepage="1252"
+                      cachedCodepage="1250"
                       cachedDataType="str"
                       cachedLength="50"
                       cachedName="elementary_school_count"
@@ -1581,7 +1923,7 @@
                     </inputColumn>
                     <inputColumn
                       refId="Package\Przepływ danych do Położenie Geograficzne\Usuń duplikaty prowincji.Inputs[Sort Input].Columns[kindergarten_count]"
-                      cachedCodepage="1252"
+                      cachedCodepage="1250"
                       cachedDataType="str"
                       cachedLength="50"
                       cachedName="kindergarten_count"
@@ -1599,7 +1941,7 @@
                     </inputColumn>
                     <inputColumn
                       refId="Package\Przepływ danych do Położenie Geograficzne\Usuń duplikaty prowincji.Inputs[Sort Input].Columns[university_count]"
-                      cachedCodepage="1252"
+                      cachedCodepage="1250"
                       cachedDataType="str"
                       cachedLength="50"
                       cachedName="university_count"
@@ -1617,7 +1959,7 @@
                     </inputColumn>
                     <inputColumn
                       refId="Package\Przepływ danych do Położenie Geograficzne\Usuń duplikaty prowincji.Inputs[Sort Input].Columns[academy_ratio]"
-                      cachedCodepage="1252"
+                      cachedCodepage="1250"
                       cachedDataType="str"
                       cachedLength="50"
                       cachedName="academy_ratio"
@@ -1635,7 +1977,7 @@
                     </inputColumn>
                     <inputColumn
                       refId="Package\Przepływ danych do Położenie Geograficzne\Usuń duplikaty prowincji.Inputs[Sort Input].Columns[elderly_population_ratio]"
-                      cachedCodepage="1252"
+                      cachedCodepage="1250"
                       cachedDataType="str"
                       cachedLength="50"
                       cachedName="elderly_population_ratio"
@@ -1653,7 +1995,7 @@
                     </inputColumn>
                     <inputColumn
                       refId="Package\Przepływ danych do Położenie Geograficzne\Usuń duplikaty prowincji.Inputs[Sort Input].Columns[elderly_alone_ratio]"
-                      cachedCodepage="1252"
+                      cachedCodepage="1250"
                       cachedDataType="str"
                       cachedLength="50"
                       cachedName="elderly_alone_ratio"
@@ -1671,7 +2013,7 @@
                     </inputColumn>
                     <inputColumn
                       refId="Package\Przepływ danych do Położenie Geograficzne\Usuń duplikaty prowincji.Inputs[Sort Input].Columns[nursing_home_count]"
-                      cachedCodepage="1252"
+                      cachedCodepage="1250"
                       cachedDataType="str"
                       cachedLength="50"
                       cachedName="nursing_home_count"
@@ -1767,7 +2109,7 @@
                   <outputColumns>
                     <outputColumn
                       refId="Package\Przepływ danych do Położenie Geograficzne\Usuń duplikaty prowincji.Outputs[Sort Output].Columns[code]"
-                      codePage="1252"
+                      codePage="1250"
                       dataType="str"
                       length="50"
                       lineageId="Package\Przepływ danych do Położenie Geograficzne\Usuń duplikaty prowincji.Outputs[Sort Output].Columns[code]"
@@ -1782,7 +2124,7 @@
                     </outputColumn>
                     <outputColumn
                       refId="Package\Przepływ danych do Położenie Geograficzne\Usuń duplikaty prowincji.Outputs[Sort Output].Columns[province]"
-                      codePage="1252"
+                      codePage="1250"
                       dataType="str"
                       length="50"
                       lineageId="Package\Przepływ danych do Położenie Geograficzne\Usuń duplikaty prowincji.Outputs[Sort Output].Columns[province]"
@@ -1798,7 +2140,7 @@
                     </outputColumn>
                     <outputColumn
                       refId="Package\Przepływ danych do Położenie Geograficzne\Usuń duplikaty prowincji.Outputs[Sort Output].Columns[city]"
-                      codePage="1252"
+                      codePage="1250"
                       dataType="str"
                       length="50"
                       lineageId="Package\Przepływ danych do Położenie Geograficzne\Usuń duplikaty prowincji.Outputs[Sort Output].Columns[city]"
@@ -1813,7 +2155,7 @@
                     </outputColumn>
                     <outputColumn
                       refId="Package\Przepływ danych do Położenie Geograficzne\Usuń duplikaty prowincji.Outputs[Sort Output].Columns[latitude]"
-                      codePage="1252"
+                      codePage="1250"
                       dataType="str"
                       length="50"
                       lineageId="Package\Przepływ danych do Położenie Geograficzne\Usuń duplikaty prowincji.Outputs[Sort Output].Columns[latitude]"
@@ -1828,7 +2170,7 @@
                     </outputColumn>
                     <outputColumn
                       refId="Package\Przepływ danych do Położenie Geograficzne\Usuń duplikaty prowincji.Outputs[Sort Output].Columns[longitude]"
-                      codePage="1252"
+                      codePage="1250"
                       dataType="str"
                       length="50"
                       lineageId="Package\Przepływ danych do Położenie Geograficzne\Usuń duplikaty prowincji.Outputs[Sort Output].Columns[longitude]"
@@ -1843,7 +2185,7 @@
                     </outputColumn>
                     <outputColumn
                       refId="Package\Przepływ danych do Położenie Geograficzne\Usuń duplikaty prowincji.Outputs[Sort Output].Columns[elementary_school_count]"
-                      codePage="1252"
+                      codePage="1250"
                       dataType="str"
                       length="50"
                       lineageId="Package\Przepływ danych do Położenie Geograficzne\Usuń duplikaty prowincji.Outputs[Sort Output].Columns[elementary_school_count]"
@@ -1858,7 +2200,7 @@
                     </outputColumn>
                     <outputColumn
                       refId="Package\Przepływ danych do Położenie Geograficzne\Usuń duplikaty prowincji.Outputs[Sort Output].Columns[kindergarten_count]"
-                      codePage="1252"
+                      codePage="1250"
                       dataType="str"
                       length="50"
                       lineageId="Package\Przepływ danych do Położenie Geograficzne\Usuń duplikaty prowincji.Outputs[Sort Output].Columns[kindergarten_count]"
@@ -1873,7 +2215,7 @@
                     </outputColumn>
                     <outputColumn
                       refId="Package\Przepływ danych do Położenie Geograficzne\Usuń duplikaty prowincji.Outputs[Sort Output].Columns[university_count]"
-                      codePage="1252"
+                      codePage="1250"
                       dataType="str"
                       length="50"
                       lineageId="Package\Przepływ danych do Położenie Geograficzne\Usuń duplikaty prowincji.Outputs[Sort Output].Columns[university_count]"
@@ -1888,7 +2230,7 @@
                     </outputColumn>
                     <outputColumn
                       refId="Package\Przepływ danych do Położenie Geograficzne\Usuń duplikaty prowincji.Outputs[Sort Output].Columns[academy_ratio]"
-                      codePage="1252"
+                      codePage="1250"
                       dataType="str"
                       length="50"
                       lineageId="Package\Przepływ danych do Położenie Geograficzne\Usuń duplikaty prowincji.Outputs[Sort Output].Columns[academy_ratio]"
@@ -1903,7 +2245,7 @@
                     </outputColumn>
                     <outputColumn
                       refId="Package\Przepływ danych do Położenie Geograficzne\Usuń duplikaty prowincji.Outputs[Sort Output].Columns[elderly_population_ratio]"
-                      codePage="1252"
+                      codePage="1250"
                       dataType="str"
                       length="50"
                       lineageId="Package\Przepływ danych do Położenie Geograficzne\Usuń duplikaty prowincji.Outputs[Sort Output].Columns[elderly_population_ratio]"
@@ -1918,7 +2260,7 @@
                     </outputColumn>
                     <outputColumn
                       refId="Package\Przepływ danych do Położenie Geograficzne\Usuń duplikaty prowincji.Outputs[Sort Output].Columns[elderly_alone_ratio]"
-                      codePage="1252"
+                      codePage="1250"
                       dataType="str"
                       length="50"
                       lineageId="Package\Przepływ danych do Położenie Geograficzne\Usuń duplikaty prowincji.Outputs[Sort Output].Columns[elderly_alone_ratio]"
@@ -1933,7 +2275,7 @@
                     </outputColumn>
                     <outputColumn
                       refId="Package\Przepływ danych do Położenie Geograficzne\Usuń duplikaty prowincji.Outputs[Sort Output].Columns[nursing_home_count]"
-                      codePage="1252"
+                      codePage="1250"
                       dataType="str"
                       length="50"
                       lineageId="Package\Przepływ danych do Położenie Geograficzne\Usuń duplikaty prowincji.Outputs[Sort Output].Columns[nursing_home_count]"
@@ -2012,7 +2354,7 @@
               componentClassID="Microsoft.FlatFileSource"
               contactInfo="Flat File Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
               description="Flat File Source"
-              localeId="2057"
+              localeId="1045"
               name="Wczytaj dane z CSV Region"
               usesDispositions="true"
               version="1">
@@ -2029,8 +2371,8 @@
               <connections>
                 <connection
                   refId="Package\Przepływ danych do Położenie Geograficzne\Wczytaj dane z CSV Region.Connections[FlatFileConnection]"
-                  connectionManagerID="Package.ConnectionManagers[Flat File Connection Manager 1]"
-                  connectionManagerRefId="Package.ConnectionManagers[Flat File Connection Manager 1]"
+                  connectionManagerID="{BC8F2A8F-1874-47B1-9AEA-C9176DF72484}:external"
+                  connectionManagerRefId="Project.ConnectionManagers[Region_CSV]"
                   name="FlatFileConnection" />
               </connections>
               <outputs>
@@ -2040,7 +2382,7 @@
                   <outputColumns>
                     <outputColumn
                       refId="Package\Przepływ danych do Położenie Geograficzne\Wczytaj dane z CSV Region.Outputs[Flat File Source Output].Columns[code]"
-                      codePage="1252"
+                      codePage="1250"
                       dataType="str"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
@@ -2062,7 +2404,7 @@
                     </outputColumn>
                     <outputColumn
                       refId="Package\Przepływ danych do Położenie Geograficzne\Wczytaj dane z CSV Region.Outputs[Flat File Source Output].Columns[province]"
-                      codePage="1252"
+                      codePage="1250"
                       dataType="str"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
@@ -2084,7 +2426,7 @@
                     </outputColumn>
                     <outputColumn
                       refId="Package\Przepływ danych do Położenie Geograficzne\Wczytaj dane z CSV Region.Outputs[Flat File Source Output].Columns[city]"
-                      codePage="1252"
+                      codePage="1250"
                       dataType="str"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
@@ -2106,7 +2448,7 @@
                     </outputColumn>
                     <outputColumn
                       refId="Package\Przepływ danych do Położenie Geograficzne\Wczytaj dane z CSV Region.Outputs[Flat File Source Output].Columns[latitude]"
-                      codePage="1252"
+                      codePage="1250"
                       dataType="str"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
@@ -2128,7 +2470,7 @@
                     </outputColumn>
                     <outputColumn
                       refId="Package\Przepływ danych do Położenie Geograficzne\Wczytaj dane z CSV Region.Outputs[Flat File Source Output].Columns[longitude]"
-                      codePage="1252"
+                      codePage="1250"
                       dataType="str"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
@@ -2150,7 +2492,7 @@
                     </outputColumn>
                     <outputColumn
                       refId="Package\Przepływ danych do Położenie Geograficzne\Wczytaj dane z CSV Region.Outputs[Flat File Source Output].Columns[elementary_school_count]"
-                      codePage="1252"
+                      codePage="1250"
                       dataType="str"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
@@ -2172,7 +2514,7 @@
                     </outputColumn>
                     <outputColumn
                       refId="Package\Przepływ danych do Położenie Geograficzne\Wczytaj dane z CSV Region.Outputs[Flat File Source Output].Columns[kindergarten_count]"
-                      codePage="1252"
+                      codePage="1250"
                       dataType="str"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
@@ -2194,7 +2536,7 @@
                     </outputColumn>
                     <outputColumn
                       refId="Package\Przepływ danych do Położenie Geograficzne\Wczytaj dane z CSV Region.Outputs[Flat File Source Output].Columns[university_count]"
-                      codePage="1252"
+                      codePage="1250"
                       dataType="str"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
@@ -2216,7 +2558,7 @@
                     </outputColumn>
                     <outputColumn
                       refId="Package\Przepływ danych do Położenie Geograficzne\Wczytaj dane z CSV Region.Outputs[Flat File Source Output].Columns[academy_ratio]"
-                      codePage="1252"
+                      codePage="1250"
                       dataType="str"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
@@ -2238,7 +2580,7 @@
                     </outputColumn>
                     <outputColumn
                       refId="Package\Przepływ danych do Położenie Geograficzne\Wczytaj dane z CSV Region.Outputs[Flat File Source Output].Columns[elderly_population_ratio]"
-                      codePage="1252"
+                      codePage="1250"
                       dataType="str"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
@@ -2260,7 +2602,7 @@
                     </outputColumn>
                     <outputColumn
                       refId="Package\Przepływ danych do Położenie Geograficzne\Wczytaj dane z CSV Region.Outputs[Flat File Source Output].Columns[elderly_alone_ratio]"
-                      codePage="1252"
+                      codePage="1250"
                       dataType="str"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
@@ -2282,7 +2624,7 @@
                     </outputColumn>
                     <outputColumn
                       refId="Package\Przepływ danych do Położenie Geograficzne\Wczytaj dane z CSV Region.Outputs[Flat File Source Output].Columns[nursing_home_count]"
-                      codePage="1252"
+                      codePage="1250"
                       dataType="str"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
@@ -2307,73 +2649,73 @@
                     isUsed="True">
                     <externalMetadataColumn
                       refId="Package\Przepływ danych do Położenie Geograficzne\Wczytaj dane z CSV Region.Outputs[Flat File Source Output].ExternalColumns[code]"
-                      codePage="1252"
+                      codePage="1250"
                       dataType="str"
                       length="50"
                       name="code" />
                     <externalMetadataColumn
                       refId="Package\Przepływ danych do Położenie Geograficzne\Wczytaj dane z CSV Region.Outputs[Flat File Source Output].ExternalColumns[province]"
-                      codePage="1252"
+                      codePage="1250"
                       dataType="str"
                       length="50"
                       name="province" />
                     <externalMetadataColumn
                       refId="Package\Przepływ danych do Położenie Geograficzne\Wczytaj dane z CSV Region.Outputs[Flat File Source Output].ExternalColumns[city]"
-                      codePage="1252"
+                      codePage="1250"
                       dataType="str"
                       length="50"
                       name="city" />
                     <externalMetadataColumn
                       refId="Package\Przepływ danych do Położenie Geograficzne\Wczytaj dane z CSV Region.Outputs[Flat File Source Output].ExternalColumns[latitude]"
-                      codePage="1252"
+                      codePage="1250"
                       dataType="str"
                       length="50"
                       name="latitude" />
                     <externalMetadataColumn
                       refId="Package\Przepływ danych do Położenie Geograficzne\Wczytaj dane z CSV Region.Outputs[Flat File Source Output].ExternalColumns[longitude]"
-                      codePage="1252"
+                      codePage="1250"
                       dataType="str"
                       length="50"
                       name="longitude" />
                     <externalMetadataColumn
                       refId="Package\Przepływ danych do Położenie Geograficzne\Wczytaj dane z CSV Region.Outputs[Flat File Source Output].ExternalColumns[elementary_school_count]"
-                      codePage="1252"
+                      codePage="1250"
                       dataType="str"
                       length="50"
                       name="elementary_school_count" />
                     <externalMetadataColumn
                       refId="Package\Przepływ danych do Położenie Geograficzne\Wczytaj dane z CSV Region.Outputs[Flat File Source Output].ExternalColumns[kindergarten_count]"
-                      codePage="1252"
+                      codePage="1250"
                       dataType="str"
                       length="50"
                       name="kindergarten_count" />
                     <externalMetadataColumn
                       refId="Package\Przepływ danych do Położenie Geograficzne\Wczytaj dane z CSV Region.Outputs[Flat File Source Output].ExternalColumns[university_count]"
-                      codePage="1252"
+                      codePage="1250"
                       dataType="str"
                       length="50"
                       name="university_count" />
                     <externalMetadataColumn
                       refId="Package\Przepływ danych do Położenie Geograficzne\Wczytaj dane z CSV Region.Outputs[Flat File Source Output].ExternalColumns[academy_ratio]"
-                      codePage="1252"
+                      codePage="1250"
                       dataType="str"
                       length="50"
                       name="academy_ratio" />
                     <externalMetadataColumn
                       refId="Package\Przepływ danych do Położenie Geograficzne\Wczytaj dane z CSV Region.Outputs[Flat File Source Output].ExternalColumns[elderly_population_ratio]"
-                      codePage="1252"
+                      codePage="1250"
                       dataType="str"
                       length="50"
                       name="elderly_population_ratio" />
                     <externalMetadataColumn
                       refId="Package\Przepływ danych do Położenie Geograficzne\Wczytaj dane z CSV Region.Outputs[Flat File Source Output].ExternalColumns[elderly_alone_ratio]"
-                      codePage="1252"
+                      codePage="1250"
                       dataType="str"
                       length="50"
                       name="elderly_alone_ratio" />
                     <externalMetadataColumn
                       refId="Package\Przepływ danych do Położenie Geograficzne\Wczytaj dane z CSV Region.Outputs[Flat File Source Output].ExternalColumns[nursing_home_count]"
-                      codePage="1252"
+                      codePage="1250"
                       dataType="str"
                       length="50"
                       name="nursing_home_count" />
@@ -2467,8 +2809,8 @@
               <connections>
                 <connection
                   refId="Package\Przepływ danych do Położenie Geograficzne\Wrzuć do DB SQL Położenie Geograficzne.Connections[OleDbConnection]"
-                  connectionManagerID="Package.ConnectionManagers[covid19southkorea.database.windows.net.Covid-19SouthKoreaDWH.covid@covid19southkorea]"
-                  connectionManagerRefId="Package.ConnectionManagers[covid19southkorea.database.windows.net.Covid-19SouthKoreaDWH.covid@covid19southkorea]"
+                  connectionManagerID="{52D2FB58-7BB0-47DA-8698-4BD065BFE199}:external"
+                  connectionManagerRefId="Project.ConnectionManagers[covid19southkorea.database.windows.net.Covid-19SouthKoreaDWH.covid@covid19southkorea]"
                   description="The OLE DB runtime connection used to access the database."
                   name="OleDbConnection" />
               </connections>
@@ -2486,47 +2828,47 @@
                       cachedName="ilosc_placowek_edukacyjnych"
                       cachedPrecision="20"
                       externalMetadataColumnId="Package\Przepływ danych do Położenie Geograficzne\Wrzuć do DB SQL Położenie Geograficzne.Inputs[OLE DB Destination Input].ExternalColumns[ilosc_placowek_edukacyjnych]"
-                      lineageId="Package\Przepływ danych do Położenie Geograficzne\Zbierz do kupy.Outputs[Union All Output 1].Columns[ilosc_placowek_edukacyjnych]" />
+                      lineageId="Package\Przepływ danych do Położenie Geograficzne\Union All.Outputs[Union All Output 1].Columns[ilosc_placowek_edukacyjnych]" />
                     <inputColumn
                       refId="Package\Przepływ danych do Położenie Geograficzne\Wrzuć do DB SQL Położenie Geograficzne.Inputs[OLE DB Destination Input].Columns[kindergarten_count]"
-                      cachedCodepage="1252"
+                      cachedCodepage="1250"
                       cachedDataType="str"
                       cachedLength="50"
                       cachedName="kindergarten_count"
                       externalMetadataColumnId="Package\Przepływ danych do Położenie Geograficzne\Wrzuć do DB SQL Położenie Geograficzne.Inputs[OLE DB Destination Input].ExternalColumns[ilosc_przedszkoli]"
-                      lineageId="Package\Przepływ danych do Położenie Geograficzne\Zbierz do kupy.Outputs[Union All Output 1].Columns[kindergarten_count]" />
+                      lineageId="Package\Przepływ danych do Położenie Geograficzne\Union All.Outputs[Union All Output 1].Columns[kindergarten_count]" />
                     <inputColumn
                       refId="Package\Przepływ danych do Położenie Geograficzne\Wrzuć do DB SQL Położenie Geograficzne.Inputs[OLE DB Destination Input].Columns[latitude]"
-                      cachedCodepage="1252"
+                      cachedCodepage="1250"
                       cachedDataType="str"
                       cachedLength="50"
                       cachedName="latitude"
                       externalMetadataColumnId="Package\Przepływ danych do Położenie Geograficzne\Wrzuć do DB SQL Położenie Geograficzne.Inputs[OLE DB Destination Input].ExternalColumns[szerokosc_geograficzna]"
-                      lineageId="Package\Przepływ danych do Położenie Geograficzne\Zbierz do kupy.Outputs[Union All Output 1].Columns[latitude]" />
+                      lineageId="Package\Przepływ danych do Położenie Geograficzne\Union All.Outputs[Union All Output 1].Columns[latitude]" />
                     <inputColumn
                       refId="Package\Przepływ danych do Położenie Geograficzne\Wrzuć do DB SQL Położenie Geograficzne.Inputs[OLE DB Destination Input].Columns[longitude]"
-                      cachedCodepage="1252"
+                      cachedCodepage="1250"
                       cachedDataType="str"
                       cachedLength="50"
                       cachedName="longitude"
                       externalMetadataColumnId="Package\Przepływ danych do Położenie Geograficzne\Wrzuć do DB SQL Położenie Geograficzne.Inputs[OLE DB Destination Input].ExternalColumns[dlugosc_geograficzna]"
-                      lineageId="Package\Przepływ danych do Położenie Geograficzne\Zbierz do kupy.Outputs[Union All Output 1].Columns[longitude]" />
+                      lineageId="Package\Przepływ danych do Położenie Geograficzne\Union All.Outputs[Union All Output 1].Columns[longitude]" />
                     <inputColumn
                       refId="Package\Przepływ danych do Położenie Geograficzne\Wrzuć do DB SQL Położenie Geograficzne.Inputs[OLE DB Destination Input].Columns[university_count]"
-                      cachedCodepage="1252"
+                      cachedCodepage="1250"
                       cachedDataType="str"
                       cachedLength="50"
                       cachedName="university_count"
                       externalMetadataColumnId="Package\Przepływ danych do Położenie Geograficzne\Wrzuć do DB SQL Położenie Geograficzne.Inputs[OLE DB Destination Input].ExternalColumns[ilosc_uczelni]"
-                      lineageId="Package\Przepływ danych do Położenie Geograficzne\Zbierz do kupy.Outputs[Union All Output 1].Columns[university_count]" />
+                      lineageId="Package\Przepływ danych do Położenie Geograficzne\Union All.Outputs[Union All Output 1].Columns[university_count]" />
                     <inputColumn
                       refId="Package\Przepływ danych do Położenie Geograficzne\Wrzuć do DB SQL Położenie Geograficzne.Inputs[OLE DB Destination Input].Columns[elementary_school_count]"
-                      cachedCodepage="1252"
+                      cachedCodepage="1250"
                       cachedDataType="str"
                       cachedLength="50"
                       cachedName="elementary_school_count"
                       externalMetadataColumnId="Package\Przepływ danych do Położenie Geograficzne\Wrzuć do DB SQL Położenie Geograficzne.Inputs[OLE DB Destination Input].ExternalColumns[ilosc_szkol_podstawowych]"
-                      lineageId="Package\Przepływ danych do Położenie Geograficzne\Zbierz do kupy.Outputs[Union All Output 1].Columns[elementary_school_count]" />
+                      lineageId="Package\Przepływ danych do Położenie Geograficzne\Union All.Outputs[Union All Output 1].Columns[elementary_school_count]" />
                     <inputColumn
                       refId="Package\Przepływ danych do Położenie Geograficzne\Wrzuć do DB SQL Położenie Geograficzne.Inputs[OLE DB Destination Input].Columns[city_WSTR]"
                       cachedDataType="wstr"
@@ -2628,21 +2970,21 @@
                   <inputColumns>
                     <inputColumn
                       refId="Package\Przepływ danych do Położenie Geograficzne\Zamień kolumny education_count ze stringów na wartości liczbowe.Inputs[Data Conversion Input].Columns[kindergarten_count]"
-                      cachedCodepage="1252"
+                      cachedCodepage="1250"
                       cachedDataType="str"
                       cachedLength="50"
                       cachedName="kindergarten_count"
                       lineageId="Package\Przepływ danych do Położenie Geograficzne\Wczytaj dane z CSV Region.Outputs[Flat File Source Output].Columns[kindergarten_count]" />
                     <inputColumn
                       refId="Package\Przepływ danych do Położenie Geograficzne\Zamień kolumny education_count ze stringów na wartości liczbowe.Inputs[Data Conversion Input].Columns[university_count]"
-                      cachedCodepage="1252"
+                      cachedCodepage="1250"
                       cachedDataType="str"
                       cachedLength="50"
                       cachedName="university_count"
                       lineageId="Package\Przepływ danych do Położenie Geograficzne\Wczytaj dane z CSV Region.Outputs[Flat File Source Output].Columns[university_count]" />
                     <inputColumn
                       refId="Package\Przepływ danych do Położenie Geograficzne\Zamień kolumny education_count ze stringów na wartości liczbowe.Inputs[Data Conversion Input].Columns[elementary_school_count]"
-                      cachedCodepage="1252"
+                      cachedCodepage="1250"
                       cachedDataType="str"
                       cachedLength="50"
                       cachedName="elementary_school_count"
@@ -2748,513 +3090,6 @@
                 </output>
               </outputs>
             </component>
-            <component
-              refId="Package\Przepływ danych do Położenie Geograficzne\Zbierz do kupy"
-              componentClassID="Microsoft.UnionAll"
-              contactInfo="Union All;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
-              description="Combines rows from multiple data flows without sorting. For example, add rows back to a data flow after correction of errors. If sorting is important, we recommend using the Merge transformation."
-              name="Zbierz do kupy"
-              version="1">
-              <inputs>
-                <input
-                  refId="Package\Przepływ danych do Położenie Geograficzne\Zbierz do kupy.Inputs[Union All Input 1]"
-                  name="Union All Input 1">
-                  <inputColumns>
-                    <inputColumn
-                      refId="Package\Przepływ danych do Położenie Geograficzne\Zbierz do kupy.Inputs[Union All Input 1].Columns[code]"
-                      cachedCodepage="1252"
-                      cachedDataType="str"
-                      cachedLength="50"
-                      cachedName="code"
-                      lineageId="Package\Przepływ danych do Położenie Geograficzne\Usuń duplikaty par city-province (w naszym datasecie nie ma).Outputs[Sort Output].Columns[code]">
-                      <properties>
-                        <property
-                          containsID="true"
-                          dataType="System.Int32"
-                          description="Output column lineage ID"
-                          name="OutputColumnLineageID">#{Package\Przepływ danych do Położenie Geograficzne\Zbierz do kupy.Outputs[Union All Output 1].Columns[code]}</property>
-                      </properties>
-                    </inputColumn>
-                    <inputColumn
-                      refId="Package\Przepływ danych do Położenie Geograficzne\Zbierz do kupy.Inputs[Union All Input 1].Columns[province]"
-                      cachedCodepage="1252"
-                      cachedDataType="str"
-                      cachedLength="50"
-                      cachedName="province"
-                      cachedSortKeyPosition="1"
-                      lineageId="Package\Przepływ danych do Położenie Geograficzne\Usuń duplikaty par city-province (w naszym datasecie nie ma).Outputs[Sort Output].Columns[province]">
-                      <properties>
-                        <property
-                          containsID="true"
-                          dataType="System.Int32"
-                          description="Output column lineage ID"
-                          name="OutputColumnLineageID">#{Package\Przepływ danych do Położenie Geograficzne\Zbierz do kupy.Outputs[Union All Output 1].Columns[province]}</property>
-                      </properties>
-                    </inputColumn>
-                    <inputColumn
-                      refId="Package\Przepływ danych do Położenie Geograficzne\Zbierz do kupy.Inputs[Union All Input 1].Columns[city]"
-                      cachedCodepage="1252"
-                      cachedDataType="str"
-                      cachedLength="50"
-                      cachedName="city"
-                      cachedSortKeyPosition="2"
-                      lineageId="Package\Przepływ danych do Położenie Geograficzne\Usuń duplikaty par city-province (w naszym datasecie nie ma).Outputs[Sort Output].Columns[city]">
-                      <properties>
-                        <property
-                          containsID="true"
-                          dataType="System.Int32"
-                          description="Output column lineage ID"
-                          name="OutputColumnLineageID">#{Package\Przepływ danych do Położenie Geograficzne\Zbierz do kupy.Outputs[Union All Output 1].Columns[city]}</property>
-                      </properties>
-                    </inputColumn>
-                    <inputColumn
-                      refId="Package\Przepływ danych do Położenie Geograficzne\Zbierz do kupy.Inputs[Union All Input 1].Columns[latitude]"
-                      cachedCodepage="1252"
-                      cachedDataType="str"
-                      cachedLength="50"
-                      cachedName="latitude"
-                      lineageId="Package\Przepływ danych do Położenie Geograficzne\Usuń duplikaty par city-province (w naszym datasecie nie ma).Outputs[Sort Output].Columns[latitude]">
-                      <properties>
-                        <property
-                          containsID="true"
-                          dataType="System.Int32"
-                          description="Output column lineage ID"
-                          name="OutputColumnLineageID">#{Package\Przepływ danych do Położenie Geograficzne\Zbierz do kupy.Outputs[Union All Output 1].Columns[latitude]}</property>
-                      </properties>
-                    </inputColumn>
-                    <inputColumn
-                      refId="Package\Przepływ danych do Położenie Geograficzne\Zbierz do kupy.Inputs[Union All Input 1].Columns[longitude]"
-                      cachedCodepage="1252"
-                      cachedDataType="str"
-                      cachedLength="50"
-                      cachedName="longitude"
-                      lineageId="Package\Przepływ danych do Położenie Geograficzne\Usuń duplikaty par city-province (w naszym datasecie nie ma).Outputs[Sort Output].Columns[longitude]">
-                      <properties>
-                        <property
-                          containsID="true"
-                          dataType="System.Int32"
-                          description="Output column lineage ID"
-                          name="OutputColumnLineageID">#{Package\Przepływ danych do Położenie Geograficzne\Zbierz do kupy.Outputs[Union All Output 1].Columns[longitude]}</property>
-                      </properties>
-                    </inputColumn>
-                    <inputColumn
-                      refId="Package\Przepływ danych do Położenie Geograficzne\Zbierz do kupy.Inputs[Union All Input 1].Columns[elementary_school_count]"
-                      cachedCodepage="1252"
-                      cachedDataType="str"
-                      cachedLength="50"
-                      cachedName="elementary_school_count"
-                      lineageId="Package\Przepływ danych do Położenie Geograficzne\Usuń duplikaty par city-province (w naszym datasecie nie ma).Outputs[Sort Output].Columns[elementary_school_count]">
-                      <properties>
-                        <property
-                          containsID="true"
-                          dataType="System.Int32"
-                          description="Output column lineage ID"
-                          name="OutputColumnLineageID">#{Package\Przepływ danych do Położenie Geograficzne\Zbierz do kupy.Outputs[Union All Output 1].Columns[elementary_school_count]}</property>
-                      </properties>
-                    </inputColumn>
-                    <inputColumn
-                      refId="Package\Przepływ danych do Położenie Geograficzne\Zbierz do kupy.Inputs[Union All Input 1].Columns[kindergarten_count]"
-                      cachedCodepage="1252"
-                      cachedDataType="str"
-                      cachedLength="50"
-                      cachedName="kindergarten_count"
-                      lineageId="Package\Przepływ danych do Położenie Geograficzne\Usuń duplikaty par city-province (w naszym datasecie nie ma).Outputs[Sort Output].Columns[kindergarten_count]">
-                      <properties>
-                        <property
-                          containsID="true"
-                          dataType="System.Int32"
-                          description="Output column lineage ID"
-                          name="OutputColumnLineageID">#{Package\Przepływ danych do Położenie Geograficzne\Zbierz do kupy.Outputs[Union All Output 1].Columns[kindergarten_count]}</property>
-                      </properties>
-                    </inputColumn>
-                    <inputColumn
-                      refId="Package\Przepływ danych do Położenie Geograficzne\Zbierz do kupy.Inputs[Union All Input 1].Columns[university_count]"
-                      cachedCodepage="1252"
-                      cachedDataType="str"
-                      cachedLength="50"
-                      cachedName="university_count"
-                      lineageId="Package\Przepływ danych do Położenie Geograficzne\Usuń duplikaty par city-province (w naszym datasecie nie ma).Outputs[Sort Output].Columns[university_count]">
-                      <properties>
-                        <property
-                          containsID="true"
-                          dataType="System.Int32"
-                          description="Output column lineage ID"
-                          name="OutputColumnLineageID">#{Package\Przepływ danych do Położenie Geograficzne\Zbierz do kupy.Outputs[Union All Output 1].Columns[university_count]}</property>
-                      </properties>
-                    </inputColumn>
-                    <inputColumn
-                      refId="Package\Przepływ danych do Położenie Geograficzne\Zbierz do kupy.Inputs[Union All Input 1].Columns[academy_ratio]"
-                      cachedCodepage="1252"
-                      cachedDataType="str"
-                      cachedLength="50"
-                      cachedName="academy_ratio"
-                      lineageId="Package\Przepływ danych do Położenie Geograficzne\Usuń duplikaty par city-province (w naszym datasecie nie ma).Outputs[Sort Output].Columns[academy_ratio]">
-                      <properties>
-                        <property
-                          containsID="true"
-                          dataType="System.Int32"
-                          description="Output column lineage ID"
-                          name="OutputColumnLineageID">#{Package\Przepływ danych do Położenie Geograficzne\Zbierz do kupy.Outputs[Union All Output 1].Columns[academy_ratio]}</property>
-                      </properties>
-                    </inputColumn>
-                    <inputColumn
-                      refId="Package\Przepływ danych do Położenie Geograficzne\Zbierz do kupy.Inputs[Union All Input 1].Columns[elderly_population_ratio]"
-                      cachedCodepage="1252"
-                      cachedDataType="str"
-                      cachedLength="50"
-                      cachedName="elderly_population_ratio"
-                      lineageId="Package\Przepływ danych do Położenie Geograficzne\Usuń duplikaty par city-province (w naszym datasecie nie ma).Outputs[Sort Output].Columns[elderly_population_ratio]">
-                      <properties>
-                        <property
-                          containsID="true"
-                          dataType="System.Int32"
-                          description="Output column lineage ID"
-                          name="OutputColumnLineageID">#{Package\Przepływ danych do Położenie Geograficzne\Zbierz do kupy.Outputs[Union All Output 1].Columns[elderly_population_ratio]}</property>
-                      </properties>
-                    </inputColumn>
-                    <inputColumn
-                      refId="Package\Przepływ danych do Położenie Geograficzne\Zbierz do kupy.Inputs[Union All Input 1].Columns[elderly_alone_ratio]"
-                      cachedCodepage="1252"
-                      cachedDataType="str"
-                      cachedLength="50"
-                      cachedName="elderly_alone_ratio"
-                      lineageId="Package\Przepływ danych do Położenie Geograficzne\Usuń duplikaty par city-province (w naszym datasecie nie ma).Outputs[Sort Output].Columns[elderly_alone_ratio]">
-                      <properties>
-                        <property
-                          containsID="true"
-                          dataType="System.Int32"
-                          description="Output column lineage ID"
-                          name="OutputColumnLineageID">#{Package\Przepływ danych do Położenie Geograficzne\Zbierz do kupy.Outputs[Union All Output 1].Columns[elderly_alone_ratio]}</property>
-                      </properties>
-                    </inputColumn>
-                    <inputColumn
-                      refId="Package\Przepływ danych do Położenie Geograficzne\Zbierz do kupy.Inputs[Union All Input 1].Columns[nursing_home_count]"
-                      cachedCodepage="1252"
-                      cachedDataType="str"
-                      cachedLength="50"
-                      cachedName="nursing_home_count"
-                      lineageId="Package\Przepływ danych do Położenie Geograficzne\Usuń duplikaty par city-province (w naszym datasecie nie ma).Outputs[Sort Output].Columns[nursing_home_count]">
-                      <properties>
-                        <property
-                          containsID="true"
-                          dataType="System.Int32"
-                          description="Output column lineage ID"
-                          name="OutputColumnLineageID">#{Package\Przepływ danych do Położenie Geograficzne\Zbierz do kupy.Outputs[Union All Output 1].Columns[nursing_home_count]}</property>
-                      </properties>
-                    </inputColumn>
-                    <inputColumn
-                      refId="Package\Przepływ danych do Położenie Geograficzne\Zbierz do kupy.Inputs[Union All Input 1].Columns[Copy of kindergarten_count]"
-                      cachedDataType="numeric"
-                      cachedName="Copy of kindergarten_count"
-                      cachedPrecision="18"
-                      lineageId="Package\Przepływ danych do Położenie Geograficzne\Usuń duplikaty par city-province (w naszym datasecie nie ma).Outputs[Sort Output].Columns[Copy of kindergarten_count]">
-                      <properties>
-                        <property
-                          containsID="true"
-                          dataType="System.Int32"
-                          description="Output column lineage ID"
-                          name="OutputColumnLineageID">#{Package\Przepływ danych do Położenie Geograficzne\Zbierz do kupy.Outputs[Union All Output 1].Columns[Copy of kindergarten_count]}</property>
-                      </properties>
-                    </inputColumn>
-                    <inputColumn
-                      refId="Package\Przepływ danych do Położenie Geograficzne\Zbierz do kupy.Inputs[Union All Input 1].Columns[Copy of university_count]"
-                      cachedDataType="numeric"
-                      cachedName="Copy of university_count"
-                      cachedPrecision="18"
-                      lineageId="Package\Przepływ danych do Położenie Geograficzne\Usuń duplikaty par city-province (w naszym datasecie nie ma).Outputs[Sort Output].Columns[Copy of university_count]">
-                      <properties>
-                        <property
-                          containsID="true"
-                          dataType="System.Int32"
-                          description="Output column lineage ID"
-                          name="OutputColumnLineageID">#{Package\Przepływ danych do Położenie Geograficzne\Zbierz do kupy.Outputs[Union All Output 1].Columns[Copy of university_count]}</property>
-                      </properties>
-                    </inputColumn>
-                    <inputColumn
-                      refId="Package\Przepływ danych do Położenie Geograficzne\Zbierz do kupy.Inputs[Union All Input 1].Columns[Copy of elementary_school_count]"
-                      cachedDataType="numeric"
-                      cachedName="Copy of elementary_school_count"
-                      cachedPrecision="18"
-                      lineageId="Package\Przepływ danych do Położenie Geograficzne\Usuń duplikaty par city-province (w naszym datasecie nie ma).Outputs[Sort Output].Columns[Copy of elementary_school_count]">
-                      <properties>
-                        <property
-                          containsID="true"
-                          dataType="System.Int32"
-                          description="Output column lineage ID"
-                          name="OutputColumnLineageID">#{Package\Przepływ danych do Położenie Geograficzne\Zbierz do kupy.Outputs[Union All Output 1].Columns[Copy of elementary_school_count]}</property>
-                      </properties>
-                    </inputColumn>
-                    <inputColumn
-                      refId="Package\Przepływ danych do Położenie Geograficzne\Zbierz do kupy.Inputs[Union All Input 1].Columns[ilosc_placowek_edukacyjnych]"
-                      cachedDataType="numeric"
-                      cachedName="ilosc_placowek_edukacyjnych"
-                      cachedPrecision="20"
-                      lineageId="Package\Przepływ danych do Położenie Geograficzne\Usuń duplikaty par city-province (w naszym datasecie nie ma).Outputs[Sort Output].Columns[ilosc_placowek_edukacyjnych]">
-                      <properties>
-                        <property
-                          containsID="true"
-                          dataType="System.Int32"
-                          description="Output column lineage ID"
-                          name="OutputColumnLineageID">#{Package\Przepływ danych do Położenie Geograficzne\Zbierz do kupy.Outputs[Union All Output 1].Columns[ilosc_placowek_edukacyjnych]}</property>
-                      </properties>
-                    </inputColumn>
-                  </inputColumns>
-                  <externalMetadataColumns />
-                </input>
-                <input
-                  refId="Package\Przepływ danych do Położenie Geograficzne\Zbierz do kupy.Inputs[Union All Input 3]"
-                  hasSideEffects="true"
-                  name="Union All Input 3">
-                  <inputColumns>
-                    <inputColumn
-                      refId="Package\Przepływ danych do Położenie Geograficzne\Zbierz do kupy.Inputs[Union All Input 3].Columns[province]"
-                      cachedCodepage="1252"
-                      cachedDataType="str"
-                      cachedLength="50"
-                      cachedName="province"
-                      cachedSortKeyPosition="1"
-                      lineageId="Package\Przepływ danych do Położenie Geograficzne\Usuń duplikaty prowincji.Outputs[Sort Output].Columns[province]">
-                      <properties>
-                        <property
-                          containsID="true"
-                          dataType="System.Int32"
-                          description="Output column lineage ID"
-                          name="OutputColumnLineageID">#{Package\Przepływ danych do Położenie Geograficzne\Zbierz do kupy.Outputs[Union All Output 1].Columns[province]}</property>
-                      </properties>
-                    </inputColumn>
-                    <inputColumn
-                      refId="Package\Przepływ danych do Położenie Geograficzne\Zbierz do kupy.Inputs[Union All Input 3].Columns[city]"
-                      cachedCodepage="1252"
-                      cachedDataType="str"
-                      cachedLength="50"
-                      cachedName="city"
-                      lineageId="Package\Przepływ danych do Położenie Geograficzne\Usuń duplikaty prowincji.Outputs[Sort Output].Columns[city]">
-                      <properties>
-                        <property
-                          containsID="true"
-                          dataType="System.Int32"
-                          description="Output column lineage ID"
-                          name="OutputColumnLineageID">#{Package\Przepływ danych do Położenie Geograficzne\Zbierz do kupy.Outputs[Union All Output 1].Columns[city]}</property>
-                      </properties>
-                    </inputColumn>
-                    <inputColumn
-                      refId="Package\Przepływ danych do Położenie Geograficzne\Zbierz do kupy.Inputs[Union All Input 3].Columns[latitude]"
-                      cachedCodepage="1252"
-                      cachedDataType="str"
-                      cachedLength="50"
-                      cachedName="latitude"
-                      lineageId="Package\Przepływ danych do Położenie Geograficzne\Usuń duplikaty prowincji.Outputs[Sort Output].Columns[latitude]">
-                      <properties>
-                        <property
-                          containsID="true"
-                          dataType="System.Int32"
-                          description="Output column lineage ID"
-                          name="OutputColumnLineageID">#{Package\Przepływ danych do Położenie Geograficzne\Zbierz do kupy.Outputs[Union All Output 1].Columns[latitude]}</property>
-                      </properties>
-                    </inputColumn>
-                    <inputColumn
-                      refId="Package\Przepływ danych do Położenie Geograficzne\Zbierz do kupy.Inputs[Union All Input 3].Columns[longitude]"
-                      cachedCodepage="1252"
-                      cachedDataType="str"
-                      cachedLength="50"
-                      cachedName="longitude"
-                      lineageId="Package\Przepływ danych do Położenie Geograficzne\Usuń duplikaty prowincji.Outputs[Sort Output].Columns[longitude]">
-                      <properties>
-                        <property
-                          containsID="true"
-                          dataType="System.Int32"
-                          description="Output column lineage ID"
-                          name="OutputColumnLineageID">#{Package\Przepływ danych do Położenie Geograficzne\Zbierz do kupy.Outputs[Union All Output 1].Columns[longitude]}</property>
-                      </properties>
-                    </inputColumn>
-                    <inputColumn
-                      refId="Package\Przepływ danych do Położenie Geograficzne\Zbierz do kupy.Inputs[Union All Input 3].Columns[elementary_school_count]"
-                      cachedCodepage="1252"
-                      cachedDataType="str"
-                      cachedLength="50"
-                      cachedName="elementary_school_count"
-                      lineageId="Package\Przepływ danych do Położenie Geograficzne\Usuń duplikaty prowincji.Outputs[Sort Output].Columns[elementary_school_count]">
-                      <properties>
-                        <property
-                          containsID="true"
-                          dataType="System.Int32"
-                          description="Output column lineage ID"
-                          name="OutputColumnLineageID">#{Package\Przepływ danych do Położenie Geograficzne\Zbierz do kupy.Outputs[Union All Output 1].Columns[elementary_school_count]}</property>
-                      </properties>
-                    </inputColumn>
-                    <inputColumn
-                      refId="Package\Przepływ danych do Położenie Geograficzne\Zbierz do kupy.Inputs[Union All Input 3].Columns[kindergarten_count]"
-                      cachedCodepage="1252"
-                      cachedDataType="str"
-                      cachedLength="50"
-                      cachedName="kindergarten_count"
-                      lineageId="Package\Przepływ danych do Położenie Geograficzne\Usuń duplikaty prowincji.Outputs[Sort Output].Columns[kindergarten_count]">
-                      <properties>
-                        <property
-                          containsID="true"
-                          dataType="System.Int32"
-                          description="Output column lineage ID"
-                          name="OutputColumnLineageID">#{Package\Przepływ danych do Położenie Geograficzne\Zbierz do kupy.Outputs[Union All Output 1].Columns[kindergarten_count]}</property>
-                      </properties>
-                    </inputColumn>
-                    <inputColumn
-                      refId="Package\Przepływ danych do Położenie Geograficzne\Zbierz do kupy.Inputs[Union All Input 3].Columns[university_count]"
-                      cachedCodepage="1252"
-                      cachedDataType="str"
-                      cachedLength="50"
-                      cachedName="university_count"
-                      lineageId="Package\Przepływ danych do Położenie Geograficzne\Usuń duplikaty prowincji.Outputs[Sort Output].Columns[university_count]">
-                      <properties>
-                        <property
-                          containsID="true"
-                          dataType="System.Int32"
-                          description="Output column lineage ID"
-                          name="OutputColumnLineageID">#{Package\Przepływ danych do Położenie Geograficzne\Zbierz do kupy.Outputs[Union All Output 1].Columns[university_count]}</property>
-                      </properties>
-                    </inputColumn>
-                    <inputColumn
-                      refId="Package\Przepływ danych do Położenie Geograficzne\Zbierz do kupy.Inputs[Union All Input 3].Columns[ilosc_placowek_edukacyjnych]"
-                      cachedDataType="numeric"
-                      cachedName="ilosc_placowek_edukacyjnych"
-                      cachedPrecision="20"
-                      lineageId="Package\Przepływ danych do Położenie Geograficzne\Usuń duplikaty prowincji.Outputs[Sort Output].Columns[ilosc_placowek_edukacyjnych]">
-                      <properties>
-                        <property
-                          containsID="true"
-                          dataType="System.Int32"
-                          description="Output column lineage ID"
-                          name="OutputColumnLineageID">#{Package\Przepływ danych do Położenie Geograficzne\Zbierz do kupy.Outputs[Union All Output 1].Columns[ilosc_placowek_edukacyjnych]}</property>
-                      </properties>
-                    </inputColumn>
-                  </inputColumns>
-                  <externalMetadataColumns />
-                </input>
-                <input
-                  refId="Package\Przepływ danych do Położenie Geograficzne\Zbierz do kupy.Inputs[Union All Input 2]"
-                  dangling="true"
-                  hasSideEffects="true"
-                  name="Union All Input 2">
-                  <externalMetadataColumns />
-                </input>
-              </inputs>
-              <outputs>
-                <output
-                  refId="Package\Przepływ danych do Położenie Geograficzne\Zbierz do kupy.Outputs[Union All Output 1]"
-                  name="Union All Output 1">
-                  <outputColumns>
-                    <outputColumn
-                      refId="Package\Przepływ danych do Położenie Geograficzne\Zbierz do kupy.Outputs[Union All Output 1].Columns[code]"
-                      codePage="1252"
-                      dataType="str"
-                      length="50"
-                      lineageId="Package\Przepływ danych do Położenie Geograficzne\Zbierz do kupy.Outputs[Union All Output 1].Columns[code]"
-                      name="code" />
-                    <outputColumn
-                      refId="Package\Przepływ danych do Położenie Geograficzne\Zbierz do kupy.Outputs[Union All Output 1].Columns[province]"
-                      codePage="1252"
-                      dataType="str"
-                      length="50"
-                      lineageId="Package\Przepływ danych do Położenie Geograficzne\Zbierz do kupy.Outputs[Union All Output 1].Columns[province]"
-                      name="province" />
-                    <outputColumn
-                      refId="Package\Przepływ danych do Położenie Geograficzne\Zbierz do kupy.Outputs[Union All Output 1].Columns[city]"
-                      codePage="1252"
-                      dataType="str"
-                      length="50"
-                      lineageId="Package\Przepływ danych do Położenie Geograficzne\Zbierz do kupy.Outputs[Union All Output 1].Columns[city]"
-                      name="city" />
-                    <outputColumn
-                      refId="Package\Przepływ danych do Położenie Geograficzne\Zbierz do kupy.Outputs[Union All Output 1].Columns[latitude]"
-                      codePage="1252"
-                      dataType="str"
-                      length="50"
-                      lineageId="Package\Przepływ danych do Położenie Geograficzne\Zbierz do kupy.Outputs[Union All Output 1].Columns[latitude]"
-                      name="latitude" />
-                    <outputColumn
-                      refId="Package\Przepływ danych do Położenie Geograficzne\Zbierz do kupy.Outputs[Union All Output 1].Columns[longitude]"
-                      codePage="1252"
-                      dataType="str"
-                      length="50"
-                      lineageId="Package\Przepływ danych do Położenie Geograficzne\Zbierz do kupy.Outputs[Union All Output 1].Columns[longitude]"
-                      name="longitude" />
-                    <outputColumn
-                      refId="Package\Przepływ danych do Położenie Geograficzne\Zbierz do kupy.Outputs[Union All Output 1].Columns[elementary_school_count]"
-                      codePage="1252"
-                      dataType="str"
-                      length="50"
-                      lineageId="Package\Przepływ danych do Położenie Geograficzne\Zbierz do kupy.Outputs[Union All Output 1].Columns[elementary_school_count]"
-                      name="elementary_school_count" />
-                    <outputColumn
-                      refId="Package\Przepływ danych do Położenie Geograficzne\Zbierz do kupy.Outputs[Union All Output 1].Columns[kindergarten_count]"
-                      codePage="1252"
-                      dataType="str"
-                      length="50"
-                      lineageId="Package\Przepływ danych do Położenie Geograficzne\Zbierz do kupy.Outputs[Union All Output 1].Columns[kindergarten_count]"
-                      name="kindergarten_count" />
-                    <outputColumn
-                      refId="Package\Przepływ danych do Położenie Geograficzne\Zbierz do kupy.Outputs[Union All Output 1].Columns[university_count]"
-                      codePage="1252"
-                      dataType="str"
-                      length="50"
-                      lineageId="Package\Przepływ danych do Położenie Geograficzne\Zbierz do kupy.Outputs[Union All Output 1].Columns[university_count]"
-                      name="university_count" />
-                    <outputColumn
-                      refId="Package\Przepływ danych do Położenie Geograficzne\Zbierz do kupy.Outputs[Union All Output 1].Columns[academy_ratio]"
-                      codePage="1252"
-                      dataType="str"
-                      length="50"
-                      lineageId="Package\Przepływ danych do Położenie Geograficzne\Zbierz do kupy.Outputs[Union All Output 1].Columns[academy_ratio]"
-                      name="academy_ratio" />
-                    <outputColumn
-                      refId="Package\Przepływ danych do Położenie Geograficzne\Zbierz do kupy.Outputs[Union All Output 1].Columns[elderly_population_ratio]"
-                      codePage="1252"
-                      dataType="str"
-                      length="50"
-                      lineageId="Package\Przepływ danych do Położenie Geograficzne\Zbierz do kupy.Outputs[Union All Output 1].Columns[elderly_population_ratio]"
-                      name="elderly_population_ratio" />
-                    <outputColumn
-                      refId="Package\Przepływ danych do Położenie Geograficzne\Zbierz do kupy.Outputs[Union All Output 1].Columns[elderly_alone_ratio]"
-                      codePage="1252"
-                      dataType="str"
-                      length="50"
-                      lineageId="Package\Przepływ danych do Położenie Geograficzne\Zbierz do kupy.Outputs[Union All Output 1].Columns[elderly_alone_ratio]"
-                      name="elderly_alone_ratio" />
-                    <outputColumn
-                      refId="Package\Przepływ danych do Położenie Geograficzne\Zbierz do kupy.Outputs[Union All Output 1].Columns[nursing_home_count]"
-                      codePage="1252"
-                      dataType="str"
-                      length="50"
-                      lineageId="Package\Przepływ danych do Położenie Geograficzne\Zbierz do kupy.Outputs[Union All Output 1].Columns[nursing_home_count]"
-                      name="nursing_home_count" />
-                    <outputColumn
-                      refId="Package\Przepływ danych do Położenie Geograficzne\Zbierz do kupy.Outputs[Union All Output 1].Columns[Copy of kindergarten_count]"
-                      dataType="numeric"
-                      lineageId="Package\Przepływ danych do Położenie Geograficzne\Zbierz do kupy.Outputs[Union All Output 1].Columns[Copy of kindergarten_count]"
-                      name="Copy of kindergarten_count"
-                      precision="18" />
-                    <outputColumn
-                      refId="Package\Przepływ danych do Położenie Geograficzne\Zbierz do kupy.Outputs[Union All Output 1].Columns[Copy of university_count]"
-                      dataType="numeric"
-                      lineageId="Package\Przepływ danych do Położenie Geograficzne\Zbierz do kupy.Outputs[Union All Output 1].Columns[Copy of university_count]"
-                      name="Copy of university_count"
-                      precision="18" />
-                    <outputColumn
-                      refId="Package\Przepływ danych do Położenie Geograficzne\Zbierz do kupy.Outputs[Union All Output 1].Columns[Copy of elementary_school_count]"
-                      dataType="numeric"
-                      lineageId="Package\Przepływ danych do Położenie Geograficzne\Zbierz do kupy.Outputs[Union All Output 1].Columns[Copy of elementary_school_count]"
-                      name="Copy of elementary_school_count"
-                      precision="18" />
-                    <outputColumn
-                      refId="Package\Przepływ danych do Położenie Geograficzne\Zbierz do kupy.Outputs[Union All Output 1].Columns[ilosc_placowek_edukacyjnych]"
-                      dataType="numeric"
-                      lineageId="Package\Przepływ danych do Położenie Geograficzne\Zbierz do kupy.Outputs[Union All Output 1].Columns[ilosc_placowek_edukacyjnych]"
-                      name="ilosc_placowek_edukacyjnych"
-                      precision="20" />
-                  </outputColumns>
-                  <externalMetadataColumns />
-                </output>
-              </outputs>
-            </component>
           </components>
           <paths>
             <path
@@ -3288,15 +3123,15 @@
               name="Flat File Source Output"
               startId="Package\Przepływ danych do Położenie Geograficzne\Wczytaj dane z CSV Region.Outputs[Flat File Source Output]" />
             <path
+              refId="Package\Przepływ danych do Położenie Geograficzne.Paths[Multicast Output 1]"
+              endId="Package\Przepływ danych do Położenie Geograficzne\Union All.Inputs[Union All Input 1]"
+              name="Multicast Output 1"
+              startId="Package\Przepływ danych do Położenie Geograficzne\Duplikuj dane.Outputs[Multicast Output 1]" />
+            <path
               refId="Package\Przepływ danych do Położenie Geograficzne.Paths[Multicast Output 2]"
               endId="Package\Przepływ danych do Położenie Geograficzne\Stwórz prowincje z &quot;unknown city&quot;.Inputs[Derived Column Input]"
               name="Multicast Output 2"
               startId="Package\Przepływ danych do Położenie Geograficzne\Duplikuj dane.Outputs[Multicast Output 2]" />
-            <path
-              refId="Package\Przepływ danych do Położenie Geograficzne.Paths[Multicast Output 3]"
-              endId="Package\Przepływ danych do Położenie Geograficzne\Zbierz do kupy.Inputs[Union All Input 1]"
-              name="Multicast Output 3"
-              startId="Package\Przepływ danych do Położenie Geograficzne\Duplikuj dane.Outputs[Multicast Output 3]" />
             <path
               refId="Package\Przepływ danych do Położenie Geograficzne.Paths[Sort Output]"
               endId="Package\Przepływ danych do Położenie Geograficzne\Duplikuj dane.Inputs[Multicast Input 1]"
@@ -3304,14 +3139,14 @@
               startId="Package\Przepływ danych do Położenie Geograficzne\Usuń duplikaty par city-province (w naszym datasecie nie ma).Outputs[Sort Output]" />
             <path
               refId="Package\Przepływ danych do Położenie Geograficzne.Paths[Sort Output1]"
-              endId="Package\Przepływ danych do Położenie Geograficzne\Zbierz do kupy.Inputs[Union All Input 3]"
+              endId="Package\Przepływ danych do Położenie Geograficzne\Union All.Inputs[Union All Input 2]"
               name="Sort Output"
               startId="Package\Przepływ danych do Położenie Geograficzne\Usuń duplikaty prowincji.Outputs[Sort Output]" />
             <path
               refId="Package\Przepływ danych do Położenie Geograficzne.Paths[Union All Output 1]"
               endId="Package\Przepływ danych do Położenie Geograficzne\Przekonwertuj typ na WSTR.Inputs[Data Conversion Input]"
               name="Union All Output 1"
-              startId="Package\Przepływ danych do Położenie Geograficzne\Zbierz do kupy.Outputs[Union All Output 1]" />
+              startId="Package\Przepływ danych do Położenie Geograficzne\Union All.Outputs[Union All Output 1]" />
           </paths>
         </pipeline>
       </DTS:ObjectData>
@@ -3340,11 +3175,11 @@
       <GraphLayout
         Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
-          Size="289.333333333334,42.6666666666667"
+          Size="289,43"
           Id="Package\Czyszczenie tabelki Położenie Geograficzne"
           TopLeft="325.833328478038,48.6666671560522" />
         <NodeLayout
-          Size="290.666666666667,42.6666666666667"
+          Size="291,43"
           Id="Package\Przepływ danych do Położenie Geograficzne"
           TopLeft="340.666667610407,138.561401637087" />
         <EdgeLayout
@@ -3390,33 +3225,79 @@
       <GraphLayout
         Capacity="32" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
-          Size="354.666666666667,42.6666666666667"
-          Id="Package\Przepływ danych do Położenie Geograficzne\Pozbądź się rekordu reprezentującego całą Koreę (Korea)"
-          TopLeft="346.87499483116,138.552634186857" />
-        <NodeLayout
-          Size="282.666666666667,42.6666666666667"
-          Id="Package\Przepływ danych do Położenie Geograficzne\Wrzuć do DB SQL Położenie Geograficzne"
-          TopLeft="372.15277223227,723.657902125562" />
-        <NodeLayout
-          Size="213.333333333334,42.6666666666667"
-          Id="Package\Przepływ danych do Położenie Geograficzne\Przekonwertuj typ na WSTR"
-          TopLeft="386.458327574656,652.923981473423" />
-        <NodeLayout
-          Size="213.333333333334,42.6666666666667"
+          Size="213,43"
           Id="Package\Przepływ danych do Położenie Geograficzne\Wczytaj dane z CSV Region"
           TopLeft="301.083338517696,63.7982448949819" />
         <NodeLayout
-          Size="370.666666666667,42.6666666666667"
-          Id="Package\Przepływ danych do Położenie Geograficzne\Usuń duplikaty par city-province (w naszym datasecie nie ma)"
-          TopLeft="211.270836994983,377.435667233692" />
+          Size="144,43"
+          Id="Package\Przepływ danych do Położenie Geograficzne\Duplikuj dane"
+          TopLeft="380.520827663131,453.087721238616" />
         <NodeLayout
-          Size="394.666666666667,42"
+          Size="395,42"
           Id="Package\Przepływ danych do Położenie Geograficzne\Zamień kolumny education_count ze stringów na wartości liczbowe"
           TopLeft="189.937505126931,208.938594570175" />
         <NodeLayout
-          Size="357.333333333334,42.6666666666667"
+          Size="240,43"
+          Id="Package\Przepływ danych do Położenie Geograficzne\Stwórz prowincje z &quot;unknown city&quot;"
+          TopLeft="545.833325199783,485.921055142899" />
+        <NodeLayout
+          Size="283,43"
+          Id="Package\Przepływ danych do Położenie Geograficzne\Wrzuć do DB SQL Położenie Geograficzne"
+          TopLeft="372.15277223227,723.657902125562" />
+        <NodeLayout
+          Size="213,43"
+          Id="Package\Przepływ danych do Położenie Geograficzne\Przekonwertuj typ na WSTR"
+          TopLeft="386.458327574656,652.923981473423" />
+        <NodeLayout
+          Size="195,43"
+          Id="Package\Przepływ danych do Położenie Geograficzne\Usuń duplikaty prowincji"
+          TopLeft="641.666657105088,565.175443619132" />
+        <NodeLayout
+          Size="371,43"
+          Id="Package\Przepływ danych do Położenie Geograficzne\Usuń duplikaty par city-province (w naszym datasecie nie ma)"
+          TopLeft="211.270836994983,377.435667233692" />
+        <NodeLayout
+          Size="357,43"
           Id="Package\Przepływ danych do Położenie Geograficzne\Dodaj kolumnę z sumą wszystkich placówek edukacyjnych"
           TopLeft="222.770840235986,309.078945224139" />
+        <NodeLayout
+          Size="355,43"
+          Id="Package\Przepływ danych do Położenie Geograficzne\Pozbądź się rekordu reprezentującego całą Koreę (Korea)"
+          TopLeft="346.87499483116,138.552634186857" />
+        <EdgeLayout
+          Id="Package\Przepływ danych do Położenie Geograficzne.Paths[Derived Column Output1]"
+          TopLeft="665.833325199783,528.587721809566">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="73.1666652386385,36.5877218095659"
+              Start="0,0"
+              End="73.1666652386385,29.0877218095659">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,14.2938609047829" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,14.2938609047829"
+                    Point2="0,18.2938609047829"
+                    Point3="4,18.2938609047829" />
+                  <mssgle:LineSegment
+                    End="69.1666652386385,18.2938609047829" />
+                  <mssgle:CubicBezierSegment
+                    Point1="69.1666652386385,18.2938609047829"
+                    Point2="73.1666652386385,18.2938609047829"
+                    Point3="73.1666652386385,22.2938609047829" />
+                  <mssgle:LineSegment
+                    End="73.1666652386385,29.0877218095659" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
         <EdgeLayout
           Id="Package\Przepływ danych do Położenie Geograficzne.Paths[Derived Column Output]"
           TopLeft="399.020838615484,351.745611890806">
@@ -3544,6 +3425,68 @@
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
+          Id="Package\Przepływ danych do Położenie Geograficzne.Paths[Sort Output]"
+          TopLeft="396.604170328316,420.102333900359">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="55.9166573348149,32.9853873382575"
+              Start="0,0"
+              End="55.9166573348149,25.4853873382575">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,12.4926936691288" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,12.4926936691288"
+                    Point2="0,16.4926936691288"
+                    Point3="4,16.4926936691288" />
+                  <mssgle:LineSegment
+                    End="51.9166573348149,16.4926936691288" />
+                  <mssgle:CubicBezierSegment
+                    Point1="51.9166573348149,16.4926936691288"
+                    Point2="55.9166573348149,16.4926936691288"
+                    Point3="55.9166573348149,20.4926936691288" />
+                  <mssgle:LineSegment
+                    End="55.9166573348149,25.4853873382575" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Przepływ danych do Położenie Geograficzne.Paths[Multicast Output 2]"
+          TopLeft="524.520827663131,463.421055142899">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="141.312497536652,22.5"
+              Start="0,0"
+              End="141.312497536652,15">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="137.312497536652,0" />
+                  <mssgle:CubicBezierSegment
+                    Point1="137.312497536652,0"
+                    Point2="141.312497536652,0"
+                    Point3="141.312497536652,4" />
+                  <mssgle:LineSegment
+                    End="141.312497536652,15" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
           Id="Package\Przepływ danych do Położenie Geograficzne.Paths[Flat File Source Output]"
           TopLeft="407.750005184362,106.464911561649">
           <EdgeLayout.Curve>
@@ -3578,35 +3521,35 @@
           </EdgeLayout.Labels>
         </EdgeLayout>
         <NodeLayout
-          Size="144,42.6666666666667"
-          Id="Package\Przepływ danych do Położenie Geograficzne\Duplikuj dane"
-          TopLeft="380.520827663131,453.087721238616" />
+          Size="121,42"
+          Id="Package\Przepływ danych do Położenie Geograficzne\Union All"
+          TopLeft="492,590" />
         <EdgeLayout
-          Id="Package\Przepływ danych do Położenie Geograficzne.Paths[Sort Output]"
-          TopLeft="396.604170328316,420.102333900359">
+          Id="Package\Przepływ danych do Położenie Geograficzne.Paths[Multicast Output 1]"
+          TopLeft="452.520827663131,496.087721238616">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="55.9166573348149,32.9853873382575"
+              EndConnector="99.979172336869,93.912278761384"
               Start="0,0"
-              End="55.9166573348149,25.4853873382575">
+              End="99.979172336869,86.412278761384">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,12.4926936691288" />
+                    End="0,42.956139380692" />
                   <mssgle:CubicBezierSegment
-                    Point1="0,12.4926936691288"
-                    Point2="0,16.4926936691288"
-                    Point3="4,16.4926936691288" />
+                    Point1="0,42.956139380692"
+                    Point2="0,46.956139380692"
+                    Point3="4,46.956139380692" />
                   <mssgle:LineSegment
-                    End="51.9166573348149,16.4926936691288" />
+                    End="95.979172336869,46.956139380692" />
                   <mssgle:CubicBezierSegment
-                    Point1="51.9166573348149,16.4926936691288"
-                    Point2="55.9166573348149,16.4926936691288"
-                    Point3="55.9166573348149,20.4926936691288" />
+                    Point1="95.979172336869,46.956139380692"
+                    Point2="99.979172336869,46.956139380692"
+                    Point3="99.979172336869,50.956139380692" />
                   <mssgle:LineSegment
-                    End="55.9166573348149,25.4853873382575" />
+                    End="99.979172336869,86.412278761384" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -3615,68 +3558,32 @@
             <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
-        <NodeLayout
-          Size="240,42.6666666666667"
-          Id="Package\Przepływ danych do Położenie Geograficzne\Stwórz prowincje z &quot;unknown city&quot;"
-          TopLeft="545.833325199783,485.921055142899" />
         <EdgeLayout
-          Id="Package\Przepływ danych do Położenie Geograficzne.Paths[Multicast Output 2]"
-          TopLeft="524.520827663131,463.421055142899">
+          Id="Package\Przepływ danych do Położenie Geograficzne.Paths[Sort Output1]"
+          TopLeft="641.666657105088,586.675443619132">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="141.312497536652,22.5"
+              EndConnector="-28.666657105088,24.324556380868"
               Start="0,0"
-              End="141.312497536652,15">
+              End="-21.166657105088,24.324556380868">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="137.312497536652,0" />
+                    End="-10.333328552544,0" />
                   <mssgle:CubicBezierSegment
-                    Point1="137.312497536652,0"
-                    Point2="141.312497536652,0"
-                    Point3="141.312497536652,4" />
+                    Point1="-10.333328552544,0"
+                    Point2="-14.333328552544,0"
+                    Point3="-14.333328552544,4" />
                   <mssgle:LineSegment
-                    End="141.312497536652,15" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <NodeLayout
-          Size="149.333333333334,42.6666666666667"
-          Id="Package\Przepływ danych do Położenie Geograficzne\Zbierz do kupy"
-          TopLeft="441.66666008532,583.684213842547" />
-        <EdgeLayout
-          Id="Package\Przepływ danych do Położenie Geograficzne.Paths[Multicast Output 3]"
-          TopLeft="452.520827663131,495.754387905283">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="40.2569435333003,87.9298259372637"
-              Start="0,0"
-              End="40.2569435333003,80.4298259372637">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,48.1986245846654" />
+                    End="-14.333328552544,20.324556380868" />
                   <mssgle:CubicBezierSegment
-                    Point1="0,48.1986245846654"
-                    Point2="0,52.1986245846654"
-                    Point3="4,52.1986245846654" />
+                    Point1="-14.333328552544,20.324556380868"
+                    Point2="-14.333328552544,24.324556380868"
+                    Point3="-18.333328552544,24.324556380868" />
                   <mssgle:LineSegment
-                    End="36.2569435333003,52.1986245846654" />
-                  <mssgle:CubicBezierSegment
-                    Point1="36.2569435333003,52.1986245846654"
-                    Point2="40.2569435333003,52.1986245846654"
-                    Point3="40.2569435333003,56.1986245846654" />
-                  <mssgle:LineSegment
-                    End="40.2569435333003,80.4298259372637" />
+                    End="-21.166657105088,24.324556380868" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -3687,102 +3594,24 @@
         </EdgeLayout>
         <EdgeLayout
           Id="Package\Przepływ danych do Położenie Geograficzne.Paths[Union All Output 1]"
-          TopLeft="516.333326751987,626.350880509213">
+          TopLeft="492,611">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="-23.2083325106646,26.5731009642097"
+              EndConnector="0.958327574655982,41.9239814734231"
               Start="0,0"
-              End="-23.2083325106646,19.0731009642097">
+              End="0.958327574655982,34.4239814734231">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,9.28655048210487" />
+                    End="-3.04167242534402,0" />
                   <mssgle:CubicBezierSegment
-                    Point1="0,9.28655048210487"
-                    Point2="0,13.2865504821049"
-                    Point3="-4,13.2865504821049" />
+                    Point1="-3.04167242534402,0"
+                    Point2="0.958327574655982,0"
+                    Point3="0.958327574655982,4" />
                   <mssgle:LineSegment
-                    End="-19.2083325106646,13.2865504821049" />
-                  <mssgle:CubicBezierSegment
-                    Point1="-19.2083325106646,13.2865504821049"
-                    Point2="-23.2083325106646,13.2865504821049"
-                    Point3="-23.2083325106646,17.2865504821049" />
-                  <mssgle:LineSegment
-                    End="-23.2083325106646,19.0731009642097" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <NodeLayout
-          Size="194.666666666667,42.6666666666667"
-          Id="Package\Przepływ danych do Położenie Geograficzne\Usuń duplikaty prowincji"
-          TopLeft="641.666657105088,565.175443619132" />
-        <EdgeLayout
-          Id="Package\Przepływ danych do Położenie Geograficzne.Paths[Sort Output1]"
-          TopLeft="641.666657105088,586.508776952465">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="-50.6666636864343,18.5087702234147"
-              Start="0,0"
-              End="-43.1666636864343,18.5087702234147">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="-21.3333318432171,0" />
-                  <mssgle:CubicBezierSegment
-                    Point1="-21.3333318432171,0"
-                    Point2="-25.3333318432171,0"
-                    Point3="-25.3333318432171,4" />
-                  <mssgle:LineSegment
-                    End="-25.3333318432171,14.5087702234147" />
-                  <mssgle:CubicBezierSegment
-                    Point1="-25.3333318432171,14.5087702234147"
-                    Point2="-25.3333318432171,18.5087702234147"
-                    Point3="-29.3333318432171,18.5087702234147" />
-                  <mssgle:LineSegment
-                    End="-43.1666636864343,18.5087702234147" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Przepływ danych do Położenie Geograficzne.Paths[Derived Column Output1]"
-          TopLeft="665.833325199783,528.587721809566">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="73.1666652386385,36.5877218095659"
-              Start="0,0"
-              End="73.1666652386385,29.0877218095659">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,14.2938609047829" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,14.2938609047829"
-                    Point2="0,18.2938609047829"
-                    Point3="4,18.2938609047829" />
-                  <mssgle:LineSegment
-                    End="69.1666652386385,18.2938609047829" />
-                  <mssgle:CubicBezierSegment
-                    Point1="69.1666652386385,18.2938609047829"
-                    Point2="73.1666652386385,18.2938609047829"
-                    Point3="73.1666652386385,22.2938609047829" />
-                  <mssgle:LineSegment
-                    End="73.1666652386385,29.0877218095659" />
+                    End="0.958327574655982,34.4239814734231" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>

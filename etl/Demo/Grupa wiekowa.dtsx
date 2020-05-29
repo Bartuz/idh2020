@@ -11,583 +11,11 @@
   DTS:LocaleID="1045"
   DTS:ObjectName="Package1"
   DTS:PackageType="5"
-  DTS:VersionBuild="28"
-  DTS:VersionGUID="{CBF532E0-D135-4BF5-B56C-764849F564C3}">
+  DTS:ProtectionLevel="0"
+  DTS:VersionBuild="32"
+  DTS:VersionGUID="{AE0E4C83-B0D3-4A62-842B-FDA69DF55FED}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
-  <DTS:ConnectionManagers>
-    <DTS:ConnectionManager
-      DTS:refId="Package.ConnectionManagers[covid19southkorea.database.windows.net.Covid-19SouthKoreaDWH.covid@covid19southkorea]"
-      DTS:CreationName="OLEDB"
-      DTS:DTSID="{8106BE45-C935-410A-8DA2-A48CF2C92FDA}"
-      DTS:ObjectName="covid19southkorea.database.windows.net.Covid-19SouthKoreaDWH.covid@covid19southkorea">
-      <DTS:ObjectData>
-        <DTS:ConnectionManager
-          DTS:ConnectionString="Data Source=covid19southkorea.database.windows.net;User ID=covid@covid19southkorea;Initial Catalog=Covid-19SouthKoreaDWH;Provider=SQLNCLI11.1;Auto Translate=False;">
-          <DTS:Password
-            DTS:Name="Password"
-            Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAvimQ3wX2i0aWlF5K7wDfMwAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAACPXz4wd1OfyScb9bJAKtkG+ZQWZmSIvy2Lw3phsqUycgAAAAAOgAAAAAIAACAAAABJIreysskassgOAYSHndzqBIuaN0PziFVBrorqdS7JdSAAAAAkkfb568rtnQ56Iptrumw3S7fOvDhKKrnt+A4/HUTxv0AAAAD4coHEKNBo0ejP7rJdUvPriHnxWku+B6Be87epiB4pUyxBleXPgNjqbwX/Sh+EefgoiyjberovBWsUvXqvQiF6</DTS:Password>
-        </DTS:ConnectionManager>
-      </DTS:ObjectData>
-    </DTS:ConnectionManager>
-    <DTS:ConnectionManager
-      DTS:refId="Package.ConnectionManagers[Flat File Connection Manager]"
-      DTS:CreationName="FLATFILE"
-      DTS:DTSID="{EAAB198F-BF62-4889-88A3-78E7AF208EA6}"
-      DTS:ObjectName="Flat File Connection Manager">
-      <DTS:ObjectData>
-        <DTS:ConnectionManager
-          DTS:Format="Delimited"
-          DTS:LocaleID="2057"
-          DTS:HeaderRowDelimiter="_x000D__x000A_"
-          DTS:ColumnNamesInFirstDataRow="True"
-          DTS:RowDelimiter=""
-          DTS:TextQualifier="_x003C_none_x003E_"
-          DTS:CodePage="1252"
-          DTS:ConnectionString="D:\PJATK_Informatyka\magisterkie\IDH\cwiczenia\coronavirusdataset\PatientInfo.csv">
-          <DTS:FlatFileColumns>
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x002C_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="patient_id"
-              DTS:DTSID="{F9DBC7DB-3BB1-4CEF-83E3-2D652FEAE485}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x002C_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="global_num"
-              DTS:DTSID="{D214F142-7A9C-4A3A-9B51-EC157490FFE0}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x002C_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="sex"
-              DTS:DTSID="{E03DACE1-68CD-44D6-8C7E-5A1980AE12DC}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x002C_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="birth_year"
-              DTS:DTSID="{ACE750D6-A411-438A-99AC-29F054E7B8AB}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x002C_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="age"
-              DTS:DTSID="{D02C3B84-392E-4F5D-8916-F3103A807E73}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x002C_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="country"
-              DTS:DTSID="{45041191-A470-4A13-BCE9-CF43C38DF213}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x002C_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="province"
-              DTS:DTSID="{BFC6E9D0-5842-4649-8109-6606A7876671}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x002C_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="city"
-              DTS:DTSID="{7FFD4889-7142-4B38-98B6-E763A9856E9A}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x002C_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="disease"
-              DTS:DTSID="{855ED024-5CA5-4B66-A3C4-446895A72B26}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x002C_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="infection_case"
-              DTS:DTSID="{DAF67645-1099-4079-9BBE-2FEDF2739BFA}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x002C_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="infection_order"
-              DTS:DTSID="{1DB42F4B-3366-4CC3-AEB2-D87FA731D0EF}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x002C_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="infected_by"
-              DTS:DTSID="{FFCC6AA0-AAB5-4F5D-AB57-9EF15DCEC89F}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x002C_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="contact_number"
-              DTS:DTSID="{C5C7D9C3-AD41-408B-840F-BFABF2D8CC97}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x002C_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="symptom_onset_date"
-              DTS:DTSID="{25AADBBF-AE24-4812-AFFC-0D85FC319DB9}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x002C_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="confirmed_date"
-              DTS:DTSID="{48E04B9A-B9B4-47CD-A057-657215094727}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x002C_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="released_date"
-              DTS:DTSID="{6D582BD0-45F7-4B62-87B3-3B47CF16A77D}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x002C_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="deceased_date"
-              DTS:DTSID="{097F5B6B-3028-4906-B7FF-EEF52AAE2931}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x000D__x000A_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="state"
-              DTS:DTSID="{EF79BE5A-39A6-40F7-881B-58D184F2F806}"
-              DTS:CreationName="" />
-          </DTS:FlatFileColumns>
-        </DTS:ConnectionManager>
-      </DTS:ObjectData>
-    </DTS:ConnectionManager>
-    <DTS:ConnectionManager
-      DTS:refId="Package.ConnectionManagers[Flat File Connection Manager 1]"
-      DTS:CreationName="FLATFILE"
-      DTS:DTSID="{71182C24-57A7-4CD1-84E0-D7E1A5B65C75}"
-      DTS:ObjectName="Flat File Connection Manager 1">
-      <DTS:ObjectData>
-        <DTS:ConnectionManager
-          DTS:Format="Delimited"
-          DTS:LocaleID="1045"
-          DTS:HeaderRowDelimiter="_x000D__x000A_"
-          DTS:ColumnNamesInFirstDataRow="True"
-          DTS:RowDelimiter=""
-          DTS:TextQualifier="_x003C_none_x003E_"
-          DTS:CodePage="1250"
-          DTS:ConnectionString="D:\a;x\cwiczenia\coronavirusdataset\PatientInfo.csv">
-          <DTS:FlatFileColumns>
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x002C_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="patient_id"
-              DTS:DTSID="{4ACE5D3F-3E67-4094-9CC4-7129809167CA}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x002C_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="global_num"
-              DTS:DTSID="{1D22AD54-180C-449E-A99F-2A1291EA854D}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x002C_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="sex"
-              DTS:DTSID="{A270248A-8840-484D-9185-6D030CC41B30}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x002C_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="birth_year"
-              DTS:DTSID="{60BEF81D-E541-4D8C-BE88-C4F4A2C1E049}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x002C_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="age"
-              DTS:DTSID="{CF126D88-B0D8-4C88-AFAD-0ACCF18A1B8A}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x002C_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="country"
-              DTS:DTSID="{BBDC8D9E-F2BF-453E-A279-151549F91945}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x002C_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="province"
-              DTS:DTSID="{C982467B-B476-4C4E-BCFB-7A9D6A3344C8}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x002C_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="city"
-              DTS:DTSID="{2AC95E6B-45EE-4EED-9840-4D27429B9046}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x002C_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="disease"
-              DTS:DTSID="{76106942-40D1-4586-BF3B-6A30D0FE42DD}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x002C_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="infection_case"
-              DTS:DTSID="{E55203A9-D112-445A-BC48-A5B000584E5B}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x002C_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="infection_order"
-              DTS:DTSID="{A5AF7609-07FA-4D35-B039-60BD50368516}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x002C_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="infected_by"
-              DTS:DTSID="{2ADF6911-6F39-47E8-B781-C1BE7B03D6B3}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x002C_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="contact_number"
-              DTS:DTSID="{262ACB93-E275-452A-A738-86419FE19E28}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x002C_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="symptom_onset_date"
-              DTS:DTSID="{7884B5EE-B042-4FCA-A8EC-3196ED411DB7}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x002C_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="confirmed_date"
-              DTS:DTSID="{28ED9158-1DD5-4FD3-9A4E-9E8C7E0E6CDC}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x002C_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="released_date"
-              DTS:DTSID="{EA60F1F6-1511-43B2-9FB3-84FD0BF0C8FA}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x002C_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="deceased_date"
-              DTS:DTSID="{EE04BF56-317E-4A8B-A646-CD443E69DA07}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x000D__x000A_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="state"
-              DTS:DTSID="{A508FA00-616B-4329-BE3C-256E4D76E842}"
-              DTS:CreationName="" />
-          </DTS:FlatFileColumns>
-        </DTS:ConnectionManager>
-      </DTS:ObjectData>
-    </DTS:ConnectionManager>
-    <DTS:ConnectionManager
-      DTS:refId="Package.ConnectionManagers[Flat File Connection Manager 2]"
-      DTS:CreationName="FLATFILE"
-      DTS:DTSID="{E405398F-892C-485B-BB55-70496DBA3147}"
-      DTS:ObjectName="Flat File Connection Manager 2">
-      <DTS:ObjectData>
-        <DTS:ConnectionManager
-          DTS:Format="Delimited"
-          DTS:LocaleID="2057"
-          DTS:HeaderRowDelimiter="_x000D__x000A_"
-          DTS:ColumnNamesInFirstDataRow="True"
-          DTS:RowDelimiter=""
-          DTS:TextQualifier="_x003C_none_x003E_"
-          DTS:CodePage="1252"
-          DTS:ConnectionString="D:\PJATK_Informatyka\magisterkie\IDH\cwiczenia\coronavirusdataset\PatientInfo.csv">
-          <DTS:FlatFileColumns>
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x002C_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="patient_id"
-              DTS:DTSID="{FF7FF6B8-176C-4B0A-85DA-16EA1D7570E2}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x002C_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="global_num"
-              DTS:DTSID="{99D5E70A-6810-4DCD-B870-CBE549F9F152}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x002C_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="sex"
-              DTS:DTSID="{FB0F6D2D-43E7-4B99-95CE-274751178E5C}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x002C_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="birth_year"
-              DTS:DTSID="{846AFA2B-CDAD-40A5-83DB-7DB8AA1B1B24}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x002C_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="age"
-              DTS:DTSID="{F90C8C24-3052-4A44-B795-773410BC4DBF}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x002C_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="country"
-              DTS:DTSID="{408D6943-DCB7-45C0-AA80-01CEF939766A}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x002C_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="province"
-              DTS:DTSID="{55E958F6-B132-457A-96F0-BD66106FE120}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x002C_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="city"
-              DTS:DTSID="{8C4BAB65-D20F-443D-AD25-395A30EE63D2}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x002C_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="disease"
-              DTS:DTSID="{6926CBF7-8DA7-407E-8530-33AA308E352A}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x002C_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="infection_case"
-              DTS:DTSID="{AF956821-5310-4B1C-8292-9F7BD8FA1DA5}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x002C_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="infection_order"
-              DTS:DTSID="{8B75903F-0754-4760-9ADF-544F2EE63027}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x002C_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="infected_by"
-              DTS:DTSID="{39F5989C-F441-4A2B-80F5-E092AA50091C}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x002C_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="contact_number"
-              DTS:DTSID="{2F531CF2-BAC3-4E51-83E8-7677427DC7AF}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x002C_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="symptom_onset_date"
-              DTS:DTSID="{9E404651-5791-41C9-9F70-E1296A6FAD93}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x002C_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="confirmed_date"
-              DTS:DTSID="{608415CF-AFA4-43BB-9F79-F6BCEA0065F6}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x002C_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="released_date"
-              DTS:DTSID="{7AA6B7CB-79ED-4BC5-821C-66DD9DCCF506}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x002C_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="deceased_date"
-              DTS:DTSID="{423DF608-F980-4151-88CC-0F034A4BBD2E}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x000D__x000A_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="state"
-              DTS:DTSID="{8E982A90-8048-4EE9-95D0-C2F289C0A44F}"
-              DTS:CreationName="" />
-          </DTS:FlatFileColumns>
-        </DTS:ConnectionManager>
-      </DTS:ObjectData>
-    </DTS:ConnectionManager>
-    <DTS:ConnectionManager
-      DTS:refId="Package.ConnectionManagers[localhost.IDH]"
-      DTS:CreationName="OLEDB"
-      DTS:DTSID="{BA0C766D-1C21-408B-801E-AD3FFC8BE7D7}"
-      DTS:ObjectName="localhost.IDH">
-      <DTS:ObjectData>
-        <DTS:ConnectionManager
-          DTS:ConnectionString="Data Source=localhost;Initial Catalog=IDH;Provider=MSOLEDBSQL.1;Integrated Security=SSPI;Auto Translate=False;" />
-      </DTS:ObjectData>
-    </DTS:ConnectionManager>
-  </DTS:ConnectionManagers>
   <DTS:Variables />
   <DTS:Executables>
     <DTS:Executable
@@ -603,7 +31,7 @@
       <DTS:Variables />
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
-          SQLTask:Connection="{8106BE45-C935-410A-8DA2-A48CF2C92FDA}"
+          SQLTask:Connection="{52D2FB58-7BB0-47DA-8698-4BD065BFE199}"
           SQLTask:SqlStatementSource="TRUNCATE TABLE [dbo].[Grupa_Wiekowa]" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
       </DTS:ObjectData>
     </DTS:Executable>
@@ -636,7 +64,7 @@
                   <inputColumns>
                     <inputColumn
                       refId="Package\Przepływ danych Grupa wiekowa\Dodaj wartość &quot;unknown age&quot;.Inputs[Derived Column Input].Columns[age]"
-                      cachedCodepage="1252"
+                      cachedCodepage="1250"
                       cachedDataType="str"
                       cachedLength="50"
                       cachedName="age"
@@ -711,7 +139,7 @@
                   <inputColumns>
                     <inputColumn
                       refId="Package\Przepływ danych Grupa wiekowa\Przekonwertuj typ na WSTR.Inputs[Data Conversion Input].Columns[age]"
-                      cachedCodepage="1252"
+                      cachedCodepage="1250"
                       cachedDataType="str"
                       cachedLength="50"
                       cachedName="age"
@@ -801,7 +229,7 @@
                   <inputColumns>
                     <inputColumn
                       refId="Package\Przepływ danych Grupa wiekowa\Usuń duplikaty.Inputs[Sort Input].Columns[age]"
-                      cachedCodepage="1252"
+                      cachedCodepage="1250"
                       cachedDataType="str"
                       cachedLength="50"
                       cachedName="age"
@@ -829,7 +257,7 @@
                   <outputColumns>
                     <outputColumn
                       refId="Package\Przepływ danych Grupa wiekowa\Usuń duplikaty.Outputs[Sort Output].Columns[age]"
-                      codePage="1252"
+                      codePage="1250"
                       dataType="str"
                       length="50"
                       lineageId="Package\Przepływ danych Grupa wiekowa\Usuń duplikaty.Outputs[Sort Output].Columns[age]"
@@ -853,7 +281,7 @@
               componentClassID="Microsoft.FlatFileSource"
               contactInfo="Flat File Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
               description="Flat File Source"
-              localeId="2057"
+              localeId="1045"
               name="Wczytaj kolumnę &quot;age&quot; z csv &quot;PatientInfo&quot;"
               usesDispositions="true"
               version="1">
@@ -870,8 +298,8 @@
               <connections>
                 <connection
                   refId="Package\Przepływ danych Grupa wiekowa\Wczytaj kolumnę &quot;age&quot; z csv &quot;PatientInfo&quot;.Connections[FlatFileConnection]"
-                  connectionManagerID="Package.ConnectionManagers[Flat File Connection Manager 2]"
-                  connectionManagerRefId="Package.ConnectionManagers[Flat File Connection Manager 2]"
+                  connectionManagerID="{5E8E8F21-473E-446C-8885-E0CDF3B5D01C}:external"
+                  connectionManagerRefId="Project.ConnectionManagers[PatientInfo_CSV]"
                   name="FlatFileConnection" />
               </connections>
               <outputs>
@@ -881,7 +309,7 @@
                   <outputColumns>
                     <outputColumn
                       refId="Package\Przepływ danych Grupa wiekowa\Wczytaj kolumnę &quot;age&quot; z csv &quot;PatientInfo&quot;.Outputs[Flat File Source Output].Columns[age]"
-                      codePage="1252"
+                      codePage="1250"
                       dataType="str"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
@@ -906,109 +334,109 @@
                     isUsed="True">
                     <externalMetadataColumn
                       refId="Package\Przepływ danych Grupa wiekowa\Wczytaj kolumnę &quot;age&quot; z csv &quot;PatientInfo&quot;.Outputs[Flat File Source Output].ExternalColumns[patient_id]"
-                      codePage="1252"
+                      codePage="1250"
                       dataType="str"
                       length="50"
                       name="patient_id" />
                     <externalMetadataColumn
                       refId="Package\Przepływ danych Grupa wiekowa\Wczytaj kolumnę &quot;age&quot; z csv &quot;PatientInfo&quot;.Outputs[Flat File Source Output].ExternalColumns[global_num]"
-                      codePage="1252"
+                      codePage="1250"
                       dataType="str"
                       length="50"
                       name="global_num" />
                     <externalMetadataColumn
                       refId="Package\Przepływ danych Grupa wiekowa\Wczytaj kolumnę &quot;age&quot; z csv &quot;PatientInfo&quot;.Outputs[Flat File Source Output].ExternalColumns[sex]"
-                      codePage="1252"
+                      codePage="1250"
                       dataType="str"
                       length="50"
                       name="sex" />
                     <externalMetadataColumn
                       refId="Package\Przepływ danych Grupa wiekowa\Wczytaj kolumnę &quot;age&quot; z csv &quot;PatientInfo&quot;.Outputs[Flat File Source Output].ExternalColumns[birth_year]"
-                      codePage="1252"
+                      codePage="1250"
                       dataType="str"
                       length="50"
                       name="birth_year" />
                     <externalMetadataColumn
                       refId="Package\Przepływ danych Grupa wiekowa\Wczytaj kolumnę &quot;age&quot; z csv &quot;PatientInfo&quot;.Outputs[Flat File Source Output].ExternalColumns[age]"
-                      codePage="1252"
+                      codePage="1250"
                       dataType="str"
                       length="50"
                       name="age" />
                     <externalMetadataColumn
                       refId="Package\Przepływ danych Grupa wiekowa\Wczytaj kolumnę &quot;age&quot; z csv &quot;PatientInfo&quot;.Outputs[Flat File Source Output].ExternalColumns[country]"
-                      codePage="1252"
+                      codePage="1250"
                       dataType="str"
                       length="50"
                       name="country" />
                     <externalMetadataColumn
                       refId="Package\Przepływ danych Grupa wiekowa\Wczytaj kolumnę &quot;age&quot; z csv &quot;PatientInfo&quot;.Outputs[Flat File Source Output].ExternalColumns[province]"
-                      codePage="1252"
+                      codePage="1250"
                       dataType="str"
                       length="50"
                       name="province" />
                     <externalMetadataColumn
                       refId="Package\Przepływ danych Grupa wiekowa\Wczytaj kolumnę &quot;age&quot; z csv &quot;PatientInfo&quot;.Outputs[Flat File Source Output].ExternalColumns[city]"
-                      codePage="1252"
+                      codePage="1250"
                       dataType="str"
                       length="50"
                       name="city" />
                     <externalMetadataColumn
                       refId="Package\Przepływ danych Grupa wiekowa\Wczytaj kolumnę &quot;age&quot; z csv &quot;PatientInfo&quot;.Outputs[Flat File Source Output].ExternalColumns[disease]"
-                      codePage="1252"
+                      codePage="1250"
                       dataType="str"
                       length="50"
                       name="disease" />
                     <externalMetadataColumn
                       refId="Package\Przepływ danych Grupa wiekowa\Wczytaj kolumnę &quot;age&quot; z csv &quot;PatientInfo&quot;.Outputs[Flat File Source Output].ExternalColumns[infection_case]"
-                      codePage="1252"
+                      codePage="1250"
                       dataType="str"
                       length="50"
                       name="infection_case" />
                     <externalMetadataColumn
                       refId="Package\Przepływ danych Grupa wiekowa\Wczytaj kolumnę &quot;age&quot; z csv &quot;PatientInfo&quot;.Outputs[Flat File Source Output].ExternalColumns[infection_order]"
-                      codePage="1252"
+                      codePage="1250"
                       dataType="str"
                       length="50"
                       name="infection_order" />
                     <externalMetadataColumn
                       refId="Package\Przepływ danych Grupa wiekowa\Wczytaj kolumnę &quot;age&quot; z csv &quot;PatientInfo&quot;.Outputs[Flat File Source Output].ExternalColumns[infected_by]"
-                      codePage="1252"
+                      codePage="1250"
                       dataType="str"
                       length="50"
                       name="infected_by" />
                     <externalMetadataColumn
                       refId="Package\Przepływ danych Grupa wiekowa\Wczytaj kolumnę &quot;age&quot; z csv &quot;PatientInfo&quot;.Outputs[Flat File Source Output].ExternalColumns[contact_number]"
-                      codePage="1252"
+                      codePage="1250"
                       dataType="str"
                       length="50"
                       name="contact_number" />
                     <externalMetadataColumn
                       refId="Package\Przepływ danych Grupa wiekowa\Wczytaj kolumnę &quot;age&quot; z csv &quot;PatientInfo&quot;.Outputs[Flat File Source Output].ExternalColumns[symptom_onset_date]"
-                      codePage="1252"
+                      codePage="1250"
                       dataType="str"
                       length="50"
                       name="symptom_onset_date" />
                     <externalMetadataColumn
                       refId="Package\Przepływ danych Grupa wiekowa\Wczytaj kolumnę &quot;age&quot; z csv &quot;PatientInfo&quot;.Outputs[Flat File Source Output].ExternalColumns[confirmed_date]"
-                      codePage="1252"
+                      codePage="1250"
                       dataType="str"
                       length="50"
                       name="confirmed_date" />
                     <externalMetadataColumn
                       refId="Package\Przepływ danych Grupa wiekowa\Wczytaj kolumnę &quot;age&quot; z csv &quot;PatientInfo&quot;.Outputs[Flat File Source Output].ExternalColumns[released_date]"
-                      codePage="1252"
+                      codePage="1250"
                       dataType="str"
                       length="50"
                       name="released_date" />
                     <externalMetadataColumn
                       refId="Package\Przepływ danych Grupa wiekowa\Wczytaj kolumnę &quot;age&quot; z csv &quot;PatientInfo&quot;.Outputs[Flat File Source Output].ExternalColumns[deceased_date]"
-                      codePage="1252"
+                      codePage="1250"
                       dataType="str"
                       length="50"
                       name="deceased_date" />
                     <externalMetadataColumn
                       refId="Package\Przepływ danych Grupa wiekowa\Wczytaj kolumnę &quot;age&quot; z csv &quot;PatientInfo&quot;.Outputs[Flat File Source Output].ExternalColumns[state]"
-                      codePage="1252"
+                      codePage="1250"
                       dataType="str"
                       length="50"
                       name="state" />
@@ -1102,8 +530,8 @@
               <connections>
                 <connection
                   refId="Package\Przepływ danych Grupa wiekowa\Wrzuć do DB SQL Grupa Wiekowa.Connections[OleDbConnection]"
-                  connectionManagerID="Package.ConnectionManagers[covid19southkorea.database.windows.net.Covid-19SouthKoreaDWH.covid@covid19southkorea]"
-                  connectionManagerRefId="Package.ConnectionManagers[covid19southkorea.database.windows.net.Covid-19SouthKoreaDWH.covid@covid19southkorea]"
+                  connectionManagerID="{52D2FB58-7BB0-47DA-8698-4BD065BFE199}:external"
+                  connectionManagerRefId="Project.ConnectionManagers[covid19southkorea.database.windows.net.Covid-19SouthKoreaDWH.covid@covid19southkorea]"
                   description="The OLE DB runtime connection used to access the database."
                   name="OleDbConnection" />
               </connections>
@@ -1212,11 +640,11 @@
       <GraphLayout
         Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
-          Size="253.333333333334,42.6666666666667"
+          Size="253,43"
           Id="Package\Czyszczenie tabelki Grupa_wiekowa"
           TopLeft="292.916662301868,26.0000004893855" />
         <NodeLayout
-          Size="236,42.6666666666667"
+          Size="236,43"
           Id="Package\Przepływ danych Grupa wiekowa"
           TopLeft="295.583336170763,92.701753759208" />
         <EdgeLayout
@@ -1250,79 +678,23 @@
       <GraphLayout
         Capacity="16" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
-          Size="245.333333333334,42.6666666666667"
-          Id="Package\Przepływ danych Grupa wiekowa\Wrzuć do DB SQL Grupa Wiekowa"
-          TopLeft="561.249991636724,318.125319271127" />
+          Size="277,43"
+          Id="Package\Przepływ danych Grupa wiekowa\Wczytaj kolumnę &quot;age&quot; z csv &quot;PatientInfo&quot;"
+          TopLeft="318.333329483867,60" />
         <NodeLayout
-          Size="149.333333333334,42.6666666666667"
-          Id="Package\Przepływ danych Grupa wiekowa\Usuń duplikaty"
-          TopLeft="350.833328999579,212.35088006061" />
-        <NodeLayout
-          Size="213.333333333334,42.6666666666667"
+          Size="213,43"
           Id="Package\Przepływ danych Grupa wiekowa\Przekonwertuj typ na WSTR"
           TopLeft="573.630943833185,230.025065121967" />
         <NodeLayout
-          Size="277.333333333334,42.6666666666667"
-          Id="Package\Przepływ danych Grupa wiekowa\Wczytaj kolumnę &quot;age&quot; z csv &quot;PatientInfo&quot;"
-          TopLeft="318.333329483867,60" />
-        <EdgeLayout
-          Id="Package\Przepływ danych Grupa wiekowa.Paths[Sort Output]"
-          TopLeft="500.166662332912,233.684213393943">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="73.4642815002728,17.674185061357"
-              Start="0,0"
-              End="65.9642815002728,17.674185061357">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="32.7321407501364,0" />
-                  <mssgle:CubicBezierSegment
-                    Point1="32.7321407501364,0"
-                    Point2="36.7321407501364,0"
-                    Point3="36.7321407501364,4" />
-                  <mssgle:LineSegment
-                    End="36.7321407501364,13.674185061357" />
-                  <mssgle:CubicBezierSegment
-                    Point1="36.7321407501364,13.674185061357"
-                    Point2="36.7321407501364,17.674185061357"
-                    Point3="40.7321407501364,17.674185061357" />
-                  <mssgle:LineSegment
-                    End="65.9642815002728,17.674185061357" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Przepływ danych Grupa wiekowa.Paths[Data Conversion Output]"
-          TopLeft="682.107134401621,272.691731788634">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,45.4335874824938"
-              Start="0,0"
-              End="0,37.9335874824938">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,37.9335874824938" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
+          Size="245,43"
+          Id="Package\Przepływ danych Grupa wiekowa\Wrzuć do DB SQL Grupa Wiekowa"
+          TopLeft="561.249991636724,318.125319271127" />
         <NodeLayout
-          Size="221.333333333334,42.6666666666667"
+          Size="149,43"
+          Id="Package\Przepływ danych Grupa wiekowa\Usuń duplikaty"
+          TopLeft="350.833328999579,212.35088006061" />
+        <NodeLayout
+          Size="221,43"
           Id="Package\Przepływ danych Grupa wiekowa\Dodaj wartość &quot;unknown age&quot;"
           TopLeft="423.249994467944,130.70175571675" />
         <EdgeLayout
@@ -1385,6 +757,62 @@
                     Point3="-108.416665468365,23.4912288385966" />
                   <mssgle:LineSegment
                     End="-108.416665468365,31.4824576771933" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Przepływ danych Grupa wiekowa.Paths[Data Conversion Output]"
+          TopLeft="682.107134401621,272.691731788634">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,45.4335874824938"
+              Start="0,0"
+              End="0,37.9335874824938">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,37.9335874824938" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Przepływ danych Grupa wiekowa.Paths[Sort Output]"
+          TopLeft="500.166662332912,233.684213393943">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="73.4642815002728,17.674185061357"
+              Start="0,0"
+              End="65.9642815002728,17.674185061357">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="32.7321407501364,0" />
+                  <mssgle:CubicBezierSegment
+                    Point1="32.7321407501364,0"
+                    Point2="36.7321407501364,0"
+                    Point3="36.7321407501364,4" />
+                  <mssgle:LineSegment
+                    End="36.7321407501364,13.674185061357" />
+                  <mssgle:CubicBezierSegment
+                    Point1="36.7321407501364,13.674185061357"
+                    Point2="36.7321407501364,17.674185061357"
+                    Point3="40.7321407501364,17.674185061357" />
+                  <mssgle:LineSegment
+                    End="65.9642815002728,17.674185061357" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
