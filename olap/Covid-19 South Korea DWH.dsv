@@ -1,4 +1,4 @@
-﻿<DataSourceView xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="ceb7aa93-ac44-4069-bbf2-9d0174434ba6" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+﻿<DataSourceView xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="c8f74264-5d05-42e1-807f-df7555ed833f" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
   <ID>Covid-19 South Korea DWH</ID>
   <Name>Covid-19 South Korea DWH</Name>
   <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
@@ -31,9 +31,9 @@
             <Name>_ALL_TABLES_</Name>
             <DiagramLayout>
               <dds>
-                <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="24" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-10213" scrolltop="-1375" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="96" x="29580" y="20241" backcolor="16777215" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="1" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+                <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="24" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-10213" scrolltop="444" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="96" x="26899" y="13194" backcolor="2434342" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="1" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
                   <font>
-                    <ddsxmlobjectstreamwrapper binary="01000000900144420100065461686f6d61" />
+                    <ddsxmlobjectstreamwrapper binary="01000000900180380100065461686f6d61" />
                   </font>
                   <mouseicon>
                     <ddsxmlobjectstreamwrapper binary="6c74000000000000" />
@@ -111,7 +111,7 @@
                 <ddscontrol controlprogid="MSDDS.Polyline" left="2700" top="5642" logicalid="18" controlid="7" masterid="0" hint1="0" hint2="0" width="3000" height="799" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
                   <control>
                     <ddsxmlobj>
-                      <polyline endtypedst="6" endtypesrc="3" usercolor="0" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+                      <polyline endtypedst="6" endtypesrc="3" usercolor="15856113" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
                     </ddsxmlobj>
                   </control>
                   <layoutobject>
@@ -129,7 +129,7 @@
                 <ddscontrol controlprogid="MSDDS.Polyline" left="5357" top="7794" logicalid="19" controlid="8" masterid="0" hint1="0" hint2="0" width="2894" height="3200" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
                   <control>
                     <ddsxmlobj>
-                      <polyline endtypedst="6" endtypesrc="3" usercolor="0" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+                      <polyline endtypedst="6" endtypesrc="3" usercolor="15856113" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
                     </ddsxmlobj>
                   </control>
                   <layoutobject>
@@ -149,7 +149,7 @@
                 <ddscontrol controlprogid="MSDDS.Polyline" left="8652" top="1089" logicalid="20" controlid="9" masterid="0" hint1="0" hint2="0" width="799" height="3199" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
                   <control>
                     <ddsxmlobj>
-                      <polyline endtypedst="6" endtypesrc="3" usercolor="0" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+                      <polyline endtypedst="6" endtypesrc="3" usercolor="15856113" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
                     </ddsxmlobj>
                   </control>
                   <layoutobject>
@@ -167,7 +167,7 @@
                 <ddscontrol controlprogid="MSDDS.Polyline" left="9301" top="7794" logicalid="21" controlid="10" masterid="0" hint1="0" hint2="0" width="4822" height="3200" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
                   <control>
                     <ddsxmlobj>
-                      <polyline endtypedst="6" endtypesrc="3" usercolor="0" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+                      <polyline endtypedst="6" endtypesrc="3" usercolor="15856113" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
                     </ddsxmlobj>
                   </control>
                   <layoutobject>
@@ -187,7 +187,7 @@
                 <ddscontrol controlprogid="MSDDS.Polyline" left="12403" top="5642" logicalid="22" controlid="11" masterid="0" hint1="0" hint2="0" width="3000" height="799" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
                   <control>
                     <ddsxmlobj>
-                      <polyline endtypedst="6" endtypesrc="3" usercolor="0" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+                      <polyline endtypedst="6" endtypesrc="3" usercolor="15856113" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
                     </ddsxmlobj>
                   </control>
                   <layoutobject>
@@ -207,7 +207,7 @@
             <ShowRelationshipNames>False</ShowRelationshipNames>
             <UseDiagramDefaultLayout>True</UseDiagramDefaultLayout>
             <DiagramViewPortLeft>-10213</DiagramViewPortLeft>
-            <DiagramViewPortTop>-1375</DiagramViewPortTop>
+            <DiagramViewPortTop>444</DiagramViewPortTop>
             <DiagramBoundingLeft>0</DiagramBoundingLeft>
             <DiagramBoundingTop>0</DiagramBoundingTop>
             <DiagramZoom>96</DiagramZoom>
@@ -270,7 +270,7 @@
                     </xs:simpleType>
                   </xs:element>
                   <xs:element name="kolejnosc_nazwa_grupy_wiekowej" msdata:ReadOnly="true" msprop:design-time-name="4dfaad0f-a24b-4fc5-959c-2ad46fdf8f46" msprop:IsLogical="True" msprop:Description="" msprop:DbColumnName="kolejnosc_nazwa_grupy_wiekowej" msprop:ComputedColumnExpression="Case &#xD;&#xA;when nazwa_grupy_wiekowej= '0s' then 0&#xD;&#xA;when nazwa_grupy_wiekowej= '10s' then 1&#xD;&#xA;when nazwa_grupy_wiekowej= '20s' then 2&#xD;&#xA;when nazwa_grupy_wiekowej= '30s' then 3&#xD;&#xA;when nazwa_grupy_wiekowej= '40s' then 4&#xD;&#xA;when nazwa_grupy_wiekowej= '50s' then 5&#xD;&#xA;when nazwa_grupy_wiekowej= '60s' then 6&#xD;&#xA;when nazwa_grupy_wiekowej= '70s' then 7&#xD;&#xA;when nazwa_grupy_wiekowej= '80s' then 8&#xD;&#xA;when nazwa_grupy_wiekowej= '90s' then 9&#xD;&#xA;when nazwa_grupy_wiekowej= '100s' then 10&#xD;&#xA;else 11&#xD;&#xA;end" type="xs:int" />
-                  <xs:element name="przyjazna_nazwa_grupy_wiekowej" msdata:ReadOnly="true" msprop:Description="" msprop:ComputedColumnExpression="Case &#xD;&#xA;when nazwa_grupy_wiekowej= '0s' then '0-9 years old'&#xD;&#xA;when nazwa_grupy_wiekowej= '10s' then '10-19 years old'&#xD;&#xA;when nazwa_grupy_wiekowej= '20s' then '20-29 years old'&#xD;&#xA;when nazwa_grupy_wiekowej= '30s' then '30-39 years old'&#xD;&#xA;when nazwa_grupy_wiekowej= '40s' then '40-49 years old'&#xD;&#xA;when nazwa_grupy_wiekowej= '50s' then '50-59 years old'&#xD;&#xA;when nazwa_grupy_wiekowej= '60s' then '60-69 years old'&#xD;&#xA;when nazwa_grupy_wiekowej= '70s' then '70-79 years old'&#xD;&#xA;when nazwa_grupy_wiekowej= '80s' then '80-89 years old'&#xD;&#xA;when nazwa_grupy_wiekowej= '90s' then '90-99 years old'&#xD;&#xA;when nazwa_grupy_wiekowej= '100s' then '100-109 years old'&#xD;&#xA;else 'Unknown age group'&#xD;&#xA;end" msprop:IsLogical="True" msprop:design-time-name="8c9c2455-be44-4b1e-8ab5-984b2987e70c" msprop:DbColumnName="przyjazna_nazwa_grupy_wiekowej">
+                  <xs:element name="przyjazna_nazwa_grupy_wiekowej" msdata:ReadOnly="true" msprop:design-time-name="8c9c2455-be44-4b1e-8ab5-984b2987e70c" msprop:IsLogical="True" msprop:Description="" msprop:DbColumnName="przyjazna_nazwa_grupy_wiekowej" msprop:ComputedColumnExpression="Case &#xD;&#xA;when nazwa_grupy_wiekowej= '0s' then '0-9 years old'&#xD;&#xA;when nazwa_grupy_wiekowej= '10s' then '10-19 years old'&#xD;&#xA;when nazwa_grupy_wiekowej= '20s' then '20-29 years old'&#xD;&#xA;when nazwa_grupy_wiekowej= '30s' then '30-39 years old'&#xD;&#xA;when nazwa_grupy_wiekowej= '40s' then '40-49 years old'&#xD;&#xA;when nazwa_grupy_wiekowej= '50s' then '50-59 years old'&#xD;&#xA;when nazwa_grupy_wiekowej= '60s' then '60-69 years old'&#xD;&#xA;when nazwa_grupy_wiekowej= '70s' then '70-79 years old'&#xD;&#xA;when nazwa_grupy_wiekowej= '80s' then '80-89 years old'&#xD;&#xA;when nazwa_grupy_wiekowej= '90s' then '90-99 years old'&#xD;&#xA;when nazwa_grupy_wiekowej= '100s' then '100-109 years old'&#xD;&#xA;else 'Unknown age group'&#xD;&#xA;end">
                     <xs:simpleType>
                       <xs:restriction base="xs:string">
                         <xs:maxLength value="17" />
@@ -305,6 +305,7 @@
                       </xs:restriction>
                     </xs:simpleType>
                   </xs:element>
+                  <xs:element name="kolejnosc_kategoria_wilgotnosci" msdata:ReadOnly="true" msprop:Description="" msprop:ComputedColumnExpression="Case &#xD;&#xA;when kategoria_wilgotnosci= 'low' then 0&#xD;&#xA;when kategoria_wilgotnosci='medium' then 1&#xD;&#xA;when kategoria_wilgotnosci='high' then 2&#xD;&#xA;else 3&#xD;&#xA;end" msprop:IsLogical="True" msprop:design-time-name="961e4f9f-dbbe-47a2-a289-a3490a87c6e0" msprop:DbColumnName="kolejnosc_kategoria_wilgotnosci" type="xs:int" />
                 </xs:sequence>
               </xs:complexType>
             </xs:element>
