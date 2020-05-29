@@ -11,295 +11,11 @@
   DTS:LocaleID="2057"
   DTS:ObjectName="Package1"
   DTS:PackageType="5"
-  DTS:VersionBuild="76"
-  DTS:VersionGUID="{931FB303-3120-4BB9-8CEA-145730C60660}">
+  DTS:ProtectionLevel="0"
+  DTS:VersionBuild="85"
+  DTS:VersionGUID="{8D2FC9C2-776D-43A8-AAC9-DEFB26666FE9}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
-  <DTS:ConnectionManagers>
-    <DTS:ConnectionManager
-      DTS:refId="Package.ConnectionManagers[covid19southkorea.database.windows.net.Covid-19SouthKoreaDWH.covid@covid19southkorea]"
-      DTS:CreationName="OLEDB"
-      DTS:DTSID="{A7DF38C7-73B4-4B68-A6BA-5B9DC1316A0E}"
-      DTS:ObjectName="covid19southkorea.database.windows.net.Covid-19SouthKoreaDWH.covid@covid19southkorea">
-      <DTS:ObjectData>
-        <DTS:ConnectionManager
-          DTS:ConnectionString="Data Source=covid19southkorea.database.windows.net;User ID=covid@covid19southkorea;Initial Catalog=Covid-19SouthKoreaDWH;Provider=SQLNCLI11.1;Auto Translate=False;">
-          <DTS:Password
-            DTS:Name="Password"
-            Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAvimQ3wX2i0aWlF5K7wDfMwAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAADySCXAIsYwQPaH0M6jPoG1nIYjH8i6J8b+nmsZ94JiBgAAAAAOgAAAAAIAACAAAADntA8ApNZ0MfvCWfoq8rOTirwKGoqV/3mmfeFOgrSaGSAAAADo3929R2H3wZcsqeNALpjyTKOZ7HruvFgPF2g004v1rkAAAAAEepdUeyi6Dv/D93HT6fdqK7VSUBCjb92Grk0xckOf+N6KbEezKX3g+enQ0ci3qWjLGriCuhmI7RUzUc6u2How</DTS:Password>
-        </DTS:ConnectionManager>
-      </DTS:ObjectData>
-    </DTS:ConnectionManager>
-    <DTS:ConnectionManager
-      DTS:refId="Package.ConnectionManagers[Flat File Connection Manager]"
-      DTS:CreationName="FLATFILE"
-      DTS:DTSID="{6AEEBDB6-C900-4CA8-8870-D2F891E01C3B}"
-      DTS:ObjectName="Flat File Connection Manager">
-      <DTS:ObjectData>
-        <DTS:ConnectionManager
-          DTS:Format="Delimited"
-          DTS:LocaleID="2057"
-          DTS:HeaderRowDelimiter="_x000D__x000A_"
-          DTS:ColumnNamesInFirstDataRow="True"
-          DTS:RowDelimiter=""
-          DTS:TextQualifier="_x003C_none_x003E_"
-          DTS:CodePage="1252"
-          DTS:ConnectionString="D:\PJATK_Informatyka\magisterkie\IDH\cwiczenia\coronavirusdataset\Region.csv">
-          <DTS:FlatFileColumns>
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x002C_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="code"
-              DTS:DTSID="{A89D96E3-DDEF-4E2C-9F60-313B2E986929}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x002C_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="province"
-              DTS:DTSID="{D9CCA316-DF73-404C-BEF1-5F04C3BE9D79}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x002C_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="city"
-              DTS:DTSID="{C5518ABF-4301-4AEC-97D8-F9640CEC88C2}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x002C_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="latitude"
-              DTS:DTSID="{539A23FE-D879-42CA-BE5D-950A187C812F}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x002C_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="longitude"
-              DTS:DTSID="{B21AC97B-DD84-410D-B725-73936CFD2040}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x002C_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="elementary_school_count"
-              DTS:DTSID="{F52B50BB-F0BD-4D62-B958-3A1973C35445}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x002C_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="kindergarten_count"
-              DTS:DTSID="{11495126-8FC9-4875-93B1-E2B42260F980}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x002C_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="university_count"
-              DTS:DTSID="{F3A73E42-8928-4637-B098-94AA83358141}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x002C_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="academy_ratio"
-              DTS:DTSID="{364446FE-C21D-4499-8FF9-49ABA32F6E2D}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x002C_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="elderly_population_ratio"
-              DTS:DTSID="{5F897275-1C44-4F0F-8B67-CE8FC2F31506}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x002C_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="elderly_alone_ratio"
-              DTS:DTSID="{C94A96DF-BCB8-4C9C-A8AC-B04BF00B4DB7}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x000D__x000A_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="nursing_home_count"
-              DTS:DTSID="{28B83539-8C3A-4D59-9066-EE06A8705129}"
-              DTS:CreationName="" />
-          </DTS:FlatFileColumns>
-        </DTS:ConnectionManager>
-      </DTS:ObjectData>
-    </DTS:ConnectionManager>
-    <DTS:ConnectionManager
-      DTS:refId="Package.ConnectionManagers[Flat File Connection Manager 1]"
-      DTS:CreationName="FLATFILE"
-      DTS:DTSID="{7707655E-4DE4-4C91-8A37-7D8DF0146060}"
-      DTS:ObjectName="Flat File Connection Manager 1">
-      <DTS:ObjectData>
-        <DTS:ConnectionManager
-          DTS:Format="Delimited"
-          DTS:LocaleID="2057"
-          DTS:HeaderRowDelimiter="_x000D__x000A_"
-          DTS:ColumnNamesInFirstDataRow="True"
-          DTS:RowDelimiter=""
-          DTS:TextQualifier="_x003C_none_x003E_"
-          DTS:CodePage="1252"
-          DTS:ConnectionString="D:\PJATK_Informatyka\magisterkie\IDH\cwiczenia\coronavirusdataset\Weather.csv">
-          <DTS:FlatFileColumns>
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x002C_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="code"
-              DTS:DTSID="{69217DAB-B040-4FFE-A6F1-F40456523987}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x002C_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="province"
-              DTS:DTSID="{26416730-EC3B-4080-8CB4-C4C7B165170C}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x002C_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="date"
-              DTS:DTSID="{78CFCEA7-6DEF-4312-86D6-76E87965A0CF}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x002C_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="avg_temp"
-              DTS:DTSID="{2F80B8F4-42DA-4375-8AA0-0DB47381F26C}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x002C_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="min_temp"
-              DTS:DTSID="{062B6D6F-1C08-4155-AF46-0E0E55DC6E89}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x002C_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="max_temp"
-              DTS:DTSID="{D907FF0F-BCF0-4128-B3D6-D2652C55B230}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x002C_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="precipitation"
-              DTS:DTSID="{8254D2A2-0ED7-4E27-B8FD-5DDFC1E16667}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x002C_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="max_wind_speed"
-              DTS:DTSID="{2AD8AA2B-37A0-4978-8C85-B11F91202493}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x002C_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="most_wind_direction"
-              DTS:DTSID="{13CDC65C-ACE3-4B4B-9F03-F73E705C29BF}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x000D__x000A_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="avg_relative_humidity"
-              DTS:DTSID="{FB37115F-D64C-4215-B0FD-894F1A66EEAB}"
-              DTS:CreationName="" />
-          </DTS:FlatFileColumns>
-        </DTS:ConnectionManager>
-      </DTS:ObjectData>
-    </DTS:ConnectionManager>
-    <DTS:ConnectionManager
-      DTS:refId="Package.ConnectionManagers[localhost]"
-      DTS:CreationName="MSOLAP100"
-      DTS:DTSID="{B8597385-6FF0-4439-9D5E-EFFA339CE1E3}"
-      DTS:ObjectName="localhost">
-      <DTS:ObjectData>
-        <DTS:ConnectionManager
-          DTS:ConnectionString="Data Source=localhost;PROVIDER=MSOLAP;Impersonation Level=Impersonate;" />
-      </DTS:ObjectData>
-    </DTS:ConnectionManager>
-    <DTS:ConnectionManager
-      DTS:refId="Package.ConnectionManagers[localhost.IDH]"
-      DTS:CreationName="OLEDB"
-      DTS:DTSID="{644158A7-00A1-43AF-AEDA-C75554A508CA}"
-      DTS:ObjectName="localhost.IDH">
-      <DTS:ObjectData>
-        <DTS:ConnectionManager
-          DTS:ConnectionString="Data Source=localhost;Initial Catalog=IDH;Provider=SQLNCLI11.1;Integrated Security=SSPI;Auto Translate=False;" />
-      </DTS:ObjectData>
-    </DTS:ConnectionManager>
-    <DTS:ConnectionManager
-      DTS:refId="Package.ConnectionManagers[localhost.IDH 1]"
-      DTS:CreationName="OLEDB"
-      DTS:DTSID="{5D130DA0-47FC-4C4C-9BCD-2DDD8A5B6F28}"
-      DTS:ObjectName="localhost.IDH 1">
-      <DTS:ObjectData>
-        <DTS:ConnectionManager
-          DTS:ConnectionString="Data Source=localhost;Initial Catalog=IDH;Provider=MSOLEDBSQL.1;Integrated Security=SSPI;Auto Translate=False;" />
-      </DTS:ObjectData>
-    </DTS:ConnectionManager>
-  </DTS:ConnectionManagers>
   <DTS:Variables />
   <DTS:Executables>
     <DTS:Executable
@@ -311,11 +27,11 @@
       DTS:LocaleID="-1"
       DTS:ObjectName="Czyszczenie Pogoda"
       DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2019; © 2019 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-      DTS:ThreadHint="1">
+      DTS:ThreadHint="0">
       <DTS:Variables />
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
-          SQLTask:Connection="{A7DF38C7-73B4-4B68-A6BA-5B9DC1316A0E}"
+          SQLTask:Connection="{52D2FB58-7BB0-47DA-8698-4BD065BFE199}"
           SQLTask:SqlStatementSource="TRUNCATE TABLE [dbo].[Pogoda]" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
       </DTS:ObjectData>
     </DTS:Executable>
@@ -328,11 +44,11 @@
       DTS:LocaleID="-1"
       DTS:ObjectName="Czyszczenie Pogoda Temp"
       DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2019; © 2019 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-      DTS:ThreadHint="0">
+      DTS:ThreadHint="1">
       <DTS:Variables />
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
-          SQLTask:Connection="{A7DF38C7-73B4-4B68-A6BA-5B9DC1316A0E}"
+          SQLTask:Connection="{52D2FB58-7BB0-47DA-8698-4BD065BFE199}"
           SQLTask:SqlStatementSource="TRUNCATE TABLE [dbo].[Pogoda_Temp]" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
       </DTS:ObjectData>
     </DTS:Executable>
@@ -349,7 +65,7 @@
       <DTS:Variables />
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
-          SQLTask:Connection="{A7DF38C7-73B4-4B68-A6BA-5B9DC1316A0E}"
+          SQLTask:Connection="{52D2FB58-7BB0-47DA-8698-4BD065BFE199}"
           SQLTask:SqlStatementSource="INSERT INTO [dbo].[Pogoda] &#xA;VALUES ('unknown humidity')" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
       </DTS:ObjectData>
     </DTS:Executable>
@@ -750,7 +466,7 @@
                   <inputColumns>
                     <inputColumn
                       refId="Package\Przepływ danych Pogoda i Pogoda Temp\Pozbądź się pustych.Inputs[Conditional Split Input].Columns[avg_relative_humidity]"
-                      cachedCodepage="1252"
+                      cachedCodepage="1250"
                       cachedDataType="str"
                       cachedLength="50"
                       cachedName="avg_relative_humidity"
@@ -827,11 +543,312 @@
               </outputs>
             </component>
             <component
+              refId="Package\Przepływ danych Pogoda i Pogoda Temp\Union All"
+              componentClassID="Microsoft.UnionAll"
+              contactInfo="Union All;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
+              description="Combines rows from multiple data flows without sorting. For example, add rows back to a data flow after correction of errors. If sorting is important, we recommend using the Merge transformation."
+              name="Union All"
+              version="1">
+              <inputs>
+                <input
+                  refId="Package\Przepływ danych Pogoda i Pogoda Temp\Union All.Inputs[Union All Input 1]"
+                  name="Union All Input 1">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Przepływ danych Pogoda i Pogoda Temp\Union All.Inputs[Union All Input 1].Columns[avg_relative_humidity]"
+                      cachedCodepage="1250"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="avg_relative_humidity"
+                      lineageId="Package\Przepływ danych Pogoda i Pogoda Temp\Wczytaj csv &quot;Pogoda&quot; z kolumną humidity.Outputs[Flat File Source Output].Columns[avg_relative_humidity]">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Output column lineage ID"
+                          name="OutputColumnLineageID">#{Package\Przepływ danych Pogoda i Pogoda Temp\Union All.Outputs[Union All Output 1].Columns[avg_relative_humidity]}</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Przepływ danych Pogoda i Pogoda Temp\Union All.Inputs[Union All Input 1].Columns[date]"
+                      cachedCodepage="1250"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="date"
+                      lineageId="Package\Przepływ danych Pogoda i Pogoda Temp\Wczytaj csv &quot;Pogoda&quot; z kolumną humidity.Outputs[Flat File Source Output].Columns[date]">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Output column lineage ID"
+                          name="OutputColumnLineageID">#{Package\Przepływ danych Pogoda i Pogoda Temp\Union All.Outputs[Union All Output 1].Columns[date]}</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Przepływ danych Pogoda i Pogoda Temp\Union All.Inputs[Union All Input 1].Columns[province]"
+                      cachedCodepage="1250"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="province"
+                      lineageId="Package\Przepływ danych Pogoda i Pogoda Temp\Wczytaj csv &quot;Pogoda&quot; z kolumną humidity.Outputs[Flat File Source Output].Columns[province]">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Output column lineage ID"
+                          name="OutputColumnLineageID">#{Package\Przepływ danych Pogoda i Pogoda Temp\Union All.Outputs[Union All Output 1].Columns[province]}</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Przepływ danych Pogoda i Pogoda Temp\Union All.Inputs[Union All Input 1].Columns[avg_relative_humidity_NUMERIC]"
+                      cachedDataType="numeric"
+                      cachedName="avg_relative_humidity_NUMERIC"
+                      cachedPrecision="18"
+                      lineageId="Package\Przepływ danych Pogoda i Pogoda Temp\Zamień wilgotność ze string na liczbę.Outputs[Data Conversion Output].Columns[avg_relative_humidity_NUMERIC]">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Output column lineage ID"
+                          name="OutputColumnLineageID">#{Package\Przepływ danych Pogoda i Pogoda Temp\Union All.Outputs[Union All Output 1].Columns[avg_relative_humidity_NUMERIC]}</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Przepływ danych Pogoda i Pogoda Temp\Union All.Inputs[Union All Input 1].Columns[kategoria]"
+                      cachedDataType="wstr"
+                      cachedLength="3"
+                      cachedName="kategoria"
+                      lineageId="Package\Przepływ danych Pogoda i Pogoda Temp\Dodaj kolumnę kategoria z wartością &quot;low&quot;.Outputs[Derived Column Output].Columns[kategoria]">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Output column lineage ID"
+                          name="OutputColumnLineageID">#{Package\Przepływ danych Pogoda i Pogoda Temp\Union All.Outputs[Union All Output 1].Columns[kategoria]}</property>
+                      </properties>
+                    </inputColumn>
+                  </inputColumns>
+                  <externalMetadataColumns />
+                </input>
+                <input
+                  refId="Package\Przepływ danych Pogoda i Pogoda Temp\Union All.Inputs[Union All Input 2]"
+                  hasSideEffects="true"
+                  name="Union All Input 2">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Przepływ danych Pogoda i Pogoda Temp\Union All.Inputs[Union All Input 2].Columns[avg_relative_humidity]"
+                      cachedCodepage="1250"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="avg_relative_humidity"
+                      lineageId="Package\Przepływ danych Pogoda i Pogoda Temp\Wczytaj csv &quot;Pogoda&quot; z kolumną humidity.Outputs[Flat File Source Output].Columns[avg_relative_humidity]">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Output column lineage ID"
+                          name="OutputColumnLineageID">#{Package\Przepływ danych Pogoda i Pogoda Temp\Union All.Outputs[Union All Output 1].Columns[avg_relative_humidity]}</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Przepływ danych Pogoda i Pogoda Temp\Union All.Inputs[Union All Input 2].Columns[date]"
+                      cachedCodepage="1250"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="date"
+                      lineageId="Package\Przepływ danych Pogoda i Pogoda Temp\Wczytaj csv &quot;Pogoda&quot; z kolumną humidity.Outputs[Flat File Source Output].Columns[date]">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Output column lineage ID"
+                          name="OutputColumnLineageID">#{Package\Przepływ danych Pogoda i Pogoda Temp\Union All.Outputs[Union All Output 1].Columns[date]}</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Przepływ danych Pogoda i Pogoda Temp\Union All.Inputs[Union All Input 2].Columns[province]"
+                      cachedCodepage="1250"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="province"
+                      lineageId="Package\Przepływ danych Pogoda i Pogoda Temp\Wczytaj csv &quot;Pogoda&quot; z kolumną humidity.Outputs[Flat File Source Output].Columns[province]">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Output column lineage ID"
+                          name="OutputColumnLineageID">#{Package\Przepływ danych Pogoda i Pogoda Temp\Union All.Outputs[Union All Output 1].Columns[province]}</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Przepływ danych Pogoda i Pogoda Temp\Union All.Inputs[Union All Input 2].Columns[avg_relative_humidity_NUMERIC]"
+                      cachedDataType="numeric"
+                      cachedName="avg_relative_humidity_NUMERIC"
+                      cachedPrecision="18"
+                      lineageId="Package\Przepływ danych Pogoda i Pogoda Temp\Zamień wilgotność ze string na liczbę.Outputs[Data Conversion Output].Columns[avg_relative_humidity_NUMERIC]">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Output column lineage ID"
+                          name="OutputColumnLineageID">#{Package\Przepływ danych Pogoda i Pogoda Temp\Union All.Outputs[Union All Output 1].Columns[avg_relative_humidity_NUMERIC]}</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Przepływ danych Pogoda i Pogoda Temp\Union All.Inputs[Union All Input 2].Columns[kategoria]"
+                      cachedDataType="wstr"
+                      cachedLength="6"
+                      cachedName="kategoria"
+                      lineageId="Package\Przepływ danych Pogoda i Pogoda Temp\Dodaj kolumnę kategoria z wartością &quot;medium&quot;.Outputs[Derived Column Output].Columns[kategoria]">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Output column lineage ID"
+                          name="OutputColumnLineageID">#{Package\Przepływ danych Pogoda i Pogoda Temp\Union All.Outputs[Union All Output 1].Columns[kategoria]}</property>
+                      </properties>
+                    </inputColumn>
+                  </inputColumns>
+                  <externalMetadataColumns />
+                </input>
+                <input
+                  refId="Package\Przepływ danych Pogoda i Pogoda Temp\Union All.Inputs[Union All Input 3]"
+                  hasSideEffects="true"
+                  name="Union All Input 3">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Przepływ danych Pogoda i Pogoda Temp\Union All.Inputs[Union All Input 3].Columns[avg_relative_humidity]"
+                      cachedCodepage="1250"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="avg_relative_humidity"
+                      lineageId="Package\Przepływ danych Pogoda i Pogoda Temp\Wczytaj csv &quot;Pogoda&quot; z kolumną humidity.Outputs[Flat File Source Output].Columns[avg_relative_humidity]">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Output column lineage ID"
+                          name="OutputColumnLineageID">#{Package\Przepływ danych Pogoda i Pogoda Temp\Union All.Outputs[Union All Output 1].Columns[avg_relative_humidity]}</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Przepływ danych Pogoda i Pogoda Temp\Union All.Inputs[Union All Input 3].Columns[date]"
+                      cachedCodepage="1250"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="date"
+                      lineageId="Package\Przepływ danych Pogoda i Pogoda Temp\Wczytaj csv &quot;Pogoda&quot; z kolumną humidity.Outputs[Flat File Source Output].Columns[date]">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Output column lineage ID"
+                          name="OutputColumnLineageID">#{Package\Przepływ danych Pogoda i Pogoda Temp\Union All.Outputs[Union All Output 1].Columns[date]}</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Przepływ danych Pogoda i Pogoda Temp\Union All.Inputs[Union All Input 3].Columns[province]"
+                      cachedCodepage="1250"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="province"
+                      lineageId="Package\Przepływ danych Pogoda i Pogoda Temp\Wczytaj csv &quot;Pogoda&quot; z kolumną humidity.Outputs[Flat File Source Output].Columns[province]">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Output column lineage ID"
+                          name="OutputColumnLineageID">#{Package\Przepływ danych Pogoda i Pogoda Temp\Union All.Outputs[Union All Output 1].Columns[province]}</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Przepływ danych Pogoda i Pogoda Temp\Union All.Inputs[Union All Input 3].Columns[avg_relative_humidity_NUMERIC]"
+                      cachedDataType="numeric"
+                      cachedName="avg_relative_humidity_NUMERIC"
+                      cachedPrecision="18"
+                      lineageId="Package\Przepływ danych Pogoda i Pogoda Temp\Zamień wilgotność ze string na liczbę.Outputs[Data Conversion Output].Columns[avg_relative_humidity_NUMERIC]">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Output column lineage ID"
+                          name="OutputColumnLineageID">#{Package\Przepływ danych Pogoda i Pogoda Temp\Union All.Outputs[Union All Output 1].Columns[avg_relative_humidity_NUMERIC]}</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Przepływ danych Pogoda i Pogoda Temp\Union All.Inputs[Union All Input 3].Columns[kategoria]"
+                      cachedDataType="wstr"
+                      cachedLength="4"
+                      cachedName="kategoria"
+                      lineageId="Package\Przepływ danych Pogoda i Pogoda Temp\Dodaj kolumnę kategoria z wartością &quot;high&quot;.Outputs[Derived Column Output].Columns[kategoria]">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Output column lineage ID"
+                          name="OutputColumnLineageID">#{Package\Przepływ danych Pogoda i Pogoda Temp\Union All.Outputs[Union All Output 1].Columns[kategoria]}</property>
+                      </properties>
+                    </inputColumn>
+                  </inputColumns>
+                  <externalMetadataColumns />
+                </input>
+                <input
+                  refId="Package\Przepływ danych Pogoda i Pogoda Temp\Union All.Inputs[Union All Input 4]"
+                  dangling="true"
+                  hasSideEffects="true"
+                  name="Union All Input 4">
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Przepływ danych Pogoda i Pogoda Temp\Union All.Outputs[Union All Output 1]"
+                  name="Union All Output 1">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Przepływ danych Pogoda i Pogoda Temp\Union All.Outputs[Union All Output 1].Columns[avg_relative_humidity]"
+                      codePage="1250"
+                      dataType="str"
+                      length="50"
+                      lineageId="Package\Przepływ danych Pogoda i Pogoda Temp\Union All.Outputs[Union All Output 1].Columns[avg_relative_humidity]"
+                      name="avg_relative_humidity" />
+                    <outputColumn
+                      refId="Package\Przepływ danych Pogoda i Pogoda Temp\Union All.Outputs[Union All Output 1].Columns[date]"
+                      codePage="1250"
+                      dataType="str"
+                      length="50"
+                      lineageId="Package\Przepływ danych Pogoda i Pogoda Temp\Union All.Outputs[Union All Output 1].Columns[date]"
+                      name="date" />
+                    <outputColumn
+                      refId="Package\Przepływ danych Pogoda i Pogoda Temp\Union All.Outputs[Union All Output 1].Columns[province]"
+                      codePage="1250"
+                      dataType="str"
+                      length="50"
+                      lineageId="Package\Przepływ danych Pogoda i Pogoda Temp\Union All.Outputs[Union All Output 1].Columns[province]"
+                      name="province" />
+                    <outputColumn
+                      refId="Package\Przepływ danych Pogoda i Pogoda Temp\Union All.Outputs[Union All Output 1].Columns[avg_relative_humidity_NUMERIC]"
+                      dataType="numeric"
+                      lineageId="Package\Przepływ danych Pogoda i Pogoda Temp\Union All.Outputs[Union All Output 1].Columns[avg_relative_humidity_NUMERIC]"
+                      name="avg_relative_humidity_NUMERIC"
+                      precision="18" />
+                    <outputColumn
+                      refId="Package\Przepływ danych Pogoda i Pogoda Temp\Union All.Outputs[Union All Output 1].Columns[kategoria]"
+                      dataType="wstr"
+                      length="6"
+                      lineageId="Package\Przepływ danych Pogoda i Pogoda Temp\Union All.Outputs[Union All Output 1].Columns[kategoria]"
+                      name="kategoria" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
               refId="Package\Przepływ danych Pogoda i Pogoda Temp\Wczytaj csv &quot;Pogoda&quot; z kolumną humidity"
               componentClassID="Microsoft.FlatFileSource"
               contactInfo="Flat File Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
               description="Flat File Source"
-              localeId="2057"
+              localeId="1045"
               name="Wczytaj csv &quot;Pogoda&quot; z kolumną humidity"
               usesDispositions="true"
               version="1">
@@ -848,8 +865,8 @@
               <connections>
                 <connection
                   refId="Package\Przepływ danych Pogoda i Pogoda Temp\Wczytaj csv &quot;Pogoda&quot; z kolumną humidity.Connections[FlatFileConnection]"
-                  connectionManagerID="Package.ConnectionManagers[Flat File Connection Manager 1]"
-                  connectionManagerRefId="Package.ConnectionManagers[Flat File Connection Manager 1]"
+                  connectionManagerID="{79626C14-1201-4523-8BF2-0B6FAFBC37FD}:external"
+                  connectionManagerRefId="Project.ConnectionManagers[Weather_CSV]"
                   name="FlatFileConnection" />
               </connections>
               <outputs>
@@ -859,7 +876,7 @@
                   <outputColumns>
                     <outputColumn
                       refId="Package\Przepływ danych Pogoda i Pogoda Temp\Wczytaj csv &quot;Pogoda&quot; z kolumną humidity.Outputs[Flat File Source Output].Columns[avg_relative_humidity]"
-                      codePage="1252"
+                      codePage="1250"
                       dataType="str"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
@@ -881,7 +898,7 @@
                     </outputColumn>
                     <outputColumn
                       refId="Package\Przepływ danych Pogoda i Pogoda Temp\Wczytaj csv &quot;Pogoda&quot; z kolumną humidity.Outputs[Flat File Source Output].Columns[date]"
-                      codePage="1252"
+                      codePage="1250"
                       dataType="str"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
@@ -903,7 +920,7 @@
                     </outputColumn>
                     <outputColumn
                       refId="Package\Przepływ danych Pogoda i Pogoda Temp\Wczytaj csv &quot;Pogoda&quot; z kolumną humidity.Outputs[Flat File Source Output].Columns[province]"
-                      codePage="1252"
+                      codePage="1250"
                       dataType="str"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
@@ -928,61 +945,61 @@
                     isUsed="True">
                     <externalMetadataColumn
                       refId="Package\Przepływ danych Pogoda i Pogoda Temp\Wczytaj csv &quot;Pogoda&quot; z kolumną humidity.Outputs[Flat File Source Output].ExternalColumns[code]"
-                      codePage="1252"
+                      codePage="1250"
                       dataType="str"
                       length="50"
                       name="code" />
                     <externalMetadataColumn
                       refId="Package\Przepływ danych Pogoda i Pogoda Temp\Wczytaj csv &quot;Pogoda&quot; z kolumną humidity.Outputs[Flat File Source Output].ExternalColumns[province]"
-                      codePage="1252"
+                      codePage="1250"
                       dataType="str"
                       length="50"
                       name="province" />
                     <externalMetadataColumn
                       refId="Package\Przepływ danych Pogoda i Pogoda Temp\Wczytaj csv &quot;Pogoda&quot; z kolumną humidity.Outputs[Flat File Source Output].ExternalColumns[date]"
-                      codePage="1252"
+                      codePage="1250"
                       dataType="str"
                       length="50"
                       name="date" />
                     <externalMetadataColumn
                       refId="Package\Przepływ danych Pogoda i Pogoda Temp\Wczytaj csv &quot;Pogoda&quot; z kolumną humidity.Outputs[Flat File Source Output].ExternalColumns[avg_temp]"
-                      codePage="1252"
+                      codePage="1250"
                       dataType="str"
                       length="50"
                       name="avg_temp" />
                     <externalMetadataColumn
                       refId="Package\Przepływ danych Pogoda i Pogoda Temp\Wczytaj csv &quot;Pogoda&quot; z kolumną humidity.Outputs[Flat File Source Output].ExternalColumns[min_temp]"
-                      codePage="1252"
+                      codePage="1250"
                       dataType="str"
                       length="50"
                       name="min_temp" />
                     <externalMetadataColumn
                       refId="Package\Przepływ danych Pogoda i Pogoda Temp\Wczytaj csv &quot;Pogoda&quot; z kolumną humidity.Outputs[Flat File Source Output].ExternalColumns[max_temp]"
-                      codePage="1252"
+                      codePage="1250"
                       dataType="str"
                       length="50"
                       name="max_temp" />
                     <externalMetadataColumn
                       refId="Package\Przepływ danych Pogoda i Pogoda Temp\Wczytaj csv &quot;Pogoda&quot; z kolumną humidity.Outputs[Flat File Source Output].ExternalColumns[precipitation]"
-                      codePage="1252"
+                      codePage="1250"
                       dataType="str"
                       length="50"
                       name="precipitation" />
                     <externalMetadataColumn
                       refId="Package\Przepływ danych Pogoda i Pogoda Temp\Wczytaj csv &quot;Pogoda&quot; z kolumną humidity.Outputs[Flat File Source Output].ExternalColumns[max_wind_speed]"
-                      codePage="1252"
+                      codePage="1250"
                       dataType="str"
                       length="50"
                       name="max_wind_speed" />
                     <externalMetadataColumn
                       refId="Package\Przepływ danych Pogoda i Pogoda Temp\Wczytaj csv &quot;Pogoda&quot; z kolumną humidity.Outputs[Flat File Source Output].ExternalColumns[most_wind_direction]"
-                      codePage="1252"
+                      codePage="1250"
                       dataType="str"
                       length="50"
                       name="most_wind_direction" />
                     <externalMetadataColumn
                       refId="Package\Przepływ danych Pogoda i Pogoda Temp\Wczytaj csv &quot;Pogoda&quot; z kolumną humidity.Outputs[Flat File Source Output].ExternalColumns[avg_relative_humidity]"
-                      codePage="1252"
+                      codePage="1250"
                       dataType="str"
                       length="50"
                       name="avg_relative_humidity" />
@@ -1076,8 +1093,8 @@
               <connections>
                 <connection
                   refId="Package\Przepływ danych Pogoda i Pogoda Temp\Wrzuć do DB SQL Pogoda.Connections[OleDbConnection]"
-                  connectionManagerID="Package.ConnectionManagers[covid19southkorea.database.windows.net.Covid-19SouthKoreaDWH.covid@covid19southkorea]"
-                  connectionManagerRefId="Package.ConnectionManagers[covid19southkorea.database.windows.net.Covid-19SouthKoreaDWH.covid@covid19southkorea]"
+                  connectionManagerID="{52D2FB58-7BB0-47DA-8698-4BD065BFE199}:external"
+                  connectionManagerRefId="Project.ConnectionManagers[covid19southkorea.database.windows.net.Covid-19SouthKoreaDWH.covid@covid19southkorea]"
                   description="The OLE DB runtime connection used to access the database."
                   name="OleDbConnection" />
               </connections>
@@ -1092,7 +1109,7 @@
                     <inputColumn
                       refId="Package\Przepływ danych Pogoda i Pogoda Temp\Wrzuć do DB SQL Pogoda.Inputs[OLE DB Destination Input].Columns[kategoria]"
                       cachedDataType="wstr"
-                      cachedLength="7"
+                      cachedLength="6"
                       cachedName="kategoria"
                       cachedSortKeyPosition="1"
                       externalMetadataColumnId="Package\Przepływ danych Pogoda i Pogoda Temp\Wrzuć do DB SQL Pogoda.Inputs[OLE DB Destination Input].ExternalColumns[kategoria_wilgotnosci]"
@@ -1138,11 +1155,11 @@
               </outputs>
             </component>
             <component
-              refId="Package\Przepływ danych Pogoda i Pogoda Temp\Wrzućdo DB SQL Pogoda Temp"
+              refId="Package\Przepływ danych Pogoda i Pogoda Temp\Wrzuć do DB SQL Pogoda Temp"
               componentClassID="Microsoft.OLEDBDestination"
               contactInfo="OLE DB Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;4"
               description="OLE DB Destination"
-              name="Wrzućdo DB SQL Pogoda Temp"
+              name="Wrzuć do DB SQL Pogoda Temp"
               usesDispositions="true"
               version="4">
               <properties>
@@ -1195,60 +1212,60 @@
               </properties>
               <connections>
                 <connection
-                  refId="Package\Przepływ danych Pogoda i Pogoda Temp\Wrzućdo DB SQL Pogoda Temp.Connections[OleDbConnection]"
-                  connectionManagerID="Package.ConnectionManagers[covid19southkorea.database.windows.net.Covid-19SouthKoreaDWH.covid@covid19southkorea]"
-                  connectionManagerRefId="Package.ConnectionManagers[covid19southkorea.database.windows.net.Covid-19SouthKoreaDWH.covid@covid19southkorea]"
+                  refId="Package\Przepływ danych Pogoda i Pogoda Temp\Wrzuć do DB SQL Pogoda Temp.Connections[OleDbConnection]"
+                  connectionManagerID="{52D2FB58-7BB0-47DA-8698-4BD065BFE199}:external"
+                  connectionManagerRefId="Project.ConnectionManagers[covid19southkorea.database.windows.net.Covid-19SouthKoreaDWH.covid@covid19southkorea]"
                   description="The OLE DB runtime connection used to access the database."
                   name="OleDbConnection" />
               </connections>
               <inputs>
                 <input
-                  refId="Package\Przepływ danych Pogoda i Pogoda Temp\Wrzućdo DB SQL Pogoda Temp.Inputs[OLE DB Destination Input]"
+                  refId="Package\Przepływ danych Pogoda i Pogoda Temp\Wrzuć do DB SQL Pogoda Temp.Inputs[OLE DB Destination Input]"
                   errorOrTruncationOperation="Insert"
                   errorRowDisposition="FailComponent"
                   hasSideEffects="true"
                   name="OLE DB Destination Input">
                   <inputColumns>
                     <inputColumn
-                      refId="Package\Przepływ danych Pogoda i Pogoda Temp\Wrzućdo DB SQL Pogoda Temp.Inputs[OLE DB Destination Input].Columns[kategoria]"
+                      refId="Package\Przepływ danych Pogoda i Pogoda Temp\Wrzuć do DB SQL Pogoda Temp.Inputs[OLE DB Destination Input].Columns[kategoria]"
                       cachedDataType="wstr"
-                      cachedLength="7"
+                      cachedLength="6"
                       cachedName="kategoria"
-                      externalMetadataColumnId="Package\Przepływ danych Pogoda i Pogoda Temp\Wrzućdo DB SQL Pogoda Temp.Inputs[OLE DB Destination Input].ExternalColumns[kategoria_wilgotnosci]"
-                      lineageId="Package\Przepływ danych Pogoda i Pogoda Temp\Zbierz wartości (połącz).Outputs[Union All Output 1].Columns[kategoria]" />
+                      externalMetadataColumnId="Package\Przepływ danych Pogoda i Pogoda Temp\Wrzuć do DB SQL Pogoda Temp.Inputs[OLE DB Destination Input].ExternalColumns[kategoria_wilgotnosci]"
+                      lineageId="Package\Przepływ danych Pogoda i Pogoda Temp\Union All.Outputs[Union All Output 1].Columns[kategoria]" />
                     <inputColumn
-                      refId="Package\Przepływ danych Pogoda i Pogoda Temp\Wrzućdo DB SQL Pogoda Temp.Inputs[OLE DB Destination Input].Columns[date_WSTR]"
+                      refId="Package\Przepływ danych Pogoda i Pogoda Temp\Wrzuć do DB SQL Pogoda Temp.Inputs[OLE DB Destination Input].Columns[date_WSTR]"
                       cachedDataType="wstr"
                       cachedLength="50"
                       cachedName="date_WSTR"
-                      externalMetadataColumnId="Package\Przepływ danych Pogoda i Pogoda Temp\Wrzućdo DB SQL Pogoda Temp.Inputs[OLE DB Destination Input].ExternalColumns[data]"
+                      externalMetadataColumnId="Package\Przepływ danych Pogoda i Pogoda Temp\Wrzuć do DB SQL Pogoda Temp.Inputs[OLE DB Destination Input].ExternalColumns[data]"
                       lineageId="Package\Przepływ danych Pogoda i Pogoda Temp\Zamień na WSTR.Outputs[Data Conversion Output].Columns[date_WSTR]" />
                     <inputColumn
-                      refId="Package\Przepływ danych Pogoda i Pogoda Temp\Wrzućdo DB SQL Pogoda Temp.Inputs[OLE DB Destination Input].Columns[province_WSTR]"
+                      refId="Package\Przepływ danych Pogoda i Pogoda Temp\Wrzuć do DB SQL Pogoda Temp.Inputs[OLE DB Destination Input].Columns[province_WSTR]"
                       cachedDataType="wstr"
                       cachedLength="50"
                       cachedName="province_WSTR"
-                      externalMetadataColumnId="Package\Przepływ danych Pogoda i Pogoda Temp\Wrzućdo DB SQL Pogoda Temp.Inputs[OLE DB Destination Input].ExternalColumns[prowincja]"
+                      externalMetadataColumnId="Package\Przepływ danych Pogoda i Pogoda Temp\Wrzuć do DB SQL Pogoda Temp.Inputs[OLE DB Destination Input].ExternalColumns[prowincja]"
                       lineageId="Package\Przepływ danych Pogoda i Pogoda Temp\Zamień na WSTR.Outputs[Data Conversion Output].Columns[province_WSTR]" />
                   </inputColumns>
                   <externalMetadataColumns
                     isUsed="True">
                     <externalMetadataColumn
-                      refId="Package\Przepływ danych Pogoda i Pogoda Temp\Wrzućdo DB SQL Pogoda Temp.Inputs[OLE DB Destination Input].ExternalColumns[pogoda_temp_id]"
+                      refId="Package\Przepływ danych Pogoda i Pogoda Temp\Wrzuć do DB SQL Pogoda Temp.Inputs[OLE DB Destination Input].ExternalColumns[pogoda_temp_id]"
                       dataType="i4"
                       name="pogoda_temp_id" />
                     <externalMetadataColumn
-                      refId="Package\Przepływ danych Pogoda i Pogoda Temp\Wrzućdo DB SQL Pogoda Temp.Inputs[OLE DB Destination Input].ExternalColumns[kategoria_wilgotnosci]"
+                      refId="Package\Przepływ danych Pogoda i Pogoda Temp\Wrzuć do DB SQL Pogoda Temp.Inputs[OLE DB Destination Input].ExternalColumns[kategoria_wilgotnosci]"
                       dataType="wstr"
                       length="50"
                       name="kategoria_wilgotnosci" />
                     <externalMetadataColumn
-                      refId="Package\Przepływ danych Pogoda i Pogoda Temp\Wrzućdo DB SQL Pogoda Temp.Inputs[OLE DB Destination Input].ExternalColumns[data]"
+                      refId="Package\Przepływ danych Pogoda i Pogoda Temp\Wrzuć do DB SQL Pogoda Temp.Inputs[OLE DB Destination Input].ExternalColumns[data]"
                       dataType="wstr"
                       length="50"
                       name="data" />
                     <externalMetadataColumn
-                      refId="Package\Przepływ danych Pogoda i Pogoda Temp\Wrzućdo DB SQL Pogoda Temp.Inputs[OLE DB Destination Input].ExternalColumns[prowincja]"
+                      refId="Package\Przepływ danych Pogoda i Pogoda Temp\Wrzuć do DB SQL Pogoda Temp.Inputs[OLE DB Destination Input].ExternalColumns[prowincja]"
                       dataType="wstr"
                       length="50"
                       name="prowincja" />
@@ -1257,22 +1274,22 @@
               </inputs>
               <outputs>
                 <output
-                  refId="Package\Przepływ danych Pogoda i Pogoda Temp\Wrzućdo DB SQL Pogoda Temp.Outputs[OLE DB Destination Error Output]"
+                  refId="Package\Przepływ danych Pogoda i Pogoda Temp\Wrzuć do DB SQL Pogoda Temp.Outputs[OLE DB Destination Error Output]"
                   exclusionGroup="1"
                   isErrorOut="true"
                   name="OLE DB Destination Error Output"
-                  synchronousInputId="Package\Przepływ danych Pogoda i Pogoda Temp\Wrzućdo DB SQL Pogoda Temp.Inputs[OLE DB Destination Input]">
+                  synchronousInputId="Package\Przepływ danych Pogoda i Pogoda Temp\Wrzuć do DB SQL Pogoda Temp.Inputs[OLE DB Destination Input]">
                   <outputColumns>
                     <outputColumn
-                      refId="Package\Przepływ danych Pogoda i Pogoda Temp\Wrzućdo DB SQL Pogoda Temp.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                      refId="Package\Przepływ danych Pogoda i Pogoda Temp\Wrzuć do DB SQL Pogoda Temp.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
                       dataType="i4"
-                      lineageId="Package\Przepływ danych Pogoda i Pogoda Temp\Wrzućdo DB SQL Pogoda Temp.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                      lineageId="Package\Przepływ danych Pogoda i Pogoda Temp\Wrzuć do DB SQL Pogoda Temp.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
                       name="ErrorCode"
                       specialFlags="1" />
                     <outputColumn
-                      refId="Package\Przepływ danych Pogoda i Pogoda Temp\Wrzućdo DB SQL Pogoda Temp.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                      refId="Package\Przepływ danych Pogoda i Pogoda Temp\Wrzuć do DB SQL Pogoda Temp.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
                       dataType="i4"
-                      lineageId="Package\Przepływ danych Pogoda i Pogoda Temp\Wrzućdo DB SQL Pogoda Temp.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                      lineageId="Package\Przepływ danych Pogoda i Pogoda Temp\Wrzuć do DB SQL Pogoda Temp.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
                       name="ErrorColumn"
                       specialFlags="2" />
                   </outputColumns>
@@ -1305,11 +1322,11 @@
                   <inputColumns>
                     <inputColumn
                       refId="Package\Przepływ danych Pogoda i Pogoda Temp\Wyciągnij unikalne kategorie.Inputs[Sort Input].Columns[avg_relative_humidity]"
-                      cachedCodepage="1252"
+                      cachedCodepage="1250"
                       cachedDataType="str"
                       cachedLength="50"
                       cachedName="avg_relative_humidity"
-                      lineageId="Package\Przepływ danych Pogoda i Pogoda Temp\Zbierz wartości (połącz).Outputs[Union All Output 1].Columns[avg_relative_humidity]">
+                      lineageId="Package\Przepływ danych Pogoda i Pogoda Temp\Union All.Outputs[Union All Output 1].Columns[avg_relative_humidity]">
                       <properties>
                         <property
                           dataType="System.Int32"
@@ -1326,7 +1343,7 @@
                       cachedDataType="numeric"
                       cachedName="avg_relative_humidity_NUMERIC"
                       cachedPrecision="18"
-                      lineageId="Package\Przepływ danych Pogoda i Pogoda Temp\Zbierz wartości (połącz).Outputs[Union All Output 1].Columns[avg_relative_humidity_NUMERIC]">
+                      lineageId="Package\Przepływ danych Pogoda i Pogoda Temp\Union All.Outputs[Union All Output 1].Columns[avg_relative_humidity_NUMERIC]">
                       <properties>
                         <property
                           dataType="System.Int32"
@@ -1341,9 +1358,9 @@
                     <inputColumn
                       refId="Package\Przepływ danych Pogoda i Pogoda Temp\Wyciągnij unikalne kategorie.Inputs[Sort Input].Columns[kategoria]"
                       cachedDataType="wstr"
-                      cachedLength="7"
+                      cachedLength="6"
                       cachedName="kategoria"
-                      lineageId="Package\Przepływ danych Pogoda i Pogoda Temp\Zbierz wartości (połącz).Outputs[Union All Output 1].Columns[kategoria]">
+                      lineageId="Package\Przepływ danych Pogoda i Pogoda Temp\Union All.Outputs[Union All Output 1].Columns[kategoria]">
                       <properties>
                         <property
                           dataType="System.Int32"
@@ -1357,11 +1374,11 @@
                     </inputColumn>
                     <inputColumn
                       refId="Package\Przepływ danych Pogoda i Pogoda Temp\Wyciągnij unikalne kategorie.Inputs[Sort Input].Columns[date]"
-                      cachedCodepage="1252"
+                      cachedCodepage="1250"
                       cachedDataType="str"
                       cachedLength="50"
                       cachedName="date"
-                      lineageId="Package\Przepływ danych Pogoda i Pogoda Temp\Zbierz wartości (połącz).Outputs[Union All Output 1].Columns[date]">
+                      lineageId="Package\Przepływ danych Pogoda i Pogoda Temp\Union All.Outputs[Union All Output 1].Columns[date]">
                       <properties>
                         <property
                           dataType="System.Int32"
@@ -1385,7 +1402,7 @@
                   <outputColumns>
                     <outputColumn
                       refId="Package\Przepływ danych Pogoda i Pogoda Temp\Wyciągnij unikalne kategorie.Outputs[Sort Output].Columns[avg_relative_humidity]"
-                      codePage="1252"
+                      codePage="1250"
                       dataType="str"
                       length="50"
                       lineageId="Package\Przepływ danych Pogoda i Pogoda Temp\Wyciągnij unikalne kategorie.Outputs[Sort Output].Columns[avg_relative_humidity]"
@@ -1395,7 +1412,7 @@
                           containsID="true"
                           dataType="System.Int32"
                           description="Specifies the lineage identifier of the input column that is associated with this output column."
-                          name="SortColumnId">#{Package\Przepływ danych Pogoda i Pogoda Temp\Zbierz wartości (połącz).Outputs[Union All Output 1].Columns[avg_relative_humidity]}</property>
+                          name="SortColumnId">#{Package\Przepływ danych Pogoda i Pogoda Temp\Union All.Outputs[Union All Output 1].Columns[avg_relative_humidity]}</property>
                       </properties>
                     </outputColumn>
                     <outputColumn
@@ -1409,13 +1426,13 @@
                           containsID="true"
                           dataType="System.Int32"
                           description="Specifies the lineage identifier of the input column that is associated with this output column."
-                          name="SortColumnId">#{Package\Przepływ danych Pogoda i Pogoda Temp\Zbierz wartości (połącz).Outputs[Union All Output 1].Columns[avg_relative_humidity_NUMERIC]}</property>
+                          name="SortColumnId">#{Package\Przepływ danych Pogoda i Pogoda Temp\Union All.Outputs[Union All Output 1].Columns[avg_relative_humidity_NUMERIC]}</property>
                       </properties>
                     </outputColumn>
                     <outputColumn
                       refId="Package\Przepływ danych Pogoda i Pogoda Temp\Wyciągnij unikalne kategorie.Outputs[Sort Output].Columns[kategoria]"
                       dataType="wstr"
-                      length="7"
+                      length="6"
                       lineageId="Package\Przepływ danych Pogoda i Pogoda Temp\Wyciągnij unikalne kategorie.Outputs[Sort Output].Columns[kategoria]"
                       name="kategoria"
                       sortKeyPosition="1">
@@ -1424,12 +1441,12 @@
                           containsID="true"
                           dataType="System.Int32"
                           description="Specifies the lineage identifier of the input column that is associated with this output column."
-                          name="SortColumnId">#{Package\Przepływ danych Pogoda i Pogoda Temp\Zbierz wartości (połącz).Outputs[Union All Output 1].Columns[kategoria]}</property>
+                          name="SortColumnId">#{Package\Przepływ danych Pogoda i Pogoda Temp\Union All.Outputs[Union All Output 1].Columns[kategoria]}</property>
                       </properties>
                     </outputColumn>
                     <outputColumn
                       refId="Package\Przepływ danych Pogoda i Pogoda Temp\Wyciągnij unikalne kategorie.Outputs[Sort Output].Columns[date]"
-                      codePage="1252"
+                      codePage="1250"
                       dataType="str"
                       length="50"
                       lineageId="Package\Przepływ danych Pogoda i Pogoda Temp\Wyciągnij unikalne kategorie.Outputs[Sort Output].Columns[date]"
@@ -1439,7 +1456,7 @@
                           containsID="true"
                           dataType="System.Int32"
                           description="Specifies the lineage identifier of the input column that is associated with this output column."
-                          name="SortColumnId">#{Package\Przepływ danych Pogoda i Pogoda Temp\Zbierz wartości (połącz).Outputs[Union All Output 1].Columns[date]}</property>
+                          name="SortColumnId">#{Package\Przepływ danych Pogoda i Pogoda Temp\Union All.Outputs[Union All Output 1].Columns[date]}</property>
                       </properties>
                     </outputColumn>
                   </outputColumns>
@@ -1461,18 +1478,18 @@
                   <inputColumns>
                     <inputColumn
                       refId="Package\Przepływ danych Pogoda i Pogoda Temp\Zamień na WSTR.Inputs[Data Conversion Input].Columns[date]"
-                      cachedCodepage="1252"
+                      cachedCodepage="1250"
                       cachedDataType="str"
                       cachedLength="50"
                       cachedName="date"
-                      lineageId="Package\Przepływ danych Pogoda i Pogoda Temp\Zbierz wartości (połącz).Outputs[Union All Output 1].Columns[date]" />
+                      lineageId="Package\Przepływ danych Pogoda i Pogoda Temp\Union All.Outputs[Union All Output 1].Columns[date]" />
                     <inputColumn
                       refId="Package\Przepływ danych Pogoda i Pogoda Temp\Zamień na WSTR.Inputs[Data Conversion Input].Columns[province]"
-                      cachedCodepage="1252"
+                      cachedCodepage="1250"
                       cachedDataType="str"
                       cachedLength="50"
                       cachedName="province"
-                      lineageId="Package\Przepływ danych Pogoda i Pogoda Temp\Zbierz wartości (połącz).Outputs[Union All Output 1].Columns[province]" />
+                      lineageId="Package\Przepływ danych Pogoda i Pogoda Temp\Union All.Outputs[Union All Output 1].Columns[province]" />
                   </inputColumns>
                   <externalMetadataColumns />
                 </input>
@@ -1498,7 +1515,7 @@
                           containsID="true"
                           dataType="System.Int32"
                           description="Specifies the input column used as the source of data for the conversion."
-                          name="SourceInputColumnLineageID">#{Package\Przepływ danych Pogoda i Pogoda Temp\Zbierz wartości (połącz).Outputs[Union All Output 1].Columns[date]}</property>
+                          name="SourceInputColumnLineageID">#{Package\Przepływ danych Pogoda i Pogoda Temp\Union All.Outputs[Union All Output 1].Columns[date]}</property>
                         <property
                           dataType="System.Boolean"
                           description="Indicates whether the column uses the faster, locale-neutral parsing routines."
@@ -1519,7 +1536,7 @@
                           containsID="true"
                           dataType="System.Int32"
                           description="Specifies the input column used as the source of data for the conversion."
-                          name="SourceInputColumnLineageID">#{Package\Przepływ danych Pogoda i Pogoda Temp\Zbierz wartości (połącz).Outputs[Union All Output 1].Columns[province]}</property>
+                          name="SourceInputColumnLineageID">#{Package\Przepływ danych Pogoda i Pogoda Temp\Union All.Outputs[Union All Output 1].Columns[province]}</property>
                         <property
                           dataType="System.Boolean"
                           description="Indicates whether the column uses the faster, locale-neutral parsing routines."
@@ -1567,7 +1584,7 @@
                   <inputColumns>
                     <inputColumn
                       refId="Package\Przepływ danych Pogoda i Pogoda Temp\Zamień wilgotność ze string na liczbę.Inputs[Data Conversion Input].Columns[avg_relative_humidity]"
-                      cachedCodepage="1252"
+                      cachedCodepage="1250"
                       cachedDataType="str"
                       cachedLength="50"
                       cachedName="avg_relative_humidity"
@@ -1632,307 +1649,6 @@
               </outputs>
             </component>
             <component
-              refId="Package\Przepływ danych Pogoda i Pogoda Temp\Zbierz wartości (połącz)"
-              componentClassID="Microsoft.UnionAll"
-              contactInfo="Union All;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
-              description="Combines rows from multiple data flows without sorting. For example, add rows back to a data flow after correction of errors. If sorting is important, we recommend using the Merge transformation."
-              name="Zbierz wartości (połącz)"
-              version="1">
-              <inputs>
-                <input
-                  refId="Package\Przepływ danych Pogoda i Pogoda Temp\Zbierz wartości (połącz).Inputs[Union All Input 1]"
-                  name="Union All Input 1">
-                  <inputColumns>
-                    <inputColumn
-                      refId="Package\Przepływ danych Pogoda i Pogoda Temp\Zbierz wartości (połącz).Inputs[Union All Input 1].Columns[avg_relative_humidity]"
-                      cachedCodepage="1252"
-                      cachedDataType="str"
-                      cachedLength="50"
-                      cachedName="avg_relative_humidity"
-                      lineageId="Package\Przepływ danych Pogoda i Pogoda Temp\Wczytaj csv &quot;Pogoda&quot; z kolumną humidity.Outputs[Flat File Source Output].Columns[avg_relative_humidity]">
-                      <properties>
-                        <property
-                          containsID="true"
-                          dataType="System.Int32"
-                          description="Output column lineage ID"
-                          name="OutputColumnLineageID">#{Package\Przepływ danych Pogoda i Pogoda Temp\Zbierz wartości (połącz).Outputs[Union All Output 1].Columns[avg_relative_humidity]}</property>
-                      </properties>
-                    </inputColumn>
-                    <inputColumn
-                      refId="Package\Przepływ danych Pogoda i Pogoda Temp\Zbierz wartości (połącz).Inputs[Union All Input 1].Columns[date]"
-                      cachedCodepage="1252"
-                      cachedDataType="str"
-                      cachedLength="50"
-                      cachedName="date"
-                      lineageId="Package\Przepływ danych Pogoda i Pogoda Temp\Wczytaj csv &quot;Pogoda&quot; z kolumną humidity.Outputs[Flat File Source Output].Columns[date]">
-                      <properties>
-                        <property
-                          containsID="true"
-                          dataType="System.Int32"
-                          description="Output column lineage ID"
-                          name="OutputColumnLineageID">#{Package\Przepływ danych Pogoda i Pogoda Temp\Zbierz wartości (połącz).Outputs[Union All Output 1].Columns[date]}</property>
-                      </properties>
-                    </inputColumn>
-                    <inputColumn
-                      refId="Package\Przepływ danych Pogoda i Pogoda Temp\Zbierz wartości (połącz).Inputs[Union All Input 1].Columns[avg_relative_humidity_NUMERIC]"
-                      cachedDataType="numeric"
-                      cachedName="avg_relative_humidity_NUMERIC"
-                      cachedPrecision="18"
-                      lineageId="Package\Przepływ danych Pogoda i Pogoda Temp\Zamień wilgotność ze string na liczbę.Outputs[Data Conversion Output].Columns[avg_relative_humidity_NUMERIC]">
-                      <properties>
-                        <property
-                          containsID="true"
-                          dataType="System.Int32"
-                          description="Output column lineage ID"
-                          name="OutputColumnLineageID">#{Package\Przepływ danych Pogoda i Pogoda Temp\Zbierz wartości (połącz).Outputs[Union All Output 1].Columns[avg_relative_humidity_NUMERIC]}</property>
-                      </properties>
-                    </inputColumn>
-                    <inputColumn
-                      refId="Package\Przepływ danych Pogoda i Pogoda Temp\Zbierz wartości (połącz).Inputs[Union All Input 1].Columns[kategoria]"
-                      cachedDataType="wstr"
-                      cachedLength="4"
-                      cachedName="kategoria"
-                      lineageId="Package\Przepływ danych Pogoda i Pogoda Temp\Dodaj kolumnę kategoria z wartością &quot;high&quot;.Outputs[Derived Column Output].Columns[kategoria]">
-                      <properties>
-                        <property
-                          containsID="true"
-                          dataType="System.Int32"
-                          description="Output column lineage ID"
-                          name="OutputColumnLineageID">#{Package\Przepływ danych Pogoda i Pogoda Temp\Zbierz wartości (połącz).Outputs[Union All Output 1].Columns[kategoria]}</property>
-                      </properties>
-                    </inputColumn>
-                    <inputColumn
-                      refId="Package\Przepływ danych Pogoda i Pogoda Temp\Zbierz wartości (połącz).Inputs[Union All Input 1].Columns[province]"
-                      cachedCodepage="1252"
-                      cachedDataType="str"
-                      cachedLength="50"
-                      cachedName="province"
-                      lineageId="Package\Przepływ danych Pogoda i Pogoda Temp\Wczytaj csv &quot;Pogoda&quot; z kolumną humidity.Outputs[Flat File Source Output].Columns[province]">
-                      <properties>
-                        <property
-                          containsID="true"
-                          dataType="System.Int32"
-                          description="Output column lineage ID"
-                          name="OutputColumnLineageID">#{Package\Przepływ danych Pogoda i Pogoda Temp\Zbierz wartości (połącz).Outputs[Union All Output 1].Columns[province]}</property>
-                      </properties>
-                    </inputColumn>
-                  </inputColumns>
-                  <externalMetadataColumns />
-                </input>
-                <input
-                  refId="Package\Przepływ danych Pogoda i Pogoda Temp\Zbierz wartości (połącz).Inputs[Union All Input 2]"
-                  hasSideEffects="true"
-                  name="Union All Input 2">
-                  <inputColumns>
-                    <inputColumn
-                      refId="Package\Przepływ danych Pogoda i Pogoda Temp\Zbierz wartości (połącz).Inputs[Union All Input 2].Columns[avg_relative_humidity]"
-                      cachedCodepage="1252"
-                      cachedDataType="str"
-                      cachedLength="50"
-                      cachedName="avg_relative_humidity"
-                      lineageId="Package\Przepływ danych Pogoda i Pogoda Temp\Wczytaj csv &quot;Pogoda&quot; z kolumną humidity.Outputs[Flat File Source Output].Columns[avg_relative_humidity]">
-                      <properties>
-                        <property
-                          containsID="true"
-                          dataType="System.Int32"
-                          description="Output column lineage ID"
-                          name="OutputColumnLineageID">#{Package\Przepływ danych Pogoda i Pogoda Temp\Zbierz wartości (połącz).Outputs[Union All Output 1].Columns[avg_relative_humidity]}</property>
-                      </properties>
-                    </inputColumn>
-                    <inputColumn
-                      refId="Package\Przepływ danych Pogoda i Pogoda Temp\Zbierz wartości (połącz).Inputs[Union All Input 2].Columns[date]"
-                      cachedCodepage="1252"
-                      cachedDataType="str"
-                      cachedLength="50"
-                      cachedName="date"
-                      lineageId="Package\Przepływ danych Pogoda i Pogoda Temp\Wczytaj csv &quot;Pogoda&quot; z kolumną humidity.Outputs[Flat File Source Output].Columns[date]">
-                      <properties>
-                        <property
-                          containsID="true"
-                          dataType="System.Int32"
-                          description="Output column lineage ID"
-                          name="OutputColumnLineageID">#{Package\Przepływ danych Pogoda i Pogoda Temp\Zbierz wartości (połącz).Outputs[Union All Output 1].Columns[date]}</property>
-                      </properties>
-                    </inputColumn>
-                    <inputColumn
-                      refId="Package\Przepływ danych Pogoda i Pogoda Temp\Zbierz wartości (połącz).Inputs[Union All Input 2].Columns[avg_relative_humidity_NUMERIC]"
-                      cachedDataType="numeric"
-                      cachedName="avg_relative_humidity_NUMERIC"
-                      cachedPrecision="18"
-                      lineageId="Package\Przepływ danych Pogoda i Pogoda Temp\Zamień wilgotność ze string na liczbę.Outputs[Data Conversion Output].Columns[avg_relative_humidity_NUMERIC]">
-                      <properties>
-                        <property
-                          containsID="true"
-                          dataType="System.Int32"
-                          description="Output column lineage ID"
-                          name="OutputColumnLineageID">#{Package\Przepływ danych Pogoda i Pogoda Temp\Zbierz wartości (połącz).Outputs[Union All Output 1].Columns[avg_relative_humidity_NUMERIC]}</property>
-                      </properties>
-                    </inputColumn>
-                    <inputColumn
-                      refId="Package\Przepływ danych Pogoda i Pogoda Temp\Zbierz wartości (połącz).Inputs[Union All Input 2].Columns[kategoria]"
-                      cachedDataType="wstr"
-                      cachedLength="6"
-                      cachedName="kategoria"
-                      lineageId="Package\Przepływ danych Pogoda i Pogoda Temp\Dodaj kolumnę kategoria z wartością &quot;medium&quot;.Outputs[Derived Column Output].Columns[kategoria]">
-                      <properties>
-                        <property
-                          containsID="true"
-                          dataType="System.Int32"
-                          description="Output column lineage ID"
-                          name="OutputColumnLineageID">#{Package\Przepływ danych Pogoda i Pogoda Temp\Zbierz wartości (połącz).Outputs[Union All Output 1].Columns[kategoria]}</property>
-                      </properties>
-                    </inputColumn>
-                    <inputColumn
-                      refId="Package\Przepływ danych Pogoda i Pogoda Temp\Zbierz wartości (połącz).Inputs[Union All Input 2].Columns[province]"
-                      cachedCodepage="1252"
-                      cachedDataType="str"
-                      cachedLength="50"
-                      cachedName="province"
-                      lineageId="Package\Przepływ danych Pogoda i Pogoda Temp\Wczytaj csv &quot;Pogoda&quot; z kolumną humidity.Outputs[Flat File Source Output].Columns[province]">
-                      <properties>
-                        <property
-                          containsID="true"
-                          dataType="System.Int32"
-                          description="Output column lineage ID"
-                          name="OutputColumnLineageID">#{Package\Przepływ danych Pogoda i Pogoda Temp\Zbierz wartości (połącz).Outputs[Union All Output 1].Columns[province]}</property>
-                      </properties>
-                    </inputColumn>
-                  </inputColumns>
-                  <externalMetadataColumns />
-                </input>
-                <input
-                  refId="Package\Przepływ danych Pogoda i Pogoda Temp\Zbierz wartości (połącz).Inputs[Union All Input 3]"
-                  hasSideEffects="true"
-                  name="Union All Input 3">
-                  <inputColumns>
-                    <inputColumn
-                      refId="Package\Przepływ danych Pogoda i Pogoda Temp\Zbierz wartości (połącz).Inputs[Union All Input 3].Columns[avg_relative_humidity]"
-                      cachedCodepage="1252"
-                      cachedDataType="str"
-                      cachedLength="50"
-                      cachedName="avg_relative_humidity"
-                      lineageId="Package\Przepływ danych Pogoda i Pogoda Temp\Wczytaj csv &quot;Pogoda&quot; z kolumną humidity.Outputs[Flat File Source Output].Columns[avg_relative_humidity]">
-                      <properties>
-                        <property
-                          containsID="true"
-                          dataType="System.Int32"
-                          description="Output column lineage ID"
-                          name="OutputColumnLineageID">#{Package\Przepływ danych Pogoda i Pogoda Temp\Zbierz wartości (połącz).Outputs[Union All Output 1].Columns[avg_relative_humidity]}</property>
-                      </properties>
-                    </inputColumn>
-                    <inputColumn
-                      refId="Package\Przepływ danych Pogoda i Pogoda Temp\Zbierz wartości (połącz).Inputs[Union All Input 3].Columns[date]"
-                      cachedCodepage="1252"
-                      cachedDataType="str"
-                      cachedLength="50"
-                      cachedName="date"
-                      lineageId="Package\Przepływ danych Pogoda i Pogoda Temp\Wczytaj csv &quot;Pogoda&quot; z kolumną humidity.Outputs[Flat File Source Output].Columns[date]">
-                      <properties>
-                        <property
-                          containsID="true"
-                          dataType="System.Int32"
-                          description="Output column lineage ID"
-                          name="OutputColumnLineageID">#{Package\Przepływ danych Pogoda i Pogoda Temp\Zbierz wartości (połącz).Outputs[Union All Output 1].Columns[date]}</property>
-                      </properties>
-                    </inputColumn>
-                    <inputColumn
-                      refId="Package\Przepływ danych Pogoda i Pogoda Temp\Zbierz wartości (połącz).Inputs[Union All Input 3].Columns[avg_relative_humidity_NUMERIC]"
-                      cachedDataType="numeric"
-                      cachedName="avg_relative_humidity_NUMERIC"
-                      cachedPrecision="18"
-                      lineageId="Package\Przepływ danych Pogoda i Pogoda Temp\Zamień wilgotność ze string na liczbę.Outputs[Data Conversion Output].Columns[avg_relative_humidity_NUMERIC]">
-                      <properties>
-                        <property
-                          containsID="true"
-                          dataType="System.Int32"
-                          description="Output column lineage ID"
-                          name="OutputColumnLineageID">#{Package\Przepływ danych Pogoda i Pogoda Temp\Zbierz wartości (połącz).Outputs[Union All Output 1].Columns[avg_relative_humidity_NUMERIC]}</property>
-                      </properties>
-                    </inputColumn>
-                    <inputColumn
-                      refId="Package\Przepływ danych Pogoda i Pogoda Temp\Zbierz wartości (połącz).Inputs[Union All Input 3].Columns[kategoria]"
-                      cachedDataType="wstr"
-                      cachedLength="3"
-                      cachedName="kategoria"
-                      lineageId="Package\Przepływ danych Pogoda i Pogoda Temp\Dodaj kolumnę kategoria z wartością &quot;low&quot;.Outputs[Derived Column Output].Columns[kategoria]">
-                      <properties>
-                        <property
-                          containsID="true"
-                          dataType="System.Int32"
-                          description="Output column lineage ID"
-                          name="OutputColumnLineageID">#{Package\Przepływ danych Pogoda i Pogoda Temp\Zbierz wartości (połącz).Outputs[Union All Output 1].Columns[kategoria]}</property>
-                      </properties>
-                    </inputColumn>
-                    <inputColumn
-                      refId="Package\Przepływ danych Pogoda i Pogoda Temp\Zbierz wartości (połącz).Inputs[Union All Input 3].Columns[province]"
-                      cachedCodepage="1252"
-                      cachedDataType="str"
-                      cachedLength="50"
-                      cachedName="province"
-                      lineageId="Package\Przepływ danych Pogoda i Pogoda Temp\Wczytaj csv &quot;Pogoda&quot; z kolumną humidity.Outputs[Flat File Source Output].Columns[province]">
-                      <properties>
-                        <property
-                          containsID="true"
-                          dataType="System.Int32"
-                          description="Output column lineage ID"
-                          name="OutputColumnLineageID">#{Package\Przepływ danych Pogoda i Pogoda Temp\Zbierz wartości (połącz).Outputs[Union All Output 1].Columns[province]}</property>
-                      </properties>
-                    </inputColumn>
-                  </inputColumns>
-                  <externalMetadataColumns />
-                </input>
-                <input
-                  refId="Package\Przepływ danych Pogoda i Pogoda Temp\Zbierz wartości (połącz).Inputs[Union All Input 4]"
-                  dangling="true"
-                  hasSideEffects="true"
-                  name="Union All Input 4">
-                  <externalMetadataColumns />
-                </input>
-              </inputs>
-              <outputs>
-                <output
-                  refId="Package\Przepływ danych Pogoda i Pogoda Temp\Zbierz wartości (połącz).Outputs[Union All Output 1]"
-                  name="Union All Output 1">
-                  <outputColumns>
-                    <outputColumn
-                      refId="Package\Przepływ danych Pogoda i Pogoda Temp\Zbierz wartości (połącz).Outputs[Union All Output 1].Columns[avg_relative_humidity]"
-                      codePage="1252"
-                      dataType="str"
-                      length="50"
-                      lineageId="Package\Przepływ danych Pogoda i Pogoda Temp\Zbierz wartości (połącz).Outputs[Union All Output 1].Columns[avg_relative_humidity]"
-                      name="avg_relative_humidity" />
-                    <outputColumn
-                      refId="Package\Przepływ danych Pogoda i Pogoda Temp\Zbierz wartości (połącz).Outputs[Union All Output 1].Columns[date]"
-                      codePage="1252"
-                      dataType="str"
-                      length="50"
-                      lineageId="Package\Przepływ danych Pogoda i Pogoda Temp\Zbierz wartości (połącz).Outputs[Union All Output 1].Columns[date]"
-                      name="date" />
-                    <outputColumn
-                      refId="Package\Przepływ danych Pogoda i Pogoda Temp\Zbierz wartości (połącz).Outputs[Union All Output 1].Columns[avg_relative_humidity_NUMERIC]"
-                      dataType="numeric"
-                      lineageId="Package\Przepływ danych Pogoda i Pogoda Temp\Zbierz wartości (połącz).Outputs[Union All Output 1].Columns[avg_relative_humidity_NUMERIC]"
-                      name="avg_relative_humidity_NUMERIC"
-                      precision="18" />
-                    <outputColumn
-                      refId="Package\Przepływ danych Pogoda i Pogoda Temp\Zbierz wartości (połącz).Outputs[Union All Output 1].Columns[kategoria]"
-                      dataType="wstr"
-                      length="7"
-                      lineageId="Package\Przepływ danych Pogoda i Pogoda Temp\Zbierz wartości (połącz).Outputs[Union All Output 1].Columns[kategoria]"
-                      name="kategoria" />
-                    <outputColumn
-                      refId="Package\Przepływ danych Pogoda i Pogoda Temp\Zbierz wartości (połącz).Outputs[Union All Output 1].Columns[province]"
-                      codePage="1252"
-                      dataType="str"
-                      length="50"
-                      lineageId="Package\Przepływ danych Pogoda i Pogoda Temp\Zbierz wartości (połącz).Outputs[Union All Output 1].Columns[province]"
-                      name="province" />
-                  </outputColumns>
-                  <externalMetadataColumns />
-                </output>
-              </outputs>
-            </component>
-            <component
               refId="Package\Przepływ danych Pogoda i Pogoda Temp\Zduplikuj dane"
               componentClassID="Microsoft.Multicast"
               contactInfo="Multicast;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;0"
@@ -1984,24 +1700,24 @@
               startId="Package\Przepływ danych Pogoda i Pogoda Temp\Zamień wilgotność ze string na liczbę.Outputs[Data Conversion Output]" />
             <path
               refId="Package\Przepływ danych Pogoda i Pogoda Temp.Paths[Data Conversion Output1]"
-              endId="Package\Przepływ danych Pogoda i Pogoda Temp\Wrzućdo DB SQL Pogoda Temp.Inputs[OLE DB Destination Input]"
+              endId="Package\Przepływ danych Pogoda i Pogoda Temp\Wrzuć do DB SQL Pogoda Temp.Inputs[OLE DB Destination Input]"
               name="Data Conversion Output"
               startId="Package\Przepływ danych Pogoda i Pogoda Temp\Zamień na WSTR.Outputs[Data Conversion Output]" />
             <path
               refId="Package\Przepływ danych Pogoda i Pogoda Temp.Paths[Derived Column Output]"
-              endId="Package\Przepływ danych Pogoda i Pogoda Temp\Zbierz wartości (połącz).Inputs[Union All Input 1]"
+              endId="Package\Przepływ danych Pogoda i Pogoda Temp\Union All.Inputs[Union All Input 1]"
               name="Derived Column Output"
-              startId="Package\Przepływ danych Pogoda i Pogoda Temp\Dodaj kolumnę kategoria z wartością &quot;high&quot;.Outputs[Derived Column Output]" />
+              startId="Package\Przepływ danych Pogoda i Pogoda Temp\Dodaj kolumnę kategoria z wartością &quot;low&quot;.Outputs[Derived Column Output]" />
             <path
               refId="Package\Przepływ danych Pogoda i Pogoda Temp.Paths[Derived Column Output1]"
-              endId="Package\Przepływ danych Pogoda i Pogoda Temp\Zbierz wartości (połącz).Inputs[Union All Input 2]"
+              endId="Package\Przepływ danych Pogoda i Pogoda Temp\Union All.Inputs[Union All Input 2]"
               name="Derived Column Output"
               startId="Package\Przepływ danych Pogoda i Pogoda Temp\Dodaj kolumnę kategoria z wartością &quot;medium&quot;.Outputs[Derived Column Output]" />
             <path
               refId="Package\Przepływ danych Pogoda i Pogoda Temp.Paths[Derived Column Output2]"
-              endId="Package\Przepływ danych Pogoda i Pogoda Temp\Zbierz wartości (połącz).Inputs[Union All Input 3]"
+              endId="Package\Przepływ danych Pogoda i Pogoda Temp\Union All.Inputs[Union All Input 3]"
               name="Derived Column Output"
-              startId="Package\Przepływ danych Pogoda i Pogoda Temp\Dodaj kolumnę kategoria z wartością &quot;low&quot;.Outputs[Derived Column Output]" />
+              startId="Package\Przepływ danych Pogoda i Pogoda Temp\Dodaj kolumnę kategoria z wartością &quot;high&quot;.Outputs[Derived Column Output]" />
             <path
               refId="Package\Przepływ danych Pogoda i Pogoda Temp.Paths[Flat File Source Output]"
               endId="Package\Przepływ danych Pogoda i Pogoda Temp\Pozbądź się pustych.Inputs[Conditional Split Input]"
@@ -2041,7 +1757,7 @@
               refId="Package\Przepływ danych Pogoda i Pogoda Temp.Paths[Union All Output 1]"
               endId="Package\Przepływ danych Pogoda i Pogoda Temp\Zduplikuj dane.Inputs[Multicast Input 1]"
               name="Union All Output 1"
-              startId="Package\Przepływ danych Pogoda i Pogoda Temp\Zbierz wartości (połącz).Outputs[Union All Output 1]" />
+              startId="Package\Przepływ danych Pogoda i Pogoda Temp\Union All.Outputs[Union All Output 1]" />
           </paths>
         </pipeline>
       </DTS:ObjectData>
@@ -2086,47 +1802,35 @@
       <GraphLayout
         Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
-          Size="178.666666666667,42.6666666666667"
+          Size="179,43"
           Id="Package\Czyszczenie Pogoda"
           TopLeft="263.749996069819,14.2456142153876" />
         <NodeLayout
-          Size="209.333333333334,42.6666666666667"
+          Size="209,43"
           Id="Package\Czyszczenie Pogoda Temp"
           TopLeft="479.583326186985,38.8070163418602" />
         <NodeLayout
-          Size="304,42.6666666666667"
+          Size="304,43"
           Id="Package\Dodaj kategorię &quot;unknown humidity&quot; do Pogoda"
-          TopLeft="245.416663009673,177.43859983107" />
+          TopLeft="245.416663009673,239.43859983107" />
         <NodeLayout
-          Size="274.666666666667,42.6666666666667"
+          Size="275,43"
           Id="Package\Przepływ danych Pogoda i Pogoda Temp"
-          TopLeft="243.749996367842,83.578948853749" />
+          TopLeft="253.749996367842,105.578948853749" />
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint]"
-          TopLeft="353.083329403152,56.9122808820543">
+          TopLeft="349.99999621883,57.2456142153876">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="-16.4444441464215,26.6666679716947"
+              EndConnector="0,48.3333346383614"
               Start="0,0"
-              End="-16.4444441464215,19.1666679716947">
+              End="0,40.8333346383614">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,11.9073366858179" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,11.9073366858179"
-                    Point2="0,15.9073366858179"
-                    Point3="-4,15.9073366858179" />
-                  <mssgle:LineSegment
-                    End="-12.4444441464215,15.9073366858179" />
-                  <mssgle:CubicBezierSegment
-                    Point1="-12.4444441464215,15.9073366858179"
-                    Point2="-16.4444441464215,15.9073366858179"
-                    Point3="-16.4444441464215,19.9073366858179" />
-                  <mssgle:LineSegment
-                    End="-16.4444441464215,19.1666679716947" />
+                    End="0,40.8333346383614" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -2137,24 +1841,30 @@
         </EdgeLayout>
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint 1]"
-          TopLeft="479.583326186985,60.1403496751935">
+          TopLeft="584.083326186985,81.8070163418602">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="-54.0555520413652,23.4385991785555"
+              EndConnector="-148.333329819143,23.7719325118888"
               Start="0,0"
-              End="-54.0555520413652,15.9385991785555">
+              End="-148.333329819143,16.2719325118888">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="-50.0555520413652,0" />
+                    End="0,10.1806538845324" />
                   <mssgle:CubicBezierSegment
-                    Point1="-50.0555520413652,0"
-                    Point2="-54.0555520413652,0"
-                    Point3="-54.0555520413652,4" />
+                    Point1="0,10.1806538845324"
+                    Point2="0,14.1806538845324"
+                    Point3="-4,14.1806538845324" />
                   <mssgle:LineSegment
-                    End="-54.0555520413652,15.9385991785555" />
+                    End="-144.333329819143,14.1806538845324" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-144.333329819143,14.1806538845324"
+                    Point2="-148.333329819143,14.1806538845324"
+                    Point3="-148.333329819143,18.1806538845324" />
+                  <mssgle:LineSegment
+                    End="-148.333329819143,16.2719325118888" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -2165,30 +1875,18 @@
         </EdgeLayout>
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint 2]"
-          TopLeft="381.083329701175,126.245615520416">
+          TopLeft="394.333329688757,148.578948853749">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="16.3333333084977,51.1929843106543"
+              EndConnector="0,90.859650977321"
               Start="0,0"
-              End="16.3333333084977,43.6929843106543">
+              End="0,83.359650977321">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,21.5964921553272" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,21.5964921553272"
-                    Point2="0,25.5964921553272"
-                    Point3="4,25.5964921553272" />
-                  <mssgle:LineSegment
-                    End="12.3333333084977,25.5964921553272" />
-                  <mssgle:CubicBezierSegment
-                    Point1="12.3333333084977,25.5964921553272"
-                    Point2="16.3333333084977,25.5964921553272"
-                    Point3="16.3333333084977,29.5964921553272" />
-                  <mssgle:LineSegment
-                    End="16.3333333084977,43.6929843106543" />
+                    End="0,83.359650977321" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -2200,127 +1898,85 @@
       </GraphLayout>
     </LayoutInfo>
   </Package>
-  <ConnectionManager
-    design-time-name="Package.ConnectionManagers[localhost]">
-    <ProjectReferenceName></ProjectReferenceName>
-  </ConnectionManager>
   <TaskHost
     design-time-name="Package\Przepływ danych Pogoda i Pogoda Temp">
     <LayoutInfo>
       <GraphLayout
         Capacity="32" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
-          Size="233.333333333334,42.6666666666667"
-          Id="Package\Przepływ danych Pogoda i Pogoda Temp\Wrzućdo DB SQL Pogoda Temp"
+          Size="230,42"
+          Id="Package\Przepływ danych Pogoda i Pogoda Temp\Wrzuć do DB SQL Pogoda Temp"
           TopLeft="741.388877841334,650.222227768591" />
         <NodeLayout
-          Size="192,42.6666666666667"
-          Id="Package\Przepływ danych Pogoda i Pogoda Temp\Zbierz wartości (połącz)"
-          TopLeft="675.416656602175,418.046785889497" />
-        <NodeLayout
-          Size="202.666666666667,42.6666666666667"
+          Size="203,43"
           Id="Package\Przepływ danych Pogoda i Pogoda Temp\Kategoryzacja wilgotności"
           TopLeft="349.166661463678,233.543864045007" />
         <NodeLayout
-          Size="277.333333333334,42.6666666666667"
+          Size="277,43"
           Id="Package\Przepływ danych Pogoda i Pogoda Temp\Wczytaj csv &quot;Pogoda&quot; z kolumną humidity"
           TopLeft="354.58332804963,10.0350879081839" />
         <NodeLayout
-          Size="214.666666666667,42.6666666666667"
+          Size="215,43"
           Id="Package\Przepływ danych Pogoda i Pogoda Temp\Wyciągnij unikalne kategorie"
           TopLeft="481.666659489274,511.403515348584" />
         <NodeLayout
-          Size="302.666666666667,42.6666666666667"
+          Size="303,43"
           Id="Package\Przepływ danych Pogoda i Pogoda Temp\Dodaj kolumnę kategoria z wartością &quot;medium&quot;"
           TopLeft="391.249994169921,314.771933816917" />
         <NodeLayout
-          Size="206.666666666667,42.6666666666667"
+          Size="200,42"
           Id="Package\Przepływ danych Pogoda i Pogoda Temp\Wrzuć do DB SQL Pogoda"
           TopLeft="460.166659849386,642.479536050208" />
         <NodeLayout
-          Size="177.333333333334,42.6666666666667"
+          Size="177,43"
           Id="Package\Przepływ danych Pogoda i Pogoda Temp\Pozbądź się pustych"
           TopLeft="359.999994635582,83.298246240792" />
         <NodeLayout
-          Size="284,42.6666666666667"
-          Id="Package\Przepływ danych Pogoda i Pogoda Temp\Dodaj kolumnę kategoria z wartością &quot;high&quot;"
-          TopLeft="599.749991996836,233.438597221014" />
+          Size="280,43"
+          Id="Package\Przepływ danych Pogoda i Pogoda Temp\Dodaj kolumnę kategoria z wartością &quot;low&quot;"
+          TopLeft="92.9166652821009,311.456146232089" />
         <NodeLayout
-          Size="164,42.6666666666667"
+          Size="164,43"
           Id="Package\Przepływ danych Pogoda i Pogoda Temp\Zamień na WSTR"
           TopLeft="824.999987706542,578.30409775994" />
         <NodeLayout
-          Size="256,42.6666666666667"
+          Size="256,43"
           Id="Package\Przepływ danych Pogoda i Pogoda Temp\Zamień wilgotność ze string na liczbę"
           TopLeft="346.666661500931,157.824564374165" />
         <NodeLayout
-          Size="280,42.6666666666667"
-          Id="Package\Przepływ danych Pogoda i Pogoda Temp\Dodaj kolumnę kategoria z wartością &quot;low&quot;"
-          TopLeft="92.9166652821009,312.456146232089" />
+          Size="284,43"
+          Id="Package\Przepływ danych Pogoda i Pogoda Temp\Dodaj kolumnę kategoria z wartością &quot;high&quot;"
+          TopLeft="599.749991996836,233.438597221014" />
         <NodeLayout
-          Size="149.333333333334,42.6666666666667"
+          Size="149,43"
           Id="Package\Przepływ danych Pogoda i Pogoda Temp\Zduplikuj dane"
           TopLeft="733.333322405815,517.485383164886" />
         <EdgeLayout
-          Id="Package\Przepływ danych Pogoda i Pogoda Temp.Paths[Union All Output 1]"
-          TopLeft="771.416656602175,460.713452556163">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="36.5833324703068,56.7719306087226"
-              Start="0,0"
-              End="36.5833324703068,49.2719306087226">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,24.3859653043613" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,24.3859653043613"
-                    Point2="0,28.3859653043613"
-                    Point3="4,28.3859653043613" />
-                  <mssgle:LineSegment
-                    End="32.5833324703068,28.3859653043613" />
-                  <mssgle:CubicBezierSegment
-                    Point1="32.5833324703068,28.3859653043613"
-                    Point2="36.5833324703068,28.3859653043613"
-                    Point3="36.5833324703068,32.3859653043613" />
-                  <mssgle:LineSegment
-                    End="36.5833324703068,49.2719306087226" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
           Id="Package\Przepływ danych Pogoda i Pogoda Temp.Paths[Sort Output]"
-          TopLeft="588.999992822607,554.070182015251">
+          TopLeft="589.166659489274,554.403515348584">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="-25.499999639888,88.4093540349573"
+              EndConnector="-28.9999996398881,88.076020701624"
               Start="0,0"
-              End="-25.499999639888,80.9093540349573">
+              End="-28.9999996398881,80.576020701624">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,40.2046770174787" />
+                    End="0,40.038010350812" />
                   <mssgle:CubicBezierSegment
-                    Point1="0,40.2046770174787"
-                    Point2="0,44.2046770174787"
-                    Point3="-4,44.2046770174787" />
+                    Point1="0,40.038010350812"
+                    Point2="0,44.038010350812"
+                    Point3="-4,44.038010350812" />
                   <mssgle:LineSegment
-                    End="-21.499999639888,44.2046770174787" />
+                    End="-24.9999996398881,44.038010350812" />
                   <mssgle:CubicBezierSegment
-                    Point1="-21.499999639888,44.2046770174787"
-                    Point2="-25.499999639888,44.2046770174787"
-                    Point3="-25.499999639888,48.2046770174787" />
+                    Point1="-24.9999996398881,44.038010350812"
+                    Point2="-28.9999996398881,44.038010350812"
+                    Point3="-28.9999996398881,48.038010350812" />
                   <mssgle:LineSegment
-                    End="-25.499999639888,80.9093540349573" />
+                    End="-28.9999996398881,80.576020701624" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -2331,37 +1987,37 @@
         </EdgeLayout>
         <EdgeLayout
           Id="Package\Przepływ danych Pogoda i Pogoda Temp.Paths[Small]"
-          TopLeft="418.055550352567,276.210530711674">
+          TopLeft="418.166661463678,276.543864045007">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="-185.138885070466,36.2456155204153"
+              EndConnector="-185.249996181577,34.912282187082"
               Start="0,0"
-              End="-185.138885070466,28.7456155204153">
+              End="-185.249996181577,27.412282187082">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,10.6685911375049" />
+                    End="0,10.1287241695522" />
                   <mssgle:CubicBezierSegment
-                    Point1="0,10.6685911375049"
-                    Point2="0,14.6685911375049"
-                    Point3="-4,14.6685911375049" />
+                    Point1="0,10.1287241695522"
+                    Point2="0,14.1287241695522"
+                    Point3="-4,14.1287241695522" />
                   <mssgle:LineSegment
-                    End="-181.138885070466,14.6685911375049" />
+                    End="-181.249996181577,14.1287241695522" />
                   <mssgle:CubicBezierSegment
-                    Point1="-181.138885070466,14.6685911375049"
-                    Point2="-185.138885070466,14.6685911375049"
-                    Point3="-185.138885070466,18.6685911375049" />
+                    Point1="-181.249996181577,14.1287241695522"
+                    Point2="-185.249996181577,14.1287241695522"
+                    Point3="-185.249996181577,18.1287241695522" />
                   <mssgle:LineSegment
-                    End="-185.138885070466,28.7456155204153" />
+                    End="-185.249996181577,27.412282187082" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
             <mssgm:EdgeLabel
-              BoundingBox="-102.043485503983,19.6685911375049,18.9480859375,9.421875"
+              BoundingBox="-102.099041059539,19.1287241695522,18.9480859375,9.421875"
               RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
@@ -2522,133 +2178,31 @@
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
-          Id="Package\Przepływ danych Pogoda i Pogoda Temp.Paths[Derived Column Output2]"
-          TopLeft="232.916665282101,355.122812898756">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="492.499991320074,62.9239729907413"
-              Start="0,0"
-              End="492.499991320074,55.4239729907413">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,37.3746671719943" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,37.3746671719943"
-                    Point2="0,41.3746671719943"
-                    Point3="4,41.3746671719943" />
-                  <mssgle:LineSegment
-                    End="488.499991320074,41.3746671719943" />
-                  <mssgle:CubicBezierSegment
-                    Point1="488.499991320074,41.3746671719943"
-                    Point2="492.499991320074,41.3746671719943"
-                    Point3="492.499991320074,45.3746671719943" />
-                  <mssgle:LineSegment
-                    End="492.499991320074,55.4239729907413" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Przepływ danych Pogoda i Pogoda Temp.Paths[Derived Column Output1]"
-          TopLeft="542.583327503254,357.438600483584">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="228.833329098921,60.6081854059133"
-              Start="0,0"
-              End="228.833329098921,53.1081854059133">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,26.3040927029567" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,26.3040927029567"
-                    Point2="0,30.3040927029567"
-                    Point3="4,30.3040927029567" />
-                  <mssgle:LineSegment
-                    End="224.833329098921,30.3040927029567" />
-                  <mssgle:CubicBezierSegment
-                    Point1="224.833329098921,30.3040927029567"
-                    Point2="228.833329098921,30.3040927029567"
-                    Point3="228.833329098921,34.3040927029567" />
-                  <mssgle:LineSegment
-                    End="228.833329098921,53.1081854059133" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Przepływ danych Pogoda i Pogoda Temp.Paths[Derived Column Output]"
-          TopLeft="741.749991996836,276.105263887681">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="75.666664605339,141.941522001816"
-              Start="0,0"
-              End="75.666664605339,134.441522001816">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,89.3314117272217" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,89.3314117272217"
-                    Point2="0,93.3314117272217"
-                    Point3="4,93.3314117272217" />
-                  <mssgle:LineSegment
-                    End="71.666664605339,93.3314117272217" />
-                  <mssgle:CubicBezierSegment
-                    Point1="71.666664605339,93.3314117272217"
-                    Point2="75.666664605339,93.3314117272217"
-                    Point3="75.666664605339,97.3314117272217" />
-                  <mssgle:LineSegment
-                    End="75.666664605339,134.441522001816" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
           Id="Package\Przepływ danych Pogoda i Pogoda Temp.Paths[Data Conversion Output1]"
-          TopLeft="906.999987706542,620.970764426607">
+          TopLeft="906.999987706542,621.30409775994">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="-48.9444431985415,29.2514633419844"
+              EndConnector="-50.6111098652081,28.918130008651"
               Start="0,0"
-              End="-48.9444431985415,21.7514633419844">
+              End="-50.6111098652081,21.418130008651">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,10.6257316709922" />
+                    End="0,10.4590650043255" />
                   <mssgle:CubicBezierSegment
-                    Point1="0,10.6257316709922"
-                    Point2="0,14.6257316709922"
-                    Point3="-4,14.6257316709922" />
+                    Point1="0,10.4590650043255"
+                    Point2="0,14.4590650043255"
+                    Point3="-4,14.4590650043255" />
                   <mssgle:LineSegment
-                    End="-44.9444431985415,14.6257316709922" />
+                    End="-46.6111098652081,14.4590650043255" />
                   <mssgle:CubicBezierSegment
-                    Point1="-44.9444431985415,14.6257316709922"
-                    Point2="-48.9444431985415,14.6257316709922"
-                    Point3="-48.9444431985415,18.6257316709922" />
+                    Point1="-46.6111098652081,14.4590650043255"
+                    Point2="-50.6111098652081,14.4590650043255"
+                    Point3="-50.6111098652081,18.4590650043255" />
                   <mssgle:LineSegment
-                    End="-48.9444431985415,21.7514633419844" />
+                    End="-50.6111098652081,21.418130008651" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -2711,15 +2265,155 @@
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
             <mssgm:EdgeLabel
-              BoundingBox="9.81639833949569,5,20.7838671875,11.6630859375"
+              BoundingBox="9.8163983394957,5,20.7838671875,11.6630859375"
               RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <NodeLayout
+          Size="121,42"
+          Id="Package\Przepływ danych Pogoda i Pogoda Temp\Union All"
+          TopLeft="730,437" />
+        <EdgeLayout
+          Id="Package\Przepływ danych Pogoda i Pogoda Temp.Paths[Derived Column Output]"
+          TopLeft="232.916665282101,354.456146232089">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="557.583334717899,82.543853767911"
+              Start="0,0"
+              End="557.583334717899,75.043853767911">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,37.2719268839555" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,37.2719268839555"
+                    Point2="0,41.2719268839555"
+                    Point3="4,41.2719268839555" />
+                  <mssgle:LineSegment
+                    End="553.583334717899,41.2719268839555" />
+                  <mssgle:CubicBezierSegment
+                    Point1="553.583334717899,41.2719268839555"
+                    Point2="557.583334717899,41.2719268839555"
+                    Point3="557.583334717899,45.2719268839555" />
+                  <mssgle:LineSegment
+                    End="557.583334717899,75.043853767911" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Przepływ danych Pogoda i Pogoda Temp.Paths[Derived Column Output1]"
+          TopLeft="542.749994169921,357.771933816917">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="266.583339163412,79.228066183083"
+              Start="0,0"
+              End="266.583339163412,71.728066183083">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,42.9164568098844" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,42.9164568098844"
+                    Point2="0,46.9164568098844"
+                    Point3="4,46.9164568098844" />
+                  <mssgle:LineSegment
+                    End="262.583339163412,46.9164568098844" />
+                  <mssgle:CubicBezierSegment
+                    Point1="262.583339163412,46.9164568098844"
+                    Point2="266.583339163412,46.9164568098844"
+                    Point3="266.583339163412,50.9164568098844" />
+                  <mssgle:LineSegment
+                    End="266.583339163412,71.728066183083" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Przepływ danych Pogoda i Pogoda Temp.Paths[Derived Column Output2]"
+          TopLeft="741.749991996836,276.438597221014">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="77.000008003164,160.561402778986"
+              Start="0,0"
+              End="77.000008003164,153.061402778986">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,100.73277485853" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,100.73277485853"
+                    Point2="0,104.73277485853"
+                    Point3="4,104.73277485853" />
+                  <mssgle:LineSegment
+                    End="73.000008003164,104.73277485853" />
+                  <mssgle:CubicBezierSegment
+                    Point1="73.000008003164,104.73277485853"
+                    Point2="77.000008003164,104.73277485853"
+                    Point3="77.000008003164,108.73277485853" />
+                  <mssgle:LineSegment
+                    End="77.000008003164,153.061402778986" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Przepływ danych Pogoda i Pogoda Temp.Paths[Union All Output 1]"
+          TopLeft="790.5,479">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="17.333322405815,38.485383164886"
+              Start="0,0"
+              End="17.333322405815,30.985383164886">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,15.242691582443" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,15.242691582443"
+                    Point2="0,19.242691582443"
+                    Point3="4,19.242691582443" />
+                  <mssgle:LineSegment
+                    End="13.333322405815,19.242691582443" />
+                  <mssgle:CubicBezierSegment
+                    Point1="13.333322405815,19.242691582443"
+                    Point2="17.333322405815,19.242691582443"
+                    Point3="17.333322405815,23.242691582443" />
+                  <mssgle:LineSegment
+                    End="17.333322405815,30.985383164886" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
     </LayoutInfo>
   </TaskHost>
   <PipelineComponentMetadata
-    design-time-name="Package\Przepływ danych Pogoda i Pogoda Temp\Wrzućdo DB SQL Pogoda Temp">
+    design-time-name="Package\Przepływ danych Pogoda i Pogoda Temp\Wrzuć do DB SQL Pogoda Temp">
     <Properties>
       <Property>
         <Name>DataSourceViewID</Name>

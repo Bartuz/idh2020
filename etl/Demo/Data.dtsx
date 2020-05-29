@@ -11,345 +11,11 @@
   DTS:LocaleID="1045"
   DTS:ObjectName="Package2"
   DTS:PackageType="5"
-  DTS:VersionBuild="61"
-  DTS:VersionGUID="{0F9A34E6-DA27-426A-BBEF-69517F70AED7}">
+  DTS:ProtectionLevel="0"
+  DTS:VersionBuild="64"
+  DTS:VersionGUID="{BD7890DE-3F55-4884-8756-61D2CDAB1406}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
-  <DTS:ConnectionManagers>
-    <DTS:ConnectionManager
-      DTS:refId="Package.ConnectionManagers[Flat File Connection Manager]"
-      DTS:CreationName="FLATFILE"
-      DTS:DTSID="{79EE37E4-F520-400B-BD82-BEF36C84ABB4}"
-      DTS:ObjectName="Flat File Connection Manager">
-      <DTS:ObjectData>
-        <DTS:ConnectionManager
-          DTS:Format="Delimited"
-          DTS:LocaleID="1045"
-          DTS:HeaderRowDelimiter="_x000D__x000A_"
-          DTS:ColumnNamesInFirstDataRow="True"
-          DTS:RowDelimiter=""
-          DTS:TextQualifier="_x003C_none_x003E_"
-          DTS:CodePage="1250"
-          DTS:ConnectionString="D:\a;x\cwiczenia\coronavirusdataset\TimeProvince.csv">
-          <DTS:FlatFileColumns>
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x002C_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="date"
-              DTS:DTSID="{2E31AF0E-9381-4C55-8E1B-2E3A69ABFBFB}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x002C_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="time"
-              DTS:DTSID="{24FCDE65-F7DE-45E2-B19A-A6B42AA78A22}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x002C_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="province"
-              DTS:DTSID="{65294E81-ABC8-4298-AC23-8C65D003C4F7}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x002C_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="confirmed"
-              DTS:DTSID="{211B4BAD-1A99-4636-AE6D-3B7192D12828}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x002C_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="released"
-              DTS:DTSID="{28E2F3A2-98FE-4C61-B4CD-718787CC656F}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x000D__x000A_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="deceased"
-              DTS:DTSID="{602C093F-3B1F-415D-8BAD-54F06B92464C}"
-              DTS:CreationName="" />
-          </DTS:FlatFileColumns>
-        </DTS:ConnectionManager>
-      </DTS:ObjectData>
-    </DTS:ConnectionManager>
-    <DTS:ConnectionManager
-      DTS:refId="Package.ConnectionManagers[Flat File Connection Manager 1]"
-      DTS:CreationName="FLATFILE"
-      DTS:DTSID="{D7423CA4-827C-43EC-9160-F3BAAF8B7FF5}"
-      DTS:ObjectName="Flat File Connection Manager 1">
-      <DTS:ObjectData>
-        <DTS:ConnectionManager
-          DTS:Format="Delimited"
-          DTS:LocaleID="1045"
-          DTS:HeaderRowDelimiter="_x000D__x000A_"
-          DTS:ColumnNamesInFirstDataRow="True"
-          DTS:RowDelimiter=""
-          DTS:TextQualifier="_x003C_none_x003E_"
-          DTS:CodePage="1250"
-          DTS:ConnectionString="D:\a;x\cwiczenia\coronavirusdataset\Time.csv">
-          <DTS:FlatFileColumns>
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x002C_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="date"
-              DTS:DTSID="{F4FB16A1-FA95-4CA2-9D45-297D72C3AB65}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x002C_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="time"
-              DTS:DTSID="{5AFF1857-4748-4D59-B6D4-553A3E81554E}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x002C_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="test"
-              DTS:DTSID="{E4BDCA72-9A32-409B-B95D-6E8EB951B7C7}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x002C_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="negative"
-              DTS:DTSID="{5E16FC56-819F-4AF6-8CC9-D195400389F9}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x002C_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="confirmed"
-              DTS:DTSID="{B026BCBD-76E3-409C-9018-EEDF6611BAD8}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x002C_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="released"
-              DTS:DTSID="{3F676F95-61F9-4B64-B609-49C21D1E03AF}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x000D__x000A_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="deceased"
-              DTS:DTSID="{103A6C5D-813C-4369-BD38-DAAC7F29FD6E}"
-              DTS:CreationName="" />
-          </DTS:FlatFileColumns>
-        </DTS:ConnectionManager>
-      </DTS:ObjectData>
-    </DTS:ConnectionManager>
-    <DTS:ConnectionManager
-      DTS:refId="Package.ConnectionManagers[Flat File Connection Manager 2]"
-      DTS:CreationName="FLATFILE"
-      DTS:DTSID="{5DA6CEA2-1A4E-4A51-B1C6-6109F123160A}"
-      DTS:ObjectName="Flat File Connection Manager 2">
-      <DTS:ObjectData>
-        <DTS:ConnectionManager
-          DTS:Format="Delimited"
-          DTS:LocaleID="2057"
-          DTS:HeaderRowDelimiter="_x000D__x000A_"
-          DTS:ColumnNamesInFirstDataRow="True"
-          DTS:RowDelimiter=""
-          DTS:TextQualifier="_x003C_none_x003E_"
-          DTS:CodePage="1252"
-          DTS:ConnectionString="D:\PJATK_Informatyka\magisterkie\IDH\cwiczenia\coronavirusdataset\Time.csv">
-          <DTS:FlatFileColumns>
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x002C_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="date"
-              DTS:DTSID="{C1B2237F-1EF1-490A-95BE-9EEE093C6075}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x002C_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="time"
-              DTS:DTSID="{B379B594-FB8E-477F-8CF0-A543E9D44F40}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x002C_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="test"
-              DTS:DTSID="{1A23075F-1EAE-426A-8C9E-EC4861E7E874}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x002C_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="negative"
-              DTS:DTSID="{6DCDE131-8ABB-4700-B48B-AC055B21B305}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x002C_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="confirmed"
-              DTS:DTSID="{F7EFAC35-675D-4A8B-A659-F44A275CF256}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x002C_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="released"
-              DTS:DTSID="{2B924A6D-69BB-490A-8AC1-824CD04E678E}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x000D__x000A_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="deceased"
-              DTS:DTSID="{D2B69D86-42B4-492D-81B2-580E12430BC1}"
-              DTS:CreationName="" />
-          </DTS:FlatFileColumns>
-        </DTS:ConnectionManager>
-      </DTS:ObjectData>
-    </DTS:ConnectionManager>
-    <DTS:ConnectionManager
-      DTS:refId="Package.ConnectionManagers[Flat File Connection Manager 3]"
-      DTS:CreationName="FLATFILE"
-      DTS:DTSID="{98C24DCE-7CD9-4424-A0FC-E082B751B8B3}"
-      DTS:ObjectName="Flat File Connection Manager 3">
-      <DTS:ObjectData>
-        <DTS:ConnectionManager
-          DTS:Format="Delimited"
-          DTS:LocaleID="2057"
-          DTS:HeaderRowDelimiter="_x000D__x000A_"
-          DTS:ColumnNamesInFirstDataRow="True"
-          DTS:RowDelimiter=""
-          DTS:TextQualifier="_x003C_none_x003E_"
-          DTS:CodePage="1252"
-          DTS:ConnectionString="D:\PJATK_Informatyka\magisterkie\IDH\cwiczenia\coronavirusdataset\Time.csv">
-          <DTS:FlatFileColumns>
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x002C_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="date"
-              DTS:DTSID="{FDC53A2A-0AFB-46AA-B879-3DF7E8FFD0DF}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x002C_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="time"
-              DTS:DTSID="{92B6BD48-E84D-4C61-86DE-060F24E4B825}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x002C_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="test"
-              DTS:DTSID="{A85E9EDF-9140-4D0F-8737-BCEE756D6929}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x002C_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="negative"
-              DTS:DTSID="{F843CA60-E881-49F3-A0EC-328A52CFEB95}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x002C_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="confirmed"
-              DTS:DTSID="{180A6E05-24E3-4EC3-A915-4EA46F3C63A7}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x002C_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="released"
-              DTS:DTSID="{29083CDF-B011-4CBC-850B-766C8A25C122}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x000D__x000A_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="deceased"
-              DTS:DTSID="{BCBEEF25-C620-4102-9E86-A142F7FA1BF8}"
-              DTS:CreationName="" />
-          </DTS:FlatFileColumns>
-        </DTS:ConnectionManager>
-      </DTS:ObjectData>
-    </DTS:ConnectionManager>
-    <DTS:ConnectionManager
-      DTS:refId="Package.ConnectionManagers[localhost.IDH]"
-      DTS:CreationName="OLEDB"
-      DTS:DTSID="{37B60DA8-E37A-4ED6-962B-6220C5190415}"
-      DTS:ObjectName="localhost.IDH">
-      <DTS:ObjectData>
-        <DTS:ConnectionManager
-          DTS:ConnectionString="Data Source=localhost;Initial Catalog=IDH;Provider=MSOLEDBSQL.1;Integrated Security=SSPI;Auto Translate=False;" />
-      </DTS:ObjectData>
-    </DTS:ConnectionManager>
-  </DTS:ConnectionManagers>
   <DTS:Variables />
   <DTS:Executables>
     <DTS:Executable
@@ -388,7 +54,7 @@
               componentClassID="Microsoft.FlatFileSource"
               contactInfo="Flat File Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
               description="Flat File Source"
-              localeId="2057"
+              localeId="1045"
               name="CSV Time"
               usesDispositions="true"
               version="1">
@@ -405,8 +71,8 @@
               <connections>
                 <connection
                   refId="Package\Przepływ danych Data\CSV Time.Connections[FlatFileConnection]"
-                  connectionManagerID="Package.ConnectionManagers[Flat File Connection Manager 3]"
-                  connectionManagerRefId="Package.ConnectionManagers[Flat File Connection Manager 3]"
+                  connectionManagerID="{DC8E7AEB-26D1-478B-94F3-44410E5C1499}:external"
+                  connectionManagerRefId="Project.ConnectionManagers[Time_CSV]"
                   name="FlatFileConnection" />
               </connections>
               <outputs>
@@ -416,7 +82,7 @@
                   <outputColumns>
                     <outputColumn
                       refId="Package\Przepływ danych Data\CSV Time.Outputs[Flat File Source Output].Columns[date]"
-                      codePage="1252"
+                      codePage="1250"
                       dataType="str"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
@@ -438,7 +104,7 @@
                     </outputColumn>
                     <outputColumn
                       refId="Package\Przepływ danych Data\CSV Time.Outputs[Flat File Source Output].Columns[time]"
-                      codePage="1252"
+                      codePage="1250"
                       dataType="str"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
@@ -460,7 +126,7 @@
                     </outputColumn>
                     <outputColumn
                       refId="Package\Przepływ danych Data\CSV Time.Outputs[Flat File Source Output].Columns[confirmed]"
-                      codePage="1252"
+                      codePage="1250"
                       dataType="str"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
@@ -482,7 +148,7 @@
                     </outputColumn>
                     <outputColumn
                       refId="Package\Przepływ danych Data\CSV Time.Outputs[Flat File Source Output].Columns[released]"
-                      codePage="1252"
+                      codePage="1250"
                       dataType="str"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
@@ -504,7 +170,7 @@
                     </outputColumn>
                     <outputColumn
                       refId="Package\Przepływ danych Data\CSV Time.Outputs[Flat File Source Output].Columns[deceased]"
-                      codePage="1252"
+                      codePage="1250"
                       dataType="str"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
@@ -526,7 +192,7 @@
                     </outputColumn>
                     <outputColumn
                       refId="Package\Przepływ danych Data\CSV Time.Outputs[Flat File Source Output].Columns[test]"
-                      codePage="1252"
+                      codePage="1250"
                       dataType="str"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
@@ -548,7 +214,7 @@
                     </outputColumn>
                     <outputColumn
                       refId="Package\Przepływ danych Data\CSV Time.Outputs[Flat File Source Output].Columns[negative]"
-                      codePage="1252"
+                      codePage="1250"
                       dataType="str"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
@@ -573,43 +239,43 @@
                     isUsed="True">
                     <externalMetadataColumn
                       refId="Package\Przepływ danych Data\CSV Time.Outputs[Flat File Source Output].ExternalColumns[date]"
-                      codePage="1252"
+                      codePage="1250"
                       dataType="str"
                       length="50"
                       name="date" />
                     <externalMetadataColumn
                       refId="Package\Przepływ danych Data\CSV Time.Outputs[Flat File Source Output].ExternalColumns[time]"
-                      codePage="1252"
+                      codePage="1250"
                       dataType="str"
                       length="50"
                       name="time" />
                     <externalMetadataColumn
                       refId="Package\Przepływ danych Data\CSV Time.Outputs[Flat File Source Output].ExternalColumns[confirmed]"
-                      codePage="1252"
+                      codePage="1250"
                       dataType="str"
                       length="50"
                       name="confirmed" />
                     <externalMetadataColumn
                       refId="Package\Przepływ danych Data\CSV Time.Outputs[Flat File Source Output].ExternalColumns[released]"
-                      codePage="1252"
+                      codePage="1250"
                       dataType="str"
                       length="50"
                       name="released" />
                     <externalMetadataColumn
                       refId="Package\Przepływ danych Data\CSV Time.Outputs[Flat File Source Output].ExternalColumns[deceased]"
-                      codePage="1252"
+                      codePage="1250"
                       dataType="str"
                       length="50"
                       name="deceased" />
                     <externalMetadataColumn
                       refId="Package\Przepływ danych Data\CSV Time.Outputs[Flat File Source Output].ExternalColumns[test]"
-                      codePage="1252"
+                      codePage="1250"
                       dataType="str"
                       length="50"
                       name="test" />
                     <externalMetadataColumn
                       refId="Package\Przepływ danych Data\CSV Time.Outputs[Flat File Source Output].ExternalColumns[negative]"
-                      codePage="1252"
+                      codePage="1250"
                       dataType="str"
                       length="50"
                       name="negative" />
@@ -649,7 +315,7 @@
               componentClassID="Microsoft.FlatFileSource"
               contactInfo="Flat File Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
               description="Flat File Source"
-              localeId="2057"
+              localeId="1045"
               name="CSV Time (ale dla liczenia sumy kroczacej)"
               usesDispositions="true"
               version="1">
@@ -666,8 +332,8 @@
               <connections>
                 <connection
                   refId="Package\Przepływ danych Data\CSV Time (ale dla liczenia sumy kroczacej).Connections[FlatFileConnection]"
-                  connectionManagerID="Package.ConnectionManagers[Flat File Connection Manager 2]"
-                  connectionManagerRefId="Package.ConnectionManagers[Flat File Connection Manager 2]"
+                  connectionManagerID="{DC8E7AEB-26D1-478B-94F3-44410E5C1499}:external"
+                  connectionManagerRefId="Project.ConnectionManagers[Time_CSV]"
                   name="FlatFileConnection" />
               </connections>
               <outputs>
@@ -677,7 +343,7 @@
                   <outputColumns>
                     <outputColumn
                       refId="Package\Przepływ danych Data\CSV Time (ale dla liczenia sumy kroczacej).Outputs[Flat File Source Output].Columns[date]"
-                      codePage="1252"
+                      codePage="1250"
                       dataType="str"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
@@ -699,7 +365,7 @@
                     </outputColumn>
                     <outputColumn
                       refId="Package\Przepływ danych Data\CSV Time (ale dla liczenia sumy kroczacej).Outputs[Flat File Source Output].Columns[time]"
-                      codePage="1252"
+                      codePage="1250"
                       dataType="str"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
@@ -721,7 +387,7 @@
                     </outputColumn>
                     <outputColumn
                       refId="Package\Przepływ danych Data\CSV Time (ale dla liczenia sumy kroczacej).Outputs[Flat File Source Output].Columns[test]"
-                      codePage="1252"
+                      codePage="1250"
                       dataType="str"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
@@ -743,7 +409,7 @@
                     </outputColumn>
                     <outputColumn
                       refId="Package\Przepływ danych Data\CSV Time (ale dla liczenia sumy kroczacej).Outputs[Flat File Source Output].Columns[negative]"
-                      codePage="1252"
+                      codePage="1250"
                       dataType="str"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
@@ -765,7 +431,7 @@
                     </outputColumn>
                     <outputColumn
                       refId="Package\Przepływ danych Data\CSV Time (ale dla liczenia sumy kroczacej).Outputs[Flat File Source Output].Columns[confirmed]"
-                      codePage="1252"
+                      codePage="1250"
                       dataType="str"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
@@ -787,7 +453,7 @@
                     </outputColumn>
                     <outputColumn
                       refId="Package\Przepływ danych Data\CSV Time (ale dla liczenia sumy kroczacej).Outputs[Flat File Source Output].Columns[released]"
-                      codePage="1252"
+                      codePage="1250"
                       dataType="str"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
@@ -809,7 +475,7 @@
                     </outputColumn>
                     <outputColumn
                       refId="Package\Przepływ danych Data\CSV Time (ale dla liczenia sumy kroczacej).Outputs[Flat File Source Output].Columns[deceased]"
-                      codePage="1252"
+                      codePage="1250"
                       dataType="str"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
@@ -834,43 +500,43 @@
                     isUsed="True">
                     <externalMetadataColumn
                       refId="Package\Przepływ danych Data\CSV Time (ale dla liczenia sumy kroczacej).Outputs[Flat File Source Output].ExternalColumns[date]"
-                      codePage="1252"
+                      codePage="1250"
                       dataType="str"
                       length="50"
                       name="date" />
                     <externalMetadataColumn
                       refId="Package\Przepływ danych Data\CSV Time (ale dla liczenia sumy kroczacej).Outputs[Flat File Source Output].ExternalColumns[time]"
-                      codePage="1252"
+                      codePage="1250"
                       dataType="str"
                       length="50"
                       name="time" />
                     <externalMetadataColumn
                       refId="Package\Przepływ danych Data\CSV Time (ale dla liczenia sumy kroczacej).Outputs[Flat File Source Output].ExternalColumns[test]"
-                      codePage="1252"
+                      codePage="1250"
                       dataType="str"
                       length="50"
                       name="test" />
                     <externalMetadataColumn
                       refId="Package\Przepływ danych Data\CSV Time (ale dla liczenia sumy kroczacej).Outputs[Flat File Source Output].ExternalColumns[negative]"
-                      codePage="1252"
+                      codePage="1250"
                       dataType="str"
                       length="50"
                       name="negative" />
                     <externalMetadataColumn
                       refId="Package\Przepływ danych Data\CSV Time (ale dla liczenia sumy kroczacej).Outputs[Flat File Source Output].ExternalColumns[confirmed]"
-                      codePage="1252"
+                      codePage="1250"
                       dataType="str"
                       length="50"
                       name="confirmed" />
                     <externalMetadataColumn
                       refId="Package\Przepływ danych Data\CSV Time (ale dla liczenia sumy kroczacej).Outputs[Flat File Source Output].ExternalColumns[released]"
-                      codePage="1252"
+                      codePage="1250"
                       dataType="str"
                       length="50"
                       name="released" />
                     <externalMetadataColumn
                       refId="Package\Przepływ danych Data\CSV Time (ale dla liczenia sumy kroczacej).Outputs[Flat File Source Output].ExternalColumns[deceased]"
-                      codePage="1252"
+                      codePage="1250"
                       dataType="str"
                       length="50"
                       name="deceased" />
@@ -945,49 +611,49 @@
                       lineageId="Package\Przepływ danych Data\Posortuj po dacie.Outputs[Sort Output].Columns[date_DBDATE]" />
                     <inputColumn
                       refId="Package\Przepływ danych Data\Dodaj dane z następnego dnia żeby przeliczyć sumę kroczącą na faktyczną wartość z danego dnia.Inputs[Merge Join Right Input].Columns[date]"
-                      cachedCodepage="1252"
+                      cachedCodepage="1250"
                       cachedDataType="str"
                       cachedLength="50"
                       cachedName="date"
                       lineageId="Package\Przepływ danych Data\Posortuj po dacie.Outputs[Sort Output].Columns[date]" />
                     <inputColumn
                       refId="Package\Przepływ danych Data\Dodaj dane z następnego dnia żeby przeliczyć sumę kroczącą na faktyczną wartość z danego dnia.Inputs[Merge Join Right Input].Columns[time]"
-                      cachedCodepage="1252"
+                      cachedCodepage="1250"
                       cachedDataType="str"
                       cachedLength="50"
                       cachedName="time"
                       lineageId="Package\Przepływ danych Data\Posortuj po dacie.Outputs[Sort Output].Columns[time]" />
                     <inputColumn
                       refId="Package\Przepływ danych Data\Dodaj dane z następnego dnia żeby przeliczyć sumę kroczącą na faktyczną wartość z danego dnia.Inputs[Merge Join Right Input].Columns[confirmed]"
-                      cachedCodepage="1252"
+                      cachedCodepage="1250"
                       cachedDataType="str"
                       cachedLength="50"
                       cachedName="confirmed"
                       lineageId="Package\Przepływ danych Data\Posortuj po dacie.Outputs[Sort Output].Columns[confirmed]" />
                     <inputColumn
                       refId="Package\Przepływ danych Data\Dodaj dane z następnego dnia żeby przeliczyć sumę kroczącą na faktyczną wartość z danego dnia.Inputs[Merge Join Right Input].Columns[released]"
-                      cachedCodepage="1252"
+                      cachedCodepage="1250"
                       cachedDataType="str"
                       cachedLength="50"
                       cachedName="released"
                       lineageId="Package\Przepływ danych Data\Posortuj po dacie.Outputs[Sort Output].Columns[released]" />
                     <inputColumn
                       refId="Package\Przepływ danych Data\Dodaj dane z następnego dnia żeby przeliczyć sumę kroczącą na faktyczną wartość z danego dnia.Inputs[Merge Join Right Input].Columns[deceased]"
-                      cachedCodepage="1252"
+                      cachedCodepage="1250"
                       cachedDataType="str"
                       cachedLength="50"
                       cachedName="deceased"
                       lineageId="Package\Przepływ danych Data\Posortuj po dacie.Outputs[Sort Output].Columns[deceased]" />
                     <inputColumn
                       refId="Package\Przepływ danych Data\Dodaj dane z następnego dnia żeby przeliczyć sumę kroczącą na faktyczną wartość z danego dnia.Inputs[Merge Join Right Input].Columns[test]"
-                      cachedCodepage="1252"
+                      cachedCodepage="1250"
                       cachedDataType="str"
                       cachedLength="50"
                       cachedName="test"
                       lineageId="Package\Przepływ danych Data\Posortuj po dacie.Outputs[Sort Output].Columns[test]" />
                     <inputColumn
                       refId="Package\Przepływ danych Data\Dodaj dane z następnego dnia żeby przeliczyć sumę kroczącą na faktyczną wartość z danego dnia.Inputs[Merge Join Right Input].Columns[negative]"
-                      cachedCodepage="1252"
+                      cachedCodepage="1250"
                       cachedDataType="str"
                       cachedLength="50"
                       cachedName="negative"
@@ -1069,7 +735,7 @@
                   <outputColumns>
                     <outputColumn
                       refId="Package\Przepływ danych Data\Dodaj dane z następnego dnia żeby przeliczyć sumę kroczącą na faktyczną wartość z danego dnia.Outputs[Merge Join Output].Columns[date]"
-                      codePage="1252"
+                      codePage="1250"
                       dataType="str"
                       length="50"
                       lineageId="Package\Przepływ danych Data\Dodaj dane z następnego dnia żeby przeliczyć sumę kroczącą na faktyczną wartość z danego dnia.Outputs[Merge Join Output].Columns[date]"
@@ -1084,7 +750,7 @@
                     </outputColumn>
                     <outputColumn
                       refId="Package\Przepływ danych Data\Dodaj dane z następnego dnia żeby przeliczyć sumę kroczącą na faktyczną wartość z danego dnia.Outputs[Merge Join Output].Columns[time]"
-                      codePage="1252"
+                      codePage="1250"
                       dataType="str"
                       length="50"
                       lineageId="Package\Przepływ danych Data\Dodaj dane z następnego dnia żeby przeliczyć sumę kroczącą na faktyczną wartość z danego dnia.Outputs[Merge Join Output].Columns[time]"
@@ -1099,7 +765,7 @@
                     </outputColumn>
                     <outputColumn
                       refId="Package\Przepływ danych Data\Dodaj dane z następnego dnia żeby przeliczyć sumę kroczącą na faktyczną wartość z danego dnia.Outputs[Merge Join Output].Columns[confirmed]"
-                      codePage="1252"
+                      codePage="1250"
                       dataType="str"
                       length="50"
                       lineageId="Package\Przepływ danych Data\Dodaj dane z następnego dnia żeby przeliczyć sumę kroczącą na faktyczną wartość z danego dnia.Outputs[Merge Join Output].Columns[confirmed]"
@@ -1114,7 +780,7 @@
                     </outputColumn>
                     <outputColumn
                       refId="Package\Przepływ danych Data\Dodaj dane z następnego dnia żeby przeliczyć sumę kroczącą na faktyczną wartość z danego dnia.Outputs[Merge Join Output].Columns[released]"
-                      codePage="1252"
+                      codePage="1250"
                       dataType="str"
                       length="50"
                       lineageId="Package\Przepływ danych Data\Dodaj dane z następnego dnia żeby przeliczyć sumę kroczącą na faktyczną wartość z danego dnia.Outputs[Merge Join Output].Columns[released]"
@@ -1129,7 +795,7 @@
                     </outputColumn>
                     <outputColumn
                       refId="Package\Przepływ danych Data\Dodaj dane z następnego dnia żeby przeliczyć sumę kroczącą na faktyczną wartość z danego dnia.Outputs[Merge Join Output].Columns[deceased]"
-                      codePage="1252"
+                      codePage="1250"
                       dataType="str"
                       length="50"
                       lineageId="Package\Przepływ danych Data\Dodaj dane z następnego dnia żeby przeliczyć sumę kroczącą na faktyczną wartość z danego dnia.Outputs[Merge Join Output].Columns[deceased]"
@@ -1144,7 +810,7 @@
                     </outputColumn>
                     <outputColumn
                       refId="Package\Przepływ danych Data\Dodaj dane z następnego dnia żeby przeliczyć sumę kroczącą na faktyczną wartość z danego dnia.Outputs[Merge Join Output].Columns[test]"
-                      codePage="1252"
+                      codePage="1250"
                       dataType="str"
                       length="50"
                       lineageId="Package\Przepływ danych Data\Dodaj dane z następnego dnia żeby przeliczyć sumę kroczącą na faktyczną wartość z danego dnia.Outputs[Merge Join Output].Columns[test]"
@@ -1159,7 +825,7 @@
                     </outputColumn>
                     <outputColumn
                       refId="Package\Przepływ danych Data\Dodaj dane z następnego dnia żeby przeliczyć sumę kroczącą na faktyczną wartość z danego dnia.Outputs[Merge Join Output].Columns[negative]"
-                      codePage="1252"
+                      codePage="1250"
                       dataType="str"
                       length="50"
                       lineageId="Package\Przepływ danych Data\Dodaj dane z następnego dnia żeby przeliczyć sumę kroczącą na faktyczną wartość z danego dnia.Outputs[Merge Join Output].Columns[negative]"
@@ -1634,7 +1300,7 @@
                   <inputColumns>
                     <inputColumn
                       refId="Package\Przepływ danych Data\Posortuj po dacie.Inputs[Sort Input].Columns[date]"
-                      cachedCodepage="1252"
+                      cachedCodepage="1250"
                       cachedDataType="str"
                       cachedLength="50"
                       cachedName="date"
@@ -1652,7 +1318,7 @@
                     </inputColumn>
                     <inputColumn
                       refId="Package\Przepływ danych Data\Posortuj po dacie.Inputs[Sort Input].Columns[time]"
-                      cachedCodepage="1252"
+                      cachedCodepage="1250"
                       cachedDataType="str"
                       cachedLength="50"
                       cachedName="time"
@@ -1670,7 +1336,7 @@
                     </inputColumn>
                     <inputColumn
                       refId="Package\Przepływ danych Data\Posortuj po dacie.Inputs[Sort Input].Columns[confirmed]"
-                      cachedCodepage="1252"
+                      cachedCodepage="1250"
                       cachedDataType="str"
                       cachedLength="50"
                       cachedName="confirmed"
@@ -1688,7 +1354,7 @@
                     </inputColumn>
                     <inputColumn
                       refId="Package\Przepływ danych Data\Posortuj po dacie.Inputs[Sort Input].Columns[released]"
-                      cachedCodepage="1252"
+                      cachedCodepage="1250"
                       cachedDataType="str"
                       cachedLength="50"
                       cachedName="released"
@@ -1706,7 +1372,7 @@
                     </inputColumn>
                     <inputColumn
                       refId="Package\Przepływ danych Data\Posortuj po dacie.Inputs[Sort Input].Columns[deceased]"
-                      cachedCodepage="1252"
+                      cachedCodepage="1250"
                       cachedDataType="str"
                       cachedLength="50"
                       cachedName="deceased"
@@ -1724,7 +1390,7 @@
                     </inputColumn>
                     <inputColumn
                       refId="Package\Przepływ danych Data\Posortuj po dacie.Inputs[Sort Input].Columns[test]"
-                      cachedCodepage="1252"
+                      cachedCodepage="1250"
                       cachedDataType="str"
                       cachedLength="50"
                       cachedName="test"
@@ -1742,7 +1408,7 @@
                     </inputColumn>
                     <inputColumn
                       refId="Package\Przepływ danych Data\Posortuj po dacie.Inputs[Sort Input].Columns[negative]"
-                      cachedCodepage="1252"
+                      cachedCodepage="1250"
                       cachedDataType="str"
                       cachedLength="50"
                       cachedName="negative"
@@ -1885,7 +1551,7 @@
                   <outputColumns>
                     <outputColumn
                       refId="Package\Przepływ danych Data\Posortuj po dacie.Outputs[Sort Output].Columns[date]"
-                      codePage="1252"
+                      codePage="1250"
                       dataType="str"
                       length="50"
                       lineageId="Package\Przepływ danych Data\Posortuj po dacie.Outputs[Sort Output].Columns[date]"
@@ -1900,7 +1566,7 @@
                     </outputColumn>
                     <outputColumn
                       refId="Package\Przepływ danych Data\Posortuj po dacie.Outputs[Sort Output].Columns[time]"
-                      codePage="1252"
+                      codePage="1250"
                       dataType="str"
                       length="50"
                       lineageId="Package\Przepływ danych Data\Posortuj po dacie.Outputs[Sort Output].Columns[time]"
@@ -1915,7 +1581,7 @@
                     </outputColumn>
                     <outputColumn
                       refId="Package\Przepływ danych Data\Posortuj po dacie.Outputs[Sort Output].Columns[confirmed]"
-                      codePage="1252"
+                      codePage="1250"
                       dataType="str"
                       length="50"
                       lineageId="Package\Przepływ danych Data\Posortuj po dacie.Outputs[Sort Output].Columns[confirmed]"
@@ -1930,7 +1596,7 @@
                     </outputColumn>
                     <outputColumn
                       refId="Package\Przepływ danych Data\Posortuj po dacie.Outputs[Sort Output].Columns[released]"
-                      codePage="1252"
+                      codePage="1250"
                       dataType="str"
                       length="50"
                       lineageId="Package\Przepływ danych Data\Posortuj po dacie.Outputs[Sort Output].Columns[released]"
@@ -1945,7 +1611,7 @@
                     </outputColumn>
                     <outputColumn
                       refId="Package\Przepływ danych Data\Posortuj po dacie.Outputs[Sort Output].Columns[deceased]"
-                      codePage="1252"
+                      codePage="1250"
                       dataType="str"
                       length="50"
                       lineageId="Package\Przepływ danych Data\Posortuj po dacie.Outputs[Sort Output].Columns[deceased]"
@@ -1960,7 +1626,7 @@
                     </outputColumn>
                     <outputColumn
                       refId="Package\Przepływ danych Data\Posortuj po dacie.Outputs[Sort Output].Columns[test]"
-                      codePage="1252"
+                      codePage="1250"
                       dataType="str"
                       length="50"
                       lineageId="Package\Przepływ danych Data\Posortuj po dacie.Outputs[Sort Output].Columns[test]"
@@ -1975,7 +1641,7 @@
                     </outputColumn>
                     <outputColumn
                       refId="Package\Przepływ danych Data\Posortuj po dacie.Outputs[Sort Output].Columns[negative]"
-                      codePage="1252"
+                      codePage="1250"
                       dataType="str"
                       length="50"
                       lineageId="Package\Przepływ danych Data\Posortuj po dacie.Outputs[Sort Output].Columns[negative]"
@@ -2113,7 +1779,7 @@
                   <inputColumns>
                     <inputColumn
                       refId="Package\Przepływ danych Data\Posortuj po nowej dacie.Inputs[Sort Input].Columns[date]"
-                      cachedCodepage="1252"
+                      cachedCodepage="1250"
                       cachedDataType="str"
                       cachedLength="50"
                       cachedName="date"
@@ -2131,7 +1797,7 @@
                     </inputColumn>
                     <inputColumn
                       refId="Package\Przepływ danych Data\Posortuj po nowej dacie.Inputs[Sort Input].Columns[time]"
-                      cachedCodepage="1252"
+                      cachedCodepage="1250"
                       cachedDataType="str"
                       cachedLength="50"
                       cachedName="time"
@@ -2149,7 +1815,7 @@
                     </inputColumn>
                     <inputColumn
                       refId="Package\Przepływ danych Data\Posortuj po nowej dacie.Inputs[Sort Input].Columns[test]"
-                      cachedCodepage="1252"
+                      cachedCodepage="1250"
                       cachedDataType="str"
                       cachedLength="50"
                       cachedName="test"
@@ -2167,7 +1833,7 @@
                     </inputColumn>
                     <inputColumn
                       refId="Package\Przepływ danych Data\Posortuj po nowej dacie.Inputs[Sort Input].Columns[negative]"
-                      cachedCodepage="1252"
+                      cachedCodepage="1250"
                       cachedDataType="str"
                       cachedLength="50"
                       cachedName="negative"
@@ -2185,7 +1851,7 @@
                     </inputColumn>
                     <inputColumn
                       refId="Package\Przepływ danych Data\Posortuj po nowej dacie.Inputs[Sort Input].Columns[confirmed]"
-                      cachedCodepage="1252"
+                      cachedCodepage="1250"
                       cachedDataType="str"
                       cachedLength="50"
                       cachedName="confirmed"
@@ -2203,7 +1869,7 @@
                     </inputColumn>
                     <inputColumn
                       refId="Package\Przepływ danych Data\Posortuj po nowej dacie.Inputs[Sort Input].Columns[released]"
-                      cachedCodepage="1252"
+                      cachedCodepage="1250"
                       cachedDataType="str"
                       cachedLength="50"
                       cachedName="released"
@@ -2221,7 +1887,7 @@
                     </inputColumn>
                     <inputColumn
                       refId="Package\Przepływ danych Data\Posortuj po nowej dacie.Inputs[Sort Input].Columns[deceased]"
-                      cachedCodepage="1252"
+                      cachedCodepage="1250"
                       cachedDataType="str"
                       cachedLength="50"
                       cachedName="deceased"
@@ -2316,7 +1982,7 @@
                   <outputColumns>
                     <outputColumn
                       refId="Package\Przepływ danych Data\Posortuj po nowej dacie.Outputs[Sort Output].Columns[date]"
-                      codePage="1252"
+                      codePage="1250"
                       dataType="str"
                       length="50"
                       lineageId="Package\Przepływ danych Data\Posortuj po nowej dacie.Outputs[Sort Output].Columns[date]"
@@ -2331,7 +1997,7 @@
                     </outputColumn>
                     <outputColumn
                       refId="Package\Przepływ danych Data\Posortuj po nowej dacie.Outputs[Sort Output].Columns[time]"
-                      codePage="1252"
+                      codePage="1250"
                       dataType="str"
                       length="50"
                       lineageId="Package\Przepływ danych Data\Posortuj po nowej dacie.Outputs[Sort Output].Columns[time]"
@@ -2346,7 +2012,7 @@
                     </outputColumn>
                     <outputColumn
                       refId="Package\Przepływ danych Data\Posortuj po nowej dacie.Outputs[Sort Output].Columns[test]"
-                      codePage="1252"
+                      codePage="1250"
                       dataType="str"
                       length="50"
                       lineageId="Package\Przepływ danych Data\Posortuj po nowej dacie.Outputs[Sort Output].Columns[test]"
@@ -2361,7 +2027,7 @@
                     </outputColumn>
                     <outputColumn
                       refId="Package\Przepływ danych Data\Posortuj po nowej dacie.Outputs[Sort Output].Columns[negative]"
-                      codePage="1252"
+                      codePage="1250"
                       dataType="str"
                       length="50"
                       lineageId="Package\Przepływ danych Data\Posortuj po nowej dacie.Outputs[Sort Output].Columns[negative]"
@@ -2376,7 +2042,7 @@
                     </outputColumn>
                     <outputColumn
                       refId="Package\Przepływ danych Data\Posortuj po nowej dacie.Outputs[Sort Output].Columns[confirmed]"
-                      codePage="1252"
+                      codePage="1250"
                       dataType="str"
                       length="50"
                       lineageId="Package\Przepływ danych Data\Posortuj po nowej dacie.Outputs[Sort Output].Columns[confirmed]"
@@ -2391,7 +2057,7 @@
                     </outputColumn>
                     <outputColumn
                       refId="Package\Przepływ danych Data\Posortuj po nowej dacie.Outputs[Sort Output].Columns[released]"
-                      codePage="1252"
+                      codePage="1250"
                       dataType="str"
                       length="50"
                       lineageId="Package\Przepływ danych Data\Posortuj po nowej dacie.Outputs[Sort Output].Columns[released]"
@@ -2406,7 +2072,7 @@
                     </outputColumn>
                     <outputColumn
                       refId="Package\Przepływ danych Data\Posortuj po nowej dacie.Outputs[Sort Output].Columns[deceased]"
-                      codePage="1252"
+                      codePage="1250"
                       dataType="str"
                       length="50"
                       lineageId="Package\Przepływ danych Data\Posortuj po nowej dacie.Outputs[Sort Output].Columns[deceased]"
@@ -2593,7 +2259,7 @@
                       lineageId="Package\Przepływ danych Data\Dodaj kolumny i wylicz faktyczne wartości przeprowadzonych testow i wyników negatywnych lub pozytywnych dla danego dnia.Outputs[Derived Column Output].Columns[ilosc_wszystkich_przeprowadzonych_testow]" />
                     <inputColumn
                       refId="Package\Przepływ danych Data\Wrzuć do DB SQL.Inputs[OLE DB Destination Input].Columns[date]"
-                      cachedCodepage="1252"
+                      cachedCodepage="1250"
                       cachedDataType="str"
                       cachedLength="50"
                       cachedName="date"
@@ -2799,28 +2465,28 @@
                   <inputColumns>
                     <inputColumn
                       refId="Package\Przepływ danych Data\Zamień typ danych CSV na obliczalne.Inputs[Data Conversion Input].Columns[date]"
-                      cachedCodepage="1252"
+                      cachedCodepage="1250"
                       cachedDataType="str"
                       cachedLength="50"
                       cachedName="date"
                       lineageId="Package\Przepływ danych Data\CSV Time.Outputs[Flat File Source Output].Columns[date]" />
                     <inputColumn
                       refId="Package\Przepływ danych Data\Zamień typ danych CSV na obliczalne.Inputs[Data Conversion Input].Columns[test]"
-                      cachedCodepage="1252"
+                      cachedCodepage="1250"
                       cachedDataType="str"
                       cachedLength="50"
                       cachedName="test"
                       lineageId="Package\Przepływ danych Data\CSV Time.Outputs[Flat File Source Output].Columns[test]" />
                     <inputColumn
                       refId="Package\Przepływ danych Data\Zamień typ danych CSV na obliczalne.Inputs[Data Conversion Input].Columns[confirmed]"
-                      cachedCodepage="1252"
+                      cachedCodepage="1250"
                       cachedDataType="str"
                       cachedLength="50"
                       cachedName="confirmed"
                       lineageId="Package\Przepływ danych Data\CSV Time.Outputs[Flat File Source Output].Columns[confirmed]" />
                     <inputColumn
                       refId="Package\Przepływ danych Data\Zamień typ danych CSV na obliczalne.Inputs[Data Conversion Input].Columns[negative]"
-                      cachedCodepage="1252"
+                      cachedCodepage="1250"
                       cachedDataType="str"
                       cachedLength="50"
                       cachedName="negative"
@@ -2960,28 +2626,28 @@
                   <inputColumns>
                     <inputColumn
                       refId="Package\Przepływ danych Data\Zamień typ danych CSV na obliczalny.Inputs[Data Conversion Input].Columns[date]"
-                      cachedCodepage="1252"
+                      cachedCodepage="1250"
                       cachedDataType="str"
                       cachedLength="50"
                       cachedName="date"
                       lineageId="Package\Przepływ danych Data\CSV Time (ale dla liczenia sumy kroczacej).Outputs[Flat File Source Output].Columns[date]" />
                     <inputColumn
                       refId="Package\Przepływ danych Data\Zamień typ danych CSV na obliczalny.Inputs[Data Conversion Input].Columns[test]"
-                      cachedCodepage="1252"
+                      cachedCodepage="1250"
                       cachedDataType="str"
                       cachedLength="50"
                       cachedName="test"
                       lineageId="Package\Przepływ danych Data\CSV Time (ale dla liczenia sumy kroczacej).Outputs[Flat File Source Output].Columns[test]" />
                     <inputColumn
                       refId="Package\Przepływ danych Data\Zamień typ danych CSV na obliczalny.Inputs[Data Conversion Input].Columns[confirmed]"
-                      cachedCodepage="1252"
+                      cachedCodepage="1250"
                       cachedDataType="str"
                       cachedLength="50"
                       cachedName="confirmed"
                       lineageId="Package\Przepływ danych Data\CSV Time (ale dla liczenia sumy kroczacej).Outputs[Flat File Source Output].Columns[confirmed]" />
                     <inputColumn
                       refId="Package\Przepływ danych Data\Zamień typ danych CSV na obliczalny.Inputs[Data Conversion Input].Columns[negative]"
-                      cachedCodepage="1252"
+                      cachedCodepage="1250"
                       cachedDataType="str"
                       cachedLength="50"
                       cachedName="negative"
@@ -3266,39 +2932,39 @@
       <GraphLayout
         Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
-          Size="198.666666666667,42.6666666666667"
+          Size="199,43"
           Id="Package\Czyszczenie tabelki Data"
-          TopLeft="155.833331011236,24.3508772874253" />
+          TopLeft="155.833331011236,23.3508772874253" />
         <NodeLayout
-          Size="185.333333333334,42.6666666666667"
+          Size="185,43"
           Id="Package\Przepływ danych Data"
           TopLeft="179.833336673677,101.052629904734" />
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint]"
-          TopLeft="255.166664344569,67.017543954092">
+          TopLeft="255.333331011236,66.3508772874253">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="17.3333389957743,34.035085950642"
+              EndConnector="17.000005662441,34.7017526173087"
               Start="0,0"
-              End="17.3333389957743,26.535085950642">
+              End="17.000005662441,27.2017526173087">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,13.017542975321" />
+                    End="0,13.3508763086543" />
                   <mssgle:CubicBezierSegment
-                    Point1="0,13.017542975321"
-                    Point2="0,17.017542975321"
-                    Point3="4,17.017542975321" />
+                    Point1="0,13.3508763086543"
+                    Point2="0,17.3508763086544"
+                    Point3="4,17.3508763086544" />
                   <mssgle:LineSegment
-                    End="13.3333389957743,17.017542975321" />
+                    End="13.000005662441,17.3508763086544" />
                   <mssgle:CubicBezierSegment
-                    Point1="13.3333389957743,17.017542975321"
-                    Point2="17.3333389957743,17.017542975321"
-                    Point3="17.3333389957743,21.017542975321" />
+                    Point1="13.000005662441,17.3508763086544"
+                    Point2="17.000005662441,17.3508763086544"
+                    Point3="17.000005662441,21.3508763086544" />
                   <mssgle:LineSegment
-                    End="17.3333389957743,26.535085950642" />
+                    End="17.000005662441,27.2017526173087" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -3316,23 +2982,23 @@
       <GraphLayout
         Capacity="32" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
-          Size="676,42.6666666666667"
+          Size="676,43"
           Id="Package\Przepływ danych Data\Dodaj kolumny i wylicz faktyczne wartości przeprowadzonych testow i wyników negatywnych lub pozytywnych dla danego dnia"
           TopLeft="1007,653" />
         <NodeLayout
-          Size="189.333333333334,42.6666666666667"
+          Size="189,43"
           Id="Package\Przepływ danych Data\Zmień datę na datę + 1"
           TopLeft="969.571429635797,270.102756536537" />
         <NodeLayout
-          Size="193.333333333334,42.6666666666667"
+          Size="193,43"
           Id="Package\Przepływ danych Data\Posortuj po nowej dacie"
           TopLeft="1028.92856171621,384.360905456883" />
         <NodeLayout
-          Size="161.333333333334,42.6666666666667"
+          Size="161,43"
           Id="Package\Przepływ danych Data\Posortuj po dacie"
           TopLeft="552.107142944954,351.030073532154" />
         <NodeLayout
-          Size="260,42.6666666666667"
+          Size="260,43"
           Id="Package\Przepływ danych Data\Zamień typ danych CSV na obliczalne"
           TopLeft="429.916666772217,152.508770753582" />
         <NodeLayout
@@ -3340,25 +3006,25 @@
           Id="Package\Przepływ danych Data\CSV Time (ale dla liczenia sumy kroczacej)"
           TopLeft="902,57" />
         <NodeLayout
-          Size="322.666666666667,42"
+          Size="323,42"
           Id="Package\Przepływ danych Data\Podziel kolumne data na 3 nowe - rok miesiac dzien"
           TopLeft="400.535714724767,243.355888400885" />
         <NodeLayout
-          Size="166.666666666667,42.6666666666667"
+          Size="167,43"
           Id="Package\Przepływ danych Data\Wrzuć do DB SQL"
           TopLeft="1252.48808371719,742.471181040624" />
         <NodeLayout
-          Size="545.333333333334,42.6666666666667"
+          Size="545,43"
           Id="Package\Przepływ danych Data\Dodaj dane z następnego dnia żeby przeliczyć sumę kroczącą na faktyczną wartość z danego dnia"
           TopLeft="641.547621557755,465.205513073074" />
         <NodeLayout
-          Size="258.666666666667,42.6666666666667"
-          Id="Package\Przepływ danych Data\Zamień typ danych CSV na obliczalny"
-          TopLeft="913.523810126951,158.812029412862" />
-        <NodeLayout
-          Size="656,42.6666666666667"
+          Size="656,43"
           Id="Package\Przepływ danych Data\Zamień nulle na 0 dla pierwszego dnia (jest to edge case z powodu braku pary dla pierwszego dnia zarejestrowania covid)"
           TopLeft="760.190476545266,580.348370915053" />
+        <NodeLayout
+          Size="259,43"
+          Id="Package\Przepływ danych Data\Zamień typ danych CSV na obliczalny"
+          TopLeft="913.523810126951,158.812029412862" />
         <NodeLayout
           Size="124,42"
           Id="Package\Przepływ danych Data\CSV Time"
