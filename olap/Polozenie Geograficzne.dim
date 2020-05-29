@@ -1,4 +1,4 @@
-﻿<Dimension xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="3cd83b6b-e461-4330-80b4-7dbf66f3142d" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+﻿<Dimension xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="7d56114f-be9a-44db-9e97-f0e2081e775e" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
   <ID>Polozenie Geograficzne</ID>
   <Name>Polozenie Geograficzne</Name>
   <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
@@ -8,9 +8,9 @@
       <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
       <Value>
         <dds xmlns="">
-          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="2" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-6754" scrolltop="-5038" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="18606" y="14182" backcolor="2434342" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="3" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-6754" scrolltop="-5038" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="4128" y="7990" backcolor="16777215" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="1" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
             <font>
-              <ddsxmlobjectstreamwrapper binary="01ee00009001b0300100065461686f6d61" />
+              <ddsxmlobjectstreamwrapper binary="01000000900144420100065461686f6d61" />
             </font>
             <mouseicon>
               <ddsxmlobjectstreamwrapper binary="6c74000000000000" />
@@ -19,9 +19,9 @@
           <layoutmanager>
             <ddsxmlobj />
           </layoutmanager>
-          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="Polozenie_Geograficzne" left="126" top="-1101" logicalid="1" controlid="1" masterid="0" hint1="0" hint2="0" width="5059" height="4106" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="Polozenie_Geograficzne" left="-6356" top="-3482" logicalid="2" controlid="1" masterid="0" hint1="0" hint2="0" width="5985" height="7969" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
             <control>
-              <ddsxmlobjectstreaminitwrapper binary="000e0000c31300000a100000" />
+              <ddsxmlobjectstreaminitwrapper binary="000e000061170000211f0000" />
             </control>
             <layoutobject>
               <ddsxmlobj>
@@ -55,11 +55,11 @@
     </Annotation>
     <Annotation>
       <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
-      <Value>126</Value>
+      <Value>-6356</Value>
     </Annotation>
     <Annotation>
       <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
-      <Value>-1101</Value>
+      <Value>-3482</Value>
     </Annotation>
     <Annotation>
       <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
@@ -94,77 +94,82 @@
   </Annotations>
   <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
   <State>Unprocessed</State>
-  <Source xsi:type="DataSourceViewBinding" dwd:design-time-name="ecad6106-5d36-465e-8979-3ced488163be">
+  <Source xsi:type="DataSourceViewBinding" dwd:design-time-name="d710fe6b-3706-4e8a-9e8d-5f955241a717">
     <DataSourceViewID>Covid-19 South Korea DWH</DataSourceViewID>
   </Source>
   <Type>Geography</Type>
-  <ErrorConfiguration dwd:design-time-name="3751d980-eb4d-49f1-a635-7431faebc90b">
+  <ErrorConfiguration dwd:design-time-name="74756f06-f472-4b7d-9aba-2267da3a1f5a">
     <KeyNotFound>ReportAndStop</KeyNotFound>
     <KeyDuplicate>ReportAndStop</KeyDuplicate>
     <NullKeyNotAllowed>ReportAndStop</NullKeyNotAllowed>
   </ErrorConfiguration>
   <CurrentStorageMode>Molap</CurrentStorageMode>
   <Attributes>
-    <Attribute dwd:design-time-name="80fa036a-a6be-4909-b8a2-9687514f1a53">
+    <Attribute dwd:design-time-name="c3e1ee5a-37ea-4a04-a55f-858f38a86800">
       <ID>Polozenie Geograficzne Id</ID>
-      <Name>Prowincja</Name>
+      <Name>Prowincja_id</Name>
       <Type>StateOrProvince</Type>
       <Usage>Key</Usage>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="46628976-2908-4209-b222-fec3e5653853">
+        <KeyColumn dwd:design-time-name="a0298990-e7ae-407b-af66-588c59d6dcde">
           <DataType>Integer</DataType>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="824d66e2-4828-44ab-807b-55d97c6d91c5">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="e7bdab85-f8e5-4db8-89ac-99d10b83efdd">
             <TableID>dbo_Polozenie_Geograficzne</TableID>
             <ColumnID>polozenie_geograficzne_id</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
-      <NameColumn dwd:design-time-name="689bdaab-ad3c-4126-8440-7effb0e96682">
+      <NameColumn dwd:design-time-name="1c08f3cd-504d-45c6-bcc2-2855c3597a12">
         <DataType>WChar</DataType>
-        <DataSize>50</DataSize>
-        <Source xsi:type="ColumnBinding" dwd:design-time-name="628916bf-96c7-44d7-9030-d26b8857fb89">
+        <DataSize>102</DataSize>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="4d852739-d165-4b7a-9e31-159078dcaa39">
           <TableID>dbo_Polozenie_Geograficzne</TableID>
-          <ColumnID>prowincja</ColumnID>
+          <ColumnID>province_city</ColumnID>
         </Source>
       </NameColumn>
       <AttributeRelationships>
-        <AttributeRelationship dwd:design-time-name="fb648f1e-46de-4aa7-a48a-d1374a77f6d6">
+        <AttributeRelationship dwd:design-time-name="f6fdc19f-20f7-4e53-98aa-246848fbbf71">
           <AttributeID>Miasto</AttributeID>
           <Name>Miasto</Name>
         </AttributeRelationship>
-        <AttributeRelationship dwd:design-time-name="4a0b5210-1815-491d-b89f-d1e09293eba0">
+        <AttributeRelationship dwd:design-time-name="e6f742b3-153e-42df-ae42-532f26741539">
           <AttributeID>Szerokosc Geograficzna</AttributeID>
           <Name>Szerokosc Geograficzna</Name>
         </AttributeRelationship>
-        <AttributeRelationship dwd:design-time-name="b83b5c40-3918-4b9b-8116-cd096a015ad0">
+        <AttributeRelationship dwd:design-time-name="29eefb14-4aa7-43a3-a093-369f1f6de664">
           <AttributeID>Dlugosc Geograficzna</AttributeID>
           <Name>Dlugosc Geograficzna</Name>
         </AttributeRelationship>
-        <AttributeRelationship dwd:design-time-name="c486908b-de27-43e9-aab6-d9c4613af1e2">
+        <AttributeRelationship dwd:design-time-name="71579cb5-e647-423d-88d5-9e6b751506a9">
           <AttributeID>Ilosc Przedszkoli</AttributeID>
           <Name>Ilosc Przedszkoli</Name>
         </AttributeRelationship>
-        <AttributeRelationship dwd:design-time-name="82e909b1-fbb8-49f9-8297-c4e270c6d858">
+        <AttributeRelationship dwd:design-time-name="c2c98b3a-fa70-42a8-a174-a0e3b8175080">
           <AttributeID>Ilosc Szkol Podstawowych</AttributeID>
           <Name>Ilosc Szkol Podstawowych</Name>
         </AttributeRelationship>
-        <AttributeRelationship dwd:design-time-name="236b4f0e-6801-4113-9c59-0cacc27844bf">
+        <AttributeRelationship dwd:design-time-name="24fb4955-64c3-47d8-9518-3857d76944be">
           <AttributeID>Ilosc Placowek Edukacyjnych</AttributeID>
           <Name>Ilosc Placowek Edukacyjnych</Name>
         </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="13f99fff-6294-4b0d-bdb9-04d030d1b30b">
+          <AttributeID>Prowincja 1</AttributeID>
+          <Name>Prowincja</Name>
+        </AttributeRelationship>
       </AttributeRelationships>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute dwd:design-time-name="f9e9b2ce-5b7a-433d-9939-af04bde41303">
+    <Attribute dwd:design-time-name="71ade648-e552-490e-a6c1-386829b50196">
       <ID>Miasto</ID>
       <Name>Miasto</Name>
       <Type>City</Type>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="47327c5b-2e3a-4929-9dea-d0fd23d269d7">
+        <KeyColumn dwd:design-time-name="c742aeb0-3ec0-40d9-b112-082c703dfdf3">
           <DataType>WChar</DataType>
           <DataSize>50</DataSize>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="0e23995b-ba53-4d7a-ab15-7a0d4196fda2">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="075413d4-c974-4f5a-b9c2-43708987149a">
             <TableID>dbo_Polozenie_Geograficzne</TableID>
             <ColumnID>miasto</ColumnID>
           </Source>
@@ -174,13 +179,13 @@
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute dwd:design-time-name="717be9ba-ff26-4659-bc79-50301bc7003a">
+    <Attribute dwd:design-time-name="797de424-354e-4d65-8c3d-abf543b1a8b7">
       <ID>Szerokosc Geograficzna</ID>
       <Name>Szerokosc Geograficzna</Name>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="e2d342cf-d9bf-40d7-9aed-c5a36f7234e4">
+        <KeyColumn dwd:design-time-name="30439f2e-36e7-45a0-8ca8-24d87d89b2a1">
           <DataType>Double</DataType>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="86b21813-cc5e-487a-95f9-9c74414559f1">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="b42d1092-b6ac-40a9-9f78-e953708bc7fa">
             <TableID>dbo_Polozenie_Geograficzne</TableID>
             <ColumnID>szerokosc_geograficzna</ColumnID>
           </Source>
@@ -190,13 +195,13 @@
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute dwd:design-time-name="c28a9cd6-9919-49dd-91ae-f3f4ac5e004b">
+    <Attribute dwd:design-time-name="0ed99dda-491b-45fa-b2e2-fbc1f23ea6f9">
       <ID>Dlugosc Geograficzna</ID>
       <Name>Dlugosc Geograficzna</Name>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="f3f7d708-f95d-43fc-b033-7416bf6b3aa2">
+        <KeyColumn dwd:design-time-name="5761d83f-f3e3-4302-8118-211108cf1f26">
           <DataType>Double</DataType>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="a76527c0-ebbe-4d99-b51a-f692a5cb1b68">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="4b07214a-94d8-4a5d-9b9b-a8c07f5623c1">
             <TableID>dbo_Polozenie_Geograficzne</TableID>
             <ColumnID>dlugosc_geograficzna</ColumnID>
           </Source>
@@ -206,13 +211,13 @@
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute dwd:design-time-name="c3dcdba9-07de-4735-b073-fe17bbae42cf">
+    <Attribute dwd:design-time-name="e0bcb06f-a9af-449a-9230-73900ef84a6f">
       <ID>Ilosc Przedszkoli</ID>
       <Name>Ilosc Przedszkoli</Name>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="1f97684b-814b-4c31-9a88-e484dd1f3391">
+        <KeyColumn dwd:design-time-name="d245787d-8f21-44e0-9629-e0ce8a467ad4">
           <DataType>Integer</DataType>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="6e87c7fc-156b-42d4-a602-b97cbe3c6838">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="57e5f161-6ff4-41ba-b1b7-5b75036e0c91">
             <TableID>dbo_Polozenie_Geograficzne</TableID>
             <ColumnID>ilosc_przedszkoli</ColumnID>
           </Source>
@@ -222,13 +227,13 @@
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute dwd:design-time-name="4dae7dac-dfea-4365-9806-2eccbd09861c">
+    <Attribute dwd:design-time-name="e262b085-66da-440f-861d-58a1793e940b">
       <ID>Ilosc Szkol Podstawowych</ID>
       <Name>Ilosc Szkol Podstawowych</Name>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="9387b602-09a3-479b-b555-85d4636f6bf3">
+        <KeyColumn dwd:design-time-name="aaa4ba65-3b16-428f-8e26-9c43e63339f4">
           <DataType>Integer</DataType>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="6efd6d90-b6e4-4514-bc15-c2ce762c12a2">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="1974f874-5084-4969-aabb-7a3faf21041a">
             <TableID>dbo_Polozenie_Geograficzne</TableID>
             <ColumnID>ilosc_szkol_podstawowych</ColumnID>
           </Source>
@@ -238,13 +243,13 @@
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute dwd:design-time-name="05e1e035-2521-431b-a14c-39efffb773de">
+    <Attribute dwd:design-time-name="6c49dc4f-afa4-4c9f-92fb-019be58e2dbe">
       <ID>Ilosc Placowek Edukacyjnych</ID>
       <Name>Ilosc Placowek Edukacyjnych</Name>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="04469016-e283-4e27-9efb-3579dc0c1006">
+        <KeyColumn dwd:design-time-name="f68b6c25-795d-4c1c-80a7-84732c45ae10">
           <DataType>Integer</DataType>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="d6bebf02-7302-4d7c-9ff4-7fd1f4c74e23">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="b98dec13-8701-40bd-b31e-6037d09500ca">
             <TableID>dbo_Polozenie_Geograficzne</TableID>
             <ColumnID>ilosc_placowek_edukacyjnych</ColumnID>
           </Source>
@@ -254,18 +259,34 @@
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
+    <Attribute dwd:design-time-name="a9fddc81-5d71-4e08-bcfb-30f19885c50b">
+      <ID>Prowincja 1</ID>
+      <Name>Prowincja</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="d12faf85-dc0a-4c90-8ede-8aba2ffa3a12">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="f271d0fb-55ac-4a18-9d9f-92357e09033b">
+            <TableID>dbo_Polozenie_Geograficzne</TableID>
+            <ColumnID>prowincja</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
   </Attributes>
   <Hierarchies>
-    <Hierarchy dwd:design-time-name="dbe95cfa-acd9-49f1-86cb-7e4e77a44ea4">
+    <Hierarchy dwd:design-time-name="d3e6182e-7c4c-4435-b4a8-57944c6f4624">
       <ID>Hierarchy</ID>
       <Name>Hierarchia geograficzne</Name>
       <Levels>
-        <Level dwd:design-time-name="5595629a-2da6-49ae-a74d-31464cb86cbb">
+        <Level dwd:design-time-name="3ed9a6e7-ee01-4d07-8511-736de64e7933">
           <ID>Prowincja</ID>
           <Name>Prowincja</Name>
-          <SourceAttributeID>Polozenie Geograficzne Id</SourceAttributeID>
+          <SourceAttributeID>Prowincja 1</SourceAttributeID>
         </Level>
-        <Level dwd:design-time-name="ebe662c7-66d3-49b0-835d-61f8bc958b6d">
+        <Level dwd:design-time-name="e6282c95-66a3-4481-b1a1-b667701d6b37">
           <ID>Miasto</ID>
           <Name>Miasto</Name>
           <SourceAttributeID>Miasto</SourceAttributeID>
