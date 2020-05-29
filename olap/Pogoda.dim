@@ -1,4 +1,4 @@
-﻿<Dimension xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="b836b229-cf84-4866-a7db-e8e73e6a1ce6" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+﻿<Dimension xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="759c7891-c7b1-4d13-bd53-5e918c9fa9b5" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
   <ID>Pogoda</ID>
   <Name>Pogoda</Name>
   <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
@@ -8,9 +8,9 @@
       <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
       <Value>
         <dds xmlns="">
-          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="3" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-4616" scrolltop="-8329" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="9543" y="11994" backcolor="2434342" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="3" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-4616" scrolltop="-8329" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="4445" y="7091" backcolor="16777215" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="1" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
             <font>
-              <ddsxmlobjectstreamwrapper binary="01000000900180380100065461686f6d61" />
+              <ddsxmlobjectstreamwrapper binary="01010000900180380100065461686f6d61" />
             </font>
             <mouseicon>
               <ddsxmlobjectstreamwrapper binary="6c74000000000000" />
@@ -89,60 +89,37 @@
   </Annotations>
   <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
   <State>Unprocessed</State>
-  <Source xsi:type="DataSourceViewBinding" dwd:design-time-name="9d730d72-bd21-4fb8-b137-ae5cc66e80f3">
+  <Source xsi:type="DataSourceViewBinding" dwd:design-time-name="cb6ec55c-8f37-45c2-83a0-195766f01b11">
     <DataSourceViewID>Covid-19 South Korea DWH</DataSourceViewID>
   </Source>
-  <ErrorConfiguration dwd:design-time-name="cecdba01-b896-464c-914d-d43046755596">
+  <ErrorConfiguration dwd:design-time-name="139f0cad-af96-4c87-ac38-134372f4b740">
     <KeyNotFound>ReportAndStop</KeyNotFound>
     <KeyDuplicate>ReportAndStop</KeyDuplicate>
     <NullKeyNotAllowed>ReportAndStop</NullKeyNotAllowed>
   </ErrorConfiguration>
   <CurrentStorageMode>Molap</CurrentStorageMode>
   <Attributes>
-    <Attribute dwd:design-time-name="6b006cc4-f8bc-4617-97c4-518e0584f41c">
+    <Attribute dwd:design-time-name="f9ad1295-7964-4861-bd38-986e5f6e4c9c">
       <ID>Pogoda Id</ID>
       <Name>Wilgotnosc</Name>
       <Usage>Key</Usage>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="6e04070a-0126-47c2-a7c9-430ef08eb69e">
+        <KeyColumn dwd:design-time-name="a50ec9e2-bba7-4c47-a7fd-de53672b2bbc">
           <DataType>Integer</DataType>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="ee582a5b-7edf-4442-bdd8-9fdc5abaa6fb">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="666bc467-c734-4dd2-a692-571fba9aa2dc">
             <TableID>dbo_Pogoda</TableID>
             <ColumnID>pogoda_id</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
-      <NameColumn dwd:design-time-name="53694c5f-8896-4531-a012-10c10472fb1d">
+      <NameColumn dwd:design-time-name="b2f10ff3-cfbe-4d33-8766-5832fe03ae6a">
         <DataType>WChar</DataType>
         <DataSize>50</DataSize>
-        <Source xsi:type="ColumnBinding" dwd:design-time-name="4516c674-60b1-4904-9d94-f64a2c94b0a2">
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="856e131a-4175-4d0f-bfbc-eef690fec970">
           <TableID>dbo_Pogoda</TableID>
           <ColumnID>kategoria_wilgotnosci</ColumnID>
         </Source>
       </NameColumn>
-      <AttributeRelationships>
-        <AttributeRelationship dwd:design-time-name="fce28574-ad6d-4bb0-a668-7077946de45f">
-          <AttributeID>Kolejnosc Kategoria Wilgotnosci</AttributeID>
-          <Name>Kolejnosc Kategoria Wilgotnosci</Name>
-        </AttributeRelationship>
-      </AttributeRelationships>
-      <OrderBy>AttributeKey</OrderBy>
-      <OrderByAttributeID>Kolejnosc Kategoria Wilgotnosci</OrderByAttributeID>
-      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
-      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
-    </Attribute>
-    <Attribute dwd:design-time-name="3b1a49d0-335e-41b7-8c90-a7de5d14b2a8">
-      <ID>Kolejnosc Kategoria Wilgotnosci</ID>
-      <Name>Kolejnosc Kategoria Wilgotnosci</Name>
-      <KeyColumns>
-        <KeyColumn dwd:design-time-name="28ca8f3d-4fe3-4469-93c9-a87ea168d9f1">
-          <DataType>Integer</DataType>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="7c43afe0-88c3-4d61-bf00-6fdcba2c3aa4">
-            <TableID>dbo_Pogoda</TableID>
-            <ColumnID>kolejnosc_kategoria_wilgotnosci</ColumnID>
-          </Source>
-        </KeyColumn>
-      </KeyColumns>
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>

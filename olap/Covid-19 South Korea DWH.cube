@@ -1,4 +1,4 @@
-﻿<Cube xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="b6ebca68-b35c-4bba-9d5d-be9cf69bb8e4" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+﻿<Cube xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="c1a0b2b9-d034-425a-8c2e-b2c4f0ded350" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
   <ID>Covid-19 South Korea DWH</ID>
   <Name>Covid-19 South Korea DWH</Name>
   <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
@@ -8,7 +8,7 @@
       <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
       <Value>
         <dds xmlns="">
-          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="24" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="2794" scrolltop="8968" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="150" x="24474" y="17727" backcolor="16777215" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="1" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="24" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="4875" scrolltop="-1323" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="60" x="13520" y="9181" backcolor="16777215" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="1" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
             <font>
               <ddsxmlobjectstreamwrapper binary="01000000900144420100065461686f6d61" />
             </font>
@@ -176,8 +176,8 @@
             </layoutobject>
             <connector lineroutestyle="MSDDS.Rectilinear" sourceid="6" destid="4" sourceattachpoint="2" destattachpoint="15" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
               <point x="12044" y="10792" />
-              <point x="12044" y="8905" />
-              <point x="9621" y="8905" />
+              <point x="12044" y="9443" />
+              <point x="9621" y="9443" />
               <point x="9621" y="8094" />
             </connector>
           </ddscontrol>
@@ -198,11 +198,11 @@
     </Annotation>
     <Annotation>
       <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
-      <Value>2794</Value>
+      <Value>4875</Value>
     </Annotation>
     <Annotation>
       <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
-      <Value>8968</Value>
+      <Value>-1323</Value>
     </Annotation>
     <Annotation>
       <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
@@ -214,128 +214,102 @@
     </Annotation>
     <Annotation>
       <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
-      <Value>150</Value>
+      <Value>60</Value>
     </Annotation>
   </Annotations>
   <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
   <State>Unprocessed</State>
   <Dimensions>
-    <Dimension dwd:design-time-name="57ce0c0c-c6fc-447f-80d5-81bb1e86c708">
+    <Dimension dwd:design-time-name="ff257bb9-df62-4714-9bae-a30a2852be17">
       <ID>Plec</ID>
       <Name>Plec</Name>
       <DimensionID>Plec</DimensionID>
       <Attributes>
-        <Attribute dwd:design-time-name="6f6831e3-ab9c-4654-b2e2-a0df549a0533">
+        <Attribute dwd:design-time-name="670eb007-34fa-4481-bde1-21dad1ba393d">
           <AttributeID>Plec Id</AttributeID>
         </Attribute>
       </Attributes>
     </Dimension>
-    <Dimension dwd:design-time-name="adaa8e00-ba0e-4965-a421-c71d349804ab">
+    <Dimension dwd:design-time-name="4ef345b8-f655-458d-81cd-fa9b088a4df3">
       <ID>Data</ID>
       <Name>Data</Name>
       <DimensionID>Data</DimensionID>
       <Attributes>
-        <Attribute dwd:design-time-name="88425df2-b417-4e30-baad-3fadd60fb582">
+        <Attribute dwd:design-time-name="1702ad3e-2e58-4de7-a303-ad6a6f2296ce">
           <AttributeID>Data Id</AttributeID>
         </Attribute>
-        <Attribute dwd:design-time-name="9da20227-70a7-4dbc-b12b-e186c861a22c">
+        <Attribute dwd:design-time-name="7921ce3a-1f1c-41b5-aa38-d818346d4170">
           <AttributeID>Rok</AttributeID>
         </Attribute>
-        <Attribute dwd:design-time-name="4700dc52-e579-4267-bdba-e13b3f492f18">
+        <Attribute dwd:design-time-name="a90d294b-5893-4b78-9427-5d85faf35a42">
           <AttributeID>Miesiac</AttributeID>
         </Attribute>
-        <Attribute dwd:design-time-name="e31e1fca-93eb-4859-859d-f596cb8d8318">
-          <AttributeID>Dzien</AttributeID>
-        </Attribute>
-        <Attribute dwd:design-time-name="3fb15726-dc9b-41fa-8217-254b3a49c5d3">
+        <Attribute dwd:design-time-name="1d6d0526-f623-409a-9e20-746b21e351d7">
           <AttributeID>Ilosc Wszystkich Przeprowadzonych Testow</AttributeID>
         </Attribute>
-        <Attribute dwd:design-time-name="48f4cefb-28eb-42b4-924e-366ae89b8ced">
+        <Attribute dwd:design-time-name="f7fb7f6a-c34b-4008-a74c-8922dedce2f3">
           <AttributeID>Ilosc Testow z Wynikiem Pozytywnym</AttributeID>
         </Attribute>
-        <Attribute dwd:design-time-name="605dc701-ac8c-461f-a811-02d758f83b43">
+        <Attribute dwd:design-time-name="261641bd-9759-4686-a6a3-a7f662b772d3">
           <AttributeID>Ilosc Testow z Wynikiem Negatywnym</AttributeID>
-        </Attribute>
-        <Attribute dwd:design-time-name="3dfde31d-3e0b-4e6c-9a32-b94423eb47d6">
-          <AttributeID>Nazwa Miesiaca</AttributeID>
         </Attribute>
       </Attributes>
       <Hierarchies>
-        <Hierarchy dwd:design-time-name="755fe442-853f-47cc-82ef-a796750eab0c">
+        <Hierarchy dwd:design-time-name="8d7a5205-d920-4926-8475-58c6322b27fd">
           <HierarchyID>Hierarchy</HierarchyID>
         </Hierarchy>
       </Hierarchies>
     </Dimension>
-    <Dimension dwd:design-time-name="53ff8f95-e6ef-4cf6-937f-3739968ad1cb">
+    <Dimension dwd:design-time-name="fdc864bf-db46-4bf0-9a25-1673e2f1e492">
       <ID>Pogoda</ID>
       <Name>Pogoda</Name>
       <DimensionID>Pogoda</DimensionID>
       <Attributes>
-        <Attribute dwd:design-time-name="c26492ad-8b18-4325-b68b-2c935567cd01">
+        <Attribute dwd:design-time-name="dcd47fa8-62bf-4266-b7a8-946f089825d9">
           <AttributeID>Pogoda Id</AttributeID>
-        </Attribute>
-        <Attribute dwd:design-time-name="a79c6b96-e8ba-4bfb-98b0-933e7a7bc6e0">
-          <AttributeID>Kolejnosc Kategoria Wilgotnosci</AttributeID>
         </Attribute>
       </Attributes>
     </Dimension>
-    <Dimension dwd:design-time-name="4fb1d14b-cf58-46d2-a105-84ec6e89bcaa">
+    <Dimension dwd:design-time-name="ef6771a0-b72d-4cfb-bb70-904f566487d5">
       <ID>Grupa Wiekowa</ID>
       <Name>Grupa Wiekowa</Name>
       <DimensionID>Grupa Wiekowa</DimensionID>
       <Attributes>
-        <Attribute dwd:design-time-name="2e6db10e-4f03-47cb-9b35-464c493957f8">
+        <Attribute dwd:design-time-name="d766a56c-aab9-4841-8360-a7765699f225">
           <AttributeID>Grupa Wiekowa Id</AttributeID>
-        </Attribute>
-        <Attribute dwd:design-time-name="8dbfa44b-29d2-4b30-9729-6071a615e938">
-          <AttributeID>Kolejnosc Nazwa Grupy Wiekowej</AttributeID>
-          <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
-        </Attribute>
-        <Attribute dwd:design-time-name="788736e3-ab4d-4355-bc25-14100eb234fe">
-          <AttributeID>Przyjazna Nazwa Grupy Wiekowej</AttributeID>
-          <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
         </Attribute>
       </Attributes>
     </Dimension>
-    <Dimension dwd:design-time-name="b4c22827-360b-4f79-92c6-39e45e12d068">
+    <Dimension dwd:design-time-name="e75f8767-f628-4bdd-a906-e541cc009027">
       <ID>Polozenie Geograficzne</ID>
       <Name>Polozenie Geograficzne</Name>
       <DimensionID>Polozenie Geograficzne</DimensionID>
       <Attributes>
-        <Attribute dwd:design-time-name="bbaf0a1e-038d-43e8-b79a-31f08ace39c3">
+        <Attribute dwd:design-time-name="d16dd9e0-e30a-4cb8-9ea0-94ab4168dd57">
           <AttributeID>Polozenie Geograficzne Id</AttributeID>
         </Attribute>
-        <Attribute dwd:design-time-name="32b70676-c8eb-4da5-93c6-7560e6f4d1b9">
+        <Attribute dwd:design-time-name="4121ae7e-1d9e-4a50-bc2c-2ebb8dcaf399">
           <AttributeID>Miasto</AttributeID>
         </Attribute>
-        <Attribute dwd:design-time-name="8f1d6449-e736-4c90-b660-adaeee349720">
+        <Attribute dwd:design-time-name="2a6ab486-a4bb-4ee0-84f2-457d92bf5bce">
           <AttributeID>Szerokosc Geograficzna</AttributeID>
         </Attribute>
-        <Attribute dwd:design-time-name="ea9d0f98-4f94-4c0b-b5d2-e00c4effe4c7">
+        <Attribute dwd:design-time-name="c2a8661a-c8d9-40d4-b825-0f896ad09468">
           <AttributeID>Dlugosc Geograficzna</AttributeID>
         </Attribute>
-        <Attribute dwd:design-time-name="be22b527-944b-4ad4-8234-e335d1a15c40">
-          <AttributeID>Ilosc Przedszkoli</AttributeID>
-        </Attribute>
-        <Attribute dwd:design-time-name="2c03ffaa-c818-460e-8e63-d0ed5646e6b4">
-          <AttributeID>Ilosc Szkol Podstawowych</AttributeID>
-        </Attribute>
-        <Attribute dwd:design-time-name="e878aedc-e55d-4c05-8a8f-0fbb65ec8e4f">
-          <AttributeID>Ilosc Placowek Edukacyjnych</AttributeID>
-        </Attribute>
-        <Attribute dwd:design-time-name="35cdb041-5c12-4a3b-a056-5a54ecde9c38">
+        <Attribute dwd:design-time-name="d8323f2b-f1c9-4097-aadd-dba94a6e7cba">
           <AttributeID>Prowincja 1</AttributeID>
         </Attribute>
       </Attributes>
       <Hierarchies>
-        <Hierarchy dwd:design-time-name="9821df00-c587-4c38-a50d-2d5fdcbbcc9a">
+        <Hierarchy dwd:design-time-name="5ef5837a-4770-4f75-bd87-c5cdf64b9a87">
           <HierarchyID>Hierarchy</HierarchyID>
         </Hierarchy>
       </Hierarchies>
     </Dimension>
   </Dimensions>
   <MeasureGroups>
-    <MeasureGroup dwd:design-time-name="f55bf73c-1088-4e8f-846c-d3b5f5e07e2b">
+    <MeasureGroup dwd:design-time-name="44797cfd-b6df-48fd-8880-845ad2a26e04">
       <ID>Dzienne Statystyki Covid 19</ID>
       <Name>Dzienne Statystyki Covid 19</Name>
       <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
@@ -343,47 +317,47 @@
       <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
       <State>Unprocessed</State>
       <Measures>
-        <Measure dwd:design-time-name="84aece9a-8130-418a-ba3f-c70afb799bfd">
+        <Measure dwd:design-time-name="300c6447-2fe2-468b-922b-4abd61602050">
           <ID>Liczba Potwierdzonych Przypadkow</ID>
           <Name>Liczba Potwierdzonych Przypadkow</Name>
-          <Source dwd:design-time-name="4b6e0757-df79-4b0b-bbda-6fb024f4e0d5">
+          <Source dwd:design-time-name="e9d63b7d-f916-4937-8ad0-c7f20e25e30e">
             <DataType>Integer</DataType>
-            <Source xsi:type="ColumnBinding" dwd:design-time-name="5665395b-241e-498d-8a5b-b825cf39cfba">
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="a60c3fd6-4c95-4c5f-a183-ab395767baa5">
               <TableID>dbo_Dzienne_Statystyki_Covid_19</TableID>
               <ColumnID>liczba_potwierdzonych_przypadkow</ColumnID>
             </Source>
           </Source>
         </Measure>
-        <Measure dwd:design-time-name="d3e674d6-55bf-4374-bc3f-7ec3c9d924b0">
+        <Measure dwd:design-time-name="b9e3aa5b-bf55-47d5-a6f1-2523d335a55f">
           <ID>Liczba Pacjentow Zwolnionych z Kwarantanny</ID>
           <Name>Liczba Pacjentow Zwolnionych z Kwarantanny</Name>
-          <Source dwd:design-time-name="226bf48c-b2ef-4a87-826d-20f3aff0a7b7">
+          <Source dwd:design-time-name="5a00eb7a-0e6e-4f4b-a99b-3cdd841a1079">
             <DataType>Integer</DataType>
-            <Source xsi:type="ColumnBinding" dwd:design-time-name="c7e0214e-a8bb-4503-9654-815d2c50f06e">
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="825876ca-ecbd-49b8-8d3d-ed0d266bec7b">
               <TableID>dbo_Dzienne_Statystyki_Covid_19</TableID>
               <ColumnID>liczba_pacjentow_zwolnionych_z_kwarantanny</ColumnID>
             </Source>
           </Source>
         </Measure>
-        <Measure dwd:design-time-name="15ed7d1d-d3e0-4d57-97c3-bc219effff44">
+        <Measure dwd:design-time-name="4fdf4aa3-f832-4f9c-8ecb-feb03231beef">
           <ID>Liczba Zgonow</ID>
           <Name>Liczba Zgonow</Name>
-          <Source dwd:design-time-name="d91d7e35-e096-4146-aa4c-57de23ef9e42">
+          <Source dwd:design-time-name="1df4eed6-21ed-497d-8264-a490f1aa14e4">
             <DataType>Integer</DataType>
-            <Source xsi:type="ColumnBinding" dwd:design-time-name="0e46859a-eded-4fb0-a7f1-4e2c0ec1c4a0">
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="21fa9998-3a4a-4ae3-984c-3655e8da08f1">
               <TableID>dbo_Dzienne_Statystyki_Covid_19</TableID>
               <ColumnID>liczba_zgonow</ColumnID>
             </Source>
           </Source>
         </Measure>
-        <Measure dwd:design-time-name="a0aae430-bcc0-4186-837d-764fda9dc56d">
+        <Measure dwd:design-time-name="14482647-2b7f-4d6a-9ffd-18e3e1ec938c">
           <ID>Dzienne Statystyki Covid 19 Count</ID>
           <Name>Dzienne Statystyki Covid 19 Count</Name>
           <AggregateFunction>Count</AggregateFunction>
-          <Source dwd:design-time-name="49d989dc-955b-4e51-b7c2-6b4ea55a015c">
+          <Source dwd:design-time-name="b48e07ec-9d9b-468c-ad3a-b9affd5edae6">
             <DataType>Integer</DataType>
             <DataSize>4</DataSize>
-            <Source xsi:type="RowBinding" dwd:design-time-name="8ec8c43b-be0b-4c66-921c-ea1b7a8ed5e0">
+            <Source xsi:type="RowBinding" dwd:design-time-name="2b85068d-4171-4e1e-8db0-fa0feb1dd6d1">
               <TableID>dbo_Dzienne_Statystyki_Covid_19</TableID>
             </Source>
           </Source>
@@ -392,15 +366,15 @@
       <StorageMode>Molap</StorageMode>
       <ProcessingMode>Regular</ProcessingMode>
       <Dimensions>
-        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="8bde2652-442a-4cd5-9dec-2f610108a082">
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="01c0df60-0dd8-44b1-8718-11b19171fbb8">
           <CubeDimensionID>Plec</CubeDimensionID>
           <Attributes>
-            <Attribute dwd:design-time-name="9101ccce-4fcb-42bf-9951-4ac88a403f7f">
+            <Attribute dwd:design-time-name="c4293373-9221-441c-92fa-6a96d25dd1ef">
               <AttributeID>Plec Id</AttributeID>
               <KeyColumns>
-                <KeyColumn dwd:design-time-name="9a517c14-377c-4042-aa43-a241e763ac19">
+                <KeyColumn dwd:design-time-name="5e40f852-2d34-4692-a09e-2b927695dcd1">
                   <DataType>Integer</DataType>
-                  <Source xsi:type="ColumnBinding" dwd:design-time-name="e998f045-c6ac-482d-8d7a-8ed53a900f05">
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="afa590c5-2665-49b1-babe-04102b3fecf5">
                     <TableID>dbo_Dzienne_Statystyki_Covid_19</TableID>
                     <ColumnID>plec_id</ColumnID>
                   </Source>
@@ -410,15 +384,15 @@
             </Attribute>
           </Attributes>
         </Dimension>
-        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="68e4ff82-5e93-46bd-aa75-968e66aab025">
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="97100dbe-cc73-453b-9669-957654b42a52">
           <CubeDimensionID>Data</CubeDimensionID>
           <Attributes>
-            <Attribute dwd:design-time-name="9da3eec9-6c9c-42c4-a6c4-b45a0bca8fd9">
+            <Attribute dwd:design-time-name="d2ef8018-1420-48be-83f3-878b10d9b268">
               <AttributeID>Data Id</AttributeID>
               <KeyColumns>
-                <KeyColumn dwd:design-time-name="8acf73fe-2529-441a-88f1-3e37200310b8">
+                <KeyColumn dwd:design-time-name="4f741756-f1c2-40a6-b06e-cfce84c4bb31">
                   <DataType>Integer</DataType>
-                  <Source xsi:type="ColumnBinding" dwd:design-time-name="0704f3ed-7321-4938-adb9-172b2dd37fef">
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="8b48b6ad-df92-4f7f-a6e0-17f640907db5">
                     <TableID>dbo_Dzienne_Statystyki_Covid_19</TableID>
                     <ColumnID>data_id</ColumnID>
                   </Source>
@@ -428,15 +402,15 @@
             </Attribute>
           </Attributes>
         </Dimension>
-        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="c3d098ee-fdbe-4bd7-8a44-7ac7a0920083">
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="0ce81f41-224a-42e5-ae1b-b2cfeb67b4bb">
           <CubeDimensionID>Pogoda</CubeDimensionID>
           <Attributes>
-            <Attribute dwd:design-time-name="8f2fa2e8-a08b-4ac4-a7eb-d788a7cd7b29">
+            <Attribute dwd:design-time-name="09aa15e5-914c-4a4e-8de4-68c34703be51">
               <AttributeID>Pogoda Id</AttributeID>
               <KeyColumns>
-                <KeyColumn dwd:design-time-name="1de86f10-0a1b-4396-a343-75fb6aa72d08">
+                <KeyColumn dwd:design-time-name="99e6b973-5e97-4ec6-bc91-13614683e440">
                   <DataType>Integer</DataType>
-                  <Source xsi:type="ColumnBinding" dwd:design-time-name="d8339316-c64b-4e4e-9c51-ed5adabae28b">
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="115a6031-2ded-4651-b5d5-4cd930267831">
                     <TableID>dbo_Dzienne_Statystyki_Covid_19</TableID>
                     <ColumnID>pogoda_id</ColumnID>
                   </Source>
@@ -446,15 +420,15 @@
             </Attribute>
           </Attributes>
         </Dimension>
-        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="19e23e0e-c917-455c-aac9-bd7df950735a">
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="91f54409-3610-4c40-975a-055cc2ee65b3">
           <CubeDimensionID>Grupa Wiekowa</CubeDimensionID>
           <Attributes>
-            <Attribute dwd:design-time-name="1cf7500f-4dee-41d2-98f3-46e424775db5">
+            <Attribute dwd:design-time-name="7e3b9cf7-3143-4565-bd11-7ec45b73021a">
               <AttributeID>Grupa Wiekowa Id</AttributeID>
               <KeyColumns>
-                <KeyColumn dwd:design-time-name="8568d417-447d-4d67-b2e8-fc541c300bcc">
+                <KeyColumn dwd:design-time-name="83cc3ec6-6ac1-49bd-a1b6-38baff917398">
                   <DataType>Integer</DataType>
-                  <Source xsi:type="ColumnBinding" dwd:design-time-name="7cc78307-ed2d-4391-bf57-15cc93d9438f">
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="752dd6a0-1ed7-4ba1-ba41-8ca7dabd94c6">
                     <TableID>dbo_Dzienne_Statystyki_Covid_19</TableID>
                     <ColumnID>grupa_wiekowa_id</ColumnID>
                   </Source>
@@ -464,15 +438,15 @@
             </Attribute>
           </Attributes>
         </Dimension>
-        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="1e749fa3-9343-4665-8680-5986de8cf60f">
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="af768a5e-deca-4530-8ed8-c18323263da8">
           <CubeDimensionID>Polozenie Geograficzne</CubeDimensionID>
           <Attributes>
-            <Attribute dwd:design-time-name="9cfb9a44-f8b4-40c6-a92c-af5179fcea36">
+            <Attribute dwd:design-time-name="62fe1f5b-5add-431c-a8c5-b850f9cc4db7">
               <AttributeID>Polozenie Geograficzne Id</AttributeID>
               <KeyColumns>
-                <KeyColumn dwd:design-time-name="e2f98342-fae8-4e7e-95ef-5cd08deac7ea">
+                <KeyColumn dwd:design-time-name="217c8d1a-589b-44ac-8890-d1bdf2fcc11d">
                   <DataType>Integer</DataType>
-                  <Source xsi:type="ColumnBinding" dwd:design-time-name="f15be7de-a2d2-456a-acf8-978a470aa607">
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="0986c48a-aec9-4966-a071-2ba12b94cf55">
                     <TableID>dbo_Dzienne_Statystyki_Covid_19</TableID>
                     <ColumnID>polozenie_geograficzne_id</ColumnID>
                   </Source>
@@ -485,8 +459,52 @@
       </Dimensions>
       <Partitions />
     </MeasureGroup>
+    <MeasureGroup dwd:design-time-name="24cf6ea4-1d49-430c-a6b2-dfb34a2cc0d5">
+      <ID>Polozenie Geograficzne</ID>
+      <Name>Polozenie Geograficzne</Name>
+      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+      <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+      <State>Unprocessed</State>
+      <Measures>
+        <Measure dwd:design-time-name="953f7a59-1ca5-4ac4-8a22-1e03a18a56af">
+          <ID>Ilosc Placowek Edukacyjnych</ID>
+          <Name>Ilosc Placowek Edukacyjnych</Name>
+          <Source dwd:design-time-name="e4f10e40-0e60-4fff-94d3-6ed496ae8229">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="4f821dd7-ebf0-4d0d-a4fe-674f9e236f9d">
+              <TableID>dbo_Polozenie_Geograficzne</TableID>
+              <ColumnID>ilosc_placowek_edukacyjnych</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+      </Measures>
+      <StorageMode>Molap</StorageMode>
+      <ProcessingMode>Regular</ProcessingMode>
+      <Dimensions>
+        <Dimension xsi:type="DegenerateMeasureGroupDimension" dwd:design-time-name="4ffe2352-9798-44ff-b4f9-dc1916ddd350">
+          <CubeDimensionID>Polozenie Geograficzne</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="0be5ac3e-d283-4954-811c-af753d8ec611">
+              <AttributeID>Polozenie Geograficzne Id</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="e35a1d6c-0e5c-4920-a791-007bc7c5d291">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="c2e1f241-4638-4239-8b0b-e26a73d802eb">
+                    <TableID>dbo_Polozenie_Geograficzne</TableID>
+                    <ColumnID>polozenie_geograficzne_id</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+      </Dimensions>
+      <Partitions />
+    </MeasureGroup>
   </MeasureGroups>
-  <Source dwd:design-time-name="12813e28-57da-4a70-b4a4-1c5413b42494">
+  <Source dwd:design-time-name="b3e32528-73d9-4c27-8011-39455261d58d">
     <DataSourceViewID>Covid-19 South Korea DWH</DataSourceViewID>
   </Source>
 </Cube>
