@@ -11,8 +11,8 @@
   DTS:LocaleID="1045"
   DTS:ObjectName="Package1"
   DTS:PackageType="5"
-  DTS:VersionBuild="28"
-  DTS:VersionGUID="{CBF532E0-D135-4BF5-B56C-764849F564C3}">
+  DTS:VersionBuild="30"
+  DTS:VersionGUID="{C7C9FF07-2FBB-440F-B4E3-0B344CABA4E2}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -27,7 +27,7 @@
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAvimQ3wX2i0aWlF5K7wDfMwAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAACPXz4wd1OfyScb9bJAKtkG+ZQWZmSIvy2Lw3phsqUycgAAAAAOgAAAAAIAACAAAABJIreysskassgOAYSHndzqBIuaN0PziFVBrorqdS7JdSAAAAAkkfb568rtnQ56Iptrumw3S7fOvDhKKrnt+A4/HUTxv0AAAAD4coHEKNBo0ejP7rJdUvPriHnxWku+B6Be87epiB4pUyxBleXPgNjqbwX/Sh+EefgoiyjberovBWsUvXqvQiF6</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAvimQ3wX2i0aWlF5K7wDfMwAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAAAWJKonFiKKhazKH6DKDJJY495M8/7LC2WHXTtOgVJrxwAAAAAOgAAAAAIAACAAAAAmsQoYAcytJ194KqI6BFxolEamwETYBKjKZhAirXKdbyAAAADy/wneyvJMc/MuIWHNCCrJ246PeVR1X6Gfuq85sPsJfkAAAAD7MSXj1iPmWLCFaA/RUUAn5snmEguGaw2aOKM4eJgCeLQn2P4LDNERnBEfQiZHAhvx3r2OMvaNlTSuTQTpRGcB</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -578,6 +578,16 @@
       </DTS:ObjectData>
     </DTS:ConnectionManager>
     <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[localhost.Covid-19SouthKoreaDWH]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{8B3C8FE2-C8F6-417D-8E58-FE0CC6F4D2E4}"
+      DTS:ObjectName="localhost.Covid-19SouthKoreaDWH">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="Data Source=localhost;Initial Catalog=Covid-19SouthKoreaDWH;Provider=SQLNCLI11.1;Integrated Security=SSPI;Auto Translate=False;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
       DTS:refId="Package.ConnectionManagers[localhost.IDH]"
       DTS:CreationName="OLEDB"
       DTS:DTSID="{BA0C766D-1C21-408B-801E-AD3FFC8BE7D7}"
@@ -603,7 +613,7 @@
       <DTS:Variables />
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
-          SQLTask:Connection="{8106BE45-C935-410A-8DA2-A48CF2C92FDA}"
+          SQLTask:Connection="{8B3C8FE2-C8F6-417D-8E58-FE0CC6F4D2E4}"
           SQLTask:SqlStatementSource="TRUNCATE TABLE [dbo].[Grupa_Wiekowa]" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
       </DTS:ObjectData>
     </DTS:Executable>
@@ -1102,8 +1112,8 @@
               <connections>
                 <connection
                   refId="Package\Przepływ danych Grupa wiekowa\Wrzuć do DB SQL Grupa Wiekowa.Connections[OleDbConnection]"
-                  connectionManagerID="Package.ConnectionManagers[covid19southkorea.database.windows.net.Covid-19SouthKoreaDWH.covid@covid19southkorea]"
-                  connectionManagerRefId="Package.ConnectionManagers[covid19southkorea.database.windows.net.Covid-19SouthKoreaDWH.covid@covid19southkorea]"
+                  connectionManagerID="Package.ConnectionManagers[localhost.Covid-19SouthKoreaDWH]"
+                  connectionManagerRefId="Package.ConnectionManagers[localhost.Covid-19SouthKoreaDWH]"
                   description="The OLE DB runtime connection used to access the database."
                   name="OleDbConnection" />
               </connections>
@@ -1250,6 +1260,14 @@
       <GraphLayout
         Capacity="16" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
+          Size="277.333333333334,42.6666666666667"
+          Id="Package\Przepływ danych Grupa wiekowa\Wczytaj kolumnę &quot;age&quot; z csv &quot;PatientInfo&quot;"
+          TopLeft="318.333329483867,60" />
+        <NodeLayout
+          Size="213.333333333334,42.6666666666667"
+          Id="Package\Przepływ danych Grupa wiekowa\Przekonwertuj typ na WSTR"
+          TopLeft="573.630943833185,230.025065121967" />
+        <NodeLayout
           Size="245.333333333334,42.6666666666667"
           Id="Package\Przepływ danych Grupa wiekowa\Wrzuć do DB SQL Grupa Wiekowa"
           TopLeft="561.249991636724,318.125319271127" />
@@ -1257,70 +1275,6 @@
           Size="149.333333333334,42.6666666666667"
           Id="Package\Przepływ danych Grupa wiekowa\Usuń duplikaty"
           TopLeft="350.833328999579,212.35088006061" />
-        <NodeLayout
-          Size="213.333333333334,42.6666666666667"
-          Id="Package\Przepływ danych Grupa wiekowa\Przekonwertuj typ na WSTR"
-          TopLeft="573.630943833185,230.025065121967" />
-        <NodeLayout
-          Size="277.333333333334,42.6666666666667"
-          Id="Package\Przepływ danych Grupa wiekowa\Wczytaj kolumnę &quot;age&quot; z csv &quot;PatientInfo&quot;"
-          TopLeft="318.333329483867,60" />
-        <EdgeLayout
-          Id="Package\Przepływ danych Grupa wiekowa.Paths[Sort Output]"
-          TopLeft="500.166662332912,233.684213393943">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="73.4642815002728,17.674185061357"
-              Start="0,0"
-              End="65.9642815002728,17.674185061357">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="32.7321407501364,0" />
-                  <mssgle:CubicBezierSegment
-                    Point1="32.7321407501364,0"
-                    Point2="36.7321407501364,0"
-                    Point3="36.7321407501364,4" />
-                  <mssgle:LineSegment
-                    End="36.7321407501364,13.674185061357" />
-                  <mssgle:CubicBezierSegment
-                    Point1="36.7321407501364,13.674185061357"
-                    Point2="36.7321407501364,17.674185061357"
-                    Point3="40.7321407501364,17.674185061357" />
-                  <mssgle:LineSegment
-                    End="65.9642815002728,17.674185061357" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Przepływ danych Grupa wiekowa.Paths[Data Conversion Output]"
-          TopLeft="682.107134401621,272.691731788634">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,45.4335874824938"
-              Start="0,0"
-              End="0,37.9335874824938">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,37.9335874824938" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
         <NodeLayout
           Size="221.333333333334,42.6666666666667"
           Id="Package\Przepływ danych Grupa wiekowa\Dodaj wartość &quot;unknown age&quot;"
@@ -1385,6 +1339,62 @@
                     Point3="-108.416665468365,23.4912288385966" />
                   <mssgle:LineSegment
                     End="-108.416665468365,31.4824576771933" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Przepływ danych Grupa wiekowa.Paths[Data Conversion Output]"
+          TopLeft="682.107134401621,272.691731788634">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,45.4335874824938"
+              Start="0,0"
+              End="0,37.9335874824938">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,37.9335874824938" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Przepływ danych Grupa wiekowa.Paths[Sort Output]"
+          TopLeft="500.166662332912,233.684213393943">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="73.4642815002728,17.674185061357"
+              Start="0,0"
+              End="65.9642815002728,17.674185061357">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="32.7321407501364,0" />
+                  <mssgle:CubicBezierSegment
+                    Point1="32.7321407501364,0"
+                    Point2="36.7321407501364,0"
+                    Point3="36.7321407501364,4" />
+                  <mssgle:LineSegment
+                    End="36.7321407501364,13.674185061357" />
+                  <mssgle:CubicBezierSegment
+                    Point1="36.7321407501364,13.674185061357"
+                    Point2="36.7321407501364,17.674185061357"
+                    Point3="40.7321407501364,17.674185061357" />
+                  <mssgle:LineSegment
+                    End="65.9642815002728,17.674185061357" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>

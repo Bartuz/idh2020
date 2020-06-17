@@ -11,8 +11,8 @@
   DTS:LocaleID="1045"
   DTS:ObjectName="Package2"
   DTS:PackageType="5"
-  DTS:VersionBuild="50"
-  DTS:VersionGUID="{E2EC7F05-61F9-499D-B95F-AE88E8E3910F}">
+  DTS:VersionBuild="51"
+  DTS:VersionGUID="{6C4FFA1F-4E73-40F8-927A-CB3616BF4B77}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -27,7 +27,7 @@
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAvimQ3wX2i0aWlF5K7wDfMwAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAAC7IrujMtNCNLZ2+pPvus6o4qrzM/nw8oqgL7dsvbD1dAAAAAAOgAAAAAIAACAAAACvfMxlD2t3L5WUZrcVC7qNIsJu2ACc0biellT7dOaDnyAAAAC6Mj86pSUvNQ+CmLacQOwoJx3Wiihljp0nnqB/w+8VukAAAAAd00lT6Bcikw/hsCBGkgZ+xfsrmQ0XZ1Af9CdqZWgFhJQOutmzKNs/FCfZCFBCPNGe2mfVCNCdWfd8jsfkTqxq</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAvimQ3wX2i0aWlF5K7wDfMwAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAACC+VXzila2Iwo9QiCddjtEFhGRzaEJTi06glnrGgbMAAAAAAAOgAAAAAIAACAAAABBLG1MTG+PgE+44JQBlK/lJIXJUtSpBDjQBU4ET3CqoyAAAABg+aixxSjLHmWAELf5TeEcCWx/h2T54Xo3s1bAzxlEtUAAAABxaDfb9ZQMraG6dPU6gKGtTCm5Ip5VK9UPWPgM1evuElD32kmj5IHHCu/CcM1Xu/tn2QX0lTCVHYMdOhSpEpGW</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -288,6 +288,16 @@
       </DTS:ObjectData>
     </DTS:ConnectionManager>
     <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[localhost.Covid-19SouthKoreaDWH]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{32C43F95-F833-4EA3-B7BE-2F4609C7E424}"
+      DTS:ObjectName="localhost.Covid-19SouthKoreaDWH">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="Data Source=localhost;Initial Catalog=Covid-19SouthKoreaDWH;Provider=SQLNCLI11.1;Integrated Security=SSPI;Auto Translate=False;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
       DTS:refId="Package.ConnectionManagers[localhost.IDH]"
       DTS:CreationName="OLEDB"
       DTS:DTSID="{968CADF8-DEF0-45D5-885F-F74398ABA5A6}"
@@ -313,7 +323,7 @@
       <DTS:Variables />
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
-          SQLTask:Connection="{30C39B94-80DF-478B-9963-AE3527469912}"
+          SQLTask:Connection="{32C43F95-F833-4EA3-B7BE-2F4609C7E424}"
           SQLTask:SqlStatementSource="TRUNCATE TABLE [dbo].[Polozenie_Geograficzne];&#xA;" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
       </DTS:ObjectData>
     </DTS:Executable>
@@ -2467,8 +2477,8 @@
               <connections>
                 <connection
                   refId="Package\Przepływ danych do Położenie Geograficzne\Wrzuć do DB SQL Położenie Geograficzne.Connections[OleDbConnection]"
-                  connectionManagerID="Package.ConnectionManagers[covid19southkorea.database.windows.net.Covid-19SouthKoreaDWH.covid@covid19southkorea]"
-                  connectionManagerRefId="Package.ConnectionManagers[covid19southkorea.database.windows.net.Covid-19SouthKoreaDWH.covid@covid19southkorea]"
+                  connectionManagerID="Package.ConnectionManagers[localhost.Covid-19SouthKoreaDWH]"
+                  connectionManagerRefId="Package.ConnectionManagers[localhost.Covid-19SouthKoreaDWH]"
                   description="The OLE DB runtime connection used to access the database."
                   name="OleDbConnection" />
               </connections>
@@ -3390,9 +3400,25 @@
       <GraphLayout
         Capacity="32" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
-          Size="354.666666666667,42.6666666666667"
-          Id="Package\Przepływ danych do Położenie Geograficzne\Pozbądź się rekordu reprezentującego całą Koreę (Korea)"
-          TopLeft="346.87499483116,138.552634186857" />
+          Size="213.333333333334,42.6666666666667"
+          Id="Package\Przepływ danych do Położenie Geograficzne\Wczytaj dane z CSV Region"
+          TopLeft="301.083338517696,63.7982448949819" />
+        <NodeLayout
+          Size="144,42.6666666666667"
+          Id="Package\Przepływ danych do Położenie Geograficzne\Duplikuj dane"
+          TopLeft="380.520827663131,453.087721238616" />
+        <NodeLayout
+          Size="149.333333333334,42.6666666666667"
+          Id="Package\Przepływ danych do Położenie Geograficzne\Zbierz do kupy"
+          TopLeft="441.66666008532,583.684213842547" />
+        <NodeLayout
+          Size="394.666666666667,42"
+          Id="Package\Przepływ danych do Położenie Geograficzne\Zamień kolumny education_count ze stringów na wartości liczbowe"
+          TopLeft="189.937505126931,208.938594570175" />
+        <NodeLayout
+          Size="240,42.6666666666667"
+          Id="Package\Przepływ danych do Położenie Geograficzne\Stwórz prowincje z &quot;unknown city&quot;"
+          TopLeft="545.833325199783,485.921055142899" />
         <NodeLayout
           Size="282.666666666667,42.6666666666667"
           Id="Package\Przepływ danych do Położenie Geograficzne\Wrzuć do DB SQL Położenie Geograficzne"
@@ -3402,21 +3428,55 @@
           Id="Package\Przepływ danych do Położenie Geograficzne\Przekonwertuj typ na WSTR"
           TopLeft="386.458327574656,652.923981473423" />
         <NodeLayout
-          Size="213.333333333334,42.6666666666667"
-          Id="Package\Przepływ danych do Położenie Geograficzne\Wczytaj dane z CSV Region"
-          TopLeft="301.083338517696,63.7982448949819" />
+          Size="194.666666666667,42.6666666666667"
+          Id="Package\Przepływ danych do Położenie Geograficzne\Usuń duplikaty prowincji"
+          TopLeft="641.666657105088,565.175443619132" />
         <NodeLayout
           Size="370.666666666667,42.6666666666667"
           Id="Package\Przepływ danych do Położenie Geograficzne\Usuń duplikaty par city-province (w naszym datasecie nie ma)"
           TopLeft="211.270836994983,377.435667233692" />
         <NodeLayout
-          Size="394.666666666667,42"
-          Id="Package\Przepływ danych do Położenie Geograficzne\Zamień kolumny education_count ze stringów na wartości liczbowe"
-          TopLeft="189.937505126931,208.938594570175" />
-        <NodeLayout
           Size="357.333333333334,42.6666666666667"
           Id="Package\Przepływ danych do Położenie Geograficzne\Dodaj kolumnę z sumą wszystkich placówek edukacyjnych"
           TopLeft="222.770840235986,309.078945224139" />
+        <NodeLayout
+          Size="354.666666666667,42.6666666666667"
+          Id="Package\Przepływ danych do Położenie Geograficzne\Pozbądź się rekordu reprezentującego całą Koreę (Korea)"
+          TopLeft="346.87499483116,138.552634186857" />
+        <EdgeLayout
+          Id="Package\Przepływ danych do Położenie Geograficzne.Paths[Derived Column Output1]"
+          TopLeft="665.833325199783,528.587721809566">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="73.1666652386385,36.5877218095659"
+              Start="0,0"
+              End="73.1666652386385,29.0877218095659">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,14.2938609047829" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,14.2938609047829"
+                    Point2="0,18.2938609047829"
+                    Point3="4,18.2938609047829" />
+                  <mssgle:LineSegment
+                    End="69.1666652386385,18.2938609047829" />
+                  <mssgle:CubicBezierSegment
+                    Point1="69.1666652386385,18.2938609047829"
+                    Point2="73.1666652386385,18.2938609047829"
+                    Point3="73.1666652386385,22.2938609047829" />
+                  <mssgle:LineSegment
+                    End="73.1666652386385,29.0877218095659" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
         <EdgeLayout
           Id="Package\Przepływ danych do Położenie Geograficzne.Paths[Derived Column Output]"
           TopLeft="399.020838615484,351.745611890806">
@@ -3544,148 +3604,6 @@
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
-          Id="Package\Przepływ danych do Położenie Geograficzne.Paths[Flat File Source Output]"
-          TopLeft="407.750005184362,106.464911561649">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="116.458322980131,32.0877226252084"
-              Start="0,0"
-              End="116.458322980131,24.5877226252084">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,12.0438613126042" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,12.0438613126042"
-                    Point2="0,16.0438613126042"
-                    Point3="4,16.0438613126042" />
-                  <mssgle:LineSegment
-                    End="112.458322980131,16.0438613126042" />
-                  <mssgle:CubicBezierSegment
-                    Point1="112.458322980131,16.0438613126042"
-                    Point2="116.458322980131,16.0438613126042"
-                    Point3="116.458322980131,20.0438613126042" />
-                  <mssgle:LineSegment
-                    End="116.458322980131,24.5877226252084" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <NodeLayout
-          Size="144,42.6666666666667"
-          Id="Package\Przepływ danych do Położenie Geograficzne\Duplikuj dane"
-          TopLeft="380.520827663131,453.087721238616" />
-        <EdgeLayout
-          Id="Package\Przepływ danych do Położenie Geograficzne.Paths[Sort Output]"
-          TopLeft="396.604170328316,420.102333900359">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="55.9166573348149,32.9853873382575"
-              Start="0,0"
-              End="55.9166573348149,25.4853873382575">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,12.4926936691288" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,12.4926936691288"
-                    Point2="0,16.4926936691288"
-                    Point3="4,16.4926936691288" />
-                  <mssgle:LineSegment
-                    End="51.9166573348149,16.4926936691288" />
-                  <mssgle:CubicBezierSegment
-                    Point1="51.9166573348149,16.4926936691288"
-                    Point2="55.9166573348149,16.4926936691288"
-                    Point3="55.9166573348149,20.4926936691288" />
-                  <mssgle:LineSegment
-                    End="55.9166573348149,25.4853873382575" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <NodeLayout
-          Size="240,42.6666666666667"
-          Id="Package\Przepływ danych do Położenie Geograficzne\Stwórz prowincje z &quot;unknown city&quot;"
-          TopLeft="545.833325199783,485.921055142899" />
-        <EdgeLayout
-          Id="Package\Przepływ danych do Położenie Geograficzne.Paths[Multicast Output 2]"
-          TopLeft="524.520827663131,463.421055142899">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="141.312497536652,22.5"
-              Start="0,0"
-              End="141.312497536652,15">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="137.312497536652,0" />
-                  <mssgle:CubicBezierSegment
-                    Point1="137.312497536652,0"
-                    Point2="141.312497536652,0"
-                    Point3="141.312497536652,4" />
-                  <mssgle:LineSegment
-                    End="141.312497536652,15" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <NodeLayout
-          Size="149.333333333334,42.6666666666667"
-          Id="Package\Przepływ danych do Położenie Geograficzne\Zbierz do kupy"
-          TopLeft="441.66666008532,583.684213842547" />
-        <EdgeLayout
-          Id="Package\Przepływ danych do Położenie Geograficzne.Paths[Multicast Output 3]"
-          TopLeft="452.520827663131,495.754387905283">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="40.2569435333003,87.9298259372637"
-              Start="0,0"
-              End="40.2569435333003,80.4298259372637">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,48.1986245846654" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,48.1986245846654"
-                    Point2="0,52.1986245846654"
-                    Point3="4,52.1986245846654" />
-                  <mssgle:LineSegment
-                    End="36.2569435333003,52.1986245846654" />
-                  <mssgle:CubicBezierSegment
-                    Point1="36.2569435333003,52.1986245846654"
-                    Point2="40.2569435333003,52.1986245846654"
-                    Point3="40.2569435333003,56.1986245846654" />
-                  <mssgle:LineSegment
-                    End="40.2569435333003,80.4298259372637" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
           Id="Package\Przepływ danych do Położenie Geograficzne.Paths[Union All Output 1]"
           TopLeft="516.333326751987,626.350880509213">
           <EdgeLayout.Curve>
@@ -3719,10 +3637,6 @@
             <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
-        <NodeLayout
-          Size="194.666666666667,42.6666666666667"
-          Id="Package\Przepływ danych do Położenie Geograficzne\Usuń duplikaty prowincji"
-          TopLeft="641.666657105088,565.175443619132" />
         <EdgeLayout
           Id="Package\Przepływ danych do Położenie Geograficzne.Paths[Sort Output1]"
           TopLeft="641.666657105088,586.508776952465">
@@ -3758,31 +3672,127 @@
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
-          Id="Package\Przepływ danych do Położenie Geograficzne.Paths[Derived Column Output1]"
-          TopLeft="665.833325199783,528.587721809566">
+          Id="Package\Przepływ danych do Położenie Geograficzne.Paths[Sort Output]"
+          TopLeft="396.604170328316,420.102333900359">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="73.1666652386385,36.5877218095659"
+              EndConnector="55.9166573348149,32.9853873382575"
               Start="0,0"
-              End="73.1666652386385,29.0877218095659">
+              End="55.9166573348149,25.4853873382575">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,14.2938609047829" />
+                    End="0,12.4926936691288" />
                   <mssgle:CubicBezierSegment
-                    Point1="0,14.2938609047829"
-                    Point2="0,18.2938609047829"
-                    Point3="4,18.2938609047829" />
+                    Point1="0,12.4926936691288"
+                    Point2="0,16.4926936691288"
+                    Point3="4,16.4926936691288" />
                   <mssgle:LineSegment
-                    End="69.1666652386385,18.2938609047829" />
+                    End="51.9166573348149,16.4926936691288" />
                   <mssgle:CubicBezierSegment
-                    Point1="69.1666652386385,18.2938609047829"
-                    Point2="73.1666652386385,18.2938609047829"
-                    Point3="73.1666652386385,22.2938609047829" />
+                    Point1="51.9166573348149,16.4926936691288"
+                    Point2="55.9166573348149,16.4926936691288"
+                    Point3="55.9166573348149,20.4926936691288" />
                   <mssgle:LineSegment
-                    End="73.1666652386385,29.0877218095659" />
+                    End="55.9166573348149,25.4853873382575" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Przepływ danych do Położenie Geograficzne.Paths[Multicast Output 3]"
+          TopLeft="452.520827663131,495.754387905283">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="40.2569435333003,87.9298259372637"
+              Start="0,0"
+              End="40.2569435333003,80.4298259372637">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,48.1986245846654" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,48.1986245846654"
+                    Point2="0,52.1986245846654"
+                    Point3="4,52.1986245846654" />
+                  <mssgle:LineSegment
+                    End="36.2569435333003,52.1986245846654" />
+                  <mssgle:CubicBezierSegment
+                    Point1="36.2569435333003,52.1986245846654"
+                    Point2="40.2569435333003,52.1986245846654"
+                    Point3="40.2569435333003,56.1986245846654" />
+                  <mssgle:LineSegment
+                    End="40.2569435333003,80.4298259372637" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Przepływ danych do Położenie Geograficzne.Paths[Multicast Output 2]"
+          TopLeft="524.520827663131,463.421055142899">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="141.312497536652,22.5"
+              Start="0,0"
+              End="141.312497536652,15">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="137.312497536652,0" />
+                  <mssgle:CubicBezierSegment
+                    Point1="137.312497536652,0"
+                    Point2="141.312497536652,0"
+                    Point3="141.312497536652,4" />
+                  <mssgle:LineSegment
+                    End="141.312497536652,15" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Przepływ danych do Położenie Geograficzne.Paths[Flat File Source Output]"
+          TopLeft="407.750005184362,106.464911561649">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="116.458322980131,32.0877226252084"
+              Start="0,0"
+              End="116.458322980131,24.5877226252084">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,12.0438613126042" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,12.0438613126042"
+                    Point2="0,16.0438613126042"
+                    Point3="4,16.0438613126042" />
+                  <mssgle:LineSegment
+                    End="112.458322980131,16.0438613126042" />
+                  <mssgle:CubicBezierSegment
+                    Point1="112.458322980131,16.0438613126042"
+                    Point2="116.458322980131,16.0438613126042"
+                    Point3="116.458322980131,20.0438613126042" />
+                  <mssgle:LineSegment
+                    End="116.458322980131,24.5877226252084" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>

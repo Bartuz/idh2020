@@ -11,8 +11,8 @@
   DTS:LocaleID="2057"
   DTS:ObjectName="Package"
   DTS:PackageType="5"
-  DTS:VersionBuild="29"
-  DTS:VersionGUID="{3258397F-5F8F-46B0-BC88-04ED249BD1DD}">
+  DTS:VersionBuild="31"
+  DTS:VersionGUID="{3722133C-8865-41EC-836D-58FF644F2CE9}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -27,7 +27,7 @@
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAvimQ3wX2i0aWlF5K7wDfMwAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAAAofxWeBFha2SI0v5foRdWdUitwwdgnPwYCEzxWGgFAGgAAAAAOgAAAAAIAACAAAACk1q3/fHdC9qQtmrtkiOzyZYNstqfTTKHW4E9w7FB00iAAAAAvZfFP6XHZyEkIrksRy+B6GYTJaGzLtKskcXQTYaLKjkAAAACOoMGb6eM+Bc+rwJVgITwrQ6T+uyCtMQhGPNp1wG6DyjiX+RINMoeihXxqasFc9BLNQJdlLQSnq35yWcHgJJ2F</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAvimQ3wX2i0aWlF5K7wDfMwAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAABUBV/IUy0uHzZsvfqKLquPDp39QKv3kXy1kjr5CKSg1QAAAAAOgAAAAAIAACAAAADrGNXg14p1grUb4HDdZdfe0d0ruyhTGNdBsbXkYhg2cSAAAAAaDTuTsjek3fOxUDPIgICdE03PveWWc0Twls1lpswlH0AAAADrBx5xT9B2k/m3hU7QgJUmfgtL8CCHuA4ZUTmgYHMM7xtsJKTiHqeaeZ+F9s4nzrLSNtUT5pvTnUF2s4wtsWce</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -214,6 +214,16 @@
       </DTS:ObjectData>
     </DTS:ConnectionManager>
     <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[localhost.Covid-19SouthKoreaDWH]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{8AFA3FAB-B7C4-4F85-B0F2-C8D9A997435D}"
+      DTS:ObjectName="localhost.Covid-19SouthKoreaDWH">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="Data Source=localhost;Initial Catalog=Covid-19SouthKoreaDWH;Provider=SQLNCLI11.1;Integrated Security=SSPI;Auto Translate=False;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
       DTS:refId="Package.ConnectionManagers[localhost.IDH]"
       DTS:CreationName="OLEDB"
       DTS:DTSID="{F2C62856-B7CC-44E8-9680-203C5ED86F22}"
@@ -239,7 +249,7 @@
       <DTS:Variables />
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
-          SQLTask:Connection="{A94282C9-86C9-42A0-B699-50BD28D01EC1}"
+          SQLTask:Connection="{8AFA3FAB-B7C4-4F85-B0F2-C8D9A997435D}"
           SQLTask:SqlStatementSource="TRUNCATE TABLE dbo.Plec" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
       </DTS:ObjectData>
     </DTS:Executable>
@@ -738,8 +748,8 @@
               <connections>
                 <connection
                   refId="Package\Przepływ danych Płeć\Wrzuć do DB SQL Pleć.Connections[OleDbConnection]"
-                  connectionManagerID="Package.ConnectionManagers[covid19southkorea.database.windows.net.Covid-19SouthKoreaDWH.covid@covid19southkorea]"
-                  connectionManagerRefId="Package.ConnectionManagers[covid19southkorea.database.windows.net.Covid-19SouthKoreaDWH.covid@covid19southkorea]"
+                  connectionManagerID="Package.ConnectionManagers[localhost.Covid-19SouthKoreaDWH]"
+                  connectionManagerRefId="Package.ConnectionManagers[localhost.Covid-19SouthKoreaDWH]"
                   description="The OLE DB runtime connection used to access the database."
                   name="OleDbConnection" />
               </connections>

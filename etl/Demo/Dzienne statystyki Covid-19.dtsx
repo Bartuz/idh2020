@@ -11,8 +11,8 @@
   DTS:LocaleID="1045"
   DTS:ObjectName="Dzienne statystyki Covid-19"
   DTS:PackageType="5"
-  DTS:VersionBuild="125"
-  DTS:VersionGUID="{DF3E384E-ACBC-46DF-8978-6AE779F621DA}">
+  DTS:VersionBuild="129"
+  DTS:VersionGUID="{0D6151EB-FB86-4F05-A5CA-F1E94F3AE0DD}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -563,6 +563,16 @@
       </DTS:ObjectData>
     </DTS:ConnectionManager>
     <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[localhost.Covid-19SouthKoreaDWH]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{807CE9E9-516E-44E9-951A-27E7EF2DA9AE}"
+      DTS:ObjectName="localhost.Covid-19SouthKoreaDWH">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="Data Source=localhost;Initial Catalog=Covid-19SouthKoreaDWH;Provider=SQLNCLI11.1;Integrated Security=SSPI;Auto Translate=False;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
       DTS:refId="Package.ConnectionManagers[localhost.IDH]"
       DTS:CreationName="OLEDB"
       DTS:DTSID="{7B11789A-578A-47DF-A5F5-4111A8F062C7}"
@@ -598,7 +608,7 @@
       <DTS:Variables />
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
-          SQLTask:Connection="{52D2FB58-7BB0-47DA-8698-4BD065BFE199}"
+          SQLTask:Connection="{807CE9E9-516E-44E9-951A-27E7EF2DA9AE}"
           SQLTask:SqlStatementSource="TRUNCATE TABLE [dbo].[Dzienne_Statystyki_Covid_19]" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
       </DTS:ObjectData>
     </DTS:Executable>
@@ -686,8 +696,8 @@ where [refTable].[prowincja] = ? and [refTable].[data] = ?</property>
               <connections>
                 <connection
                   refId="Package\Przepływ danych Dzienne Statystyki Covid-19\Dodaj kategoria wilgotności.Connections[OleDbConnection]"
-                  connectionManagerID="{52D2FB58-7BB0-47DA-8698-4BD065BFE199}:external"
-                  connectionManagerRefId="Project.ConnectionManagers[covid19southkorea.database.windows.net.Covid-19SouthKoreaDWH.covid@covid19southkorea]"
+                  connectionManagerID="Package.ConnectionManagers[localhost.Covid-19SouthKoreaDWH]"
+                  connectionManagerRefId="Package.ConnectionManagers[localhost.Covid-19SouthKoreaDWH]"
                   description="Connection manager used to access lookup data."
                   name="OleDbConnection" />
               </connections>
@@ -863,8 +873,8 @@ where [refTable].[kategoria_wilgotnosci] = ?</property>
               <connections>
                 <connection
                   refId="Package\Przepływ danych Dzienne Statystyki Covid-19\Dodaj pogoda_id.Connections[OleDbConnection]"
-                  connectionManagerID="{52D2FB58-7BB0-47DA-8698-4BD065BFE199}:external"
-                  connectionManagerRefId="Project.ConnectionManagers[covid19southkorea.database.windows.net.Covid-19SouthKoreaDWH.covid@covid19southkorea]"
+                  connectionManagerID="Package.ConnectionManagers[localhost.Covid-19SouthKoreaDWH]"
+                  connectionManagerRefId="Package.ConnectionManagers[localhost.Covid-19SouthKoreaDWH]"
                   description="Connection manager used to access lookup data."
                   name="OleDbConnection" />
               </connections>
@@ -1022,8 +1032,8 @@ where [refTable].[dzien] = ? and [refTable].[miesiac] = ? and [refTable].[rok] =
               <connections>
                 <connection
                   refId="Package\Przepływ danych Dzienne Statystyki Covid-19\Dołącz data_id.Connections[OleDbConnection]"
-                  connectionManagerID="{52D2FB58-7BB0-47DA-8698-4BD065BFE199}:external"
-                  connectionManagerRefId="Project.ConnectionManagers[covid19southkorea.database.windows.net.Covid-19SouthKoreaDWH.covid@covid19southkorea]"
+                  connectionManagerID="Package.ConnectionManagers[localhost.Covid-19SouthKoreaDWH]"
+                  connectionManagerRefId="Package.ConnectionManagers[localhost.Covid-19SouthKoreaDWH]"
                   description="Connection manager used to access lookup data."
                   name="OleDbConnection" />
               </connections>
@@ -1212,8 +1222,8 @@ where [refTable].[nazwa_grupy_wiekowej] = ?</property>
               <connections>
                 <connection
                   refId="Package\Przepływ danych Dzienne Statystyki Covid-19\Dołącz Id Grupa wiekowa.Connections[OleDbConnection]"
-                  connectionManagerID="{52D2FB58-7BB0-47DA-8698-4BD065BFE199}:external"
-                  connectionManagerRefId="Project.ConnectionManagers[covid19southkorea.database.windows.net.Covid-19SouthKoreaDWH.covid@covid19southkorea]"
+                  connectionManagerID="Package.ConnectionManagers[localhost.Covid-19SouthKoreaDWH]"
+                  connectionManagerRefId="Package.ConnectionManagers[localhost.Covid-19SouthKoreaDWH]"
                   description="Connection manager used to access lookup data."
                   name="OleDbConnection" />
               </connections>
@@ -1332,7 +1342,7 @@ where [refTable].[nazwa_plci] = ?</property>
                   dataType="System.Int32"
                   description="Specifies the cache type of the lookup table."
                   name="CacheType"
-                  typeConverter="CacheType">0</property>
+                  typeConverter="CacheType">2</property>
                 <property
                   dataType="System.Int32"
                   description="Specifies how the Lookup transformation handles rows without matching entries in the reference data set."
@@ -1371,8 +1381,8 @@ where [refTable].[nazwa_plci] = ?</property>
               <connections>
                 <connection
                   refId="Package\Przepływ danych Dzienne Statystyki Covid-19\Dołącz Id Płeć biologiczna.Connections[OleDbConnection]"
-                  connectionManagerID="{52D2FB58-7BB0-47DA-8698-4BD065BFE199}:external"
-                  connectionManagerRefId="Project.ConnectionManagers[covid19southkorea.database.windows.net.Covid-19SouthKoreaDWH.covid@covid19southkorea]"
+                  connectionManagerID="Package.ConnectionManagers[localhost.Covid-19SouthKoreaDWH]"
+                  connectionManagerRefId="Package.ConnectionManagers[localhost.Covid-19SouthKoreaDWH]"
                   description="Connection manager used to access lookup data."
                   name="OleDbConnection" />
               </connections>
@@ -1608,8 +1618,8 @@ where [refTable].[miasto] = ? and [refTable].[prowincja] = ?</property>
               <connections>
                 <connection
                   refId="Package\Przepływ danych Dzienne Statystyki Covid-19\Polozenie geograficzne.Connections[OleDbConnection]"
-                  connectionManagerID="{52D2FB58-7BB0-47DA-8698-4BD065BFE199}:external"
-                  connectionManagerRefId="Project.ConnectionManagers[covid19southkorea.database.windows.net.Covid-19SouthKoreaDWH.covid@covid19southkorea]"
+                  connectionManagerID="Package.ConnectionManagers[localhost.Covid-19SouthKoreaDWH]"
+                  connectionManagerRefId="Package.ConnectionManagers[localhost.Covid-19SouthKoreaDWH]"
                   description="Connection manager used to access lookup data."
                   name="OleDbConnection" />
               </connections>
@@ -2592,8 +2602,8 @@ where [refTable].[miasto] = ? and [refTable].[prowincja] = ?</property>
               <connections>
                 <connection
                   refId="Package\Przepływ danych Dzienne Statystyki Covid-19\Wrzuć do Dzienne Statystyki Covid-19.Connections[OleDbConnection]"
-                  connectionManagerID="{52D2FB58-7BB0-47DA-8698-4BD065BFE199}:external"
-                  connectionManagerRefId="Project.ConnectionManagers[covid19southkorea.database.windows.net.Covid-19SouthKoreaDWH.covid@covid19southkorea]"
+                  connectionManagerID="Package.ConnectionManagers[localhost.Covid-19SouthKoreaDWH]"
+                  connectionManagerRefId="Package.ConnectionManagers[localhost.Covid-19SouthKoreaDWH]"
                   description="The OLE DB runtime connection used to access the database."
                   name="OleDbConnection" />
               </connections>
@@ -3635,52 +3645,62 @@ where [refTable].[miasto] = ? and [refTable].[prowincja] = ?</property>
               name="Aggregate Output 1"
               startId="Package\Przepływ danych Dzienne Statystyki Covid-19\Wylicz miary.Outputs[Aggregate Output 1]" />
             <path
-              refId="Package\Przepływ danych Dzienne Statystyki Covid-19.Paths[Data Conversion Output2]"
+              refId="Package\Przepływ danych Dzienne Statystyki Covid-19.Paths[Data Conversion Output]"
               endId="Package\Przepływ danych Dzienne Statystyki Covid-19\Dodaj kategoria wilgotności.Inputs[Lookup Input]"
               name="Data Conversion Output"
               startId="Package\Przepływ danych Dzienne Statystyki Covid-19\Konwertuj dla_danego_dnia na WSTR.Outputs[Data Conversion Output]" />
             <path
-              refId="Package\Przepływ danych Dzienne Statystyki Covid-19.Paths[Data Conversion Output]"
+              refId="Package\Przepływ danych Dzienne Statystyki Covid-19.Paths[Data Conversion Output1]"
               endId="Package\Przepływ danych Dzienne Statystyki Covid-19\Dołącz Id Płeć biologiczna.Inputs[Lookup Input]"
               name="Data Conversion Output"
               startId="Package\Przepływ danych Dzienne Statystyki Covid-19\Przekonwertuj typ na WSTR.Outputs[Data Conversion Output]" />
             <path
-              refId="Package\Przepływ danych Dzienne Statystyki Covid-19.Paths[Data Conversion Output1]"
+              refId="Package\Przepływ danych Dzienne Statystyki Covid-19.Paths[Data Conversion Output2]"
               endId="Package\Przepływ danych Dzienne Statystyki Covid-19\Wyodrębnij Dzień, Miesiąc, Rok.Inputs[Derived Column Input]"
               name="Data Conversion Output"
               startId="Package\Przepływ danych Dzienne Statystyki Covid-19\Zamień na DBDATE.Outputs[Data Conversion Output]" />
             <path
-              refId="Package\Przepływ danych Dzienne Statystyki Covid-19.Paths[Derived Column Output]"
+              refId="Package\Przepływ danych Dzienne Statystyki Covid-19.Paths[Derived Column Output3]"
               endId="Package\Przepływ danych Dzienne Statystyki Covid-19\Dołącz data_id.Inputs[Lookup Input]"
               name="Derived Column Output"
               startId="Package\Przepływ danych Dzienne Statystyki Covid-19\Wyodrębnij Dzień, Miesiąc, Rok.Outputs[Derived Column Output]" />
             <path
-              refId="Package\Przepływ danych Dzienne Statystyki Covid-19.Paths[Derived Column Output1]"
+              refId="Package\Przepływ danych Dzienne Statystyki Covid-19.Paths[Derived Column Output2]"
+              endId="Package\Przepływ danych Dzienne Statystyki Covid-19\Zamień puste rekordy na odpowiedni &quot;brak wartości&quot;.Inputs[Derived Column Input]"
+              name="Derived Column Output"
+              startId="Package\Przepływ danych Dzienne Statystyki Covid-19\Zamień city &quot;etc&quot; na wartość province &quot;unknown city&quot;.Outputs[Derived Column Output]" />
+            <path
+              refId="Package\Przepływ danych Dzienne Statystyki Covid-19.Paths[Derived Column Output4]"
               endId="Package\Przepływ danych Dzienne Statystyki Covid-19\Dodaj pogoda_id.Inputs[Lookup Input]"
               name="Derived Column Output"
               startId="Package\Przepływ danych Dzienne Statystyki Covid-19\Zamień NULL w kategoria wilgotności na &quot;unknown humidity&quot;.Outputs[Derived Column Output]" />
             <path
-              refId="Package\Przepływ danych Dzienne Statystyki Covid-19.Paths[Derived Column Output2]"
-              endId="Package\Przepływ danych Dzienne Statystyki Covid-19\Zamień city &quot;etc&quot; na wartość province &quot;unknown city&quot;.Inputs[Derived Column Input]"
-              name="Derived Column Output"
-              startId="Package\Przepływ danych Dzienne Statystyki Covid-19\Zamień puste na NULL.Outputs[Derived Column Output]" />
-            <path
-              refId="Package\Przepływ danych Dzienne Statystyki Covid-19.Paths[Derived Column Output4]"
+              refId="Package\Przepływ danych Dzienne Statystyki Covid-19.Paths[Derived Column Output]"
               endId="Package\Przepływ danych Dzienne Statystyki Covid-19\Wylicz miary.Inputs[Aggregate Input 1]"
               name="Derived Column Output"
               startId="Package\Przepływ danych Dzienne Statystyki Covid-19\Zamień puste rekordy na odpowiedni &quot;brak wartości&quot;.Outputs[Derived Column Output]" />
             <path
-              refId="Package\Przepływ danych Dzienne Statystyki Covid-19.Paths[Derived Column Output3]"
-              endId="Package\Przepływ danych Dzienne Statystyki Covid-19\Zamień puste rekordy na odpowiedni &quot;brak wartości&quot;.Inputs[Derived Column Input]"
+              refId="Package\Przepływ danych Dzienne Statystyki Covid-19.Paths[Derived Column Output1]"
+              endId="Package\Przepływ danych Dzienne Statystyki Covid-19\Zamień city &quot;etc&quot; na wartość province &quot;unknown city&quot;.Inputs[Derived Column Input]"
               name="Derived Column Output"
-              startId="Package\Przepływ danych Dzienne Statystyki Covid-19\Zamień city &quot;etc&quot; na wartość province &quot;unknown city&quot;.Outputs[Derived Column Output]" />
+              startId="Package\Przepływ danych Dzienne Statystyki Covid-19\Zamień puste na NULL.Outputs[Derived Column Output]" />
             <path
               refId="Package\Przepływ danych Dzienne Statystyki Covid-19.Paths[Flat File Source Output]"
               endId="Package\Przepływ danych Dzienne Statystyki Covid-19\Usuń puste &quot;confirmed date&quot;.Inputs[Conditional Split Input]"
               name="Flat File Source Output"
               startId="Package\Przepływ danych Dzienne Statystyki Covid-19\Wczytaj csv PatientInfo.Outputs[Flat File Source Output]" />
             <path
+              refId="Package\Przepływ danych Dzienne Statystyki Covid-19.Paths[Lookup Match Output5]"
+              endId="Package\Przepływ danych Dzienne Statystyki Covid-19\Wrzuć do Dzienne Statystyki Covid-19.Inputs[OLE DB Destination Input]"
+              name="Lookup Match Output"
+              startId="Package\Przepływ danych Dzienne Statystyki Covid-19\Dodaj pogoda_id.Outputs[Lookup Match Output]" />
+            <path
               refId="Package\Przepływ danych Dzienne Statystyki Covid-19.Paths[Lookup Match Output]"
+              endId="Package\Przepływ danych Dzienne Statystyki Covid-19\Polozenie geograficzne.Inputs[Lookup Input]"
+              name="Lookup Match Output"
+              startId="Package\Przepływ danych Dzienne Statystyki Covid-19\Dołącz Id Grupa wiekowa.Outputs[Lookup Match Output]" />
+            <path
+              refId="Package\Przepływ danych Dzienne Statystyki Covid-19.Paths[Lookup Match Output1]"
               endId="Package\Przepływ danych Dzienne Statystyki Covid-19\Zamień NULL w kategoria wilgotności na &quot;unknown humidity&quot;.Inputs[Derived Column Input]"
               name="Lookup Match Output"
               startId="Package\Przepływ danych Dzienne Statystyki Covid-19\Dodaj kategoria wilgotności.Outputs[Lookup Match Output]" />
@@ -3699,16 +3719,6 @@ where [refTable].[miasto] = ? and [refTable].[prowincja] = ?</property>
               endId="Package\Przepływ danych Dzienne Statystyki Covid-19\Konwertuj dla_danego_dnia na WSTR.Inputs[Data Conversion Input]"
               name="Lookup Match Output"
               startId="Package\Przepływ danych Dzienne Statystyki Covid-19\Dołącz data_id.Outputs[Lookup Match Output]" />
-            <path
-              refId="Package\Przepływ danych Dzienne Statystyki Covid-19.Paths[Lookup Match Output5]"
-              endId="Package\Przepływ danych Dzienne Statystyki Covid-19\Wrzuć do Dzienne Statystyki Covid-19.Inputs[OLE DB Destination Input]"
-              name="Lookup Match Output"
-              startId="Package\Przepływ danych Dzienne Statystyki Covid-19\Dodaj pogoda_id.Outputs[Lookup Match Output]" />
-            <path
-              refId="Package\Przepływ danych Dzienne Statystyki Covid-19.Paths[Lookup Match Output1]"
-              endId="Package\Przepływ danych Dzienne Statystyki Covid-19\Polozenie geograficzne.Inputs[Lookup Input]"
-              name="Lookup Match Output"
-              startId="Package\Przepływ danych Dzienne Statystyki Covid-19\Dołącz Id Grupa wiekowa.Outputs[Lookup Match Output]" />
             <path
               refId="Package\Przepływ danych Dzienne Statystyki Covid-19.Paths[Wypełnione confirmed_date]"
               endId="Package\Przepływ danych Dzienne Statystyki Covid-19\Zamień puste na NULL.Inputs[Derived Column Input]"
@@ -3792,112 +3802,152 @@ where [refTable].[miasto] = ? and [refTable].[prowincja] = ?</property>
       <GraphLayout
         Capacity="64" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
-          Size="176,42.6666666666667"
-          Id="Package\Przepływ danych Dzienne Statystyki Covid-19\Zamień na DBDATE"
-          TopLeft="672.794635821888,557.833335576351" />
+          Size="190.666666666667,42.6666666666667"
+          Id="Package\Przepływ danych Dzienne Statystyki Covid-19\Polozenie geograficzne"
+          TopLeft="1241.50295769064,501.219300201009" />
         <NodeLayout
-          Size="261.333333333334,42.6666666666667"
-          Id="Package\Przepływ danych Dzienne Statystyki Covid-19\Konwertuj dla_danego_dnia na WSTR"
-          TopLeft="367.684518509411,621.525065722047" />
+          Size="258.666666666667,42.6666666666667"
+          Id="Package\Przepływ danych Dzienne Statystyki Covid-19\Wrzuć do Dzienne Statystyki Covid-19"
+          TopLeft="143.071426618312,715.682963558008" />
         <NodeLayout
-          Size="140,42.6666666666667"
-          Id="Package\Przepływ danych Dzienne Statystyki Covid-19\Wylicz miary"
-          TopLeft="555.044634586334,207.80702131728" />
+          Size="328,42.6666666666667"
+          Id="Package\Przepływ danych Dzienne Statystyki Covid-19\Zamień puste rekordy na odpowiedni &quot;brak wartości&quot;"
+          TopLeft="1129.99998534719,207.894739578801" />
         <NodeLayout
           Size="328,42.6666666666667"
           Id="Package\Przepływ danych Dzienne Statystyki Covid-19\Zamień city &quot;etc&quot; na wartość province &quot;unknown city&quot;"
-          TopLeft="740.294634766388,130.605265478183" />
+          TopLeft="1146.54462871279,130.605265478183" />
         <NodeLayout
-          Size="189.333333333334,42.6666666666667"
-          Id="Package\Przepływ danych Dzienne Statystyki Covid-19\Wczytaj csv PatientInfo"
-          TopLeft="292.857138493232,20.5614037577575" />
-        <NodeLayout
-          Size="150.666666666667,42.6666666666667"
-          Id="Package\Przepływ danych Dzienne Statystyki Covid-19\Dołącz data_id"
-          TopLeft="361.559520915328,477.293234148561" />
-        <NodeLayout
-          Size="189.333333333334,42.6666666666667"
-          Id="Package\Przepływ danych Dzienne Statystyki Covid-19\Zamień puste na NULL"
-          TopLeft="545.243498368744,21.5151517820891" />
-        <NodeLayout
-          Size="200.666666666667,42.6666666666667"
-          Id="Package\Przepływ danych Dzienne Statystyki Covid-19\Dołącz Id Grupa wiekowa"
-          TopLeft="834.211297093092,429.633974315402" />
-        <NodeLayout
-          Size="368,42.6666666666667"
-          Id="Package\Przepływ danych Dzienne Statystyki Covid-19\Zamień NULL w kategoria wilgotności na &quot;unknown humidity&quot;"
-          TopLeft="11.9047617273673,584.020052913216" />
-        <NodeLayout
-          Size="261.333333333334,42.6666666666667"
-          Id="Package\Przepływ danych Dzienne Statystyki Covid-19\Wrzuć do Dzienne Statystyki Covid-19"
-          TopLeft="143.48809327877,752.51629623271" />
+          Size="140,42.6666666666667"
+          Id="Package\Przepływ danych Dzienne Statystyki Covid-19\Wylicz miary"
+          TopLeft="961.294628532738,207.80702131728" />
         <NodeLayout
           Size="213.333333333334,42.6666666666667"
           Id="Package\Przepływ danych Dzienne Statystyki Covid-19\Przekonwertuj typ na WSTR"
-          TopLeft="464.523802601865,359.754379830422" />
+          TopLeft="870.773796548268,359.754379830422" />
         <NodeLayout
-          Size="160,42.6666666666667"
-          Id="Package\Przepływ danych Dzienne Statystyki Covid-19\Dodaj pogoda_id"
-          TopLeft="150.869045549738,660.150378916638" />
+          Size="261.333333333334,42.6666666666667"
+          Id="Package\Przepływ danych Dzienne Statystyki Covid-19\Konwertuj dla_danego_dnia na WSTR"
+          TopLeft="773.934512455814,621.525065722047" />
+        <NodeLayout
+          Size="189.333333333334,42.6666666666667"
+          Id="Package\Przepływ danych Dzienne Statystyki Covid-19\Wczytaj csv PatientInfo"
+          TopLeft="699.107132439635,20.5614037577575" />
+        <NodeLayout
+          Size="368,42.6666666666667"
+          Id="Package\Przepływ danych Dzienne Statystyki Covid-19\Zamień NULL w kategoria wilgotności na &quot;unknown humidity&quot;"
+          TopLeft="418.154755673771,584.020052913216" />
+        <NodeLayout
+          Size="150.666666666667,42.6666666666667"
+          Id="Package\Przepływ danych Dzienne Statystyki Covid-19\Dołącz data_id"
+          TopLeft="767.809514861731,477.293234148561" />
+        <NodeLayout
+          Size="189.333333333334,42.6666666666667"
+          Id="Package\Przepływ danych Dzienne Statystyki Covid-19\Zamień puste na NULL"
+          TopLeft="951.493492315147,21.5151517820891" />
+        <NodeLayout
+          Size="200.666666666667,42.6666666666667"
+          Id="Package\Przepływ danych Dzienne Statystyki Covid-19\Dołącz Id Grupa wiekowa"
+          TopLeft="1240.4612910395,429.633974315402" />
         <NodeLayout
           Size="214.666666666667,42.6666666666667"
           Id="Package\Przepływ danych Dzienne Statystyki Covid-19\Usuń puste &quot;confirmed date&quot;"
-          TopLeft="422.273806221605,109.05263349356" />
+          TopLeft="828.523800168008,109.05263349356" />
         <NodeLayout
           Size="230.666666666667,42.6666666666667"
           Id="Package\Przepływ danych Dzienne Statystyki Covid-19\Wyodrębnij Dzień, Miesiąc, Rok"
-          TopLeft="527.273804656983,480.771931206861" />
+          TopLeft="933.523798603386,480.771931206861" />
         <NodeLayout
-          Size="190.666666666667,42.6666666666667"
-          Id="Package\Przepływ danych Dzienne Statystyki Covid-19\Polozenie geograficzne"
-          TopLeft="835.252963744237,501.219300201009" />
+          Size="176,42.6666666666667"
+          Id="Package\Przepływ danych Dzienne Statystyki Covid-19\Zamień na DBDATE"
+          TopLeft="1079.04462976829,557.833335576351" />
+        <NodeLayout
+          Size="160,42.6666666666667"
+          Id="Package\Przepływ danych Dzienne Statystyki Covid-19\Dodaj pogoda_id"
+          TopLeft="557.119039496141,660.150378916638" />
         <NodeLayout
           Size="209.333333333334,42.6666666666667"
           Id="Package\Przepływ danych Dzienne Statystyki Covid-19\Dodaj kategoria wilgotności"
-          TopLeft="147.416664648801,485.122807515515" />
+          TopLeft="553.666658595204,485.122807515515" />
         <NodeLayout
           Size="204,42.6666666666667"
           Id="Package\Przepływ danych Dzienne Statystyki Covid-19\Dołącz Id Płeć biologiczna"
-          TopLeft="699.107132439634,350.956145171754" />
+          TopLeft="1105.35712638604,350.956145171754" />
         <EdgeLayout
-          Id="Package\Przepływ danych Dzienne Statystyki Covid-19.Paths[Lookup Match Output5]"
-          TopLeft="230.869045549738,702.817045583305">
+          Id="Package\Przepływ danych Dzienne Statystyki Covid-19.Paths[Wypełnione confirmed_date]"
+          TopLeft="970.301577945786,109.05263349356">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="43.2857143956987,49.6992506494054"
+              EndConnector="75.8585810360278,-44.8708150448042"
               Start="0,0"
-              End="43.2857143956987,42.1992506494054">
+              End="75.8585810360278,-37.3708150448042">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,20.8496253247027" />
+                    End="0,-14.1475059614005" />
                   <mssgle:CubicBezierSegment
-                    Point1="0,20.8496253247027"
-                    Point2="0,24.8496253247027"
-                    Point3="4,24.8496253247027" />
+                    Point1="0,-14.1475059614005"
+                    Point2="0,-18.1475059614005"
+                    Point3="4,-18.1475059614005" />
                   <mssgle:LineSegment
-                    End="39.2857143956987,24.8496253247027" />
+                    End="71.8585810360278,-18.1475059614005" />
                   <mssgle:CubicBezierSegment
-                    Point1="39.2857143956987,24.8496253247027"
-                    Point2="43.2857143956987,24.8496253247027"
-                    Point3="43.2857143956987,28.8496253247027" />
+                    Point1="71.8585810360278,-18.1475059614005"
+                    Point2="75.8585810360278,-18.1475059614005"
+                    Point3="75.8585810360278,-22.1475059614005" />
                   <mssgle:LineSegment
-                    End="43.2857143956987,42.1992506494054" />
+                    End="75.8585810360278,-37.3708150448042" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
             <mssgm:EdgeLabel
-              BoundingBox="-26.5485295209007,29.8496253247027,96.3827734375,11.609375"
+              BoundingBox="-24.6372329194861,-13.1475059614005,125.133046875,11.658203125"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Przepływ danych Dzienne Statystyki Covid-19.Paths[Lookup Match Output5]"
+          TopLeft="557.119039496141,681.483712249971">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-155.380946211162,55.53258464137"
+              Start="0,0"
+              End="-147.880946211162,55.53258464137">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="-73.6904731055812,0" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-73.6904731055812,0"
+                    Point2="-77.6904731055812,0"
+                    Point3="-77.6904731055812,4" />
+                  <mssgle:LineSegment
+                    End="-77.6904731055812,51.53258464137" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-77.6904731055812,51.53258464137"
+                    Point2="-77.6904731055812,55.53258464137"
+                    Point3="-81.6904731055812,55.53258464137" />
+                  <mssgle:LineSegment
+                    End="-147.880946211162,55.53258464137" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="-125.881859824331,-17.609375,96.3827734375,11.609375"
               RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
           Id="Package\Przepływ danych Dzienne Statystyki Covid-19.Paths[Lookup Match Output4]"
-          TopLeft="413.115076470884,519.959900815228">
+          TopLeft="819.365070417287,519.959900815228">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
@@ -3933,7 +3983,7 @@ where [refTable].[miasto] = ? and [refTable].[prowincja] = ?</property>
         </EdgeLayout>
         <EdgeLayout
           Id="Package\Przepływ danych Dzienne Statystyki Covid-19.Paths[Lookup Match Output3]"
-          TopLeft="833.773799106301,393.62281183842">
+          TopLeft="1240.0237930527,393.62281183842">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
@@ -3969,7 +4019,7 @@ where [refTable].[miasto] = ? and [refTable].[prowincja] = ?</property>
         </EdgeLayout>
         <EdgeLayout
           Id="Package\Przepływ danych Dzienne Statystyki Covid-19.Paths[Lookup Match Output2]"
-          TopLeft="835.252963744237,522.552633534343">
+          TopLeft="1241.50295769064,522.552633534343">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
@@ -3993,37 +4043,13 @@ where [refTable].[miasto] = ? and [refTable].[prowincja] = ?</property>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
             <mssgm:EdgeLabel
-              BoundingBox="-94.6497146410987,-17.609375,96.3827734375,11.609375"
+              BoundingBox="-94.6497146410986,-17.609375,96.3827734375,11.609375"
               RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
           Id="Package\Przepływ danych Dzienne Statystyki Covid-19.Paths[Lookup Match Output1]"
-          TopLeft="932.565463751998,472.300640982069">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,28.9186592189407"
-              Start="0,0"
-              End="0,21.4186592189407">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,21.4186592189407" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="-48.19138671875,4.90464210947036,96.3827734375,11.609375"
-              RelativePosition="Any" />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Przepływ danych Dzienne Statystyki Covid-19.Paths[Lookup Match Output]"
-          TopLeft="218.527775759912,527.789474182182">
+          TopLeft="624.777769706315,527.789474182182">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
@@ -4058,8 +4084,32 @@ where [refTable].[miasto] = ? and [refTable].[prowincja] = ?</property>
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
+          Id="Package\Przepływ danych Dzienne Statystyki Covid-19.Paths[Lookup Match Output]"
+          TopLeft="1338.8154576984,472.300640982069">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,28.9186592189407"
+              Start="0,0"
+              End="0,21.4186592189407">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,21.4186592189407" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="-48.19138671875,4.90464210947035,96.3827734375,11.609375"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
           Id="Package\Przepływ danych Dzienne Statystyki Covid-19.Paths[Flat File Source Output]"
-          TopLeft="387.523805159898,63.2280704244242">
+          TopLeft="793.773799106301,63.2280704244242">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
@@ -4092,42 +4142,8 @@ where [refTable].[miasto] = ? and [refTable].[prowincja] = ?</property>
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
-          Id="Package\Przepływ danych Dzienne Statystyki Covid-19.Paths[Derived Column Output2]"
-          TopLeft="670.132387257633,64.1818184487558">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="234.162247508756,66.4234470294272"
-              Start="0,0"
-              End="234.162247508756,58.9234470294272">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,22.9033514504663" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,22.9033514504663"
-                    Point2="0,26.9033514504663"
-                    Point3="4,26.9033514504663" />
-                  <mssgle:LineSegment
-                    End="230.162247508756,26.9033514504663" />
-                  <mssgle:CubicBezierSegment
-                    Point1="230.162247508756,26.9033514504663"
-                    Point2="234.162247508756,26.9033514504663"
-                    Point3="234.162247508756,30.9033514504663" />
-                  <mssgle:LineSegment
-                    End="234.162247508756,58.9234470294272" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Przepływ danych Dzienne Statystyki Covid-19.Paths[Derived Column Output1]"
-          TopLeft="195.904761727367,626.686719579883">
+          Id="Package\Przepływ danych Dzienne Statystyki Covid-19.Paths[Derived Column Output4]"
+          TopLeft="602.15475567377,626.686719579883">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
@@ -4160,8 +4176,8 @@ where [refTable].[miasto] = ? and [refTable].[prowincja] = ?</property>
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
-          Id="Package\Przepływ danych Dzienne Statystyki Covid-19.Paths[Derived Column Output]"
-          TopLeft="605.496026879206,523.438597873528">
+          Id="Package\Przepływ danych Dzienne Statystyki Covid-19.Paths[Derived Column Output3]"
+          TopLeft="1011.74602082561,523.438597873528">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
@@ -4194,150 +4210,8 @@ where [refTable].[miasto] = ? and [refTable].[prowincja] = ?</property>
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
-          Id="Package\Przepływ danych Dzienne Statystyki Covid-19.Paths[Data Conversion Output2]"
-          TopLeft="456.128962953855,621.525065722047">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="-170.490076082832,-93.7355915398654"
-              Start="0,0"
-              End="-170.490076082832,-86.2355915398654">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,-42.780203608134" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,-42.780203608134"
-                    Point2="0,-46.780203608134"
-                    Point3="-4,-46.780203608134" />
-                  <mssgle:LineSegment
-                    End="-166.490076082832,-46.780203608134" />
-                  <mssgle:CubicBezierSegment
-                    Point1="-166.490076082832,-46.780203608134"
-                    Point2="-170.490076082832,-46.780203608134"
-                    Point3="-170.490076082832,-50.780203608134" />
-                  <mssgle:LineSegment
-                    End="-170.490076082832,-86.2355915398654" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Przepływ danych Dzienne Statystyki Covid-19.Paths[Data Conversion Output1]"
-          TopLeft="732.794635821888,557.833335576351">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="-53.0763867204602,-34.3947377028226"
-              Start="0,0"
-              End="-53.0763867204602,-26.8947377028226">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,-13.2427737147578" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,-13.2427737147578"
-                    Point2="0,-17.2427737147578"
-                    Point3="-4,-17.2427737147578" />
-                  <mssgle:LineSegment
-                    End="-49.0763867204602,-17.2427737147578" />
-                  <mssgle:CubicBezierSegment
-                    Point1="-49.0763867204602,-17.2427737147578"
-                    Point2="-53.0763867204602,-17.2427737147578"
-                    Point3="-53.0763867204602,-21.2427737147578" />
-                  <mssgle:LineSegment
-                    End="-53.0763867204602,-26.8947377028226" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Przepływ danych Dzienne Statystyki Covid-19.Paths[Data Conversion Output]"
-          TopLeft="571.190469268532,402.421046497089">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="229.916663171102,-8.79823465866866"
-              Start="0,0"
-              End="229.916663171102,-1.29823465866866">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,18.5" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,18.5"
-                    Point2="0,22.5"
-                    Point3="4,22.5" />
-                  <mssgle:LineSegment
-                    End="225.916663171102,22.5" />
-                  <mssgle:CubicBezierSegment
-                    Point1="225.916663171102,22.5"
-                    Point2="229.916663171102,22.5"
-                    Point3="229.916663171102,18.5" />
-                  <mssgle:LineSegment
-                    End="229.916663171102,-1.29823465866866" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Przepływ danych Dzienne Statystyki Covid-19.Paths[Wypełnione confirmed_date]"
-          TopLeft="564.051583999383,109.05263349356">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="75.8585810360278,-44.8708150448042"
-              Start="0,0"
-              End="75.8585810360278,-37.3708150448042">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,-14.1475059614005" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,-14.1475059614005"
-                    Point2="0,-18.1475059614005"
-                    Point3="4,-18.1475059614005" />
-                  <mssgle:LineSegment
-                    End="71.8585810360278,-18.1475059614005" />
-                  <mssgle:CubicBezierSegment
-                    Point1="71.8585810360278,-18.1475059614005"
-                    Point2="75.8585810360278,-18.1475059614005"
-                    Point3="75.8585810360278,-22.1475059614005" />
-                  <mssgle:LineSegment
-                    End="75.8585810360278,-37.3708150448042" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="-24.6372329194861,-13.1475059614005,125.133046875,11.658203125"
-              RelativePosition="Any" />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <NodeLayout
-          Size="328,42.6666666666667"
-          Id="Package\Przepływ danych Dzienne Statystyki Covid-19\Zamień puste rekordy na odpowiedni &quot;brak wartości&quot;"
-          TopLeft="723.749991400788,207.894739578801" />
-        <EdgeLayout
-          Id="Package\Przepływ danych Dzienne Statystyki Covid-19.Paths[Derived Column Output3]"
-          TopLeft="904.294634766388,173.27193214485">
+          Id="Package\Przepływ danych Dzienne Statystyki Covid-19.Paths[Derived Column Output2]"
+          TopLeft="1310.54462871279,173.27193214485">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
@@ -4370,8 +4244,42 @@ where [refTable].[miasto] = ? and [refTable].[prowincja] = ?</property>
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
-          Id="Package\Przepływ danych Dzienne Statystyki Covid-19.Paths[Derived Column Output4]"
-          TopLeft="723.749991400788,229.184213781373">
+          Id="Package\Przepływ danych Dzienne Statystyki Covid-19.Paths[Derived Column Output1]"
+          TopLeft="1076.38238120404,64.1818184487558">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="234.162247508756,66.4234470294272"
+              Start="0,0"
+              End="234.162247508756,58.9234470294272">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,22.9033514504663" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,22.9033514504663"
+                    Point2="0,26.9033514504663"
+                    Point3="4,26.9033514504663" />
+                  <mssgle:LineSegment
+                    End="230.162247508756,26.9033514504663" />
+                  <mssgle:CubicBezierSegment
+                    Point1="230.162247508756,26.9033514504663"
+                    Point2="234.162247508756,26.9033514504663"
+                    Point3="234.162247508756,30.9033514504663" />
+                  <mssgle:LineSegment
+                    End="234.162247508756,58.9234470294272" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Przepływ danych Dzienne Statystyki Covid-19.Paths[Derived Column Output]"
+          TopLeft="1129.99998534719,229.184213781373">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
@@ -4392,8 +4300,110 @@ where [refTable].[miasto] = ? and [refTable].[prowincja] = ?</property>
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
+          Id="Package\Przepływ danych Dzienne Statystyki Covid-19.Paths[Data Conversion Output2]"
+          TopLeft="1139.04462976829,557.833335576351">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-53.0763867204602,-34.3947377028226"
+              Start="0,0"
+              End="-53.0763867204602,-26.8947377028226">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,-13.2427737147578" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,-13.2427737147578"
+                    Point2="0,-17.2427737147578"
+                    Point3="-4,-17.2427737147578" />
+                  <mssgle:LineSegment
+                    End="-49.0763867204602,-17.2427737147578" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-49.0763867204602,-17.2427737147578"
+                    Point2="-53.0763867204602,-17.2427737147578"
+                    Point3="-53.0763867204602,-21.2427737147578" />
+                  <mssgle:LineSegment
+                    End="-53.0763867204602,-26.8947377028226" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Przepływ danych Dzienne Statystyki Covid-19.Paths[Data Conversion Output1]"
+          TopLeft="977.440463214935,402.421046497089">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="229.916663171102,-8.79823465866866"
+              Start="0,0"
+              End="229.916663171102,-1.29823465866866">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,18.5" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,18.5"
+                    Point2="0,22.5"
+                    Point3="4,22.5" />
+                  <mssgle:LineSegment
+                    End="225.916663171102,22.5" />
+                  <mssgle:CubicBezierSegment
+                    Point1="225.916663171102,22.5"
+                    Point2="229.916663171102,22.5"
+                    Point3="229.916663171102,18.5" />
+                  <mssgle:LineSegment
+                    End="229.916663171102,-1.29823465866866" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Przepływ danych Dzienne Statystyki Covid-19.Paths[Data Conversion Output]"
+          TopLeft="862.378956900258,621.525065722047">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-170.490076082832,-93.7355915398654"
+              Start="0,0"
+              End="-170.490076082832,-86.2355915398654">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,-42.780203608134" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,-42.780203608134"
+                    Point2="0,-46.780203608134"
+                    Point3="-4,-46.780203608134" />
+                  <mssgle:LineSegment
+                    End="-166.490076082832,-46.780203608134" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-166.490076082832,-46.780203608134"
+                    Point2="-170.490076082832,-46.780203608134"
+                    Point3="-170.490076082832,-50.780203608134" />
+                  <mssgle:LineSegment
+                    End="-170.490076082832,-86.2355915398654" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
           Id="Package\Przepływ danych Dzienne Statystyki Covid-19.Paths[Aggregate Output 1]"
-          TopLeft="625.044634586334,250.473687983946">
+          TopLeft="1031.29462853274,250.473687983946">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
@@ -4428,6 +4438,42 @@ where [refTable].[miasto] = ? and [refTable].[prowincja] = ?</property>
       </GraphLayout>
     </LayoutInfo>
   </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\Przepływ danych Dzienne Statystyki Covid-19\Polozenie geograficzne">
+    <Properties>
+      <Property>
+        <Name>OverwriteParamsSQLProp</Name>
+        <Value
+          type="q2:boolean">false</Value>
+      </Property>
+      <Property>
+        <Name>UsedTableName</Name>
+        <Value
+          type="q3:string">[dbo].[Polozenie_Geograficzne]</Value>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q4:int">0</Value>
+      </Property>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Przepływ danych Dzienne Statystyki Covid-19\Wrzuć do Dzienne Statystyki Covid-19">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
   <PipelineComponentMetadata
     design-time-name="Package\Przepływ danych Dzienne Statystyki Covid-19\Dołącz data_id">
     <Properties>
@@ -4475,19 +4521,6 @@ where [refTable].[miasto] = ? and [refTable].[prowincja] = ?</property>
     </Properties>
   </PipelineComponentMetadata>
   <PipelineComponentMetadata
-    design-time-name="Package\Przepływ danych Dzienne Statystyki Covid-19\Wrzuć do Dzienne Statystyki Covid-19">
-    <Properties>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-      <Property>
-        <Name>TableInfoObjectType</Name>
-        <Value
-          type="q2:string">Table</Value>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <PipelineComponentMetadata
     design-time-name="Package\Przepływ danych Dzienne Statystyki Covid-19\Dodaj pogoda_id">
     <Properties>
       <Property>
@@ -4499,29 +4532,6 @@ where [refTable].[miasto] = ? and [refTable].[prowincja] = ?</property>
         <Name>UsedTableName</Name>
         <Value
           type="q3:string">[dbo].[Pogoda]</Value>
-      </Property>
-      <Property>
-        <Name>TableInfoObjectType</Name>
-        <Value
-          type="q4:int">0</Value>
-      </Property>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <PipelineComponentMetadata
-    design-time-name="Package\Przepływ danych Dzienne Statystyki Covid-19\Polozenie geograficzne">
-    <Properties>
-      <Property>
-        <Name>OverwriteParamsSQLProp</Name>
-        <Value
-          type="q2:boolean">false</Value>
-      </Property>
-      <Property>
-        <Name>UsedTableName</Name>
-        <Value
-          type="q3:string">[dbo].[Polozenie_Geograficzne]</Value>
       </Property>
       <Property>
         <Name>TableInfoObjectType</Name>

@@ -5,10 +5,6 @@
   DTS:CreationName="OLEDB">
   <DTS:ObjectData>
     <DTS:ConnectionManager
-      DTS:ConnectionString="Data Source=covid19southkorea.database.windows.net;User ID=covid@covid19southkorea;Initial Catalog=Covid-19SouthKoreaDWH;Provider=SQLNCLI11.1;Auto Translate=False;">
-      <DTS:Password
-        DTS:Name="Password"
-        Sensitive="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAvimQ3wX2i0aWlF5K7wDfMwAAAAACAAAAAAAQZgAAAAEAACAAAAArz+SiUg5tF8pzHcfy1H+3MmKFkQErIMkbPq7jkAU4iQAAAAAOgAAAAAIAACAAAABivaj07PXONzcsxSO2w9dNqzZX5ACWND7tBnGABHrceIAAAAC+oU8rzI2IYosvufoVCvL1oOHWTlQpHOFtsyCJFGqqw8+55hDCq8HeYEINc0HVfnMa6Lh2byeSvrJbPmzQIVR+kirwzR1GMCq90wadPHYp8NthXd3TOz3ng+QwlkK88qUfPITASeaEol6psHBYCRkDqvHj8jPVl31qj7fzYmV9W0AAAABA8O+IvlrUnbADbVLmpDvRCsWokVWOR5yndBxdk6eNO/cK0qr5Fmk8WAteaySgScGw0JqQV96dBYF5MP1ODK/M</DTS:Password>
-    </DTS:ConnectionManager>
+      DTS:ConnectionString="Data Source=DESKTOP-V8810I2;Initial Catalog=Covid-19SouthKoreaDWH;Provider=SQLNCLI11.1;Integrated Security=SSPI;Auto Translate=False;" />
   </DTS:ObjectData>
 </DTS:ConnectionManager>
