@@ -11,8 +11,8 @@
   DTS:LocaleID="1045"
   DTS:ObjectName="Package2"
   DTS:PackageType="5"
-  DTS:VersionBuild="61"
-  DTS:VersionGUID="{0F9A34E6-DA27-426A-BBEF-69517F70AED7}">
+  DTS:VersionBuild="64"
+  DTS:VersionGUID="{53A52A53-0E6E-41B9-9FA1-AC92D6276839}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -340,6 +340,16 @@
       </DTS:ObjectData>
     </DTS:ConnectionManager>
     <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[localhost.Covid-19SouthKoreaDWH]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{0BE90E41-2C03-4DD2-92AE-C8D1B8D67460}"
+      DTS:ObjectName="localhost.Covid-19SouthKoreaDWH">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="Data Source=localhost;Initial Catalog=Covid-19SouthKoreaDWH;Provider=SQLNCLI11.1;Integrated Security=SSPI;Auto Translate=False;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
       DTS:refId="Package.ConnectionManagers[localhost.IDH]"
       DTS:CreationName="OLEDB"
       DTS:DTSID="{37B60DA8-E37A-4ED6-962B-6220C5190415}"
@@ -365,7 +375,7 @@
       <DTS:Variables />
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
-          SQLTask:Connection="{52D2FB58-7BB0-47DA-8698-4BD065BFE199}"
+          SQLTask:Connection="{0BE90E41-2C03-4DD2-92AE-C8D1B8D67460}"
           SQLTask:SqlStatementSource="TRUNCATE TABLE [dbo].[Data]" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
       </DTS:ObjectData>
     </DTS:Executable>
@@ -2539,8 +2549,8 @@
               <connections>
                 <connection
                   refId="Package\Przepływ danych Data\Wrzuć do DB SQL.Connections[OleDbConnection]"
-                  connectionManagerID="{52D2FB58-7BB0-47DA-8698-4BD065BFE199}:external"
-                  connectionManagerRefId="Project.ConnectionManagers[covid19southkorea.database.windows.net.Covid-19SouthKoreaDWH.covid@covid19southkorea]"
+                  connectionManagerID="Package.ConnectionManagers[localhost.Covid-19SouthKoreaDWH]"
+                  connectionManagerRefId="Package.ConnectionManagers[localhost.Covid-19SouthKoreaDWH]"
                   description="The OLE DB runtime connection used to access the database."
                   name="OleDbConnection" />
               </connections>
@@ -2591,14 +2601,6 @@
                       cachedPrecision="19"
                       externalMetadataColumnId="Package\Przepływ danych Data\Wrzuć do DB SQL.Inputs[OLE DB Destination Input].ExternalColumns[ilosc_wszystkich_przeprowadzonych_testow]"
                       lineageId="Package\Przepływ danych Data\Dodaj kolumny i wylicz faktyczne wartości przeprowadzonych testow i wyników negatywnych lub pozytywnych dla danego dnia.Outputs[Derived Column Output].Columns[ilosc_wszystkich_przeprowadzonych_testow]" />
-                    <inputColumn
-                      refId="Package\Przepływ danych Data\Wrzuć do DB SQL.Inputs[OLE DB Destination Input].Columns[date]"
-                      cachedCodepage="1252"
-                      cachedDataType="str"
-                      cachedLength="50"
-                      cachedName="date"
-                      externalMetadataColumnId="Package\Przepływ danych Data\Wrzuć do DB SQL.Inputs[OLE DB Destination Input].ExternalColumns[pelna_data]"
-                      lineageId="Package\Przepływ danych Data\Dodaj dane z następnego dnia żeby przeliczyć sumę kroczącą na faktyczną wartość z danego dnia.Outputs[Merge Join Output].Columns[date]" />
                   </inputColumns>
                   <externalMetadataColumns
                     isUsed="True">
